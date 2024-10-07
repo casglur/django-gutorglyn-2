@@ -1,0 +1,56 @@
+{% extends "gutorglyn/static-base.html" %}
+{% load i18n %}
+
+{% block content %}
+{% if debug == "on" %}
+	<script type="text/javascript"
+		src="//code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript"
+		src="/static/js/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="/static/js/gutor.js"></script>
+{% endif %}
+
+<div class="span-20">
+<br/>
+<h2>{% trans "Search Page Title" %}<br /></h2>
+</div>
+<div class="span-20" id="wait">
+	<div class="progress-label">
+		<p>{% trans "Search Page Message" %}</p>
+		<p><img src="/static/img/icons/ajax-loader.gif"></p>
+	</div>
+</div>
+<div class="span-20 last" id="content">
+</div>
+<script type="text/javascript">
+		debugStatus = gup('debug');
+		searchOption = gup('search-option');
+		ignoreDiacritics = gup('ignore-diacritics');
+		matchCase = gup('match-case');
+		pageStart = 0;		
+		regEx = gup('reg-ex');
+		searchVal = gup('searchVal');
+
+		createCookie('explanatory_notes_page_start', pageStart);
+		createCookie('patrons_page_start', pageStart);
+		createCookie('paraphrases_page_start', pageStart);
+		createCookie('poems_page_start', pageStart);
+		createCookie('texts_page_start', pageStart);
+		createCookie('translations_page_start', pageStart);
+		createCookie('sources_page_start', pageStart);
+		createCookie('search_option', searchOption);
+		
+		
+		$.get( "gutorglyn/search-results-blank/?searchVal=" + searchVal + "&search-option=" + searchOption + "&ignore-diacritics=" + ignoreDiacritics +"&match-case=" + matchCase + "&reg-ex=" + regEx + "&debug=" + debugStatus + "&page-start=0", function( data ) {
+			$("#content").append(data);
+			$("#wait").hide();
+		});
+</script>
+
+{% endblock %}
+
+
+
+
+
+

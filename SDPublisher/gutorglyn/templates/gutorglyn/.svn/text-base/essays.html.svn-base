@@ -1,0 +1,41 @@
+{% extends "gutorglyn/static-base.html" %} {% block content %}
+{% load i18n %}
+
+<div>
+	<br/>
+	<h1><i>{% trans "Essays Page Title" %}</i></h1>
+	<h2><i>{% trans "Essays Page Sub Title" %}</i></h2>	
+	<div class="span-20">
+		<p>{% trans "Essays Page Edited By Label" %}: Dylan Foster Evans, Barry J. Lewis, Ann Parry Owen</p>
+		<p><img alt="Essay Thumbnail" src="/static/img/flyers/CYWYDDAUGWALCH_APO-1-web.png" align="left" class="essay-flyer-image">{% trans "Essays Page Description" %}</p>
+		<p>{% trans "Essays Page Book Detail" %}</p>		
+		<p><strong>{% trans "Essays Page Price Label" %}:</strong> &pound;25</p>
+		<p>{% trans "Essays Page How to buy message" %}<br/><a href="/static/flyers/CYWYDDAUGWALCH_APO.pdf">{% trans "Essays Page Order Form label" %}</a></p>
+	</div>
+	<div class="span-21">
+	<br/>
+		<h3>{% trans "Essays Page Contents Label" %}</h3>
+		<ol class="essay-contents">
+		<li>Trosglwyddiad Cerddi Guto&apos;r Glyn, <br/><i>Dafydd Johnston</i></li>
+		<li>Guto&apos;r Glyn and the Wars of the Roses, <br/><i>Helen Fulton</i></li>
+		<li>&apos;Mwy o Gymro na Iorciad&apos;, <br/><i>Rhidian Griffiths</i></li>
+		<li>William Herbert of Raglan (d. 1469): Family History and Personal Identity, <br/><i>Dylan Foster Evans</i></li>
+		<li>&apos;He took me to the duke of York&apos;: Henry Griffith, a &apos;Man of War&apos;, <br/><i>Adam Chapman</i></li>
+		<li>The Poet as Social Observer: Guto&apos;r Glyn in West Wales, <br/><i>Ralph A. Griffiths</i></li>
+		<li>Bardd yn y Tirlun: Cymru a&apos;i Rhanbarthau drwy Lygaid Guto&apos;r Glyn, <br/><i>Barry J. Lewis</i></li>
+		<li>Musical Imagery in the Poetry of Guto&apos;r Glyn (fl. c.1435-90), <br/><i>Sally Harper</i></li>
+		<li>&apos;Food and wine for all the world&apos;: Food and Drink in Fifteenth-Century Poetry, <br/><i>Alaw Mai Edwards</i></li>
+		<li>&apos;Arms of stone upon my grave&apos;: Weapons in the Poetry of Guto&apos;r Glyn, <br/><i>Jenny Day</i></li>
+		<li>&apos;Llawer dyn... / &Acirc; chywydd a iachawyd&apos;: Guto&apos;r Glyn yr Iachawr, <br/><i>Bleddyn Owen Huws</i></li>
+		<li>The Cistercians and the Bards - Praise and Patronage in Fifteenth-Century Wales, <br/><i>Karen St&ouml;ber</i></li>
+		<li>Late Medieval Christianity, Saints&apos; Cults and Popular Devotional Trends: Guto&apos;r Glyn and Fifteenth-Century Religious Culture in Britain and Europe, <br/><i>Katharine K. Olson</i></li>
+		<li>&apos;Gorau merch, gorau marchawg&apos;: Gendered Ideals in the Poetry of Guto&apos;r Glyn, <br/><i>Krista Kapphahn</i></li>
+		<li>Creating the Architecture of Happiness in Late Medieval Wales, <br/><i>Richard Suggett</i></li>
+		<li>&apos;Llif Noe yw&apos;r llefain a wnawn&apos;: Genre ac Afonydd ym Marddoniaeth Guto&apos;r Glyn, <br/><i>Eurig Salisbury a Hywel M. Griffiths</i></li>
+		<li>Adeiladu Hudoliaeth: Dehongli Barddoniaeth Guto&apos;r Glyn, <br/><i>Dylan Foster Evans</i></li>
+		</ol>
+	</div>
+</div>
+
+
+{% endblock %}

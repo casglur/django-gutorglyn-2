@@ -1,0 +1,93 @@
+{% extends "gutorglyn/static-base.html" %}
+{% block content %}
+{% load i18n %}
+{% load gutor_extras %}
+<hr class="space"/>
+<hr class="space"/>		
+<div class="span-20">
+	<div class="name">
+	{% if nameType == "person" %}
+		{% if lang == "cym" %}
+			{% regroup nameDetails by def_cym as person_list %}
+			{% for person in person_list %}
+				<h3>{{ person.grouper }}</h3>
+				<b>Ffurfiau:</b> 
+				{% regroup nameDetails by name_in_text as form_list %}
+				{% for form in form_list %}
+					{{ form.grouper }}{% if not forloop.last %}, {% endif %}
+				{% endfor %}
+				<br/>				
+				<b>Cyfeiriadau:</b> 
+				{% for ref in person.list %}
+					<a href="/gutorglyn/poem/?poem-selection={{ ref.line_ref|trimRef }}">{{ ref.line_ref }}</a>{% if not forloop.last %},{% endif %}
+				{% endfor %}
+				{% if not forloop.last %}<hr/>{% endif %}					
+			{% endfor %}
+		{% endif %}
+		{% if lang == "eng" %}
+			{% regroup nameDetails by def_eng as person_list %}
+			{% for person in person_list %}
+				<h3>{{ person.grouper }}</h3>
+				<b>Forms:</b>
+				{% regroup nameDetails by name_in_text as form_list %}
+				{% for form in form_list %}
+					{{ form.grouper }}{% if not forloop.last %}, {% endif %}
+				{% endfor %}
+				<br/>				
+				<b>References:</b> 
+				{% for ref in person.list %}
+					<a href="/gutorglyn/poem/?poem-selection={{ ref.line_ref|trimRef }}">{{ ref.line_ref }}</a>
+				{% endfor %}
+				{% if not forloop.last %}<hr/>{% endif %}					
+			{% endfor %}
+		{% endif %}
+	{% endif %}					
+	
+	{% if nameType == "place" %}
+		{% if lang == "cym" %}
+			{% regroup nameDetails by def_cym as place_list %}
+			{% for place in place_list %}
+			<h3>{{ place.grouper }}</h3>
+				<b>Ffurfiau:</b> 
+				{% regroup nameDetails by place_in_text as form_list %}
+				{% for form in form_list %}
+					{{ form.grouper }}{% if not forloop.last %}, {% endif %}
+				{% endfor %}
+				<br/>			
+				<b>Cyfeiriadau:</b>			
+				{% for ref in place.list %}
+					<a href="/gutorglyn/poem/?poem-selection={{ ref.line_ref|trimRef }}">{{ ref.line_ref }}</a>
+				{% endfor %}
+				{% if not forloop.last %}<hr/>{% endif %}									
+			{% endfor %}
+		{% endif %}	
+		{% if lang == "eng" %}
+			{% regroup nameDetails by def_eng as place_list %}
+			{% for place in place_list %}
+			<h3>{{ place.grouper }}</h3>
+				<b>Forms:</b> 
+				{% regroup nameDetails by place_in_text as form_list %}
+				{% for form in form_list %}
+					{{ form.grouper }}{% if not forloop.last %}, {% endif %}
+				{% endfor %}
+				<br/>			
+				<b>References:</b> 
+				{% for ref in place.list %}
+					<a href="/gutorglyn/poem/?poem-selection={{ ref.line_ref|trimRef }}">{{ ref.line_ref }}</a>
+				{% endfor %}
+				{% if not forloop.last %}<hr/>{% endif %}		
+			{% endfor %}
+		{% endif %}
+	{% endif %}
+	<hr class="space"/>		  	  
+	</div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+

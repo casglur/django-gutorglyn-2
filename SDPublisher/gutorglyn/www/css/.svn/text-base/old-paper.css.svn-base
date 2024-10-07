@@ -1,0 +1,73 @@
+/*
+   -----------------------------------------------------------------------
+  Old-paper stylesheet
+  -----------------------------------------------------------------------
+ */
+ 
+body {
+     background:url('../img/bg/wood1.jpg') repeat;
+}
+.container {
+    background: url('../img/bg/old-paper-small.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.panel {
+    background-image: url('../img/bg/wood1.jpg');
+}
+.panel2 {
+    background-image: url('../img/bg/wood1.jpg');
+}
+.patron-panel {
+    background-image:url('../img/bg/old-paper-small.jpg');    
+    background-size: 100% 100%;   
+}
+
+.abbrev-panel-content {
+    background-image:url('../img/bg/old-paper-small.jpg');    
+    background-size: 100% 100%;   
+}
+a.trigger {
+    background:#9b692e;
+    border: 1px solid #F4E381;
+}
+a.trigger:hover {
+    background:#c57b21;
+}
+a.active.trigger {
+background:#c57b21;
+}
+a.trigger2 {
+    background:#9b692e;
+    border: 1px solid #F4E381;
+}
+a.trigger2:hover {
+    background:#c57b21;
+}
+
+a.active.trigger2 {
+background:#c57b21;
+}
+
+.ui-button-text {color:white;}
+
+/* Tabs */
+.ui-widget-content {
+    background:#fcc36a;
+    border: 0px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-state-default {
+     background:#666;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color:white;
+}
+.ui-tabs .ui-tabs-nav {
+    background:#fcc36a;
+    border: 0px;
+}
+.ui-tabs-nav li.ui-tabs-selected {
+     background:#9b4700;
+}
+.ui-tabs-panel{
+    background:#fcc36a;
+}

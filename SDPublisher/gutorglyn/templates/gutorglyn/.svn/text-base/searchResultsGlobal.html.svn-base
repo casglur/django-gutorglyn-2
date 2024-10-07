@@ -1,0 +1,211 @@
+{% block content %}
+{% load i18n %}
+<div class="span-20" id="{{ searchMode }}-results-wait" style="display: none;">
+	<div class="progress-label">
+		<p>{% trans "Search Page Message" %}</p>
+		<p><img src="/static/img/icons/ajax-loader.gif"></p>
+	</div>
+</div>
+<div id="{{ searchMode }}-search-results-container">
+	
+	{% if debug == "on" %}
+		<div class="debug">	
+		<script type="text/javascript"
+			src="//code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript"
+			src="/static/js/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="/static/js/gutor.js"></script>
+			Page Name: searchResultsGlobal.html <br/>
+			Search Mode: {{ searchMode }} <br/>
+			Search Term: {{ searchTrm }}<br/>
+			Contains Type: {{ containsType }} <br/>
+			Search Type: {{ searchType }} <br/>
+			Search Option: {{ searchOption }} <br/>			
+			{{ searchMode }} Page Number: {{ pageNumber }} <br/>
+			{{ searchMode }} Page Number Values: {{ pageNumberValues }} <br/>
+			Page Start: {{ pageStart }} - Page End: {{ pageEnd }}<br/>
+			Total Number of Hits: {{ searchNum }}<br/>
+		</div>	
+	{% endif %}
+	<div class="span-18 search-tools">
+		<div class="span-9 search-info">
+		{% trans "Search Page Page Number Label" %}: {{ pageNumber }} {% trans "global 'of' label" %} <span id="total-pages">{{ totalPageNumber|floatformat }}</span>
+				| {% trans "Search Page Search Info Results Label" %} {{ pageStart }} - {{ pageEnd }} {% trans "global 'of' label" %} {{ searchNum }} 
+		</div>
+		<div class="search-pagination">				
+				<a href="#" onclick="JavaScript: {{ searchMode }}GetFirstPage();" class="{{ searchMode }}-first-page-link search-icon seek-first">1</a>
+				<a href="#" onclick="JavaScript: {{ searchMode }}GetPreviousPage();" class="{{ searchMode }}-previous-page-link search-icon seek-prev">{% trans "Search Page Controls Previous Label" %}</a>
+				{% if pageNumber > 1 %}
+					<span class="search-results-current-page-number-prev"><a href="#" onclick="JavaScript: {{ searchMode }}GetPreviousPage();">{{ pageNumber|add:"-1" }}</a></span>
+				{% endif %}
+				<span class="search-results-current-page-number">{{ pageNumber}}</span>
+				{% if pageNumber != totalPageNumber %}
+					<span class="search-results-current-page-number-next"><a href="#" onclick="JavaScript: {{ searchMode }}GetNextPage();">{{ pageNumber|add:"1" }}</a></span>
+				{% endif %}					
+				<a href="#" onclick="JavaScript: {{ searchMode }}GetNextPage();" class="{{ searchMode }}-next-page-link search-icon seek-next">{% trans "Search Page Controls Next Label" %}</a>
+				<a href="#" onclick="JavaScript: {{ searchMode }}GetLastPage();" class="{{ searchMode }}-last-page-link search-icon seek-last">{{ totalPageNumber|floatformat }}</a>
+		</div>
+	</div>	
+	<br/>
+	<br/>
+
+	<div>
+		<br/>	
+		<input type="hidden" name="page-start"  id="page-start" value="0"/>
+	</div>
+	
+	<br/>
+		
+	<div class="results-group">
+		 {{searchLineHits|safe}}
+	</div>
+	
+	<div class="span-18 search-tools">
+		<div class="span-9 search-info">
+		{% trans "Search Page Page Number Label" %}: {{ pageNumber }} {% trans "global 'of' label" %} <span id="total-pages">{{ totalPageNumber|floatformat }}</span>
+				| {% trans "Search Page Search Info Results Label" %} {{ pageStart }} - {{ pageEnd }} {% trans "global 'of' label" %} {{ searchNum }} 
+		</div>
+		<div class="search-pagination">				
+				<a href="#" onclick="JavaScript: {{ searchMode }}GetFirstPage();" class="{{ searchMode }}-first-page-link search-icon seek-first">1</a>
+				<a href="#" onclick="JavaScript: {{ searchMode }}GetPreviousPage();" class="{{ searchMode }}-previous-page-link search-icon seek-prev">{% trans "Search Page Controls Previous Label" %}</a>
+				{% if pageNumber > 1 %}
+					<span class="search-results-current-page-number-prev"><a href="#" onclick="JavaScript: {{ searchMode }}GetPreviousPage();">{{ pageNumber|add:"-1" }}</a></span>
+				{% endif %}
+				<span class="search-results-current-page-number">{{ pageNumber}}</span>
+				{% if pageNumber != totalPageNumber %}
+					<span class="search-results-current-page-number-next"><a href="#" onclick="JavaScript: {{ searchMode }}GetNextPage();">{{ pageNumber|add:"1" }}</a></span>
+				{% endif %}					
+				<a href="#" onclick="JavaScript: {{ searchMode }}GetNextPage();" class="{{ searchMode }}-next-page-link search-icon seek-next">{% trans "Search Page Controls Next Label" %}</a>
+				<a href="#" onclick="JavaScript: {{ searchMode }}GetLastPage();" class="{{ searchMode }}-last-page-link search-icon seek-last">{{ totalPageNumber|floatformat }}</a>
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+    currentPage = parseInt({{ pageNumber }});
+	
+	ignoreDiacritics = gup('ignore-diacritics');
+    
+	matchCase = gup('match-case');
+	pageNumberValues = {{ pageNumberValues }};    
+	resultsEnd = parseInt({{ pageEnd }});
+	resultsStart = parseInt({{ pageStart }});
+    regEx = gup('reg-ex');
+    searchVal = gup('searchVal');
+    totalPages = pageNumberValues.length;
+    totalPages = totalPages - 2;
+    totalResults = parseInt({{ searchNum }});
+    
+    nextPageStart = pageNumberValues[currentPage];    
+    
+    if (nextPageStart > totalResults) {
+        $('.{{ searchMode }}-next-page-link').hide();
+        $('.{{ searchMode }}-next-page-link').removeAttr('onClick');
+        $('.{{ searchMode }}-last-page-link').hide();
+        $('.{{ searchMode }}-last-page-link').removeAttr('onClick');
+    }
+    
+    previousPageStart = pageNumberValues[currentPage - 2];
+    
+    if (currentPage <= 1) {
+        $('.{{ searchMode }}-previous-page-link').hide();
+        $('.{{ searchMode }}-previous-page-link').removeAttr('onClick');
+    }
+    
+    if (currentPage <= 1) {
+        $('.{{ searchMode }}-first-page-link').hide();
+        $('.{{ searchMode }}-first-page-link').removeAttr('onClick');
+        $('.{{ searchMode }}-previous-page-link').hide();
+        $('.{{ searchMode }}-previous-page-link').removeAttr('onClick');
+    }
+    
+    pageStart = readCookie('{{ searchMode }}_page_start');
+    
+	createCookie('explanatory_notes_page_start', pageStart);
+	createCookie('patrons_page_start', pageStart);
+	createCookie('paraphrases_page_start', pageStart);
+	createCookie('poems_page_start', pageStart);
+	createCookie('texts_page_start', pageStart);
+	createCookie('translations_page_start', pageStart);
+	createCookie('sources_page_start', pageStart);	
+    
+    resultsPerPage = 10;
+	lastPageIndex = parseInt(resultsPerPage) * totalPages;    
+    
+	console.log('{{ searchMode }} page number values: ' + pageNumberValues);
+	console.log('{{ searchMode }} current page: ' + currentPage);
+	console.log('{{ searchMode }} next page start value: ' + nextPageStart);
+	console.log('{{ searchMode }} previous page start value: ' + previousPageStart);
+	console.log('{{ searchMode }} last page number value: ' + lastPageIndex);
+	console.log('{{ searchMode }} total pages: ' + totalPages );
+
+	function {{ searchMode }}GetFirstPage() {    
+	    $("#{{ searchMode }}-search-results-container").hide();
+	    $("#{{ searchMode }}-results-wait").show();
+
+	    $.get("gutorglyn/search-results-v1/?searchVal=" + searchVal
+	            + "&per-page=" + resultsPerPage + "&page-start=" + 0  + "&search-option={{ searchOption}}" + "&mode={{ searchMode }}", function(data) {
+	        $("#{{ searchMode }}-search-results-container").replaceWith(data);
+	        $("#{{ searchMode }}-results-wait").hide();
+	    });
+	}
+	
+	function {{ searchMode }}GetLastPage() {    
+	    $("#{{ searchMode }}-search-results-container").hide();
+	    $("#{{ searchMode }}-results-wait").show();
+
+	    $.get("gutorglyn/search-results-v1/?searchVal=" + searchVal
+	            + "&per-page=" + resultsPerPage + "&page-start=" + lastPageIndex + "&search-option={{ searchOption }}" + "&mode={{ searchMode }}", function(data) {
+	        $("#{{ searchMode }}-search-results-container").replaceWith(data);
+	        $("#{{ searchMode }}-results-wait").hide();
+	    });
+	}
+	
+	function {{ searchMode }}GetPreviousPage() {    
+	    $("#{{ searchMode }}-search-results-container").hide();
+	    $("#{{ searchMode }}-results-wait").show();
+
+	    $.get("gutorglyn/search-results-v1/?searchVal=" + searchVal
+	            + "&per-page=" + resultsPerPage + "&page-start=" + previousPageStart + "&search-option={{ searchOption}}" + "&mode={{ searchMode }}", function(data) {
+	        $("#{{ searchMode }}-search-results-container").replaceWith(data);
+	        $("#{{ searchMode }}-results-wait").hide();
+	    });
+	}
+	
+	function {{ searchMode }}GetNextPage() {    
+	    $("#{{ searchMode }}-search-results-container").hide();	    
+	    $("#{{ searchMode }}-results-wait").show();
+	    
+	    $.get("gutorglyn/search-results-v1/?searchVal=" + searchVal
+	            + "&per-page=" + resultsPerPage + "&page-start=" + nextPageStart + "&search-option={{ searchOption }}" + "&mode={{ searchMode }}", function(data) {
+	        $("#{{ searchMode }}-search-results-container").replaceWith(data);
+	        $("#{{ searchMode }}-results-wait").hide();		        
+	    });
+	}
+	
+	/* code to highlight found search terms  */
+	var terms = decodeURI(searchVal);
+	terms = terms.replace("+", " ", 'g');
+	var regExGlobalFlag = 'g';
+	var regExCaseFlag = 'i';
+	var searchOption = '';
+	if (searchOption === 'match-case') {
+	    regExCaseFlag = '';
+	    regExGlobalFlag = '';
+	}
+	var regExJS = new RegExp(terms, regExGlobalFlag + regExCaseFlag);
+	console.log('Search term: ' + terms);
+	console.log('Regular Expression: ' + regExJS);
+	$('.search-results-line').each(function() { 
+		$(this).html($(this).html().replace(regExJS, "<span class='found'>$&</span>"));
+		$(".found").parents(".search-results-line").css("color", "#222222");		
+		});
+	$('p').each(function() { 
+		$(this).html($(this).html().replace(regExJS, "<span class='found'>$&</span>"));
+		});	
+
+	/* code to highlight found search terms End */
+</script>
+{% endblock %}    			

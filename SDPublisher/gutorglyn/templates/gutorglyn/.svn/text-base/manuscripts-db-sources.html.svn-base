@@ -1,0 +1,37 @@
+{% block content %}
+{% load i18n %}
+<div class="span-12 manuscript-search-results">
+<table class="manuscripts-poems">
+<thead><tr><th>{% trans "Manuscripts Page Table Header Manuscript Reference" %}</th><th>{% trans "Manuscripts Page Table Header Hand" %}</th><th>{% trans "Manuscripts Page Table Header Date" %}</th></tr></thead>
+<tbody>
+{% for manus in manu_list %}	    
+	<tr>
+	<td>{{manus.manuscript_ref}}</td>
+	{% if lang == "cym" %}
+		<td>{{manus.hand_cy}}</td>
+	{% else%}
+			<td>{{manus.hand_en}}</td>
+	{% endif %}
+	{% if lang == "cym" %}
+		<td>{{manus.dates_cy}}</td>
+	{% else%}
+			<td>{{manus.dates_en}}</td>
+	{% endif %}
+{% endfor %}	
+{% for manus in poem_list %}	    
+	<tr><td>{{manus.poem_number}}</td><td>{{manus.manuscript_ref}}</td><td>{{manus.hand_cy}}</td><td>{{manus.dates_cy}}</td></tr>
+{% endfor %}
+</tbody>	
+</table>
+</div>
+<hr class="space">
+<hr class="space">
+{% endblock %}
+
+
+
+
+
+
+
+

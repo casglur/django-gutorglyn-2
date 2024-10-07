@@ -1,0 +1,40 @@
+{% block black-bar %}
+{% load i18n %}
+<!-- Black Bar -->
+<div class="span-24 last" id="black-bar">
+    <form method="GET" action="/gutorglyn/poem" id="poem-select">
+ 
+ <!-- Poem Dropdown Menu -->
+<select id="poem-selection" name="poem-selection"></select>
+<!-- Poem Dropdown Menu End -->
+
+<!-- First Line Dropdown Menu -->
+
+{% include "gutorglyn/first-line-dropdown.html" %}
+
+<!-- First Line Menu End -->               
+             
+    </form>
+    <form method="GET" action="/gutorglyn/search/" onsubmit="return validateTopSearchBox()">
+        <label id="search-for" for="searchVal">{% trans "Black Bar Search For Label" %}
+        </label>
+        <input type="text" name="searchVal" title="search" id="searchVal" class="top-search-box"/>
+        <input type="hidden" name="per-page"  id="per-page" value="10"/>
+        <input type="hidden" name="page-start"  id="page-start" value="0"/>
+        <input type="hidden" name="search-option"  id="search-option" value="ignore-diacritics"/>  
+        <input type="submit" id="search-button" value="{% trans "Black Bar Search Button" %}">
+    	<a id="advanced-search-link-top" href="/gutorglyn/search-start">{% trans "Black Bar Advanced Search Link" %}</a>
+	    <button class="show-menu"></button>
+    </form>
+    <span class="top-links">
+		<a href="#" class="language-switch"></a>&nbsp;
+	</span>
+</div>
+<!-- Black Bar End -->
+
+<script type="text/javascript" src="/static/js/black-bar.js"></script>
+
+{% endblock black-bar%}
+
+
+

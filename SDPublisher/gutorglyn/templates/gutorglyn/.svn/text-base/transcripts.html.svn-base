@@ -1,0 +1,62 @@
+{% load i18n %}
+<div class="span-8">
+{{transcriptTitle|safe}}
+</div>
+<div class="transcript-menu-div" class=span-3 last">
+	<form method="get" action="/gutorglyn/transcripts/" name="transcript-form" id="transcript-form">
+		<select id="transcription-select" name="transcription-select">
+		{{transcriptTitles|safe}}
+		</select>
+		<input type="hidden" value="{{poemNum}}" name="poemID" id="poemID">
+		<input type="hidden" value="{{transcriptIndex}}" id="transIndex"/>
+		<input type="hidden" value="{{transcriptID}}" id="transcriptID"/>
+	</form>
+</div>
+<div class="span-8 last">
+<i>{{transcriptHandText|safe}}, {{transcriptDateText|safe}}</i>
+</div>
+<div class="span-10 last">
+{{transcriptText|safe}}
+</div>
+
+<div class="span-10 last">
+<strong>{% trans "Transcript Tab Line Orders Heading" %}</strong>
+<br/>
+{{transcriptLineNumsText|safe}}
+<br/>
+<br/>
+<strong>{% trans "Transcript Tab Notes Heading" %}</strong>
+<br/>
+{{transcriptNotesText|safe}}
+</div>
+<script type="text/javascript">
+<!--
+
+//Set Transcript Dropdown menu to selected item on page load
+
+if ( $("#transIndex").val()) {
+	var transIndex = $("#transIndex").val();
+	$("#transcription-select")[0].selectedIndex = transIndex;
+} else {
+	var desiredValue = $("#transcriptID").val();
+	var el = document.getElementById("transcription-select");
+	for(var i=0; i<el.options.length; i++) {
+	  if ( el.options[i].value == desiredValue ) { //change .value to .text to match on text value
+	    el.selectedIndex = i;
+	    break;
+	  }
+	}
+}
+
+//-->
+</script>
+
+
+
+
+
+
+
+
+
+

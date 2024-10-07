@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/gutorglyn/!svn/ver/1521
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/gutorglyn/!svn/ver/8/__init__.py
+END
+excalibur3-settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gutorglyn/!svn/ver/1082/excalibur3-settings.py
+END
+test_settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gutorglyn/!svn/ver/1319/test_settings.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/gutorglyn/!svn/ver/903/settings.py
+END
+alexlinux-settings
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gutorglyn/!svn/ver/1205/alexlinux-settings
+END
+start production.bat
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/gutorglyn/!svn/ver/392/start%20production.bat
+END
+ccs-streamer3-settings
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gutorglyn/!svn/ver/1380/ccs-streamer3-settings
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/gutorglyn/!svn/ver/1100/urls.py
+END
+manage.py
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/gutorglyn/!svn/ver/8/manage.py
+END

@@ -1,0 +1,10 @@
+<div id="poem">
+<div id="main-title">{% block poemTitleMain %}{{ poemTitle|safe }}{%endblock poemTitleMain%}</div>
+<div id="editor">{% block editor %}{{ editor|safe }}{% endblock editor%}</div>
+<div id="texts">
+	<div id="edited-text">
+		<div id="content">
+		{% block editedText %}{{ editedText|safe }}{% endblock editedText%}</div>
+	</div>
+</div>
+</div>

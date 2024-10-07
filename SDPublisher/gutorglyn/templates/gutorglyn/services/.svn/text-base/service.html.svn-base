@@ -1,0 +1,14 @@
+<div id="service-text">
+
+{{ editedText|safe }}
+{{ paraphrase|safe }}
+{{ translation|safe }}
+{{ textNotes|safe }}
+{{ titleCy|safe }}
+{{ titleEn|safe }}
+{{ exNotes|safe }}
+{{ exEngNotes|safe }}
+{{ patron|safe }}
+{{ editor|safe }}
+
+</div>

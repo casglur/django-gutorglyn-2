@@ -1,0 +1,253 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<!--  {% load verbatim %} -->  
+<html>
+    <head>
+        <title>Gwaith Guto'r Glyn</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link type="text/css" rel="stylesheet" href="/static/blueprint/screen.css"
+            media="screen, projection" />
+
+        <!--[if lt IE 8]><link rel="stylesheet" href="/static/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+        <link type="text/css" rel="stylesheet" href="/static/css/gutorglyn.css"
+            media="screen, projection" />
+        <link type="text/css" rel="stylesheet" href="/static/css/jquery-ui-1.8.13.custom.css" />
+        <link type="text/css" rel="stylesheet" href="/static/css/slidingpanel.css"
+            media="screen, projection" />
+        <link type="text/css" rel="stylesheet" href="/static/css/jquery.lightbox-0.5.css"
+            media="screen" />
+
+        <link type="text/css" rel="stylesheet" href="/static/blueprint/print.css"
+            media="print" />
+
+        <script type="text/javascript" src="/static/js/jquery-1.5.1.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery-ui-1.8.13.custom.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.lightbox-0.5.js"></script>
+        <script type="text/javascript" src="/static/js/jquery-gutor.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="container">
+                <hr class="space" />
+                <div class="prepend-1 span-9 top-head">
+                    <h1>
+                        <a href="/static/index.html">Gwaith Guto'r Glyn</a>
+                    </h1>
+                </div>
+                <div class="span-14 last">
+                    <form method="GET" action="/static/poem-redirect.html" id="poem-select">
+                        <label for="poem">Goto Poem: </label>
+                        <select id="poem" name="poem">
+                            <option value="#">Choose...</option>
+                            <option value="001">1</option>
+                            <option value="002">2</option>
+                            <option value="003">3</option>
+                            <option value="012">12</option>
+                            <option value="016">16</option>
+                            <option value="018">18</option>
+                            <option value="018a">18a</option>
+                        </select>
+                    </form>                  
+                    <form method="GET" action="/gutorglyn/search/">
+                        <label for="searchVal">&nbsp;&nbsp;Search for: </label><input type="text" name="searchVal" title="search"
+                            id="searchVal" value="Pond rhyfedd" />
+                        <input type="submit" value="Search" />
+                    </form>
+                    
+                    <!-- paragraph sync button --> 
+                    &nbsp;&nbsp;<input type="checkbox" checked="yes" id="Activechk" /><label for="Activechk">Un-Lock</label>
+                    <!-- paragraph sync button end -->
+                    
+                </div>             
+                <hr style="color:red;background-color: #FF0000; height:7px;" />
+                <!-- Top Nav links -->
+                <div class="prepend-1 span-12 last">
+                    <a href="/static/index.html">Home</a> | <a href="#">Patrons</a> | <a href="#">Locations</a> | 
+                    <a href="#">First Lines</a> | <a href="#">Titles</a> | <a href="#">Search</a>
+                </div>
+                <!-- Top Nav links End-->
+                <!-- Poem Title -->
+                <div class="prepend-1 span-22 last" id="main-title"> 
+                    {% block poemTitleMain %}{%endblock%} 
+                </div>
+                <!-- Poem Title End -->
+                <!-- Editor information -->
+                <div class="prepend-1 span-9 last" id="editor-title">
+                    <i>Golygwyd gan {% block editor %}{% endblock %}</i>
+                </div>
+                <!-- Editor information end -->
+                
+                <!-- Poem Selector Drop Down -->
+                <div class="span-8 last">
+                    
+                </div>
+                <!-- Poem Selector Drop Down End -->
+                
+                <hr class="space" />
+                
+                <div class="column span-10" id="col-1">
+                    
+                    
+                    <!-- Edited Text --> 
+                    <div class="span-9 edited-text" id="edited-text">
+                        <hr class="space" />
+                        
+                        <hr class="space" />
+                        <hr class="space" />
+                        
+                        {% block editedText %}{% endblock %}
+                        
+                    </div>
+                    <!-- Edited Text end -->
+                </div>
+                <div class="span-14 last">
+                    <div id="tabs">
+                        <ul>
+                            <li>
+                                <a href="#paraphrase-tab">
+                                    <span>Aralleiriad</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#translation-tab">
+                                    <span>Translation</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#notes-tab">
+                                    <span>Nodiadau</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#stemma-tab">
+                                    <span>Stemma</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="paraphrase-tab"> {% block paraphrase %}{% endblock %} </div>
+                        <div id="translation-tab"> {% block translation %}{% endblock %} </div>
+                        <div id="notes-tab">
+                            <ul>
+                                <li>
+                                    <a href="#text-notes-tab">
+                                        <span>Testunol</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#explanatory-notes-tab">
+                                        <span>Esboniadol</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#english-explanatory-notes-tab">
+                                        <span>English Explanatory Notes</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div id="text-notes-tab">{% block textNotes %}{% endblock %}</div>
+                            <div id="explanatory-notes-tab">{% block exNotes %}{% endblock %}</div>
+                            <div id="english-explanatory-notes-tab">{% block exEngNotes%}{% endblock %}</div>
+                        </div>
+                        <div id="stemma-tab">
+                            <div id="dialog" title="{% block poemTitleNav %}{% endblock %} - Click to drag">
+                                <img id="stemma-img-dialog" src="/static/img/guto02stema.png" alt="Stemma for "/>
+                            </div>
+                            <button id="opener">Breakout Stemma</button> - Click to drag
+                            <img id="stemma-img" src="/static/img/guto02stema.png" alt="Stemma for "/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="span-24">
+                    <hr class="space"/>
+                </div>
+            </div>
+            
+            <!-- sliding left panel -->
+            <div class="panel">
+                <div style="clear:both;"></div>
+                <div class="columns">
+                    <div class="colleft">
+                        <h3>Audio</h3>
+                        <ul>
+                            <li>
+                                <a href="/static/img/audio.wmv" title="Awdio"> Awdio </a>
+                            </li>
+                        </ul>
+                        <h3>Stemma</h3>
+                        <ul>
+                            <li>
+                                <a href="/static/img/guto02stema.png" title="View Stemma"> View
+                                    Stemma Full Screen </a>
+                            </li>
+                        </ul>
+                        <div id="gallery">
+                            <ul>
+                                <li>
+                                    <a href="/static/img/guto02stema.png" title="View Stemma">
+                                        View Stemma Lightbox </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>Poems</h3>
+                        <ul>
+                            <li>
+                                <a href="/gutorglyn/poem/001" title="Guto 1">Guto 1</a>
+                            </li>
+                            <li>
+                                <a href="/gutorglyn/poem/002" title="Guto 2">Guto 2</a>
+                            </li>
+                            <li>
+                                <a href="/gutorglyn/poem/003" title="Guto 3">Guto 3</a>
+                            </li>
+                            <li>
+                                <a href="/gutorglyn/poem/012" title="Guto 12">Guto 12</a>
+                            </li>
+                            <li>
+                                <a href="/gutorglyn/poem/016" title="Guto 16">Guto 16</a>
+                            </li>
+                            <li>
+                                <a href="/gutorglyn/poem/018" title="Guto ">Guto 18</a>
+                            </li>
+                            <li>
+                                <a href="/gutorglyn/poem/018a" title="Guto 18a">Guto 18a</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="colright">
+                        <h3>Manuscript Images</h3>
+                        <ul>
+                            <li>
+                                <a href="/static/img/manuscript1_full.gif"
+                                    title="Manuscript Image 1">
+                                    <img src="/static/img/manuscript1_small.gif"
+                                        name="Manuscript Image 1" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/static/img/manuscript2_full.gif"
+                                    title="Manuscript Image2">
+                                    <img src="/static/img/manuscript2_small.gif"
+                                        name="Manuscript Image 2" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/static/img/manuscript3_full.gif"
+                                    title="Manuscript Image3">
+                                    <img src="/static/img/manuscript3_small.gif"
+                                        name="Manuscript Image 3" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+                <div style="clear:both;"></div>
+            </div>
+            <a class="trigger" href="#"></a>
+            <!-- sliding left panel end -->        
+
+        </div>       
+    </body>
+</html>

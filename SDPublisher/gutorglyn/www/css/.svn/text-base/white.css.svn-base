@@ -1,0 +1,78 @@
+/*
+   -----------------------------------------------------------------------
+  White stylesheet
+  -----------------------------------------------------------------------
+ */
+body {
+     background:#666;
+}
+ 
+.container {
+    background:#fff;
+}
+
+.patron-panel {
+    background:#fff;
+}
+
+.abbrev-panel-content {
+    background:#fff;
+}
+
+.panel2 {
+    background:#fff;
+}
+
+a.trigger {
+    background:#000;
+    border: 1px solid #9b4700;
+}
+
+a.trigger:hover {
+    background:green;
+}
+
+a.active.trigger {
+background:green;
+}
+
+a.trigger2 {
+    background:#000;
+    border: 1px solid #9b4700;
+}
+
+a.trigger2:hover {
+    background:green;
+}
+
+a.active.trigger2 {
+    background:green;
+}
+
+a.variant-line-link-show:link {
+    color:#8B7D6B;
+}
+a.variant-line-link:active {
+    color:#8B7D6B;
+}
+
+
+/* Tabs */
+.ui-widget-content {
+     background:white;    
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+     background:#666;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color:white;
+}
+.ui-tabs .ui-tabs-nav {
+    background:#000;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+     background:#9b4700;
+}
+.ui-tabs .ui-tabs-panel{
+    background-color: white;
+}

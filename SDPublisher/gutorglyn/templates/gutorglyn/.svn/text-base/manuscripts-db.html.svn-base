@@ -1,0 +1,69 @@
+{% extends "gutorglyn/static-base.html" %} {% block content %}
+{% load i18n %}
+<hr class="space">
+<div>
+	<h2>{% trans "Manuscripts Page Title" %}</h2>
+</div>
+<div>
+	<p>{% trans "Manuscripts Page Explanation" %}</p>
+</div>
+<div class="span-22 search-group">
+	<form action="/gutorglyn/manuscripts/" id="manuscript_form">
+		<select name="m">
+			<option>{% trans "Manuscripts Page Select Manuscript Reference" %}</option>
+			{% for manus in manu_select %}
+				<option value="{{manus.manuscript_name}}">{{manus.manuscript_name}}</option>
+			{% endfor %}
+		</select>
+		<input type="submit" value="{% trans "Manuscripts Page Submit Button" %}">
+	</form>
+</div>
+<div class=span-22 search-group">
+	<form action="/gutorglyn/manuscripts/" id="poem_form">
+		<select name="p">
+			<option>{% trans "Manuscripts Page Select Poem Number" %}</option>
+			{% for poems in poem_select %}
+				<option value="{{poems.poem_number}}">{{poems.poem_number}}</option>
+			{% endfor %}
+		</select>
+		<input type="submit" value="{% trans "Manuscripts Page Submit Button" %}">
+	</form>
+</div>
+<div class="span-20 manuscript-search-results">
+<br/>
+<h3>{{action_def}}</h3>
+<table class="manuscripts-poems">
+<thead><tr><th>{% trans "Manuscripts Page Table Header Poem Number" %}</th><th>{% trans "Manuscripts Page Table Header Manuscript Reference" %}</th><th>{% trans "Manuscripts Page Table Header Hand" %}</th><th>{% trans "Manuscripts Page Table Header Date" %}</th></tr></thead>
+<tbody>
+{% for manus in manu_list %}	    
+	<tr>
+	<td>{{manus.poem_number}}</td>
+	<td>{{manus.manuscript_ref}}</td>
+	{% if lang == "cym" %}
+		<td>{{manus.hand_cy}}</td>
+	{% else%}
+			<td>{{manus.hand_en}}</td>
+	{% endif %}
+	{% if lang == "cym" %}
+		<td>{{manus.dates_cy}}</td>
+	{% else%}
+			<td>{{manus.dates_en}}</td>
+	{% endif %}
+{% endfor %}	
+{% for manus in poem_list %}	    
+	<tr><td>{{manus.poem_number}}</td><td>{{manus.manuscript_ref}}</td><td>{{manus.hand_cy}}</td><td>{{manus.dates_cy}}</td></tr>
+{% endfor %}
+</tbody>	
+</table>
+</div>
+<hr class="space">
+<hr class="space">
+{% endblock %}
+
+
+
+
+
+
+
+

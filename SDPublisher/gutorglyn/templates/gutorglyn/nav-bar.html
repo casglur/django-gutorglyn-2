@@ -1,0 +1,53 @@
+{% load i18n %}
+{% block nav-bar %}
+
+<!-- Top Nav links -->
+<div class="span-24 last">
+	<div id="menu-button">{% trans "Red Menu Mobile Menu Option" %}</div>
+	<div id='cssmenu'>
+		<ul>
+			<li><a href="/"><span>{% trans "Red Menu Home Option" %}</span></a></li>
+			<li class='has-sub'><a href="#"><span>{% trans "Red Menu The Edition Option" %}</span></a>
+				<ul>
+					<li><a href="/gutorglyn/poem/"><span>{% trans "Red Menu The Poems Option" %}</span></a></li>
+					<li><a href="/gutorglyn/title-list"><span>{% trans "Red Menu Title List Option" %}</span></a></li>
+					<li><a href="/gutorglyn/patron-list"><span>{% trans "Red Menu Patrons and Poets List Option" %}</span></a></li>
+					<li><a href="/gutorglyn/get-personal-names"><span>{% trans "Red Menu Personal Names Option" %}</span></a></li>
+	                <li><a href="/gutorglyn/get-place-names"><span>{% trans "Red Menu Place Names Option" %}</span></a></li>                
+					<li><a href="/gutorglyn/get-manuscripts/"><span>{% trans "Red Menu Manuscripts and Poems Option" %}</span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub"><a href="#"><span>{% trans "Red Menu Resources Option" %}</span></a>
+	            <ul>
+	                <li><a href="/gutorglyn/biog"><span>{% trans "Red Menu Biography Option" %}</span></a></li>
+	                <li><a href="/gutorglyn/about"><span>{% trans "Red Menu About Option" %}</span></a></li>
+	                <li><a href="/gutorglyn/guidelines"><span>{% trans "Red Menu Guidelines Option" %}</span></a></li>
+	                <li class="has-sub">
+	                	<a href="#"><span><span>{% trans "Red Menu Performances Option" %}</span></span></a>
+	                	<ul>
+	                		<li><a href="/gutorglyn/drwm"><span>{% trans "Red Menu Drwm Concert Option" %}</span></a></li>
+	                	</ul>
+	                </li>
+	                <li class="has-sub">
+	                	<a href="#"><span>{% trans "Red Menu Publications Option" %}</span></a>
+	                	<ul>
+	                		<li><a href="/gutorglyn/essays"><span>{% trans "Red Menu Book of Essays Option" %}</span></a></li>
+	                	</ul>
+	                </li>	                
+	                <li class="has-sub">
+	                	<a href="#"><span>{% trans "Red Menu Articles Option" %}</span></a>
+	                	<ul>
+	                		<li><a href="/gutorglyn/tuchwith"><span>{% trans "Red Menu Digital Editing Option" %}</span></a></li>
+							<li><a href="/gutorglyn/musical-companions"><span>{% trans "Red Menu Musical Companions Option" %}</span></a></li>
+	                	</ul>               	
+	                </li>
+	            </ul>			
+			</li>
+			<li class='last'>{% trans "Red Menu Guto's Wales Option" %}</li>
+		</ul>
+	</div>
+</div>
+
+<!-- Top Nav links End-->
+
+{% endblock nav-bar%}

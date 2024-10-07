@@ -1,0 +1,100 @@
+body {
+margin: 0;
+padding: 0;
+border: 0;
+height: 100%; 
+max-height: 100%; 
+font-size:90%;
+}
+
+#framecontentTop{ 
+position: absolute; 
+top: 0;
+left: 0;
+width: 100%; /*Width of left frame div*/
+height: 70px;
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: #FFD8B7;
+color: black;
+}
+
+#framecontentLeft{ 
+position: fixed; 
+float: left;
+top: 70px; /*Set top value to HeightOfTopFrameDiv*/
+left: 0; 
+right: 0;
+width: 200px; 
+height: 100%; /*Height of top frame div*/
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: #FFD8B7;
+color: black;
+}
+
+#page{
+margin-left: 10px; 
+margin-top: 10px; 
+margin-right: 10px;
+margin-bottom: 10px;
+background: #fff;
+}
+
+#maincontent{
+position: fixed; 
+left: 200px; 
+top: 70px; 
+right: 0;
+bottom: 0;
+overflow: auto; 
+background: #fff;
+}
+
+.innertube{
+margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+}
+
+
+
+h2 {
+  margin: 6px;
+}
+
+h3 {
+  margin: 10px;
+}
+
+
+p.text { margin-left: 15px;
+	margin-right: 15px;}
+p.red { margin-left: 15px;
+	margin-right: 15px;
+	color: red;
+	}
+
+p.item {font-size: 100%; margin-left: 0em; margin-right: 4em;  margin-top: 0pt; margin-bottom: 0pt} 
+p.indent1 {margin-left: 4em; margin-top: 6pt; margin-bottom: 0pt; border: thin solid black; padding: 5px; margin-right: 20%; background: #ffc; white-space: nowrap}
+p.indent2 { margin-left: 6em; text-indent: -1em; margin-top: 0pt; margin-bottom: 0pt}
+p.indent2-end { margin-left: 6em; text-indent: -1em; margin-top: 0pt; margin-bottom: 1pt}
+p.indent3 { margin-left: 8em; text-indent: -1em; margin-top: 0pt; margin-bottom: 0pt}
+p.indent3-start { margin-left: 8em; text-indent: -1em; margin-top: 1pt; margin-bottom: 0pt}
+p.indent3-end { margin-left: 8em; text-indent: -1em; margin-top: 0pt; margin-bottom: 1pt}
+p.indent4 {margin-left: 10em; text-indent: -1em; margin-top: 0pt; margin-bottom: 0pt}
+p.indent5 {margin-left: 12em; text-indent: -1em; margin-top: 0pt; margin-bottom: 0pt}
+p.indent6 {margin-left: 14em; text-indent: -1em; margin-top: 0pt; margin-bottom: 0pt}
+p.indent1-start {margin-left: 4em; text-indent: -1em; margin-top: 1pt; margin-bottom: 0pt}
+p.indent1-end { margin-left: 4em; text-indent: -1em; margin-top: 0pt; margin-bottom: 1pt}
+p.indent1-only { margin-left: 4em; text-indent: -1em; margin-top: 1pt; margin-bottom: 1pt}
+p.noind {}
+table {margin-left: 4em; margin-right: 4em; margin-top: 4pt; margin-bottom: 4pt; border-collapse: separate}
+table.sep
+{
+border-collapse: separate;
+}
+#framecontentLeft a {color: #395A7B}
+
+
+
+
+
+ a{text-decoration:none;}
+ a:hover{color:#395A7B}

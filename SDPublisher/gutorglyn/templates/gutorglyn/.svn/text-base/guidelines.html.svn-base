@@ -1,0 +1,194 @@
+{% extends "gutorglyn/static-base.html" %} 
+{% block content %}
+{% load i18n %}
+{% get_current_language as lang %}
+<hr class="space"/>
+<div>
+<h2>{% trans "Guidelines Page Title" %}</h2>
+</div>
+{% if lang == "cy" %}
+<div>
+<h4>Iaith</h4>
+<p>Pan fyddwch yn defnyddio'r wefan am y tro cyntaf, bydd gofyn i chi ddewis iaith. Os byddwch am newid iaith ar &ocirc;l hynny gallwch wneud drwy ddewis yr iaith ar frig y ddalen ar y dde.</p>
+<br/>
+<h3>Y Cerddi</h3>
+<p>O ddewis 'Y Cerddi' ar y tudalen cartref byddwch yn mynd yn syth i gerdd 1.</p> 
+
+<p>Gallwch ddewis cerdd arall yn &ocirc;l:
+<ul>
+<li>rhif a theitl y gerdd yn y blwch <strong>'Dewis teitl cerdd'</strong> ar frig y ddalen</li>
+<li>llinell gyntaf y gerdd yn y blwch <strong>'Dewis llinell gyntaf'</strong> ar frig y ddalen</li>
+</ul>
+</p>
+
+<p>Gallwch hefyd chwilio am gerdd drwy deipio unrhyw air neu gyfuniad yn y blwch 'chwilio' cyffredinol. (Gw. isod am opsiynau chwilio pellach.)</p>
+
+<p>Gallwch ddewis cerdd hefyd yn &ocirc;l enw noddwr, eirchiad neu fardd yn y rhestr 'Noddwyr a Beirdd'.</p>
+<br/>
+<h3>Y Panel ar y Chwith</h3>
+
+<h4>Testun</h4>
+<p>Ar &ocirc;l dewis cerdd, bydd y testun yn aros yn y panel ar y chwith.</p> 
+
+<p>O ddewis <strong>'Dangos opsiynau'</strong> ar frig y ddalen, a dewis <strong>'Dangos/cuddio enwau priod'</strong> islaw, bydd yr enwau priod yn y testun yn cael eu tanlinellu.</p>
+
+<p>O glicio ar yr enw, bydd ffenestr fechan yn agor gyda manylion am yr enw hwnnw ac unrhyw gyfeiriadau eraill ato yn y cerddi. (Os oes nodyn esboniadol, nodir hyn drwy roi 'n' yn dilyn y cyfeiriad, e.e. 13.14n.)</p>
+	
+<p>O ddewis <strong>'Dangos/cuddio dolen llinell'</strong> mae rhifau llinell wedi eu tanlinellu yn ymddangos ar ochr chwith pob llinell yn y testun, ac o glicio ar rif bydd yr amrywiadau ar y llinell honno yn y prif lawysgrifau yn ymddangos yn y panel ar y dde.</p>
+<br/>
+<h3>Y Panel ar y Dde</h3>
+<p>Defnyddiwch y tabiau ar frig y panel hwn i ddewis yr eitemau isod. Mae'r botwm <strong>'cloi/datgloi sgrolio'</strong> yn peri i'r testun yn y panel dde sgrolio gyda'r testun ar y chwith neu'n annibynnol arno.</p>
+
+<h4>Aralleiriad</h4>
+Aralleiriad i Gymraeg modern. 
+
+<h4>Translation</h4>
+Cyfieithiad i Saesneg. 
+
+<h4>Nodiadau</h4>
+<p>Mae tair set o nodiadau, dwy yn y Gymraeg ac un yn Saesneg:</p>
+
+<blockquote>Esboniadol  Mae'r rhain yn cynnwys nodyn rhagymadroddol sy'n rhoi gwybodaeth am y cefndir (cyd-destun hanesyddol, amgylchiadau canu'r gerdd ac ati); dyddiad canu'r gerdd (neu fras amcan ohono); gwybodaeth am olygiadau neu gyfieithiadau blaenorol; nodyn byr ar y mydr a'r gynghanedd. Yna ceir nodiadau manwl ar eiriau, cyfuniadau, cystrawen a chynganeddion anarferol: unrhyw wybodaeth sy'n helpu'r darllenydd i ddeall a gwerthfawrogi'r gerdd. Ceir llyfryddiaeth ar waelod y nodiadau.</blockquote>
+
+<blockquote>Testunol Ceir nodyn rhagarweiniol yn trafod y llawysgrifau sy'n cynnwys y testun, gan nodi'r berthynas rhyngddynt, eu safon gyffredinol a'r testunau llawysgrif y seiliwyd y testun golygedig arnynt. Yna ceir nodiadau ar eiriau, gan drafod darlleniadau amrywiol y llawysgrifau a'r rhesymau dros ddewis darlleniadau penodol. Ceir llyfryddiaeth ar waelod y nodiadau.</blockquote>
+
+<blockquote>English notes Fersiwn Saesneg o'r nodiadau esboniadol, gyda gwybodaeth gryno am hanes y llawysgrifau a'u cydberthynas.</blockquote>
+
+<h4>Llawysgrifau</h4>
+O ddewis 'Llawysgrifau' bydd y tabiau canlynol yn ymddangos:
+
+<h4>Ffynonellau</h4>
+<p>Rhestrir yr holl lawysgrifau sy'n cynnwys y gerdd dan sylw. Nodir amrediad y tudalennau/ffolios ac, os yw'n hysbys, enw'r ysgrifydd a'r dyddiad cop&iuml;o. Daw'r wybodaeth am y llawysgrifau o gyfrol arfaethedig Daniel Huws, Repertory of Welsh Manuscripts (RepWM), a diolchir yn fawr iddo am rannu'r gwaith gyda ni.</p>
+
+<h4>Trawsysgrifiadau </h4>
+<p>Am egwyddorion trawsysgrifio, gw. dan <u>Adnoddau</u>.</p>
+
+<p>Cynigir trawsysgrifiad o'r testunau y seiliwyd y cerddi arnynt. Mae'r rhifau llinell yn y trawsysgrifiadau yn cyfateb i'r rhifau llinell yn y testun golygedig; nid yw'r llinellau o reidrwydd yn dilyn yr un drefn. Nodir trefn y llinellau ar waelod y trawsysgrifiad, a thynnir sylw yno at unrhyw nodweddion anarferol yn y llawysgrif (megis ymylnodau neu ddulliau o ddynodi cywiriadau neu amrywiadau) a phroblemau wrth geisio dehongli'r llawysgrifen.</p>
+
+<h4>Lluniau</h4>
+<p>Cynigir delweddau o nifer o'r llawysgrifau a drawsysgrifir. Os dewiswch y tab 'lluniau', fe welwch a oes lluniau ar gael. O glicio ar lun bychan bydd ffenestr newydd yn agor. Gallwch addasu maint y ffenestr honno a'i symud i ochr chwith y sgrin fel bod modd darllen y gerdd yn y llawysgrif a'r trawsysgrifiad ohoni ochr yn ochr.</p> 
+
+<h4>Stema</h4>
+<p>Delwedd yn mapio perthynas dybiedig y testunau llawysgrifol &acirc;'i gilydd yw'r stema. Fe'i cynigir yn ochelgar iawn - gan ei bod hi'n aml yn amhosibl bod yn gwbl sicr am gydberthynas y testunau, yn enwedig gan fod rhai yn tarddu o ffynonellau ysgrifenedig sydd bellach wedi eu colli, neu o ffynonellau llafar.</p>
+
+<p>Drwy glicio ar y tab 'stema' bydd y stema yn ymddangos yn y panel ar y dde. I'w wneud yn fwy, cliciwch ar ddolen 'stema fwy' a bydd ffenestr yn agor y gallwch newid ei maint a'i symud o amgylch y sgrin. Gallwch hefyd agor stema (mewn tab newydd yn eich porwr) drwy glicio ar lun bychan ohono a welir yn y nodiadau Testunol neu'r English notes.</p> 
+
+<p>Defnyddir X i gynrychioli ffynhonnell sydd wedi ei cholli; llinellau soled i ddangos fod y berthynas rhwng dwy lawysgrif yn gl&ograve;s a bod y naill mae'n debyg yn gopi o'r llall; a llinell ddotiedig i ddangos fod dwy lawysgrif yn ymddangos fel petaent yn perthyn ond bod llawysgrifau wedi eu colli rhyngddynt. Rhoddir blychau trwm o amgylch y llawysgrifau allweddol (sef y rhai a drafodir yn y nodiadau Testunol), a dewiswyd y llawysgrifau a ddefnyddiwyd i lunio'r testun golygedig o blith y rhai hyn.</p>
+
+<p>Rhestrir ar waelod y ddalen y llawysgrifau nad oes modd eu gosod yn y stema oherwydd fod y testun yn rhy fyr, yn ddiweddar iawn, neu'n rhy lwgr.</p>
+
+<h4>Droriau</h4>
+<p>Ar yr ymyl chwith eithaf, ceir tabiau sy'n agor y 'droriau' &acirc;'r adnoddau islaw ynddynt. Drwy glicio ar y tab, bydd yn troi'n wyrch a bydd dr&ocirc;r yn agor ar draws y sgrin. Gellir cau'r dr&acirc;r drwy glicio eto ar y tab.</p>
+
+<h4>Noddwyr a Beirdd</h4>
+<p>Ceir yma wybodaeth bellach am brif wrthrychau'r gerdd dan sylw (y noddwr, yr eirchiad mewn cywydd gofyn, bardd arall, ac ati). Rhoddir llyfryddiaeth ar y gwaelod. Gellir cael hyd i wybodaeth am noddwyr neu feirdd eraill drwy gyfrwng y ddolen 'Noddwyr a Beirdd' ar frig y ddalen. Cewch yr un wybodaeth drwy glicio ar y dolenni perthnasol yn y nodiadau.</p>
+
+<h4>Byrfoddau</h4>
+<p>Mae'r dr&ocirc;r hwn yn darparu rhestr o'r byrfoddau a ddefnyddir yn y nodiadau.</p>
+
+<h4>Chwilio</h4>
+<p>Mae'r prif flwch chwilio ar frig y ddalen. Gallwch chwilio am air neu am gyfuniad o eiriau, chwilio'n gyffredinol ar draws holl gynnwys y wefan, neu gyfyngu eich chwilio i feysydd penodol, megis testun y cerddi yn unig. Gallwch ddewis anwybyddu acenion, a chwilio drwy gyfateb llythrennau bach neu fawr. Caniateir chwilio drwy ddefnyddio mynegiadau rheolaidd hefyd.</p> 
+
+<h4>Awdio</h4>
+<p>Gallwch glywed y gerdd yn cael ei datgan drwy ddefnyddio'r chwaraewr uwchben y panel de.</p>
+
+<h4>Adnoddau</h4>
+<p>Yma gellir cael hyd i adnoddau pellach sy'n ymwneud &acirc; Guto'r Glyn a'i fyd, gan gynnwys bywgraffiad y bardd.</p>
+
+<h4>Cymru Guto</h4>
+<p>Bydd y tab hwn yn eich arwain at wefan gysylltiedig, sy'n cyflwyno gwybodaeth gefndirol am fywyd yng Nghymru'r bymthegfed ganrif.</p>
+
+</div>
+
+
+{% else %}
+<div>
+<h4>Language</h4>
+<p>When you use the website for the first time you will be asked to select a language. If you later wish to change your language choice, you can do so by clicking the language option at the top right of the page.</p>
+
+<h3>The Poems</h3>
+<p>Selecting 'The Poems' on the home page will take you to poem one.</p> 
+
+<p>You can select another poem by:</p>
+<ul>
+<li>the number and title of the poem in the <strong>'Choose poem title'</strong> menu at the top of the page</li>
+<li>the first line of the poem in the <strong>'Choose first line'</strong> menu at the top of the page.</li>
+</ul>
+<p>You can also find a poem by searching for any word or word combination using the general <strong>'search'</strong> box. (See below for further search options.)</p>
+
+<p>Another way of selecting a poem is to choose the name of a patron, petitioner or poet in the list of <strong></strong>'Patrons and Poets'.</p>
+<br/>
+
+<h3>The Left-hand Panel</h3>
+
+<h4>Text</h4>
+<p>After choosing a poem, the text will remain in the left-hand panel.</p> 
+
+<p>Personal and place names in the text will be underlined by choosing <strong>'Show Options'</strong>at the top of the page, then selecting <strong>'Show/hide name links'</strong></p> 
+
+<p>By clicking on an underlined name, a pop-up window will open with a definition and listing any further references in the poems. (Where an explanatory note is provided, this is indicated by an 'n' following the poem and line reference, e.g. 13.14n.)</p>
+
+<p>By choosing <strong>'Show/hide line links'</strong>, underlined line numbers will appear to the left of the text, and by clicking on a line number the right-hand panel will show the variant readings for that line in the major manuscripts.</p>
+<br/>
+<h3>The Right-hand Panel</h3>
+
+<p>Use the tabs at the top of this panel to select the items listed below. You can use the <strong>'lock/unlock scrolling'</strong> option to enable or disable synchronized scrolling of the right-hand and left-hand panels.</p>
+
+<h4>Aralleiriad</h4>
+Modern Welsh paraphrase.
+
+<h4>Translation</h4>
+English translation. 
+
+<h4>Notes</h4>
+There are three sets of notes, two in Welsh (Esboniadol and Testunol), and English notes.
+ 
+The English notes include an introductory note providing information about the background (historical context, the circumstances in which the poem was performed and so on); the date of the poem (or a rough estimate); a summary of the information about the manuscripts, noting the principal sources used for the edition; a list of any previous editions or translations; a short note on metre and cynghanedd.  This is followed by detailed notes on words, word combinations, unusual syntax or metrical features or important textual notes: any information which will help the reader to understand and appreciate the poem. (A fuller discussion on the manuscripts and textual readings is given in Welsh under Testunol notes.) A bibliography is provided at the end of the notes.
+
+<h4>Manuscripts</h4>
+<p>By selecting <u>Manuscripts</u> the following tabs will appear:</p>
+
+<h4>Sources</h4>
+<p>All the manuscripts containing the chosen poem are listed. The page/folio range is given and, if known, the name of the scribe and the date when the poem was copied. This information has been taken from Daniel Huws's forthcoming volume, Repertory of Welsh Manuscripts (RepWM), and we thank him for sharing his work with us.</p>
+
+<h4>Transcriptions</h4>
+<p>For transcription conventions, see under Resources.</p>
+
+<p>Transcriptions are given for the manuscript texts that form the basis of the edited text of the poem. The line numbers in the transcriptions correspond to those in the edited text: lines do not necessarily follow the same order. The line order is noted at the end of the transcription, and attention is drawn to any unusual features in the manuscript (e.g. marginalia, ways of denoting corrections or variants, &c.) and problems encountered in interpreting the handwriting.</p> 
+
+<h4>Images</h4>
+<p>Images are presented of some of the manuscript texts which are transcribed: if a small image is provided in the transcriptions, you can click on it and a new window will open. The image can be resized and moved to the left of the screen so that the poem can be read in the manuscript and the transcription side by side.</p>
+
+<h4>Stemma</h4>
+<p>The stemma is an image mapping the supposed relationships between the manuscript texts. It is offered tentatively, as it is often impossible to be completely sure about how the texts relate to one another, especially as some derive from lost written sources or from sources transmitted orally.</p>
+
+<p>By clicking on the 'stemma' tab, the stemma will appear in the right-hand panel. To enlarge it, click on the 'pop-up stemma' link, and a new window will open which you can resize and move around the screen. You can also open the stemma (in a new browser window) by clicking on the thumbnail given in the Testunol or English notes.</p> 
+
+<p>X is used to denote a source which has been lost; solid lines show that the relationship between two manuscripts is close, and that one is likely to be a copy of the other; and a dotted line shows that two manuscripts seem to be related, but sources may have been lost between them. Bold boxes denote the key manuscripts (namely the ones discussed in the notes), and the manuscripts which form the basis of the edited text are chosen from these.</p>
+
+<p>At the bottom, a list is given of the manuscripts which could not be included in the stemma: because the text was too short, too recent or too corrupt.</p>
+<br/>
+<h3>Drawers</h3>
+<p>At the extreme left, there are tabs which open 'drawers' with the resources noted below. By clicking on a tab, it will turn green and a drawer opens across the screen. To close the drawer, click again on the tab.</p>
+
+<h4>Patrons and Poets</h4>
+<p>This drawer provides further information about the subject of the relevant poem (the patron, the petitioner in a request poem, another poet, and so on). A bibliography is given at the end. You can find information about other patrons and poets by clicking on the 'Patrons and Poets' link at the top of the page. The same information can be accessed by clicking on relevant links in the notes.</p>
+
+<h4>Abbreviations</h4>
+<p>This drawer provides a list of the abbreviations used in the notes.</p>
+
+<h4>Search</h4>
+<p>The main search box is located at the top of the screen. You can search for a single word or a combination of words, either generally across the whole site or limiting your search to specific fields, such as the text of the poems. You can choose to ignore accents, and can make your search case-sensitive. You can also choose to use regular expressions.</p>
+
+<h4>Audio</h4>
+<p>You can hear a reading of the poem by using the player that appears when you choose <strong>'Show Options'</strong>'Show Options' at the top of the page.</p>
+
+<h4>Resources</h4>
+<p>Use this link to view further resources relating to Guto'r Glyn and his world, including a biography of the poet.</p>
+
+<h4>Guto's Wales</h4>
+<p>This tab will take you to the associated Guto's Wales website, which provides information about life in fifteenth-century Wales.</p>
+
+</div>
+{% endif %}
+{% endblock %}

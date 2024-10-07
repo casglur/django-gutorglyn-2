@@ -1,0 +1,389 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/1509/gutorglyn/python/@scripts/excalibur3
+END
+removeEnvironmentOld.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/removeEnvironmentOld.py
+END
+removeAllDocumentsLowMemory.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/removeAllDocumentsLowMemory.py
+END
+putDocumentsTxn.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/gutorglyn/!svn/ver/983/gutorglyn/python/@scripts/excalibur3/putDocumentsTxn.py
+END
+putDocumentsTxn10-99.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/putDocumentsTxn10-99.py
+END
+django-version.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/django-version.py
+END
+searchDocsInContainerForString1.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/searchDocsInContainerForString1.py
+END
+titlesWithOrderBy.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gutorglyn/!svn/ver/1445/gutorglyn/python/@scripts/excalibur3/titlesWithOrderBy.py
+END
+removeSingleDocumentTxn.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/gutorglyn/!svn/ver/983/gutorglyn/python/@scripts/excalibur3/removeSingleDocumentTxn.py
+END
+searchDocsInContainerForString5.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/gutorglyn/!svn/ver/1485/gutorglyn/python/@scripts/excalibur3/searchDocsInContainerForString5.py
+END
+searchDocsInContainerForString9.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/gutorglyn/!svn/ver/1059/gutorglyn/python/@scripts/excalibur3/searchDocsInContainerForString9.py
+END
+searchPoemNumber.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/searchPoemNumber.py
+END
+removeAllDocumentsTxn.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/gutorglyn/!svn/ver/983/gutorglyn/python/@scripts/excalibur3/removeAllDocumentsTxn.py
+END
+returnLineGroup.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/gutorglyn/!svn/ver/1059/gutorglyn/python/@scripts/excalibur3/returnLineGroup.py
+END
+bdxmlexamples.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/bdxmlexamples.py
+END
+searchDocsInContainerForString.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/searchDocsInContainerForString.py
+END
+setNamespace.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/setNamespace.py
+END
+putSingleDocument.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gutorglyn/!svn/ver/1221/gutorglyn/python/@scripts/excalibur3/putSingleDocument.py
+END
+searchDocsInContainerForUnicodeString.py
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/gutorglyn/!svn/ver/1509/gutorglyn/python/@scripts/excalibur3/searchDocsInContainerForUnicodeString.py
+END
+listDocsInContainer.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/gutorglyn/!svn/ver/983/gutorglyn/python/@scripts/excalibur3/listDocsInContainer.py
+END
+removeDocuments.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/removeDocuments.py
+END
+firstLinesWithOrderByEnglish.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/gutorglyn/!svn/ver/1187/gutorglyn/python/@scripts/excalibur3/firstLinesWithOrderByEnglish.py
+END
+firstLines.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/gutorglyn/!svn/ver/1187/gutorglyn/python/@scripts/excalibur3/firstLines.py
+END
+searchDocsInContainerForLongString.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/searchDocsInContainerForLongString.py
+END
+simpleSearchWithNamespace.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/gutorglyn/!svn/ver/1059/gutorglyn/python/@scripts/excalibur3/simpleSearchWithNamespace.py
+END
+createEnvironment.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/gutorglyn/!svn/ver/961/gutorglyn/python/@scripts/excalibur3/createEnvironment.py
+END
+loadDocs.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/loadDocs.py
+END
+deleteIndex.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/gutorglyn/!svn/ver/1401/gutorglyn/python/@scripts/excalibur3/deleteIndex.py
+END
+searchDocsInContainerForString4.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/searchDocsInContainerForString4.py
+END
+addRemoveIndex.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/gutorglyn/!svn/ver/1471/gutorglyn/python/@scripts/excalibur3/addRemoveIndex.py
+END
+searchDocsInContainerForString8.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/gutorglyn/!svn/ver/1499/gutorglyn/python/@scripts/excalibur3/searchDocsInContainerForString8.py
+END
+putDocumentsTxnMulti.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/putDocumentsTxnMulti.py
+END
+removeContainer.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/removeContainer.py
+END
+allPatronsWithOrderBy.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/gutorglyn/!svn/ver/1065/gutorglyn/python/@scripts/excalibur3/allPatronsWithOrderBy.py
+END
+firstLinesWithOrderBy.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/gutorglyn/!svn/ver/1187/gutorglyn/python/@scripts/excalibur3/firstLinesWithOrderBy.py
+END
+deleteDocsInContainer.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/deleteDocsInContainer.py
+END
+createContainerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/createContainerTest.py
+END
+searchDocsInContainerForString10.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/gutorglyn/!svn/ver/1235/gutorglyn/python/@scripts/excalibur3/searchDocsInContainerForString10.py
+END
+removeAllDocuments.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gutorglyn/!svn/ver/983/gutorglyn/python/@scripts/excalibur3/removeAllDocuments.py
+END
+searchDocsRegularExpression.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/gutorglyn/!svn/ver/1509/gutorglyn/python/@scripts/excalibur3/searchDocsRegularExpression.py
+END
+poemTitles.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/poemTitles.py
+END
+addDefaultIndex.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/gutorglyn/!svn/ver/1471/gutorglyn/python/@scripts/excalibur3/addDefaultIndex.py
+END
+poemNumbersWithTitlesEnglish.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/gutorglyn/!svn/ver/1194/gutorglyn/python/@scripts/excalibur3/poemNumbersWithTitlesEnglish.py
+END
+removeEnvironmentProduction.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/removeEnvironmentProduction.py
+END
+searchDocsInContainerForString3.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/searchDocsInContainerForString3.py
+END
+listIndexes.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/gutorglyn/!svn/ver/1401/gutorglyn/python/@scripts/excalibur3/listIndexes.py
+END
+searchDocsInContainerForString7.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/searchDocsInContainerForString7.py
+END
+patronList.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/patronList.py
+END
+putSingleDocumentTxn.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/putSingleDocumentTxn.py
+END
+searchDocsInContainer.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/searchDocsInContainer.py
+END
+findPatronWithNamespace.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/gutorglyn/!svn/ver/1059/gutorglyn/python/@scripts/excalibur3/findPatronWithNamespace.py
+END
+poemNumbersWithTitles.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/gutorglyn/!svn/ver/1189/gutorglyn/python/@scripts/excalibur3/poemNumbersWithTitles.py
+END
+simpleSearch.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/gutorglyn/!svn/ver/1059/gutorglyn/python/@scripts/excalibur3/simpleSearch.py
+END
+addIndex.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/gutorglyn/!svn/ver/1471/gutorglyn/python/@scripts/excalibur3/addIndex.py
+END
+removeEnvironment.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/gutorglyn/!svn/ver/983/gutorglyn/python/@scripts/excalibur3/removeEnvironment.py
+END
+putDocumentRange.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/putDocumentRange.py
+END
+searchDocsInContainerForString2.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/searchDocsInContainerForString2.py
+END
+putDocuments.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/gutorglyn/!svn/ver/1059/gutorglyn/python/@scripts/excalibur3/putDocuments.py
+END
+searchDocsInContainerForString6.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/searchDocsInContainerForString6.py
+END
+removeSingleDocument.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/gutorglyn/!svn/ver/1221/gutorglyn/python/@scripts/excalibur3/removeSingleDocument.py
+END
+searchTransTitles.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/searchTransTitles.py
+END
+createContainer.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/gutorglyn/!svn/ver/961/gutorglyn/python/@scripts/excalibur3/createContainer.py
+END
+make-people-json.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/make-people-json.py
+END
+getSiblings.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/getSiblings.py
+END
+putDocumentsTxn1-9.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/@scripts/excalibur3/putDocumentsTxn1-9.py
+END

@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="/static/gutorglyn.css"/>
+        <link type="text/css" rel="stylesheet" href="/static/blueprint/screen.css"/>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <title>Gwaith Guto'r Glyn</title>
+    </head>
+    <body>
+        <div class="container">
+            <hr class="space"/>
+            <div class="prepend-1 span-23 last header">
+                <h1>Gutor Glyn</h1>
+            </div>
+            <hr class="space"/>
+            <div class="prepend-1 span-22 append-1 last edit">
+                <h3>Edited Text</h3>
+                {% block main %}{% endblock %}
+            </div>
+            <div class="prepend-1 span-22 append-1 last para"> 
+                <h3>Paraphrase</h3>
+                {% block para %}{% endblock %}
+            </div>
+            <div class="prepend-1 span-22 append-1 last trans">
+                <h3>Translation</h3>
+                {% block trans %}{% endblock %}
+            </div>
+        </div>
+    </body>
+</html>

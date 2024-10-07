@@ -1,0 +1,690 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Guto'r Glyn.net\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-08 13:52+0100\n"
+"PO-Revision-Date: 2015-04-08 13:30-0000\n"
+"Last-Translator: Alexander Roberts <a.l.roberts@swansea.ac.uk>\n"
+"Language-Team: LANGUAGE <apo@cymru.ac.uk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: .\views.py:202
+msgid "Searching for manuscripts containing poem number"
+msgstr "Searching for manuscripts containing poem number: "
+
+#: .\views.py:205
+msgid "Searching for poems contained in manuscripts reference"
+msgstr "Searching for poems contained in manuscripts reference: "
+
+#: .\views.py:746 .\views.py:1010 .\views.py:1271
+msgid "Search Type Definition case-insensitive"
+msgstr "case-insensitive"
+
+#: .\views.py:750 .\views.py:1014 .\views.py:1275
+msgid "Search Type Definition case-sensitive"
+msgstr "case-sensitive"
+
+#: .\views.py:755 .\views.py:1019 .\views.py:1280
+msgid "Search Type Definition ignoring diacritics"
+msgstr "Ignoring Diacritics"
+
+#: .\views.py:815 .\views.py:1079 .\views.py:1346
+msgid "Search Type Definition regular expression"
+msgstr "Regular Expression"
+
+#: .\templates\gutorglyn\about.html.py:7
+msgid "About the project Page Title"
+msgstr "About the project"
+
+#: .\templates\gutorglyn\biog-cy.html.py:6
+#: .\templates\gutorglyn\biog-en.html.py:8
+#: .\templates\gutorglyn\biog.html.py:7
+msgid "Biography Page title"
+msgstr "Biography"
+
+#: .\templates\gutorglyn\biog-cy.html.py:8
+#: .\templates\gutorglyn\biog-en.html.py:10
+#: .\templates\gutorglyn\biog.html.py:9
+msgid "Biography Page contents label"
+msgstr "Contents"
+
+#: .\templates\gutorglyn\black-bar.html.py:19
+msgid "Black Bar Search For Label"
+msgstr "&nbsp;&nbsp;Search for "
+
+#: .\templates\gutorglyn\black-bar.html.py:24
+msgid "Black Bar Search Button"
+msgstr "Search"
+
+#: .\templates\gutorglyn\black-bar.html.py:25
+msgid "Black Bar Advanced Search Link"
+msgstr "Advanced"
+
+#: .\templates\gutorglyn\drwm-videos.html.py:6
+msgid "Drwm Video Page Title"
+msgstr "Voicing the Verse"
+
+#: .\templates\gutorglyn\drwm-videos.html.py:7
+msgid "Drwm Video Page Sub Title"
+msgstr "with"
+
+#: .\templates\gutorglyn\drwm-videos.html.py:9
+msgid "Drwm Video Page Location"
+msgstr "National Library of Wales"
+
+#: .\templates\gutorglyn\drwm-videos.html.py:9
+msgid "Drwm Video Page Date"
+msgstr "September"
+
+#: .\templates\gutorglyn\drwm-videos.html.py:10
+#: .\templates\gutorglyn\musical-companions.html.py:8
+msgid "Musical Companions Page Description"
+msgstr "&nbsp;"
+
+#: .\templates\gutorglyn\drwm-videos.html.py:13
+#: .\templates\gutorglyn\musical-companions.html.py:11
+#: .\templates\gutorglyn\tuchwith.html.py:12
+msgid "TuChwith Page Download Link Text"
+msgstr "Download article"
+
+#: .\templates\gutorglyn\essays.html.py:6
+msgid "Essays Page Title"
+msgstr "'Gwalch Cywyddau Gw&ycirc;r'"
+
+#: .\templates\gutorglyn\essays.html.py:7
+msgid "Essays Page Sub Title"
+msgstr "ESSAYS ON GUTO’R GLYN AND FIFTEENTH-CENTURY WALES"
+
+#: .\templates\gutorglyn\essays.html.py:9
+msgid "Essays Page Edited By Label"
+msgstr "Edited by"
+
+#: .\templates\gutorglyn\essays.html.py:10
+msgid "Essays Page Description"
+msgstr ""
+"A collection of essays has been inspired by ‘Guto’r Glyn.net’, the new "
+"electronic edition of the poetry of Guto’r Glyn (fl. c.1435–90), considered "
+"by many to be the most significant Welsh poet of the fifteenth century. "
+"Experts in the history and culture of late medieval Wales were invited to "
+"contribute in their chosen language, and among the topics discussed are the "
+"manuscript transmission of the poems, history, politics, religion, the "
+"material culture of the uchelwyr, music, geography and warfare."
+
+#: .\templates\gutorglyn\essays.html.py:11
+msgid "Essays Page Book Detail"
+msgstr "tt. xiv + 495 December 2013 hardback ISBN 978-1-907029-10-3"
+
+#: .\templates\gutorglyn\essays.html.py:12
+msgid "Essays Page Price Label"
+msgstr "Price"
+
+#: .\templates\gutorglyn\essays.html.py:13
+msgid "Essays Page How to buy message"
+msgstr ""
+"To purchase the collection of essays please click the link below to download "
+"the PDF order form. Complete the form and return it with a cheque for the "
+"correct amount to the address listed."
+
+#: .\templates\gutorglyn\essays.html.py:13
+msgid "Essays Page Order Form label"
+msgstr "Order Form"
+
+#: .\templates\gutorglyn\essays.html.py:17
+msgid "Essays Page Contents Label"
+msgstr "Contents"
+
+#: .\templates\gutorglyn\first-line-dropdown.html.py:5
+msgid "Black Bar First Line Dropdown Menu Choice"
+msgstr "Choose first line"
+
+#: .\templates\gutorglyn\footer.html.py:4
+#: .\templates\gutorglyn\searchResults.html.py:121
+#: .\templates\gutorglyn\searchResultsNew.html.py:119
+msgid "JavaScript Message Invalid Field Length"
+msgstr "Error: Invalid search term length, must be 4 or more characters"
+
+#: .\templates\gutorglyn\footer.html.py:12
+msgid "Footer Copyright Notice"
+msgstr ""
+"&copy;<a href=\"http://www.wales.ac.uk/en/"
+"CentreforAdvancedWelshCelticStudies/IntroductiontotheCentre.aspx\">2013 "
+"Centre for Advanced Welsh and Celtic Studies</a>"
+
+#: .\templates\gutorglyn\guidelines.html.py:7
+msgid "Guidelines Page Title"
+msgstr "Guidelines"
+
+#: .\templates\gutorglyn\index.html.py:32
+msgid "Home Page Welcome Message"
+msgstr "Welcome to Guto’r Glyn.net"
+
+#: .\templates\gutorglyn\index.html.py:34
+msgid "Home Page Disclaimer"
+msgstr ""
+"The website is still under development. Any comments to <a id='mailto' "
+"style='font-size: 10pt; font-weight: normal; color: black; text-decoration: "
+"underline;' href='mailto:apo@cymru.ac.uk'>Guto</a>, please."
+
+#: .\templates\gutorglyn\index.html.py:36
+msgid "Home Page Browser Message"
+msgstr ""
+"This web site is best viewed using the Google Chrome or Mozilla Firefox "
+"browsers."
+
+#: .\templates\gutorglyn\manuscripts-db.html.py:5
+msgid "Manuscripts Page Title"
+msgstr "Manuscripts and Poems Database"
+
+#: .\templates\gutorglyn\manuscripts-db.html.py:8
+msgid "Manuscripts Page Explanation"
+msgstr ""
+"Using this page you can choose a manuscript to see which of Guto'r Glyn's "
+"poems occur in it, or choose a poem to see a list of the manuscripts which "
+"include that poem."
+
+#: .\templates\gutorglyn\manuscripts-db.html.py:13
+msgid "Manuscripts Page Select Manuscript Reference"
+msgstr "Choose a manuscript"
+
+#: .\templates\gutorglyn\manuscripts-db.html.py:18
+#: .\templates\gutorglyn\manuscripts-db.html.py:29
+msgid "Manuscripts Page Submit Button"
+msgstr "OK"
+
+#: .\templates\gutorglyn\manuscripts-db.html.py:24
+msgid "Manuscripts Page Select Poem Number"
+msgstr "Choose a poem"
+
+#: .\templates\gutorglyn\manuscripts-db.html.py:36
+msgid "Manuscripts Page Table Header Poem Number"
+msgstr "Poem Number"
+
+#: .\templates\gutorglyn\manuscripts-db.html.py:36
+msgid "Manuscripts Page Table Header Manuscript Reference"
+msgstr "Manuscript Reference"
+
+#: .\templates\gutorglyn\manuscripts-db.html.py:36
+msgid "Manuscripts Page Table Header Hand"
+msgstr "Hand"
+
+#: .\templates\gutorglyn\manuscripts-db.html.py:36
+msgid "Manuscripts Page Table Header Date"
+msgstr "Date"
+
+#: .\templates\gutorglyn\musical-companions.html.py:6
+msgid "Musical Companions Page Title"
+msgstr "Guto’r Glyn and his musical companions"
+
+#: .\templates\gutorglyn\nav-bar.html.py:6
+msgid "Red Menu Mobile Menu Option"
+msgstr "Menu"
+
+#: .\templates\gutorglyn\nav-bar.html.py:9
+msgid "Red Menu Home Option"
+msgstr "Home"
+
+#: .\templates\gutorglyn\nav-bar.html.py:10
+msgid "Red Menu The Edition Option"
+msgstr "The Edition"
+
+#: .\templates\gutorglyn\nav-bar.html.py:12
+msgid "Red Menu The Poems Option"
+msgstr "The Poems"
+
+#: .\templates\gutorglyn\nav-bar.html.py:13
+msgid "Red Menu Title List Option"
+msgstr "Title List"
+
+#: .\templates\gutorglyn\nav-bar.html.py:14
+msgid "Red Menu Patrons and Poets List Option"
+msgstr "Patrons and Poets List"
+
+#: .\templates\gutorglyn\nav-bar.html.py:15
+msgid "Red Menu Personal Names Option"
+msgstr "Personal Names"
+
+#: .\templates\gutorglyn\nav-bar.html.py:16
+msgid "Red Menu Place Names Option"
+msgstr "Place Names"
+
+#: .\templates\gutorglyn\nav-bar.html.py:17
+msgid "Red Menu Manuscripts and Poems Option"
+msgstr "Manuscripts and Poems"
+
+#: .\templates\gutorglyn\nav-bar.html.py:20
+msgid "Red Menu Resources Option"
+msgstr "Resources"
+
+#: .\templates\gutorglyn\nav-bar.html.py:22
+msgid "Red Menu Biography Option"
+msgstr "Biography"
+
+#: .\templates\gutorglyn\nav-bar.html.py:23
+msgid "Red Menu About Option"
+msgstr "About the project"
+
+#: .\templates\gutorglyn\nav-bar.html.py:24
+msgid "Red Menu Guidelines Option"
+msgstr "Guidelines"
+
+#: .\templates\gutorglyn\nav-bar.html.py:26
+msgid "Red Menu Performances Option"
+msgstr "Performances"
+
+#: .\templates\gutorglyn\nav-bar.html.py:28
+msgid "Red Menu Drwm Concert Option"
+msgstr "Voicing the Verse"
+
+#: .\templates\gutorglyn\nav-bar.html.py:32
+msgid "Red Menu Publications Option"
+msgstr "Publications"
+
+#: .\templates\gutorglyn\nav-bar.html.py:34
+msgid "Red Menu Book of Essays Option"
+msgstr "Gwalch Cywyddau Gwŷr"
+
+#: .\templates\gutorglyn\nav-bar.html.py:38
+msgid "Red Menu Articles Option"
+msgstr "Articles"
+
+#: .\templates\gutorglyn\nav-bar.html.py:40
+msgid "Red Menu Digital Editing Option"
+msgstr "Digital Editing"
+
+#: .\templates\gutorglyn\nav-bar.html.py:41
+msgid "Red Menu Musical Companions Option"
+msgstr "Musical Companions"
+
+#: .\templates\gutorglyn\nav-bar.html.py:46
+msgid "Red Menu Guto's Wales Option"
+msgstr "<a href=\"/gutoswales\"><span>Guto's Wales</span></a>"
+
+#: .\templates\gutorglyn\patron-detail.html.py:5
+msgid "People Detail Page Title"
+msgstr "List of Patrons and Poets"
+
+#: .\templates\gutorglyn\patron-list.html.py:5
+msgid "People List Page Title"
+msgstr "List of Patrons and Poets"
+
+#: .\templates\gutorglyn\patron-list.html.py:8
+msgid "People List Usage Blurb"
+msgstr ""
+"Use the box below to find patrons and poets. Type at least three letters "
+"from anywhere in the name."
+
+#: .\templates\gutorglyn\patron-list.html.py:10
+msgid "People List find button"
+msgstr "Search for patron or poet"
+
+#: .\templates\gutorglyn\personal-names-db.html.py:5
+msgid "Personal Names Page Title"
+msgstr "Personal Names"
+
+#: .\templates\gutorglyn\personal-names-db.html.py:8
+msgid "Personal Names Page Explanation"
+msgstr ""
+"This list includes names of animals and inanimate objects, such as swords, "
+"as well as people. An 'n' after the poem reference indicates that there is "
+"an explanatory note."
+
+#: .\templates\gutorglyn\place-names-db.html.py:5
+msgid "Place Names Page Title"
+msgstr "Place Names"
+
+#: .\templates\gutorglyn\place-names-db.html.py:8
+msgid "Place Names Page Explanation"
+msgstr ""
+"This list includes the names of towns and cities, houses and castles, "
+"countries, administrative regions such as commotes and parishes, and "
+"geographical features such as rivers and hills. An 'n' after the poem "
+"reference indicates that there is an explanatory note."
+
+#: .\templates\gutorglyn\poem.html.py:14
+#: .\templates\gutorglyn\bootstrap\base.html.py:61
+msgid "Edited by"
+msgstr "Edited by"
+
+#: .\templates\gutorglyn\poem.html.py:40
+msgid "Poem Tabs Paraphrase Label"
+msgstr "Paraphrase"
+
+#: .\templates\gutorglyn\poem.html.py:51
+msgid "Poem Tabs Notes Label"
+msgstr "Notes"
+
+#: .\templates\gutorglyn\poem.html.py:56
+msgid "Poem Tabs Manuscripts Label"
+msgstr "Manuscripts"
+
+#: .\templates\gutorglyn\poem.html.py:62
+msgid "Poem Tabs Variants Label"
+msgstr "Variants"
+
+#: .\templates\gutorglyn\poem.html.py:78
+msgid "Poem Tabs Explanatory Notes Label"
+msgstr "Welsh Explanatory Notes"
+
+#: .\templates\gutorglyn\poem.html.py:83
+msgid "Poem Tabs Text Notes Label"
+msgstr "Welsh Textual Notes"
+
+#: .\templates\gutorglyn\poem.html.py:111
+msgid "Poem Tabs Sources Label"
+msgstr "Sources"
+
+#: .\templates\gutorglyn\poem.html.py:116
+msgid "Poem Tabs Transcripts Label"
+msgstr "Transcriptions"
+
+#: .\templates\gutorglyn\poem.html.py:121
+msgid "Poem Tabs Images Label"
+msgstr "Images"
+
+#: .\templates\gutorglyn\poem.html.py:126
+msgid "Poem Tabs Stemma Label"
+msgstr "Stemma"
+
+#: .\templates\gutorglyn\poem.html.py:137
+msgid "Poem Tabs Open Stemma Link"
+msgstr "Open stemma"
+
+#: .\templates\gutorglyn\poem.html.py:145
+msgid "Poem Page Variant Lines Tab Message"
+msgstr "Click on a line number to see variants"
+
+#: .\templates\gutorglyn\print-this.html.py:5
+msgid "Print This Page Title"
+msgstr "Print View"
+
+#: .\templates\gutorglyn\print-this.html.py:8
+msgid "Print This Page Message"
+msgstr "Please wait... loading print view"
+
+#: .\templates\gutorglyn\raw-base.html.py:19
+msgid "Raw Base Page Editor Label"
+msgstr "Edited by"
+
+#: .\templates\gutorglyn\search-start.html.py:9
+#: .\templates\gutorglyn\search-start.html.py:15
+#: .\templates\gutorglyn\searchResults.html.py:22
+#: .\templates\gutorglyn\searchResultsNew.html.py:25
+msgid "Search Page search button"
+msgstr "Search"
+
+#: .\templates\gutorglyn\search-start.html.py:19
+#: .\templates\gutorglyn\searchResults.html.py:26
+#: .\templates\gutorglyn\searchResultsNew.html.py:29
+msgid "Search Page Match Case Label"
+msgstr "Match case and diacritics"
+
+#: .\templates\gutorglyn\search-start.html.py:20
+#: .\templates\gutorglyn\searchResults.html.py:27
+#: .\templates\gutorglyn\searchResultsNew.html.py:30
+msgid "Search Form Ignore Diacritics Lable"
+msgstr "Ignore Diacritics"
+
+#: .\templates\gutorglyn\search-start.html.py:21
+#: .\templates\gutorglyn\searchResults.html.py:28
+#: .\templates\gutorglyn\searchResultsNew.html.py:31
+msgid "Search Form Regular Expression Lable"
+msgstr "Regular Expression"
+
+#: .\templates\gutorglyn\search.html.py:15
+msgid "Search Page Title"
+msgstr "Search Results"
+
+#: .\templates\gutorglyn\search.html.py:19
+#: .\templates\gutorglyn\searchResultsGlobal.html.py:5
+#: .\templates\gutorglyn\searchResultsNew.html.py:62
+#: .\templates\gutorglyn\searchResultsNew.html.py:70
+#: .\templates\gutorglyn\searchResultsNew.html.py:78
+#: .\templates\gutorglyn\searchResultsNew.html.py:86
+#: .\templates\gutorglyn\searchResultsNew.html.py:94
+#: .\templates\gutorglyn\searchResultsNew.html.py:102
+#: .\templates\gutorglyn\searchResultsNew.html.py:110
+#: .\templates\gutorglyn\deprecated\searchResultsPoems.html.py:5
+msgid "Search Page Message"
+msgstr "Please wait... executing search query"
+
+#: .\templates\gutorglyn\searchResults.html.py:15
+#: .\templates\gutorglyn\searchResultsNew.html.py:18
+msgid "Search Page Search Term Label"
+msgstr "Search term"
+
+#: .\templates\gutorglyn\searchResults.html.py:17
+#: .\templates\gutorglyn\searchResultsNew.html.py:20
+msgid "Search Page Search Type Label"
+msgstr "Search type"
+
+#: .\templates\gutorglyn\searchResults.html.py:31
+#: .\templates\gutorglyn\deprecated\searchResultsParaphrases.html.py:14
+#: .\templates\gutorglyn\deprecated\searchResultsPoems.html.py:22
+msgid "Search Page Results Per Page Label"
+msgstr "Results per page"
+
+#: .\templates\gutorglyn\searchResults.html.py:31
+#: .\templates\gutorglyn\searchResultsGlobal.html.py:31
+#: .\templates\gutorglyn\searchResultsGlobal.html.py:64
+#: .\templates\gutorglyn\deprecated\searchResultsParaphrases.html.py:14
+#: .\templates\gutorglyn\deprecated\searchResultsPoems.html.py:24
+msgid "Search Page Page Number Label"
+msgstr "Page number"
+
+#: .\templates\gutorglyn\searchResults.html.py:33
+#: .\templates\gutorglyn\searchResults.html.py:68
+#: .\templates\gutorglyn\searchResultsNew.html.py:59
+#: .\templates\gutorglyn\deprecated\searchResultsParaphrases.html.py:23
+#: .\templates\gutorglyn\deprecated\searchResultsPoems.html.py:43
+msgid "Search Page Showing Label"
+msgstr "Showing"
+
+#: .\templates\gutorglyn\searchResults.html.py:35
+#: .\templates\gutorglyn\searchResults.html.py:36
+#: .\templates\gutorglyn\searchResults.html.py:37
+#: .\templates\gutorglyn\searchResults.html.py:38
+#: .\templates\gutorglyn\searchResults.html.py:39
+#: .\templates\gutorglyn\deprecated\searchResultsParaphrases.html.py:25
+#: .\templates\gutorglyn\deprecated\searchResultsParaphrases.html.py:26
+#: .\templates\gutorglyn\deprecated\searchResultsParaphrases.html.py:27
+#: .\templates\gutorglyn\deprecated\searchResultsParaphrases.html.py:28
+#: .\templates\gutorglyn\deprecated\searchResultsParaphrases.html.py:29
+#: .\templates\gutorglyn\deprecated\searchResultsPoems.html.py:45
+#: .\templates\gutorglyn\deprecated\searchResultsPoems.html.py:46
+#: .\templates\gutorglyn\deprecated\searchResultsPoems.html.py:47
+#: .\templates\gutorglyn\deprecated\searchResultsPoems.html.py:48
+#: .\templates\gutorglyn\deprecated\searchResultsPoems.html.py:49
+msgid "Search Page Instances Label"
+msgstr "results"
+
+#: .\templates\gutorglyn\searchResults.html.py:49
+#: .\templates\gutorglyn\searchResultsNew.html.py:40
+msgid "Search Results Page Guide Title"
+msgstr "Search Guide"
+
+#: .\templates\gutorglyn\searchResults.html.py:51
+#: .\templates\gutorglyn\searchResultsNew.html.py:42
+msgid "Search Results Page Guide Text"
+msgstr ""
+"Results are returned for queries relating to where in the digital edition "
+"the search term may be found. If the search term is found in an edited text "
+"then it will be found under the 'Poems' tab, likewise if it is found in a "
+"text note then it will be found under the 'Text Notes' tab. A 'result' count "
+"is provided for each tab. A ‘result’ is either a line in a poem, or a "
+"paragraph within a note, that contains one or more matches. The actual "
+"number of matches can be higher than the number of ‘results’ found."
+
+#: .\templates\gutorglyn\searchResults.html.py:55
+#: .\templates\gutorglyn\searchResultsNew.html.py:46
+msgid "Search Page View Results In Label"
+msgstr "Click on the tabs to view your search results"
+
+#: .\templates\gutorglyn\searchResults.html.py:59
+#: .\templates\gutorglyn\searchResultsNew.html.py:50
+msgid "Search Page Tab Poems"
+msgstr "Poems"
+
+#: .\templates\gutorglyn\searchResults.html.py:60
+#: .\templates\gutorglyn\searchResultsNew.html.py:51
+msgid "Search Page Tab Paraphrase"
+msgstr "Paraphrase"
+
+#: .\templates\gutorglyn\searchResults.html.py:61
+#: .\templates\gutorglyn\searchResultsNew.html.py:52
+msgid "Search Page Tab Translation"
+msgstr "Translation"
+
+#: .\templates\gutorglyn\searchResults.html.py:62
+#: .\templates\gutorglyn\searchResultsNew.html.py:53
+msgid "Search Page Tab Explanatory Notes"
+msgstr "Explanatory Notes"
+
+#: .\templates\gutorglyn\searchResults.html.py:63
+#: .\templates\gutorglyn\searchResultsNew.html.py:54
+msgid "Search Page Tab Text Notes"
+msgstr "Text Notes"
+
+#: .\templates\gutorglyn\searchResults.html.py:64
+#: .\templates\gutorglyn\searchResultsNew.html.py:55
+msgid "Search Page Tab Sources"
+msgstr "Sources"
+
+#: .\templates\gutorglyn\searchResults.html.py:65
+#: .\templates\gutorglyn\searchResultsNew.html.py:56
+msgid "Search Page Tab Patrons and Poets"
+msgstr "Patrons and Poets"
+
+#: .\templates\gutorglyn\searchResults.html.py:68
+#: .\templates\gutorglyn\searchResultsNew.html.py:59
+#: .\templates\gutorglyn\xquery-test.html.py:8
+msgid "Search Page Poem Results Count label"
+msgstr "results"
+
+#: .\templates\gutorglyn\searchResults.html.py:75
+#: .\templates\gutorglyn\searchResultsNew.html.py:67
+msgid "Search Page Paraphrase Results Count label"
+msgstr "Results"
+
+#: .\templates\gutorglyn\searchResults.html.py:82
+#: .\templates\gutorglyn\searchResultsNew.html.py:75
+msgid "Search Page Text Translation Results Count label"
+msgstr "Results"
+
+#: .\templates\gutorglyn\searchResults.html.py:89
+#: .\templates\gutorglyn\searchResultsNew.html.py:83
+msgid "Search Page Explanatory Notes Results Count label"
+msgstr "Results"
+
+#: .\templates\gutorglyn\searchResults.html.py:96
+#: .\templates\gutorglyn\searchResultsNew.html.py:91
+msgid "Search Page Text Notes Results Count label"
+msgstr "Results"
+
+#: .\templates\gutorglyn\searchResults.html.py:103
+#: .\templates\gutorglyn\searchResultsNew.html.py:99
+msgid "Search Page Text Sources Results Count label"
+msgstr "Results"
+
+#: .\templates\gutorglyn\searchResults.html.py:110
+#: .\templates\gutorglyn\searchResultsNew.html.py:107
+msgid "Search Page Names Results Count label"
+msgstr "Results"
+
+#: .\templates\gutorglyn\searchResultsGlobal.html.py:31
+#: .\templates\gutorglyn\searchResultsGlobal.html.py:32
+#: .\templates\gutorglyn\searchResultsGlobal.html.py:64
+#: .\templates\gutorglyn\searchResultsGlobal.html.py:65
+msgid "global 'of' label"
+msgstr "of"
+
+#: .\templates\gutorglyn\searchResultsGlobal.html.py:32
+#: .\templates\gutorglyn\searchResultsGlobal.html.py:65
+msgid "Search Page Search Info Results Label"
+msgstr "Results"
+
+#: .\templates\gutorglyn\searchResultsGlobal.html.py:36
+#: .\templates\gutorglyn\searchResultsGlobal.html.py:69
+msgid "Search Page Controls Previous Label"
+msgstr "Previous"
+
+#: .\templates\gutorglyn\searchResultsGlobal.html.py:44
+#: .\templates\gutorglyn\searchResultsGlobal.html.py:77
+msgid "Search Page Controls Next Label"
+msgstr "Next"
+
+#: .\templates\gutorglyn\title-list.html.py:5
+msgid "Title List Page Title"
+msgstr "Title List"
+
+#: .\templates\gutorglyn\title-list.html.py:8
+msgid "Title List Usage Blurb"
+msgstr ""
+"Use the box below to find poem titles. Type at least three letters from "
+"anywhere in the title"
+
+#: .\templates\gutorglyn\title-list.html.py:10
+msgid "Title List find button"
+msgstr "Find title"
+
+#: .\templates\gutorglyn\transcript-images-viewer.html.py:24
+#: .\templates\gutorglyn\transcript-images.html.py:23
+#: .\templates\gutorglyn\transcripts.html.py:23
+msgid "Transcript Tab Line Orders Heading"
+msgstr "Line Orders"
+
+#: .\templates\gutorglyn\transcript-images-viewer.html.py:29
+#: .\templates\gutorglyn\transcript-images.html.py:28
+#: .\templates\gutorglyn\transcripts.html.py:28
+msgid "Transcript Tab Notes Heading"
+msgstr "Notes"
+
+#: .\templates\gutorglyn\tuchwith.html.py:6
+msgid "TuChwith Page Title"
+msgstr "Digital Editing"
+
+#: .\templates\gutorglyn\tuchwith.html.py:7
+msgid "TuChwith Page Sub Title"
+msgstr "Golygu Digidol: Profiad Prosiect Guto’r Glyn, by Ann Parry Owen."
+
+#: .\templates\gutorglyn\tuchwith.html.py:9
+msgid "TuChwith Page Description"
+msgstr ""
+"A short article (in Welsh) published in Tu Chwith, Spring 2013, pp. 40–8, "
+"discussing some issues regarding the preparation of the digital edition of "
+"Guto’r Glyn’s poetry."
+
+#: .\templates\gutorglyn\manage\xml-upload.html.py:6
+msgid "XML Upload Page Title"
+msgstr "XML Upload"
+
+#: .\templates\gutorglyn\manage\xml-upload.html.py:7
+msgid "XML Upload Page Text"
+msgstr "Use this page to Upload XML"
+
+#: .\templates\gutorglyn\manage\xml-upload.html.py:11
+msgid "XML Upload Page Select Text"
+msgstr "Select text to update"
+
+#~ msgid "Patron Draw Label"
+#~ msgstr "Patrons and Poets"
+
+#, fuzzy
+#~ msgid "Black Bar Show/Hide Menu Label"
+#~ msgstr "&nbsp;&nbsp;Search for "
+
+#~ msgid "Search Form Advanced Search Title"
+#~ msgstr "Advanced Search"
+
+#~ msgid "Search Form Match Case Lable"
+#~ msgstr "Match Case"
+
+#~ msgid "Red Menu Biog URL Option"
+#~ msgstr "biog-en"

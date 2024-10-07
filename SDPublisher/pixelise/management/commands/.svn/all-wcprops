@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/gutorglyn/!svn/ver/8/pixelise/management/commands
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gutorglyn/!svn/ver/8/pixelise/management/commands/__init__.py
+END
+rmxml.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gutorglyn/!svn/ver/8/pixelise/management/commands/rmxml.py
+END
+putallxml.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/gutorglyn/!svn/ver/8/pixelise/management/commands/putallxml.py
+END
+indexxml.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gutorglyn/!svn/ver/8/pixelise/management/commands/indexxml.py
+END
+putxml.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gutorglyn/!svn/ver/8/pixelise/management/commands/putxml.py
+END
+startxml.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gutorglyn/!svn/ver/8/pixelise/management/commands/startxml.py
+END

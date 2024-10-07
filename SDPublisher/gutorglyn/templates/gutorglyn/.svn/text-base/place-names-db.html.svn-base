@@ -1,0 +1,42 @@
+{% extends "gutorglyn/static-base.html" %} {% block content %}
+{% load i18n %}
+<hr class="space">
+<div>
+	<h2>{% trans "Place Names Page Title" %}</h2>
+</div>
+<div>
+	<p>{% trans "Place Names Page Explanation" %}</p>
+</div>
+<div>
+	<div class="names">
+	{% regroup placeList by place_in_text as place_list %}
+	    {% for places in place_list %}	    
+	    	<h3>{{ places.grouper }}</h3>
+	    	<p>
+	    		<b>Welsh Definition:</b> {{ places.list.0.def_cym}} 		
+	    		<br/>	 
+	    		<b>English Definition:</b> {{ places.list.0.def_eng}}
+	    		<br/>	   		    	   			  
+	    		<b>Line Refs:</b> 		   		    	  		    	
+		    	{% for place in places.list %}
+					<a href="/gutorglyn/get-poem/?searchVal={{place.poem_number}}-">{{ place.line_ref }}</a>{% if not forloop.last %},{% endif %}	    
+		    	{% endfor %}
+	    	</p>
+	    {% endfor %}
+	</div>
+</div>
+<hr class="space">
+<hr class="space">
+<script>
+$(function() {
+	$( ".names" ).accordion();
+});
+</script>
+{% endblock %}
+
+
+
+
+
+
+

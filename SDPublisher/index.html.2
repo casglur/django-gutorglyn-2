@@ -1,0 +1,720 @@
+
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Gutor Glyn.net</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1">
+
+
+<!-- For mobile displays -->
+<!--<link rel="stylesheet" type="text/css"
+	href="/static/blueprint/mobile.css" media="screen, projection" />  -->
+
+<!-- For desktop displays -->
+
+<!--[if lt IE 8]>        
+        	<link rel="stylesheet" href="/static/blueprint/ie.css" type="text/css" media="screen, projection">       
+        <![endif]-->
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.8.16/themes/smoothness/jquery-ui.css" />
+<link type="text/css" rel="stylesheet"
+	href="/static/blueprint/screen.css" />
+<link type="text/css" rel="stylesheet"
+	href="/static/css/jquery-ui-1.8.16.custom.css" />
+<link type="text/css" rel="stylesheet"
+	href="/static/css/gutorglyn.css"/>
+
+<!-- <link type="text/css" rel="alternate stylesheet"
+	href="/static/css/white.css" title="white" media="screen, projection" /> -->	
+<link type="text/css" rel="alternate stylesheet"
+	href="/static/css/old-paper.css" title="old paper" media="screen, projection" />
+<!-- <link type="text/css" rel="alternate stylesheet"
+	href="/static/css/green.css" title="green" media="screen, projection" />	  -->		
+<link type="text/css" rel="stylesheet"
+	href="/static/css/new.css" title="new" media="screen, projection" />	
+
+<link type="text/css" rel="stylesheet"
+	href="/static/css/slidingpanel.css" media="screen, projection" />
+<link type="text/css" rel="stylesheet"
+	href="/static/css/slidingpanel2.css" media="screen, projection" />
+<link type="text/css" rel="stylesheet"
+	href="/static/css/print.css" media="print" />
+<link type="text/css" rel="stylesheet"
+	href="/static/css/css-menu/css-menu.css" media="screen" />	
+	
+<link href="/static/css/jplayer/skin/premium-pixels/premium-pixels.css" rel="stylesheet" type="text/css" />
+ 
+<script type="text/javascript"
+	src="//code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript"
+	src="/static/js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="/static/js/gutor.js"></script>
+<script type="text/javascript" src="/static/js/jquery-gutor.js"></script>
+<script type="text/javascript" src="/static/js/raphael-min.js"></script>
+
+<script type="text/javascript" src="/static/js/vocab.js"></script>
+<script type="text/javascript" src="/static/js/jquery.tinycarousel.js"></script>
+<script type="text/javascript" src="/static/js/DoubleTapToGo.js"></script>
+<script type="text/javascript" src="/static/js/jQuery.jPlayer.2.5.0/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="/static/js/css-menu/ccs-menu_jquery.js"></script> 
+
+<!-- google-analytics -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2764516-8']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- google-analytics End -->
+
+
+
+
+<style type="text/css">
+#slider-code {
+	height: 184px;
+	overflow: hidden;
+	width: 500px;
+	padding-top: 10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#slider-code .viewport {
+	float: left;
+	width: 400px;
+	height: 184px;
+	overflow: hidden;
+	position: relative;
+}
+
+#slider-code .buttons {
+	background: url("/static/img/icons/buttons-brown.png") no-repeat scroll
+		0 0 transparent;
+	display: block;
+	margin: 65px 10px 0 0;
+	background-position: 0 -38px;
+	text-indent: -999em;
+	float: left;
+	width: 39px;
+	height: 37px;
+	overflow: hidden;
+	position: relative;
+}
+
+#slider-code .next {
+	background-position: 0 0;
+	margin: 65px 0 0 10px;
+}
+#slider-code .disable {
+	visibility: hidden;
+}
+
+#slider-code .overview {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+}
+
+#slider-code .overview li {
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 1px;
+	height: 184px;
+	width: 400px;
+}
+
+#slider-code .pager {
+	overflow: hidden;
+	list-style: none;
+	clear: both;
+	margin: 0 0 0 45px;
+}
+
+#slider-code .pager li {
+	float: left;
+}
+
+#slider-code .pagenum {
+	background-color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px;
+	color: #555555;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+}
+
+#slider-code .active {
+	color: #fff;
+	background-color: #555555;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+	
+		
+
+<!-- Black Bar -->
+<div class="span-24 last" id="black-bar">
+    <form method="GET" action="/gutorglyn/poem" id="poem-select">
+ 
+ <!-- Poem Dropdown Menu -->
+
+
+<select id="poem" name="poem">
+    <option value="#">Dewis...</option>
+    <option value="001">1 &ndash; Moliant i Syr Rhisiart Gethin ap Rhys Gethin o Fuellt, capten
+        Mantes yn Ffrainc</option>
+    <option value="002">2 &ndash; Dathlu rhyddid Syr Rhisiart Gethin ap Rhys Gethin o Fuellt, capten
+        Mantes yn Ffrainc</option>
+    <option value="003">3 &ndash; Moliant i Fathau Goch o Faelor</option>
+    <option value="004">4 &ndash; Brwydr y beirdd yn erbyn gwin Tomas ap Watgyn o Landdewi
+        Rhydderch</option>
+    <option value="005">5 &ndash; Salwch yr Abad Rhys ap Dafydd o Ystrad-fflur</option>
+    <option value="006">6 &ndash; Cwyn am absenoldeb yr Abad Rhys ap Dafydd o Ystrad-fflur</option>
+    <option value="007">7 &ndash; Moliant i'r Abad Rhys ap Dafydd o Ystrad-fflur</option>
+    <option value="008">8 &ndash; Awdl foliant i'r Abad Rhys ap Dafydd o Ystrad-fflur</option>
+    <option value="009">9 &ndash; Marwnad yr Abad Rhys ap Dafydd o Ystrad-fflur</option>
+    <option value="010">10 &ndash; Moliant i Hywel ap Llywelyn Fychan o Lyn Aeron</option>
+    <option value="011">11 &ndash; Moliant i Rys ap Dafydd o Uwch Aeron</option>
+    <option value="012">12 &ndash; Awdl foliant i Ddafydd ap Tomas o Flaen-tren</option>
+    <option value="013">13 &ndash; Moliant i Ddafydd ap Tomas o Flaen-tren</option>
+    <option value="014">14 &ndash; Moliant i Syr Rhys ap Tomas o Abermarlais</option>
+    <option value="015">15 &ndash; Moliant i Rys ap Siancyn o Lyn-nedd</option>
+    <option value="016">16 &ndash; Moliant i Syr Wiliam, offeiriad Merthyr Tudful</option>
+    <option value="017">17 &ndash; Moliant i Ddafydd Mathau o Landaf</option>
+    <option value="018a">18a &ndash; Hywel Dafi yn cyhuddo Guto'r Glyn o ganu celwydd o flaen Morgan
+        ap Rhosier o Wynll&wcirc;g</option>
+    <option value="018">18 &ndash; Ateb cyhuddiad Hywel Dafi ei fod yn wenieithiwr</option>
+    <option value="019">19 &ndash; Moliant i Syr Wiliam ap Tomas o Raglan</option>
+    <option value="020">20 &ndash; Ymryson Guto'r Glyn a Hywel Dafi yn llys Syr Wiliam
+        Herbert</option>	
+    <option value="020a">20a &ndash; Ateb Hywel Dafi</option>
+    <option value="021">21 &ndash; Moliant i Wiliam Herbert o Raglan, iarll cyntaf Penfro, ar
+        &ocirc;l cipio castell Harlech, 1468</option>
+    <option value="022">22 &ndash; Moliant i Golbrwg, cartref Syr Rhisiart Herbert</option>
+    <option value="023">23 &ndash; Moliant i Wiliam Herbert o Raglan, iarll cyntaf Penfro</option>
+    <option value="024">24 &ndash; Marwnad Wiliam Herbert o Raglan, iarll cyntaf Penfro</option>
+    <option value="025">25 &ndash; Annog Wiliam Herbert, ail iarll Penfro, i ddial ei dad</option>
+    <option value="026">26 &ndash; Cysuro Ann Herbert, iarlles Penfro, ar &ocirc;l marwolaeth ei
+        g&wcirc;r</option>
+    <option value="027">27 &ndash; Moliant i Syr Water Herbert</option>
+    <option value="028">28 &ndash; Moliant i Wiliam Herbert o Benfro a Llanfihangel Troddi</option>
+    <option value="029">29 &ndash; Annog Edward IV i adfer trefn yng Nghymru</option>
+    <option value="030">30 &ndash; Moliant i Phylib ap Gwilym Llwyd o Drefgwnter</option>
+    <option value="031">31 &ndash; Moliant i Siancyn Hafart o Aberhonddu</option>
+    <option value="032">32 &ndash; Ymweld &acirc; Harri Gruffudd o'r Cwrtnewydd</option>
+    <option value="033">33 &ndash; Moliant i wallt du Harri Gruffudd o'r Cwrtnewydd</option>
+    <option value="034">34 &ndash; Ymrafael Harri Gruffudd o'r Cwrtnewydd ac Ieuan Gethin am serch
+        Gwladus o Lyn-nedd</option>
+    <option value="035">35 &ndash; Cybydd-dod Harri Gruffudd o'r Cwrtnewydd</option>
+    <option value="036">36 &ndash; Marwnad Harri Gruffudd o'r Cwrtnewydd</option>
+    <option value="037">37 &ndash; Moliant i Ddafydd Llwyd ap Dafydd o'r Drenewydd</option>
+    <option value="038">38 &ndash; Moliant i'r Faenor, cartref Edward ap Hywel a Gwenll&iuml;an
+        ferch Rhys</option>
+    <option value="039">39 &ndash; Gofyn march gan Faredudd ab Ifan Fychan o Gedewain ar ran
+        Rheinallt ap Rhys Gruffudd</option>
+    <option value="040">40 &ndash; Marwnad Hywel ab Owain o Lanbryn-mair</option>
+    <option value="041">41 &ndash; Moliant i law arian Si&ocirc;n Dafi</option>
+    <option value="042">42 &ndash; Marwnad Einion ap Gruffudd o Lechwedd Ystrad</option>
+    <option value="043">43 &ndash; Awdl foliant i Syr Bened, person Corwen</option>
+    <option value="044">44 &ndash; Porthmona</option>	
+    <option value="044a">44a &ndash; Ymateb Tudur Penllyn i Guto'r Glyn a'i gyngor i Syr
+        Bened</option>
+    <option value="045">45 &ndash; Ymateb Guto'r Glyn i Dudur Penllyn</option>
+    <option value="046">46 &ndash; Ymateb Guto'r Glyn i Ieuan ap Tudur Penllyn</option>	
+    <option value="046a">46a &ndash; Dychan gan Ieuan ap Tudur Penllyn i Dudur Penllyn</option>
+    <option value="046b">46b &ndash; Ateb Tudur Penllyn i'r beirdd a'i testuniodd</option>
+    <option value="047">47 &ndash; Marwnad Syr Bened, person Corwen</option>
+    <option value="048">48 &ndash; Moliant i Ieuan ab Einion o'r Cryniarth a'i dylwyth</option>
+    <option value="049">49 &ndash; Moliant i Feurig Fychan ap Hywel Selau o Nannau, ei wraig
+        Angharad ferch Dafydd, eu mab Dafydd a'i wraig yntau Elen ferch Hywel</option>
+    <option value="050">50 &ndash; Marwnad Meurig Fychan ap Hywel Selau a'i wraig Angharad ferch
+        Dafydd o Nannau</option>
+    <option value="051">51 &ndash; Diolch i Ddafydd ap Meurig Fychan ac Elen ferch Hywel o Nannau am
+        farch</option>
+    <option value="052">52 &ndash; Marwnad Gruffudd Fychan ap Gruffudd o Gorsygedol</option>
+    <option value="053">53 &ndash; Gofyn ffaling gan Elen ferch Robert Pilstwn o'r
+        Llannerch</option>
+    <option value="054">54 &ndash; Englynion marwnad Dafydd Nanmor ac Ieuan Deulwyn</option>
+    <option value="055">55 &ndash; Moliant i Wiliam ap Gruffudd o Gochwillan</option>
+    <option value="056">56 &ndash; Moliant i Wiliam Fychan ap Gwilym o'r Penrhyn</option>
+    <option value="057">57 &ndash; Moliant i Wiliam Fychan ap Gwilym o'r Penrhyn a thair ardal ei
+        awdurdod</option>
+    <option value="058">58 &ndash; Diolch i Risiart Cyffin ab Ieuan Llwyd, deon Bangor, am
+        bwrs</option>
+    <option value="059">59 &ndash; Diolch i Risiart Cyffin ab Ieuan Llwyd, deon Bangor, am
+        baderau</option>
+    <option value="060">60 &ndash; Gofyn gwalch gan Huw Bwlclai ap Wiliam Bwlclai o Fiwmares ar ran
+        Rhisiart Cyffin ab Ieuan Llwyd, deon Bangor</option>
+    <option value="061">61 &ndash; Gofyn teils gan Risiart Cyffin ab Ieuan Llwyd, deon Bangor, ar
+        ran Syr Gruffudd ab Einion o Henllan</option>
+    <option value="062">62 &ndash; Moliant i Ddafydd ap Gwilym o Lwydiarth</option>
+    <option value="063">63 &ndash; Moliant i bum mab Llywelyn ap Hwlcyn o F&ocirc;n</option>
+    <option value="064">64 &ndash; Moliant i Huw Lewys ap Llywelyn o Brysaeddfed pan fu bron &acirc;
+        boddi</option>
+    <option value="065a">65a &ndash; Dychan gan Lywelyn ap Gutun i Guto'r Glyn pan haerwyd ei
+        foddi</option>
+    <option value="065">65 &ndash; Ateb i ddychan Llywelyn ap Gutun</option>
+    <option value="066">66 &ndash; Dychan i Ddafydd ab Edmwnd</option>
+    <option value="067">67 &ndash; Dychan i Ddafydd ab Edmwnd</option>
+    <option value="068a">68a &ndash; Dychan i geilliau Guto'r Glyn gan Ddafydd ab Edmwnd</option>
+    <option value="068">68 &ndash; Dychan i gal Dafydd ab Edmwnd</option>
+    <option value="068b">68b &ndash; Dychan gan Ddafydd ab Edmwnd i Guto'r Glyn</option>	
+    <option value="069">69 &ndash; Ymbil &acirc;'r Grog yng Nghaer ar ran Dafydd ab Ieuan</option>
+    <option value="070">70 &ndash; Moliant i Syr Hywel ap Dai o Laneurgain</option>
+    <option value="071">71 &ndash; Moliant i Domas Salbri ap Harri Salbri o Leweni a'i
+        dylwyth</option>
+    <option value="072">72 &ndash; Marwnad Si&ocirc;n ap Madog Pilstwn o Hafod-y-wern</option>
+    <option value="073">73 &ndash; Gofyn saeled gan Wiliam Rodn ap Richard Rodn o Holt ar ran Dafydd
+        Bromffild o Fers</option>
+    <option value="074">74 &ndash; Moliant i Rosier ap Si&ocirc;n Pilstwn o Emral</option>
+    <option value="075">75 &ndash; Moliant i Si&ocirc;n Hanmer ap Si&ocirc;n Hanmer o Halchdyn a'r
+        Llai</option>
+    <option value="076">76 &ndash; Gofyn cyllell hela gan Ruffudd ap Rhys o I&acirc;l ar ran
+        Si&ocirc;n Hanmer ap Si&ocirc;n Hanmer o Halchdyn a'r Llai</option>
+    <option value="077">77 &ndash; Moliant i'r Abad Tomas o Amwythig</option>
+    <option value="078">78 &ndash; Moliant i Si&ocirc;n Talbod, ail iarll Amwythig</option>
+    <option value="079">79 &ndash; Moliant i Syr Rosier Cinast ap Gruffudd o'r Cnwcin</option>
+    <option value="080">80 &ndash; Moliant i Syr Si&ocirc;n Bwrch ap Huw Bwrch o'r Drefrudd</option>
+    <option value="081">81 &ndash; Diolch i Si&acirc;n Bwrch ferch William Clopton o'r Drefrudd am
+        ei gofal</option>
+    <option value="082">82 &ndash; Marwnad Llywelyn ab y Moel</option>
+    <option value="083">83 &ndash; Moliant i Ruffudd Fychan ap Gruffudd Deuddwr o'r
+        Collfryn</option>
+    <option value="084">84 &ndash; Moliant i Syr Si&ocirc;n Mechain, person Llandrinio</option>
+    <option value="085">85 &ndash; Moliant i d&ycirc; newydd Syr Si&ocirc;n Mechain, person
+        Llandrinio</option>
+    <option value="086">86 &ndash; Moliant i Ddafydd Llwyd ap Gruffudd o Abertanad</option>
+    <option value="087">87 &ndash; Diolch i Gatrin ferch Maredudd o Abertanad a'i g&wcirc;r, Dafydd
+        Llwyd ap Gruffudd, am bwrs</option>
+    <option value="088">88 &ndash; Marwnad Gweurful ferch Madog o Abertanad</option>
+    <option value="089">89 &ndash; Marwnad Dafydd Llwyd ap Gruffudd o Abertanad</option>
+    <option value="090">90 &ndash; Ar achlysur ailadeiladu t&ycirc; Hywel ab Ieuan Fychan ym
+        Moeliwrch</option>
+    <option value="091">91 &ndash; Moliant i Hywel ab Ieuan Fychan o Foeliwrch</option>
+    <option value="092">92 &ndash; I iach&aacute;u glin Hywel ab Ieuan Fychan o Foeliwrch</option>
+    <option value="093">93 &ndash; Englynion ymryson rhwng Ieuan ap Gruffudd Leiaf a Guto'r
+        Glyn</option>
+    <option value="094">94 &ndash; Moliant i Ddafydd Cyffin ab Iolyn o Langedwyn</option>
+    <option value="095">95 &ndash; Moliant i Faredudd ap Hywel o Groesoswallt</option>
+    <option value="096">96 &ndash; Moliant i Sieffrai Cyffin ap Morus o Groesoswallt</option>
+    <option value="097">97 &ndash; Moliant i Sieffrai Cyffin ap Morus o Groesoswallt a'i wraig,
+        Si&acirc;n ferch Lawrence Stanstry</option>
+    <option value="098">98 &ndash; Gofyn brigawn gan Sieffrai Cyffin ap Morus o Groesoswallt ar ran
+        Dafydd Llwyd ap Gruffudd o Abertanad</option>
+    <option value="099">99 &ndash; Gofyn corn hela gan Sieffrai Cyffin ap Morus o Groesoswallt ar
+        ran Si&ocirc;n Eutun ap Si&acirc;ms Eutun o Barc Eutun</option>
+    <option value="100">100 &ndash; Gofyn dau filgi gan Robert ab Ieuan Fychan o Goetmor ar ran
+        Sieffrai Cyffin ap Morus o Groesoswallt</option>
+    <option value="101a">101a &ndash; Dychan gan Syr Rhys i Guto'r Glyn ac yntau gartref yn glaf y
+        Nadolig</option>
+    <option value="101">101 &ndash; Ateb i ddychan Syr Rhys</option>
+    <option value="102">102 &ndash; Moliant i Groesoswallt</option>
+    <option value="103">103 &ndash; Moliant i feibion Edward ap Dafydd o Fryncunallt</option>
+    <option value="104">104 &ndash; Marwnad Edward ap Dafydd o Fryncunallt</option>
+    <option value="105">105 &ndash; Marwnad Robert Trefor ab Edward o Fryncunallt</option>
+    <option value="106">106 &ndash; I gymodi ag Ieuan Fychan ab Ieuan o Bengwern</option>
+    <option value="107">107 &ndash; Moliant i Si&ocirc;n Edward o Blasnewydd a'i wraig, Gwenhwyfar
+        ferch Elis Eutun </option>
+    <option value="108">108 &ndash; Gofyn wyth ych ar ran Rhisiart Cyffin ab Ieuan Llwyd, deon
+        Bangor</option>
+    <option value="109">109 &ndash; Diolch i'r Abad Dafydd ab Ieuan o Lyn-y-groes a Rhisiart Cyffin
+        ab Ieuan Llwyd, deon Bangor, am wella briw</option>
+    <option value="110">110 &ndash; Diolch i'r Abad Dafydd ab Ieuan o Lyn-y-groes am fwcled</option>
+    <option value="111">111 &ndash; Awdl foliant i'r Abad Dafydd ab Ieuan o Lyn-y-groes</option>
+    <option value="112">112 &ndash; Moliant i'r Abad Dafydd ab Ieuan o Lyn-y-groes</option>
+    <option value="113">113 &ndash; Awdl foliant i'r Abad Dafydd ab Ieuan o Lyn-y-groes</option>
+    <option value="114">114 &ndash; Gofyn i Drahaearn ab Ieuan o Ben-rhos am gael benthyg Llyfr y
+        Greal ar ran Abad Dafydd ab Ieuan o Lyn-y-groes</option>
+    <option value="115">115 &ndash; Moliant i'r Abad Dafydd ab Owain o Ystrad Marchell</option>
+    <option value="116">116 &ndash; Guto'r Glyn yn amddiffyn ei le yng Nglyn-y-groes</option>
+    <option value="117">117 &ndash; Moliant i'r Abad Dafydd ab Ieuan o Lyn-y-groes</option>
+    <option value="118">118 &ndash; Myfyrdod diwedd oes</option>
+    <option value="119">119 &ndash; Ei englyn olaf</option>
+    <option value="120">120 &ndash; Guto Powys yn gofyn llurig gan Si&ocirc;n Abral o'r
+        Gilwch</option>
+    <option value="121">121 &ndash; Gosteg o englynion ansicr eu hawduraeth ynghylch dagr a roddodd
+        Tudur Aled i Hywel Grythor</option>
+    <option value="122">122 &ndash; Gosteg o englynion ansicr eu hawduraeth i annog Rhys Grythor i
+        ofyn ffaling gan yr Abad Dafydd o Faenan</option>
+    <option value="123">123 &ndash; Englyn ansicr ei awduraeth i was y bardd a oedd yn rhincian
+        dannedd yn ei gwsg</option>
+    <option value="124">124 &ndash; Englyn ansicr ei awduraeth i rywun a rechodd</option>
+    <option value="125">125 &ndash; Marwnad ddienw i Syr Wiliam ap Tomas o Raglan</option>
+    <option value="126">126 &ndash; Marwnad Guto'r Glyn gan Gutun Owain</option>
+</select>
+
+
+
+<!-- Poem Dropdown Menu End -->
+
+<!-- First Line Dropdown Menu -->
+
+
+
+<select id="first-line" name="first-line">
+    <option id="first-line-dropdown" value="#">Dewis llinell gyntaf...</option>
+    <option value="056">A adeilo hudoliaeth,</option>
+    <option value="022">A oes unplas yn siampler?</option>
+    <option value="121">Adda Fras, wylwas, a elwyn' &ndash; yn fardd,</option>
+    <option value="007">Af &acirc; mawl a fo melys</option>
+    <option value="124">Afanc, rhyw forgranc rhefrgrin &ndash; rhumenwynt,</option>
+    <option value="086">Af dduw Sul, foddus aelwyd,</option>    
+    <option value="023">Ai gwledd a wnaeth f'arglwyddwawr</option>
+    <option value="005">ArglwyddRys, eryr gwleddrym,</option>
+    <option value="078">Arglwyddwedd ar goel addas,</option>
+    <option value="079">Awst y llas fy nghastell i,</option>
+    <option value="051">Bron draw biau'r enw a drig,</option>
+    <option value="032">Brysiaf, lle mae browysedd,</option>
+    <option value="040">Caewyd deurudd caterwen,</option>
+    <option value="014">Caraf urddol Caerfyrddin,</option>
+    <option value="008">Cerais y mab &acirc;'r corun,</option>
+    <option value="075">Cwncwerwyr oedd y gw&ycirc;r gynt,</option>
+    <option value="083">Chwerddais am ben Sais o'r sir,</option>
+    <option value="013">Dafydd, brydydd a brawdwr,</option> 
+    <option value="068">Dafydd fab, difudd ei fod,</option>         
+    <option value="017">Dafydd Mathau, bendefig,</option>
+    <option value="090">Dafydd o braffwydd Broffwyd</option>
+    <option value="037">Dafydd, mae'r beirdd yn dyfod,</option>
+    <option value="018a">Darogan fydd a ganwyf,</option>
+    <option value="028">Dau dir, ni newidiwyd un,</option>
+    <option value="024">Dawns o Bowls! Doe'n ysbeiliwyd,</option>
+    <option value="123">Deffro Twm gidwm, gedyrn &ndash; dy ddannedd,</option>
+    <option value="109">Deliais, o glwyf a dolur</option>
+    <option value="044">Deubeth a red drwy'r gwledydd,</option>
+    <option value="062">Dilyd henw deiliad hynwyf,</option>
+    <option value="045">Diwedd hen fu 'r fargen fau,</option>
+    <option value="036">Doe darfu'r Deau derfyn,</option>
+    <option value="084">Duw a roes ym o dir saint</option>    
+    <option value="052">Duw Rh&ecirc;n dug Edwart Frenin,</option>
+    <option value="042">Dwfr Alwen doe fu'r wylaw,</option>
+    <option value="073">Dyn traws f&ucirc;m yn dwyn tros f&ocirc;r</option>
+    <option value="009">Dyn wyf doe a anafwyd,</option>
+    <option value="046b">Eich rhybudd 'r ydwy', &acirc; chribau &ndash; rhedyn</option>
+    <option value="053">Elen aur llen o'r Llannerch</option>
+    <option value="041">Er treulio punt yn Llundain,</option>
+    <option value="018">Ewch yn iach, ni chwenychaf</option>
+    <option value="046a">Fy nhad oedd gachiad, guchiau &ndash; tylluan,</option>
+    <option value="101a">Gutun y Glyn, a fu glaf,</option>
+    <option value="101">Gwae a gynhaliodd i gyd</option>
+    <option value="119">Gwae'r gwan dau oedran nid edrych, &ndash; ni chwardd,</option>
+    <option value="016">Gwn waith, o gariad gwen &wcirc;yl,</option>
+    <option value="122">Gwylliad, grym eirchiad, gorau marchog &ndash; gynt</option>
+    <option value="026">Gynt y rhoed yn gynta' rhan</option>
+    <option value="107">Hawdd fyd heddiw i fwydau,</option>
+    <option value="092">Hywel, ni chysgaf haeach,</option>
+    <option value="071">I Gelli-wig ac i'w llys</option>
+    <option value="089">I gilio rhag ei elyn</option>
+    <option value="038">Iechyd i &wcirc;r uchod &ecirc;l</option>
+    <option value="085">Iolo, tuthiodd at Ithael,</option>
+    <option value="012">Llawen wyf i'm plwyf a'm plas &ndash; diofal,</option>
+    <option value="104">Llawer nos, llew'r Waun Isaf,</option>
+    <option value="033">Lle nid da lliw onid du,</option>
+    <option value="111">Llwyddiant i'r tenant a'r tai &ndash; a'r wengaer</option>
+    <option value="105">Llydan oedd gastell Edwart</option>
+    <option value="113">Llys rydd ym y sydd, ansoddau &ndash; llu dalm,</option>
+    <option value="064">Llywygais garllaw eigion,</option>
+    <option value="082">Mae arch yn Ystrad Marchell</option>
+    <option value="120">Mae arofyn am ryfel</option>
+    <option value="098">Mae ceidwad i'n gwlad a'n gwledd,</option>
+    <option value="034">Mae dawn Duw i'm dyn diwael,</option>
+    <option value="115">Mae deusant i'm dewisaw,</option>
+    <option value="110">Mae eryr ar holl w&ycirc;r ll&ecirc;n</option>
+    <option value="055">Mae gwahawdd ym a gohir</option>
+    <option value="063">Mae heddiw ym wahoddion</option>
+    <option value="081">Mae i'm cefn er ys pythefnos</option>
+    <option value="065">Mae llef oer, mae llifeiriaint</option>
+    <option value="116">Mae poen ym a hap ennyd,</option>
+    <option value="059">Mae un ceidwad mewn cadair</option>
+    <option value="118">Mae un cun yma i'n cynnal,</option>
+    <option value="117">Mae'r henwyr? Ai meirw'r rheini?</option>
+    <option value="029">Mae'r tarw mawr o'r Mortmeriaid?</option>
+    <option value="054">Marw Dafydd y sydd fal saeth &ndash; i'm esgyrn</option>
+    <option value="049">Mawr fu Hywel a Meurig</option>
+    <option value="050">Mawr fu'r cri am y Trihael,</option>
+    <option value="020">Mawr yw dysg (yno mae'r da)</option>
+    <option value="087">Mawr yw'r gair am y teirodd,</option>
+    <option value="077">Mi a euthum i 'Mwythig</option>
+    <option value="047">Mi a welais, mau wylaw,</option>
+    <option value="060">Milwr a g&acirc;r moli'r gw&ycirc;dd,</option>
+    <option value="088">Mis drwg a fu 'm Mhowys draw,</option>
+    <option value="039">Mredudd, ai yma'r ydwyd?</option>
+    <option value="058">Mynnwn 'y mod mewn un man,</option>
+    <option value="080">Ni chair ustus na Christiawn</option>
+    <option value="093">Ni fynnaf ataf llei notier &ndash; gywely,</option>
+    <option value="095">Ni phery stad na phwrs dyn</option>
+    <option value="068b">'N&ocirc;l bwrw trosol, peri trwsio &ndash; 'i ddorglwyd</option>    
+    <option value="046">Och w&ycirc;r, a glywsoch, werin, &ndash; y damwain,</option>
+    <option value="114">Oed trywyr yt, Trahaearn,</option>
+    <option value="001">Oer oedd weled urddolion</option>
+    <option value="108">Ordain ar y deon wyf,</option>
+    <option value="003">Pan sonier i'n amser ni</option>
+    <option value="097">Pererin piau'r awron</option>
+    <option value="043">Prelad ar ein gwlad o Glwyd &ndash; i Ddyfrdwy,</option>
+	<option value="070">Pwy'r mab ll&ecirc;n p&ecirc;r ym mhob llys?</option>    
+    <option value="074">Pwy sy geidwad teirgwlad hy,</option>    
+    <option value="100">Rhobert, uwch rhiwiau Aber,</option>
+    <option value="015">Rhoist, lew, win a rhost lawer,</option>    
+    <option value="061">Rhoi t&ycirc;'r wyf fry ar y fron,</option>
+    <option value="020a">Rhyfedd ydiw arfeddyd</option>
+    <option value="106">Sain Cristoffr a fu'n offrwm</option>
+    <option value="019">S&acirc;l rhugl yn seiliaw Rhaglan,</option>    
+    <option value="011">Seythydd wyf, od ymsaethaf</option>
+    <option value="031">Siancyn, wayw ennyn annwyd,</option>
+    <option value="099">Sieffrai, a yf osai Ffrainc,</option>
+    <option value="044a">Sulien a'th geidw, Syr Bened,</option>
+    <option value="067">Sywidw Asaf ydwyd,</option>
+    <option value="025">Tair blynedd rhyfedd fu'r rhain:</option>
+    <option value="004">Teimlwr gw&ycirc;r, teml i&ocirc;r gwiwrent,</option>        
+    <option value="030">Tlos fu anrheg Taliesin,</option>
+    <option value="021">Tri llu aeth i Gymru gynt,</option>
+    <option value="125">Tri llu, oergwymp tra llwyrgoll,</option>
+    <option value="065a">Tristach yw Cymry trostyn',</option>
+    <option value="027">Tyfodd g&wcirc;r at Dafydd Gam</option>
+    <option value="096">Tyfodd un o blant difeth</option>
+    <option value="072">Wylofus wyf fal afon,</option>
+    <option value="035">Y du hydr o'r Deheudir,</option>
+    <option value="068a">Y dyn a sigwyd ei au</option>
+    <option value="091">Y g&wcirc;r ar war y garreg</option>
+    <option value="057">Y g&wcirc;r mawr a egyr M&ocirc;n</option>
+    <option value="069">Y Grog i bob dyn o gred</option>   
+    <option value="048">Y gwrda o gywirdeb</option>     
+    <option value="112">'Y nghred, pei gallwn redeg</option>    
+    <option value="094">Y llwyn gwydr yn Llangedwyn,</option>
+    <option value="006">Y mae dolur i'm dilyn,</option>
+    <option value="002">Y mae glaw am a glywais</option>
+    <option value="010">Y mae g&wcirc;r ym i'w garu,</option>
+    <option value="066">Y mae llwdn yma llednoeth</option>
+    <option value="076">Yn dripheth y'th wn&acirc;nt, Ruffudd,</option>
+    <option value="126">Yn iach, awen na chywydd!</option>
+    <option value="102">Yn ieuanc b&ucirc;m flaeneuwr,</option>
+    <option value="103">Yr eryrod arwraidd,</option>
+</select>
+
+
+
+
+
+<!-- First Line Menu End -->               
+             
+    </form>
+    <form method="GET" action="/gutorglyn/search/">
+        <label id="search-for" for="searchVal">
+        </label>
+        <input type="text" name="searchVal" title="search" id="searchVal" />
+        <input type="hidden" name="per-page"  id="per-page" value="10"/>
+        <input type="hidden" name="page-start"  id="page-start" value="0"/>        
+        <input type="submit" id="search-button" />
+    	<button class="show-menu"></button>
+    	<a id="advanced-search-link-top" href="/gutorglyn/search-start">Uwch</a>
+    </form>
+    <span class="top-links">
+		<!--		<a href="#">Y Prosiect</a>&nbsp;|&nbsp;
+		<a href="#">Cymorth</a>
+&nbsp;|&nbsp; <a href="#">English</a>  -->
+&nbsp;&nbsp;
+	<a href="#" class="language-switch"></a>
+	</span>
+</div>
+<!-- Black Bar End -->
+
+
+
+<script>
+$(".language-switch").text(languageLabel);
+$(".language-switch").click(function() {
+	//console.log("language lable is " + languageLabel);
+	if (languageLabel == "English") {
+		createCookie('gutorglynlang', 'en', 3650);
+	} else {
+		createCookie('gutorglynlang', 'cy', 3650);
+	}	
+	location.reload();
+	});
+
+//Set value of dropdown text based on URL parameter
+var desiredValue;
+var currentURL = window.location.href;
+
+if (currentURL.indexOf("/poem/") > -1) {
+	if (gup('poem')) {
+		desiredValue = gup('poem')
+	} else {
+		desiredValue = readCookie('gutorglynpoem')
+	}
+	var el = document.getElementById("poem");
+	for(var i=0; i<el.options.length; i++) {
+	  if ( el.options[i].value == desiredValue ) { //change .value to .text to match on text value
+	    el.selectedIndex = i;
+	    break;
+	  }
+	}
+	var el = document.getElementById("first-line");
+	for(var i=0; i<el.options.length; i++) {
+	  if ( el.options[i].value == desiredValue ) { //change .value to .text to match on text value
+	    el.selectedIndex = i;
+	    break;
+	  }
+	}
+}
+
+
+
+</script>
+
+
+
+		
+		<div class="span-10 last">
+			<a href="/gutorglyn/index"><img id="gg-logo" alt="guto'r glyn.net"
+				src="/static/img/logo/gg-logo-1.png"></a>
+		</div>
+		
+		
+
+
+<!-- Top Nav links -->
+<div class="span-24 last">
+	<div id="menu-button">Cynnwys</div>
+	<div id='cssmenu'>
+		<ul>
+			<li><a href="/"><span>Cartref</span></a></li>
+			<li class='has-sub'><a href="#"><span>Y Golygiad</span></a>
+				<ul>
+					<li><a href="/gutorglyn/poem/"><span>Y Cerddi</span></a></li>
+					<li><a href="/gutorglyn/title-list"><span>Rhestr Teitlau</span></a></li>
+					<li><a href="/gutorglyn/patron-list"><span>Noddwyr a Beirdd</span></a></li>
+					<li><a href="/gutorglyn/get-personal-names"><span>Enwau Personol</span></a></li>
+	                <li><a href="/gutorglyn/get-place-names"><span>Enwau Lleoedd</span></a></li>                
+					<li><a href="/gutorglyn/get-manuscripts/"><span>Llawysgrifau a Cherddi</span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub"><a href="#"><span>Adnoddau</span></a>
+	            <ul>
+	                <li><a href="/gutorglyn/biog"><span>Bywgraffiad</span></a></li>
+	                <li><a href="/gutorglyn/about"><span>Am y prosiect</span></a></li>
+	                <li><a href="/gutorglyn/guidelines"><span>Canllawiau</span></a></li>
+	                <li class="has-sub">
+	                	<a href="#"><span><span>Perfformiadau</span></span></a>
+	                	<ul>
+	                		<li><a href="/gutorglyn/drwm"><span>Y Gerdd a’r Gân</span></a></li>
+	                	</ul>
+	                </li>
+	                <li class="has-sub">
+	                	<a href="#"><span>Cyhoeddiadau</span></a>
+	                	<ul>
+	                		<li><a href="/gutorglyn/essays"><span>Gwalch Cywyddau Gwŷr</span></a></li>
+	                	</ul>
+	                </li>	                
+	                <li class="has-sub">
+	                	<a href="#"><span>Erthyglau</span></a>
+	                	<ul>
+	                		<li><a href="/gutorglyn/tuchwith"><span>Golygu Digidol</span></a></li>
+							<li><a href="/gutorglyn/musical-companions"><span>Cyfeillion Cerddorol</span></a></li>
+	                	</ul>               	
+	                </li>
+	            </ul>			
+			</li>
+			<li class='last'><a href="http://www.guto.tth2.co.uk/"><span>Cymru Guto</span></a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- Top Nav links End-->
+
+
+
+		
+		<div class="span-22 manuscript-holder">
+			
+			
+
+<div class="span-24 last" id="manuscript">
+	<hr class="space" />
+	<hr class="space" />
+	<hr class="space" />	
+	<!-- Slideshow -->
+	<div id="slider-code">
+		<a class="buttons prev" href="#">left</a>
+		<div class="viewport">
+			<ul class="overview">
+				<li><a href="/gutorglyn/poem/"><img id="slideshow-poems" alt="Go to the poems" src="#" /></a></li>
+				<li><img id="slideshow-resources" alt="" src="#"/></li>
+				<li><img id="slideshow-guidelines" alt="" src="#"/></li>
+				<li><img id="slideshow-gutoswales" alt="" src="#"/></li>
+				<li><img id="slideshow-guto" alt="" src="#"/></li>
+				<li><img id="slideshow-about" alt="About the project" src="#"/></li>
+			</ul>
+		</div>
+		<a class="buttons next" href="#">right</a>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#slider-code').tinycarousel();
+		});
+	</script>
+	<!-- Slideshow End -->
+	<hr class="space" />
+	<hr class="space" />	
+	<!-- Disclaimer -->
+	<div class="prepend-3 span-18 last" id="disclaimer">
+		<h1 id="homepage-welcome">Croeso i Guto’r Glyn.net</h1>
+		<p id="homepage-disclaimer">
+			Mae'r wefan yn dal i gael ei datblygu. Unrhyw sylwadau, os gwelwch yn
+			dda, at <a id="mailto"
+				style="font-size: 10pt; font-weight: normal; color: black; text-decoration: underline;"
+				href="mailto:apo@cymru.ac.uk">Guto</a>.
+		</p>
+		<p>Mae'r wefan yn gweithio ar ei gorau gyda Google Chrome neu Mozilla Firefox</p>
+	</div>
+	<div id="push"></div>
+</div>
+<!-- Disclaimer End -->
+
+			
+		</div>
+	
+		<div class="span-24 last" id="footer">	
+	<div class="span-24 last" id="funding-logos">
+		<a href="http://www.ahrc.ac.uk"><img src="/static/img/logo/ahrc-small.png" alt="AHRC Logo"></a>
+		<a href="http://www.wales.ac.uk/en/CentreforAdvancedWelshCelticStudies/IntroductiontotheCentre.aspx"><img src="/static/img/logo/uw-logo.png" alt="University of Wales Logo"></a>
+		<a href="http://www.llgc.org.uk/"><img src="/static/img/logo/glw-logo.gif" alt="GLW Logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://www.rcahmw.gov.uk/"><img src="/static/img/logo/RCAHMW_logo_web.png" alt="RCAHMW Logo"></a>
+	</div>
+	<div class="span-24 last" id="copyright">
+	</div>
+	<div class="span-24 last">
+		<hr class="space" />
+	</div>
+</div>
+
+   	
+	
+	</div>
+<!-- Container End --> 
+	<script>
+	
+	$( function()
+	{
+		$( '#nav li:has(ul)' ).doubleTapToGo();
+	});
+	
+	</script>
+</body>
+</html>

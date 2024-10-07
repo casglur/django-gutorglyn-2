@@ -1,0 +1,20 @@
+{% extends "SDPintro/base.html" %}
+{% block content %}
+<div id="framecontentTop">
+<div class="innertube">
+<H2>SDPublisher: Getting Started and Reference Documentation</H2>
+<p class="item">Reference documentation, v. 1.1.  21 September 2009.
+</div>
+</div>
+<div id="maincontent">
+<div class="innertube">
+{{ page_content|safe }}
+</div>
+</div>
+<div id="framecontentLeft">
+<div class="innertube">
+{{ nav_content|safe }}
+</div>
+</div>
+{% endblock %}
+

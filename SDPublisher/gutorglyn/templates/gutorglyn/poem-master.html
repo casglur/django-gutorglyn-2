@@ -1,0 +1,178 @@
+{% extends "gutorglyn/text.html" %}
+
+{% block content %}
+<div class="prepend-1 span-23 last">
+    <a href="#" class="show-hide-vlines">Show/hide Line Links</a> | 
+    <a href="#" class="">Show/hide Proper Names</a>
+<!-- paragraph sync button -->
+	<input type="checkbox" checked="yes" id="Activechk" />
+	<label for="Activechk">
+	Datgloi
+	</label>
+<!-- paragraph sync button end --> 
+</div>
+<!-- Poem Title -->
+<div class="prepend-1 span-22 last" id="main-title">
+	{% block poemTitleMain %}{{ poemTitle|safe }}{%endblock%}
+</div>
+<!-- Poem Title End -->
+<!-- Editor information -->
+<div class="prepend-1 span-9 last" id="editor-title">
+	<i>Golygwyd gan {% block editor %}{{ editor|safe }}{% endblock %}</i>
+</div>
+<!-- Editor information end -->
+
+<hr class="space" />
+<!-- Column 1 -->
+<div class="span-8 col-1">
+
+	<!-- Edited Text -->
+	<div id="edited-text">
+		<hr class="space" />
+	
+{{ editedText|safe }}
+
+	</div>
+	<!-- Edited Text end -->
+</div>
+<!-- Column 1 end -->
+
+<!-- Column 2 -->
+<div class="span-15 col-2">
+	<div id="tabs">
+		<ul>
+			<li>
+				<a href="#paraphrase-tab">
+					<span>Aralleiriad</span>
+				</a>
+			</li>
+			<li>
+				<a href="#audio-tab">
+					<span>Awdio</span>
+				</a>
+			</li>
+			<li>
+				<a href="#translation-tab">
+					<span>Translation</span>
+				</a>
+			</li>
+			<li>
+				<a href="#notes-tab">
+					<span>Nodiadau</span>
+				</a>
+			</li>
+			<li>
+				<a href="#transcriptions-tab">
+					<span>Llawysgrifau</span>
+				</a>
+			</li>
+			<li>
+				<a href="/gutorglyn/variant-lines/?p={{poemNumber}}&l=1" class="show-hide-vlines">
+					<span>Amrywiadau</span>
+				</a>
+			</li>
+		</ul>
+		<div id="paraphrase-tab">{{ paraphrase|safe }}</div>
+		<div id="audio-tab">
+		<hr class="space"/>
+		<hr class="space"/>
+		<hr class="space"/>
+		<hr class="space"/>
+			<audio controls="controls">
+			  <source src="song.ogg" type="audio/ogg" />
+			  <source src="/static/audio/{{poemNumber}}.mp3" type="audio/mp3" />
+			  Your browser does not support the audio tag.
+			</audio>
+		<br/>
+	<a href="/static/audio/{{poemNumber}}.mp3"> Awdio cerdd {{poemNumber}}.mp3</a>
+		</div>
+		<div id="translation-tab">{{ translation|safe }}</div>
+		<div id="notes-tab">
+			<ul>
+				<li>
+					<a href="#explanatory-notes-tab">
+						<span>Esboniadol</span>
+					</a>
+				</li>
+				<li>
+					<a href="#text-notes-tab">
+						<span>Testunol</span>
+					</a>
+				</li>
+				<li>
+					<a href="#english-explanatory-notes-tab">
+						<span>English Notes</span>
+					</a>
+				</li>
+				<li>
+					<a href="#names-tab">
+						<span>Names</span>
+					</a>
+				</li>
+			</ul>
+			<div class="tab-detail">
+				<div id="text-notes-tab">
+					{{ textNotes|safe }}	
+				</div>
+				<div id="explanatory-notes-tab">
+					{{ exNotes|safe }}
+				</div>
+				<div id="english-explanatory-notes-tab">
+					{{ exEngNotes|safe }}		
+				</div>			
+			</div>
+
+		</div>
+		<div id="transcriptions-tab">
+			<ul>
+				<li>
+					<a href="#transcriptions-sources-tab">
+						<span>Ffynonellau</span>
+					</a>
+				</li>
+				<li>
+					<a href="/gutorglyn/transcripts/?poem={{poemNumber}}">
+						<span>Trawsysgrifiadau</span>
+					</a>
+				</li>
+				<li>
+					<a href="/gutorglyn/transcriptimages/?poem={{poemNumber}}">
+						<span>Lluniau</span>
+					</a>
+				</li>
+				</li>
+				<li>
+					<a href="#transcription-stema-tab">
+						<span>Stema</span>
+					</a>
+				</li>				
+			</ul>
+			<div class="tab-detail">			
+				<div id="transcriptions-sources-tab">
+					<iframe width="100%" height="90%" src="//www.dafyddapgwilym.net/ggg/manuGetEng.php?poemID={{poemNumber}}"></iframe>
+				</div>
+				<div id="transcriptions-text-tab"></div>
+				<div id="transcription-images-tab"></div>
+				<div id="transcription-stema-tab">
+				    <p><a href="#" class="ui-state-default ui-corner-all" id="open-stema">Popup Stemma</a></p>
+				    <div id="stema-dialog" title="Cerdd {{poemNumber}} Stema">
+						<img width="100%" src="/static/img/stemma/{{poemNumber}}stema.png">
+					</div>
+					<p>			
+					<img src="/static/img/stemma/{{poemNumber}}stema.png" alt="{{poemNumber}} stemma" width="100%">
+					</p>
+				</div>
+			</div>		
+		</div>
+	</div>
+</div>
+<!-- Column 2 end -->
+
+
+<div id="manuscript-image-dialog">Image Dialog</div>
+
+{% include "gutorglyn/block-panel.html" %}
+{% include "gutorglyn/draw-abbrev.html" %}
+
+{% endblock %}
+

@@ -1,0 +1,36 @@
+{% extends "gutorglyn/raw-base.html" %}
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans "Print This Page Title" %}</h1>
+<div class="prepend-1 span-23" id="wait">
+	<div class="progress-label">
+		<p>{% trans "Print This Page Message" %}</p>
+		<p><img src="/static/img/icons/ajax-loader.gif"></p>
+	</div>
+</div>
+ <script type="text/javascript">
+ 		poemID = gup('poemID');
+ 		poemPart = gup('poem-part');
+ 		$.get( "gutorglyn/parts-raw/" + poemID + "?poem-part=poemTitle", function( data ) {
+			$(".title").append(data);
+			$("h1").hide();
+			
+		});		
+ 		$.get( "gutorglyn/parts-raw/" + poemID + "?poem-part=editor", function( data ) {
+			$(".editor-name").append(data);
+			$("#editor-title").show();			
+		});	 		
+ 		$.get( "gutorglyn/parts-raw/" + poemID + "?poem-part=" + poemPart, function( data ) {
+			$(".raw-content").append(data);
+			$("#wait").hide();
+		});
+</script>
+
+{% endblock %}
+
+
+
+
+
+

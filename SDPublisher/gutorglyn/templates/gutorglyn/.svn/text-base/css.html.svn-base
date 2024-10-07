@@ -1,0 +1,38 @@
+
+<!-- For mobile displays -->
+<!--<link rel="stylesheet" type="text/css"
+	href="/static/blueprint/mobile.css" media="screen, projection" />  -->
+
+<!-- For desktop displays -->
+
+<!--[if lt IE 8]>        
+        	<link rel="stylesheet" href="/static/blueprint/ie.css" type="text/css" media="screen, projection">       
+        <![endif]-->
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.8.16/themes/smoothness/jquery-ui.css" />
+<link type="text/css" rel="stylesheet"
+	href="/static/blueprint/screen.css" />
+<link type="text/css" rel="stylesheet"
+	href="/static/css/jquery-ui-1.8.16.custom.css" />
+<link type="text/css" rel="stylesheet"
+	href="/static/css/gutorglyn.css"/>
+
+<!-- <link type="text/css" rel="alternate stylesheet"
+	href="/static/css/white.css" title="white" media="screen, projection" /> -->	
+<link type="text/css" rel="alternate stylesheet"
+	href="/static/css/old-paper.css" title="old paper" media="screen, projection" />
+<!-- <link type="text/css" rel="alternate stylesheet"
+	href="/static/css/green.css" title="green" media="screen, projection" />	  -->		
+<link type="text/css" rel="stylesheet"
+	href="/static/css/new.css" title="new" media="screen, projection" />	
+
+<link type="text/css" rel="stylesheet"
+	href="/static/css/slidingpanel.css" media="screen, projection" />
+<link type="text/css" rel="stylesheet"
+	href="/static/css/slidingpanel2.css" media="screen, projection" />
+<link type="text/css" rel="stylesheet"
+	href="/static/css/print.css" media="print" />
+<link type="text/css" rel="stylesheet"
+	href="/static/css/css-menu/css-menu.css" media="screen" />	
+	
+<link href="/static/css/jplayer/skin/premium-pixels/premium-pixels.css" rel="stylesheet" type="text/css" />

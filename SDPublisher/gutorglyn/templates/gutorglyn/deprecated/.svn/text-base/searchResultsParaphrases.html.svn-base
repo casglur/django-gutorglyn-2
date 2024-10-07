@@ -1,0 +1,50 @@
+{% block content %}
+{% load i18n %}
+
+{% if debug == "on" %}
+Search Term: {{ searchTrm }}<br/>
+Contains Type: {{ containsType }} <br/>
+Search Type: {{ searchType }} <br/>
+Poem Page Number: {{ poemPageNumber }} <br/>
+Poem Page Number Values: {{ poemPageNumberValues }} <br/>
+Start: {{ pageStart }} - End: {{ pageEnd }}<br/>
+Total: {{ poemSearchNum }}<br/>
+{% endif %}
+
+{% trans "Search Page Results Per Page Label" %}: {{perPage}}  | {% trans "Search Page Page Number Label" %}: {{ poemPageNumber }}
+
+<br/>
+
+
+<div>
+{{ pageStart }} - {{ pageEnd }} of {{ poemSearchNum }} 
+
+<br/>
+		{% trans "Search Page Showing Label" %}: 
+        <select name="per-page">
+        	<option value="10">10 {% trans "Search Page Instances Label" %}</option>
+ 	        <option value="20">20 {% trans "Search Page Instances Label" %}</option>
+ 	        <option value="30">30 {% trans "Search Page Instances Label" %}</option>
+ 	        <option value="40" selected>40 {% trans "Search Page Instances Label" %}</option>
+ 	        <option value="50">50 {% trans "Search Page Instances Label" %}</option>
+        </select>
+        <input type="submit" name="submit" value="Next Page">
+        <input type="hidden" name="page-start"  id="page-start" value="0"/>
+</div>
+
+
+
+<br/>
+
+<div class="results-group" id="paraphrase-results-group">
+	 {{paraphraseSearchGroupHits|safe}}
+</div>
+
+
+<script>
+// count number of anchor tags = number of single results
+//var tagNumber
+//tagNumber = parseInt(document.getElementsByTagName('a').length) / 2;
+//alert(tagNumber);
+</script>
+{% endblock %}    			

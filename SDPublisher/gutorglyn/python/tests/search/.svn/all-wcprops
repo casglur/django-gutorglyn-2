@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/gutorglyn/!svn/ver/1427/gutorglyn/python/tests/search
+END
+regExSearch.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/gutorglyn/!svn/ver/1425/gutorglyn/python/tests/search/regExSearch.py
+END
+Search-fn-contains.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/gutorglyn/!svn/ver/1427/gutorglyn/python/tests/search/Search-fn-contains.py
+END
+regExSearch-fn-matches.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/gutorglyn/!svn/ver/1425/gutorglyn/python/tests/search/regExSearch-fn-matches.py
+END
+regExSearch-fn-tokenize.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/gutorglyn/!svn/ver/1425/gutorglyn/python/tests/search/regExSearch-fn-tokenize.py
+END

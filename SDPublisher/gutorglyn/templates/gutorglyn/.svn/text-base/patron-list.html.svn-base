@@ -1,0 +1,28 @@
+{% extends "gutorglyn/static-base.html" %} {% block content %}
+{% load i18n %}
+<hr class="space"/>
+<div class="span-22">
+<h2>{% trans "People List Page Title" %}</h2>
+</div>
+<div class="span-22 search-group">
+<p>{% trans "People List Usage Blurb" %}</p>
+  <form name="search_form" id="searchForm" method="GET" action="/gutorglyn/name-full/?n=">
+   <label for="name">{% trans "People List find button" %}: </label>
+   <input type="text" id="name" name="name" />
+   <input type="hidden" id="n" name="n" />
+  </form>
+</div>
+<hr class="space"/>
+<div class="span-22 patron-list">
+	{{ patronNamesOutput|safe }}
+</div>
+<hr class="space">
+<hr class="space">
+
+<script src="/static/js/patronsAjax.js"></script>
+<script>	
+$(document).ready(function () {	
+	patronAutoComplete()
+});
+</script>
+{% endblock %}

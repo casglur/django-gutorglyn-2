@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+.body {height:100%px;background-color:#fff;} .body div {height:100%;vertical-align:left;text-align:left;} .body h3 {text-align:center;} .tabsView td {border:solid 1px #0000A6;border-top:none;border-right:solid 2px #1E1ED2;}
+.tabsView th {cursor:pointer;padding:2px;font-weight:normal;font-style:italic;color:#888;border:solid 1px #bbb;border-right:none;background-color:#f8f8f8;border-bottom:solid 1px #1E1ED2;} #tabsView > .tabsView {width:950px;} 
+.tabsView {width:950px;border-collapse:collapse;border:none;margin:5px;} .tabsView tr {border-right:solid 1px #bbb;} th.header_true {font-weight:bold;border:solid 1px #0000A6;border-right:solid 2px #1E1ED2;border-bottom:solid 1px #eee;color:#0000A6;background-color:#fff;} 
+</style>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    </head>
+    <body>
+        
+        <script id="tabsTmpl" type="text/x-jquery-tmpl">
+    {{wrap(null, {state: $item.state}) "#tabsWrap"}}
+        <h3>Edited Text</h3> 
+        <div>
+
+                
+        <p> 
+		Testun Golygedig
+		
+			<span>Oer oedd weled urddolion</span><br/> 
+			<span>A’r ieirll yn dyfod o Rôn.</span><br/> 
+			<span>Pob capten o sifften Sais</span><br/> 
+			<span>O waelod Lloegr a welais.</span><br/> 
+			<span>Pond rhyfedd (o’r mawredd mau!),</span><br/> 
+			<span>Beili Mawnt, ble mae yntau?</span><br/> 
+			<span>Bual du a blodeuyn</span><br/> 
+			<span>Buellt dir, ni bu well dyn.</span><br/> 
+			<span>O gwelais lawer galawnt,</span><br/> 
+			<span>Gorau am win oedd garw Mawnt,</span><br/> 
+			<span>Y marchog dyledog daid</span><br/> 
+			<span>A’r sêr ar ei gwrseriaid,</span><br/> 
+			<span>Syr Rhisiart goethwart Gethin,</span><br/> 
+			<span>Serchog faedd tarianog trin.</span><br/> 
+			<span>O Fair ddi-wair, a ddaw ef</span><br/> 
+			<span>Yn hydr yng nghefn Hydref,</span><br/> 
+			<span>Myrdd wynfyd (Mair i’w ddanfon!),</span><br/> 
+			<span>Mab Rhys ar frys o dref Rôn?</span><br/> 
+		</span><br/> 
+
+	<p> 
+        </div>
+        <h3>Two</h3>
+        <div>
+            <b>Second</b> tab
+        </div>
+        <h3>Three</h3>
+        <div>
+            Third <em>tab</em> <br/> and more content...
+        </div>
+    {{/wrap}}
+</script>
+        
+        <script id="tabsWrap" type="text/x-jquery-tmpl">
+    <table class="tabsView"><tbody>
+        <tr>
+            {{each $item.html("h3", true)}}
+                <th class="header_${$index === $item.state.activeIndex}">
+                    ${$value}
+                </th>
+            {{/each}}
+        </tr>
+        <tr><td colspan='${$item.html("h3").length}'>
+            <div class="body">
+                {{html $item.html("div")[$item.state.activeIndex]}}
+            </div>
+        </td></tr>
+    </tbody></table>
+</script>
+        
+        <div id="tabsView"></div>
+        
+        <script>
+/* Track the selected tab index */
+var state = { activeIndex: 1 };
+
+/* Render tabs view */
+$( "#tabsTmpl" ).tmpl( null, { state: state})
+    .appendTo( "#tabsView" );
+
+$( "#tabsView" )
+    .delegate( ".tabsView th", "click", function() {
+        var tmplItem = $.tmplItem( this );
+
+        /* Set the selected tab index to this tab */
+        tmplItem.state.activeIndex = $(this).index();
+
+        /* update the rendering */
+        tmplItem.update();
+    });
+</script>
+        
+    </body>
+</html>

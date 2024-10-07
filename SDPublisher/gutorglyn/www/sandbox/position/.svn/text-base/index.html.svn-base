@@ -1,0 +1,64 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Position</title>
+        <link type="text/css" rel="stylesheet" href="/static/blueprint/screen.css"
+            media="screen, projection" />
+        <!--[if lt IE 8]><link rel="stylesheet" href="/static/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+        <link type="text/css" rel="stylesheet" href="/static/css/gutorglyn.css"
+            media="screen, projection" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="column span-10">
+                <!-- Edited Text -->
+                <div class="span-9 edited-text showgrid" id="edited-text" style="height: 600px;">
+                    <h3>cywydd group - 3cm indent throughout</h3>
+                    <div class="cywydd-group">
+                        <span class="cywydd-line-number">1</span><span class="cywydd-line-1">Llawen
+                            wyf i’m plwyf a’m plas – diofal,</span><br />
+                        <span class="cywydd-line-number">2</span><span class="cywydd-line">Llawen
+                            wyf i’m plwyf a’m plas – diofal,</span><br />
+                    </div><br />
+                    <div class="cywydd-group">
+                        <span class="cywydd-line-number">1</span><span class="cywydd-line-first"
+                            >Llawen wyf i’m plwyf a’m plas – diofal,</span><br />
+                        <span class="cywydd-line-number">2</span><span class="cywydd-line">Llawen
+                            wyf i’m plwyf a’m plas – diofal,</span><br />
+                    </div>
+                    <br />
+                    <div class="cywydd-group">
+                        <span class="cywydd-line-number">1</span><span class="cywydd-line-1">Oer
+                            oedd weled urddolion</span><br />
+                        <span class="cywydd-line-number=">2</span><span class="cywydd-line">A’r
+                            ieirll yn dyfod o Rôn.</span><br />
+                        </div><br/>
+                        <h3>englyn proest - 3cm indent throughout</h3>
+                        <div class="EP-group">
+                            <span class="EP-line-number">1</span><span class="EP-line">Llawen wyf
+                                i’m plwyf a’m plas – diofal,</span><br />
+                            <span class="EP-line-number">12</span><span class="EP-line">Llawen wyf
+                                i’m plwyf a’m plas – diofal,</span><br />
+                            <span class="EP-line-number">120</span><span class="EP-line">Llawen wyf
+                                i’m plwyf a’m plas – diofal,</span><br />
+                        </div>
+                        <br />
+                        <h3>englyn unodl union</h3>
+                        <div class="EUU-group">
+                            <span class="EUU-line-number">1</span><span class="EUU-line">Llawen wyf
+                                i’m plwyf a’m plas – diofal,</span><br />
+                            <span class="EUU-line-number">12</span><span class="EUU-line">Llawen wyf
+                                i’m plwyf a’m plas – diofal,</span><br />
+                            <span class="EUU-line-number">120</span><span class="EUU-line">Llawen
+                                wyf i’m plwyf a’m plas – diofal,</span><br />
+                        </div>
+                    </div>
+                    <!-- Edited Text end -->
+                </div>
+            <!-- column end -->
+        </div>
+        <!-- container end -->
+    </body>
+</html>

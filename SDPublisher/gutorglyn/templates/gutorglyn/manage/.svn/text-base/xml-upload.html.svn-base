@@ -1,0 +1,25 @@
+{% extends "gutorglyn/static-base.html" %} 
+{% block content %}
+{% load i18n %}
+<hr class="space"/>
+<div class="prepend-1 span-23">
+<h2>{% trans "XML Upload Page Title" %}</h2>
+<p>{% trans "XML Upload Page Text" %}</p>
+</div>
+<div class="prepend-1 span-23">
+<form id="doc-select" action="/gutorglyn/upload-new.html" method="GET">
+{% trans "XML Upload Page Select Text" %}
+	<select>
+	{% for key in documents %}
+	    <option>
+	        <td>{{ key }}</td>
+		</option>       
+	{% endfor %}
+	</select>
+	<input type="submit" value="Submit">
+</form>
+
+</div>
+
+
+{% endblock %}

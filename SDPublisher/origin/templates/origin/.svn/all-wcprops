@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gutorglyn/!svn/ver/903/origin/templates/origin
+END
+text.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/gutorglyn/!svn/ver/8/origin/templates/origin/text.html
+END
+error.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/gutorglyn/!svn/ver/8/origin/templates/origin/error.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gutorglyn/!svn/ver/903/origin/templates/origin/base.html
+END

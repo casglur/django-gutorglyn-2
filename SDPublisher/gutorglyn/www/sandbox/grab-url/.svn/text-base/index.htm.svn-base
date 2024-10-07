@@ -1,0 +1,23 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Gwaith Guto'r Glyn</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+
+var urlHalves = String(document.location).split('?');
+var SrchPairs = urlHalves[1].split('=');
+var SrchVars = SrchPairs.split('+');
+
+
+document.write(urlHalves + "<br />");
+document.write(urlHalves[0] + "<br />");
+document.write(urlHalves[1] + "<br />");
+document.write("Search Pairs: " + SrchPairs  + "<br />");            
+document.write("Search Variables: " + SrchVars  + "<br />");
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

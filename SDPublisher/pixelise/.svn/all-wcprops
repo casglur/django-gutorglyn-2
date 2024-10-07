@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/gutorglyn/!svn/ver/363/pixelise
+END
+core.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gutorglyn/!svn/ver/363/pixelise/core.py
+END
+_element_methods.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/gutorglyn/!svn/ver/8/pixelise/_element_methods.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gutorglyn/!svn/ver/8/pixelise/__init__.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gutorglyn/!svn/ver/8/pixelise/utils.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gutorglyn/!svn/ver/8/pixelise/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gutorglyn/!svn/ver/8/pixelise/models.py
+END

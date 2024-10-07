@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/gutorglyn/!svn/ver/1310/white
+END
+manage.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gutorglyn/!svn/ver/726/white/manage.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gutorglyn/!svn/ver/1310/white/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gutorglyn/!svn/ver/726/white/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gutorglyn/!svn/ver/903/white/settings.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gutorglyn/!svn/ver/1310/white/urls.py
+END

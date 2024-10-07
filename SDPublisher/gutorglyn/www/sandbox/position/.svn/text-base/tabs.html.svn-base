@@ -1,0 +1,410 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<!--   -->  
+<html> 
+    <head> 
+        <title>Gwaith Guto'r Glyn</title> 
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+        <link type="text/css" rel="stylesheet" href="/static/blueprint/screen.css"
+            media="screen, projection" /> 
+ 
+        <!--[if lt IE 8]><link rel="stylesheet" href="/static/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]--> 
+ 
+        <link type="text/css" rel="stylesheet" href="/static/css/gutorglyn.css"
+            media="screen, projection" /> 
+        <link type="text/css" rel="stylesheet" href="/static/css/jquery-ui-1.8.13.custom.css" /> 
+        <link type="text/css" rel="stylesheet" href="/static/css/slidingpanel.css"
+            media="screen, projection" /> 
+        <link type="text/css" rel="stylesheet" href="/static/css/jquery.lightbox-0.5.css"
+            media="screen" /> 
+ 
+        <link type="text/css" rel="stylesheet" href="/static/blueprint/print.css"
+            media="print" /> 
+ 
+        <script type="text/javascript" src="/static/js/jquery-1.5.1.min.js"></script> 
+        <script type="text/javascript" src="/static/js/jquery-ui-1.8.13.custom.min.js"></script> 
+        <script type="text/javascript" src="/static/js/jquery.lightbox-0.5.js"></script> 
+        <script type="text/javascript" src="/static/js/jquery-gutor.js"></script> 
+        
+        <script type="text/javascript" src="/static/js/themeroller.js"></script> 
+ 
+    </head> 
+    <body> 
+        <div class="container showgrid"> 
+<!-- Column 2 --> 
+<div class="span-14 last"> 
+	<div id="tabs"> 
+		<ul> 
+			<li> 
+				<a href="#paraphrase-tab"> 
+					<span>Aralleiriad</span> 
+				</a> 
+			</li> 
+			<li> 
+				<a href="#translation-tab"> 
+					<span>Translation</span> 
+				</a> 
+			</li> 
+			<li> 
+				<a href="#notes-tab"> 
+					<span>Nodiadau</span> 
+				</a> 
+			</li> 
+			<li> 
+				<a href="#stemma-tab"> 
+					<span>Stema</span> 
+				</a> 
+			</li> 
+		</ul> 
+		<div id="paraphrase-tab"> 
+						
+						<div class="line-group"> 
+							<span class="line-number">17</span><span>Yfory a heddiw y’m gwahoddwyd</span><br/> 
+							<span class="line-number">18</span><span>i’w dŷ a’i fro, </span><br/> 
+							<span class="line-number">19</span><span>a chael gloddesta y diwrnod wedyn,</span><br/> 
+							<span class="line-number">20</span><span>a saethu at yr un targed eto y diwrnod nesaf.</span><br/> 
+						</div><br/> 
+						<div class="line-group"> 
+							<span class="line-number">21</span><span>Enwaf nod y gaeaf, ffawd da’r Nadolig,</span><br/> 
+							<span class="line-number">22</span><span>noddfa arbennig yw hon;</span><br/> 
+							<span class="line-number">23</span><span>naid carw yw’r nod heddiw,</span><br/> 
+							<span class="line-number">24</span><span>greddf carw yw neidio i fyny i’r tir uchel.</span><br/> 
+						</div><br/> 
+						<div class="line-group"> 
+							<span class="line-number">25</span><span>Coeden fwyaf Rhiw Tren, boed i Dduw roi ei fendith ar y llys
+								hwn</span><br/> 
+							<span class="line-number">26</span><span>a henaint i’w geidwad,</span><br/> 
+							<span class="line-number">27</span><span>tŵr brenhinol bryn ei daid,</span><br/> 
+							<span class="line-number">28</span><span>bryn hardd y barwn a’i dad.</span><br/> 
+						</div><br/> 
+						<div class="line-group"> 
+							<span class="line-number">29</span><span>Yr oedd ei dad yn ddisgynnydd i deulu Dinefwr o Dewdwr</span><br/> 
+							<span class="line-number">30</span><span>ac aeth â’r cant o wŷr a thir ychwanegol.</span><br/> 
+							<span class="line-number">31</span><span>Ei gefnogwyr yw blodau holl wybodaeth y byd</span><br/> 
+							<span class="line-number">32</span><span>o hen deuluoedd yr ardaloedd hyn.</span><br/> 
+							<span class="line-number">33</span><span>Fe’i gwelir yn arglwydd unigryw ac fe’i cyffelybir i Nudd,</span><br/> 
+							<span class="line-number">34</span><span>yn drysor ffraeth Duw a’i grefydd.</span><br/> 
+							<span class="line-number">35</span><span>Mae ei air am alwad awdurdodol yn hysbys i bawb,</span><br/> 
+							<span class="line-number">36</span><span>disgynnydd Rhys yw’r bardd i’r ynys gyfan.</span><br/> 
+							<span class="line-number">37</span><span>Ystyrid ei daid dedwydd yn fardd,</span><br/> 
+							<span class="line-number">38</span><span>a’r gŵr hwn yw’r barnwr a phrydydd gwirioneddol.</span><br/> 
+							<span class="line-number">39</span><span>Nid yw’n gofyn aur nac eiddo’n dâl am fawl yn ei
+								fro,</span><br/> 
+							<span class="line-number">40</span><span>nac ychwaith yn mynnu cyfoeth mwy na dyn arall.</span><br/> 
+							<span class="line-number">41</span><span>I ferch deilwng y mae’n canu, myn Cynog Sant,</span><br/> 
+							<span class="line-number">42</span><span>a’r penillion i’r gog a’r dail a’r coed.</span><br/> 
+							<span class="line-number">43</span><span>Mae ei lys elusengar yn gwaredu afiechyd hen ddyn,</span><br/> 
+							<span class="line-number">44</span><span>ei wên a’i farddoniaeth a’i win newydd.</span><br/> 
+							<span class="line-number">45</span><span>Ar faeth yr wyf i yn nhiriogaeth Dewi Sant</span><br/> 
+							<span class="line-number">46</span><span>yn llys Dafydd wrth ymyl afon Teifi,</span><br/> 
+							<span class="line-number">47</span><span>ac mae fy nhaith hir o Fôn i barthau afon Aeron</span><br/> 
+							<span class="line-number">48</span><span>yn mynd drwy Fabwynion adref bob dydd.</span><br/> 
+							<span class="line-number">49</span><span>Lluniais fawl erioed i eos cerdd Is Coed</span><br/> 
+							<span class="line-number">50</span><span>a’i gymar, golau’r lleuad ardal Gwynionydd,</span><br/> 
+							<span class="line-number">51</span><span>ac fe gawn aur trwm ger afon Tren yn ddi-ddadl</span><br/> 
+							<span class="line-number">52</span><span>a diolch am awen awdl a chywydd,</span><br/> 
+							<span class="line-number">53</span><span>A llys agored lle gwaredir blinder</span><br/> 
+							<span class="line-number">54</span><span>a lle difesur a llyfr Ofydd,</span><br/> 
+							<span class="line-number">55</span><span>gwin cynhaeaf helaeth a dillad gaeaf,</span><br/> 
+							<span class="line-number">56</span><span>y gwanwyn a’r haf gan y carw,</span><br/> 
+							<span class="line-number">57</span><span>cig tyner, bara gwyn a bragod â phen gwyn </span><br/> 
+							<span class="line-number">58</span><span>a chynnyrch pêr gwenyn a ffrwyth gwinwydd.</span><br/> 
+							<span class="line-number">59</span><span>Hiriell yw ef, na foed i mi fyth fod</span><br/> 
+							<span class="line-number">60</span><span>heb lywodraethwr Mabelfyw ym mhob gwlad.</span><br/> 
+							<span class="line-number">61</span><span>Boed i’r un Duw gadw ein tŵr a’n tarian, nid yw’n
+								wan,</span><br/> 
+							<span class="line-number">62</span><span>a chadw Gwenllïan gyda’n llywydd.</span><br/> 
+							<span class="line-number">63</span><span>Hwynt-hwy yn un llond tŷ o’r un farwniaeth</span><br/> 
+							<span class="line-number">64</span><span>yw’n maeth a’n lluniaeth a’n llawenydd.</span><br/> 
+						</div><br/> 
+					 </div> 
+		<div id="translation-tab"> 
+						
+							<span class="line-number"></span><span>12 – Ode in praise of Dafydd ap Tomas ap Dafydd of
+								Blaen-tren</span><br/> 
+						</div><br/> 
+						<div class="line-group"> 
+							<span class="line-number">1</span><span>I am joyful in my parish and my carefree mansion,</span><br/> 
+							<span class="line-number">2</span><span>the court of Dafydd ap Tomas</span><br/> 
+							<span class="line-number">3</span><span>of the lineage of Dafydd, the third generation,</span><br/> 
+							<span class="line-number">4</span><span>and Llywelyn with the blue-coloured spear.</span><br/> 
+						</div><br/> 
+						<div class="line-group"> 
+							<span class="line-number">5</span><span>I get fresh mead to drink </span><br/> 
+							<span class="line-number">6</span><span>from this man, many a weak one drinks it.</span><br/> 
+							<span class="line-number">7</span><span>The best husband and gentle wife,</span><br/> 
+							<span class="line-number">8</span><span>the best couple as far as Cardiff.</span><br/> 
+						</div><br/> 
+						<div class="line-group"> 
+							<span class="line-number">9</span><span>His praise grows from Cardiff as far as the river Teifi</span><br/> 
+							<span class="line-number">10</span><span>and to the land of Pryderi,</span><br/> 
+							<span class="line-number">11</span><span>and to Anglesey and Abergavenny</span><br/> 
+							<span class="line-number">12</span><span>what I sing will be a growing shoot.</span><br/> 
+						</div><br/> 
+						<div class="line-group"> 
+							<span class="line-number">13</span><span>My life was pleasant for me </span><br/> 
+							<span class="line-number">14</span><span>when the lord of Mabelfyw came of age.</span><br/> 
+							<span class="line-number">15</span><span>Good for wine as far as St David’s,</span><br/> 
+							<span class="line-number">16</span><span>he is good for gold and every kind of thing.</span><br/> 
+						</div><br/> 
+						<div class="line-group"> 
+							<span class="line-number">17</span><span>I have been invited today and tomorrow</span><br/> 
+							<span class="line-number">18</span><span>to his house and his district,</span><br/> 
+							<span class="line-number">19</span><span>and to have a feast the following day,</span><br/> 
+							<span class="line-number">20</span><span>and to shoot at the same target the day after that.</span><br/> 
+						</div><br/> 
+						<div class="line-group"> 
+							<span class="line-number">21</span><span>I will set a target for the winter, good fortune at
+								Christmas,</span><br/> 
+							<span class="line-number">22</span><span>this is a notable sanctuary;</span><br/> 
+							<span class="line-number">23</span><span>the target today is a stag’s leap,</span><br/> 
+							<span class="line-number">24</span><span>the stag’s instinct is to leap up to the high ground.</span><br/> 
+						</div><br/> 
+						<div class="line-group"> 
+							<span class="line-number">25</span><span>The greatest tree of Rhiw Tren, may God give his blessing to
+								this court</span><br/> 
+							<span class="line-number">26</span><span>and old age to its keeper,</span><br/> 
+							<span class="line-number">27</span><span>the royal tower of his grandfather’s hill,</span><br/> 
+							<span class="line-number">28</span><span>the fair hill of the baron and his father.</span><br/> 
+						</div><br/> 
+						<div class="line-group"> 
+							<span class="line-number">29</span><span>His father was a descendant of the Dinefwr family from
+								Tewdwr</span><br/> 
+							<span class="line-number">30</span><span>who took the one hundred men and additional land.</span><br/> 
+							<span class="line-number">31</span><span>His party are the pinnacle of all the world’s knowledge</span><br/> 
+							<span class="line-number">32</span><span>from the old families of these areas.</span><br/> 
+							<span class="line-number">33</span><span>He is considered a unique lord and likened to Nudd,</span><br/> 
+							<span class="line-number">34</span><span>as an eloquent treasure of God and his religion.</span><br/> 
+							<span class="line-number">35</span><span>His word for a summons is well-known to all,</span><br/> 
+							<span class="line-number">36</span><span>the grandson of Rhys is poet to all the island.</span><br/> 
+							<span class="line-number">37</span><span>His blessed grandfather was considered to be a poet,</span><br/> 
+							<span class="line-number">38</span><span>and this man is the judge and a true bard.</span><br/> 
+							<span class="line-number">39</span><span>He does not ask for gold or goods in payment for praise in his
+								region,</span><br/> 
+							<span class="line-number">40</span><span>nor does he demand wealth more than another man.</span><br/> 
+							<span class="line-number">41</span><span>He sings to a worthy maiden, by St Cynog,</span><br/> 
+							<span class="line-number">42</span><span>and the verses to the cuckoo and the leaves and the trees.</span><br/> 
+							<span class="line-number">43</span><span>His charitable court cures an old man of his sickness,</span><br/> 
+							<span class="line-number">44</span><span>his smile and his muse and his new wine.</span><br/> 
+							<span class="line-number">45</span><span>I am in fosterage in St David’s land</span><br/> 
+							<span class="line-number">46</span><span>in Dafydd’s court beside the river Teifi,</span><br/> 
+							<span class="line-number">47</span><span>and my long journey from Anglesey to the banks of the river
+								Aeron</span><br/> 
+							<span class="line-number">48</span><span>is through Mabwynion homewards everyday.</span><br/> 
+							<span class="line-number">49</span><span>I have always fashioned praise to the nightingale of Is Coed’s
+								song</span><br/> 
+							<span class="line-number">50</span><span>and his partner, the moonlight of the land of Gwynionydd,</span><br/> 
+							<span class="line-number">51</span><span>and I would get weighty gold without dispute by the river
+								Tren</span><br/> 
+							<span class="line-number">52</span><span>and thanks for the poetry of ode and <i>cywydd</i>,</span><br/> 
+							<span class="line-number">53</span><span>and an open court where tiredness is got rid of</span><br/> 
+							<span class="line-number">54</span><span>and a limitless place and the book of Ovid,</span><br/> 
+							<span class="line-number">55</span><span>wine of an abundant harvest and clothes for winter,</span><br/> 
+							<span class="line-number">56</span><span>spring and summer from the stag,</span><br/> 
+							<span class="line-number">57</span><span>Tender meat, white bread and white-topped bragget</span><br/> 
+							<span class="line-number">58</span><span>And the sweet produce of bees and the fruit of vines.</span><br/> 
+							<span class="line-number">59</span><span>He is a Hiriell, may I never be </span><br/> 
+							<span class="line-number">60</span><span>without the governor of Mabelfyw in every land.</span><br/> 
+							<span class="line-number">61</span><span>May the one God keep our tower and shield, he is not weak,</span><br/> 
+							<span class="line-number">62</span><span>and keep Gwenllïan with our governor.</span><br/> 
+							<span class="line-number">63</span><span>They as one household from the same baronage</span><br/> 
+							<span class="line-number">64</span><span>are our nourishment and our sustenance and our joy.</span><br/> 
+						</div><br/> 
+					 </div> 
+		<div id="notes-tab"> 
+			<ul> 
+				<li> 
+					<a href="#explanatory-notes-tab"> 
+						<span>Esboniadol</span> 
+					</a> 
+				</li> 
+				<li> 
+					<a href="#text-notes-tab"> 
+						<span>Testunol</span> 
+					</a> 
+				</li>                            
+				<li> 
+					<a href="#english-explanatory-notes-tab"> 
+						<span>English Notes</span> 
+					</a> 
+				</li> 
+			</ul> 
+			<div id="text-notes-tab"> 
+						
+							<p>Y llawysgrifau***</p> 
+							<p>*******</p> 
+							
+								<p>*******</p> 
+							
+						
+						
+							
+								<p>*******</p> 
+							
+						
+						
+							<p>Llyfryddiaeth</p> 
+							<p>********</p> 
+						
+					</div> 
+			<div id="explanatory-notes-tab"> 
+						
+							<p>Roedd Dafydd ap Tomas ap Dafydd ap Llywelyn ap
+								Gruffydd Sais yn un o ddisgynyddion Rhydderch ap Tewdwr Mawr o deulu
+								brenhinol Deheubarth, gw. WG1 ‘Rhydderch ap Tewdwr’ 3 a WG2
+								‘Rhydderch ap Tewdwr’ 3 (A1). Daliodd swydd rhingyll cwmwd Mabelfyw
+								am bum mlynedd ar hugain rhwng 1436 a 1461, fel ei dad a’i daid o’i
+								flaen, gw. Griffiths 1972: 360–1. Ei wraig oedd Gwenllïan
+								ferch Rhys ap Dafydd, gw. WG2 ‘Elystan Glodrydd’ 51 (E). Ei gartref
+								oedd Blaen-tren ym mhlwyf Llanybydder. Dyna’r enw a roddir yng
+								nghywydd Guto iddo, cerdd 13, a hefyd yn y cerddi a ganodd Lewys
+								Glyn Cothi i’w wraig Gwenllïan a’u mab Rhys (GLGC cerddi
+								41–4). Ni cheir yr enw hwnnw yn yr awdl hon, ond sonnir am <i>Rhiw Tren</i> (ll. 25) mewn cyd-destun sy’n
+								awgrymu mai enw arall ydyw ar gartref Dafydd. Nodir yr enw Coed-tren
+								hefyd gan Bartrum yn WG1. Mae’n debyg bod y llys ar yr un safle
+								â Glantrenfawr heddiw, gw. Jones 1987: 11–12. Afonig yw
+								Tren sy’n llifo i afon Dyar ger Llanybydder, ac mae honno’n ei thro
+								yn llifo i afon Teifi.</p> 
+							<p>Mae’r awdl hon yn nodedig am ei harddull lyfn a rhwydd sy’n
+								adlewyrchu awyrgylch esmwyth a llawen y llys a ddisgrifir. Egyr trwy
+								olrhain tras Dafydd dros dair cenhedlaeth, ac yn nes ymlaen yn y
+								gerdd pwysleisir bod honno’n dras frenhinol (25–32). Ar
+								letygarwch Dafydd a’i wraig Gwenllïan y mae’r pwyslais trwy
+								gydol y gerdd, a honnir bod gwahoddiad parhaol i’r bardd fel petai
+								ar faeth yn eu llys a’i fod yn teithio adref pan ddaw yno o’r
+								gogledd. Rhoddir cryn sylw hefyd i ddawn Dafydd fel bardd, a
+								phwysleisir nad canu mawl am dâl a wnâi fel clerwyr
+								megis Guto ei hun, ond canu am serch a natur fel beirdd amatur yn
+								nhraddodiad Dafydd ap Gwilym.</p> 
+							<p>Dyddiad</p> 
+							<p>1436–61.</p> 
+							<p>Golygiad blaenorol</p> 
+							<p>GGl cerdd XIII.</p> 
+							<p>Mesur a chynghanedd</p> 
+							<p>Pum englyn unodl union, dau englyn proest, a chyfres o ddeunaw o
+								gyhydeddau hirion. Cysylltir yr englynion trwy gyrch-gymeriad, a
+								hefyd yr englyn olaf a’r cyhydedd hir cyntaf. Y mae gair olaf y
+								gerdd, <i>llawenydd</i>, yn cyrchu’r gair cyntaf,
+									<i>llawen</i>.</p> 
+						
+						
+							
+								<p><b>gwlad Bryderi</b> Yr hen Ddyfed, tiriogaeth
+									Pwyll a’i fab Pryderi yn y Mabinogi.</p> 
+							
+							
+								<p><b>Mabeilfyw</b> Mabelfyw, cwmwd yn y Cantref Mawr
+									a gynhwysai blwyfi Llanybydder a Phencarreg. </p> 
+							
+							
+								<p><b>ynyd</b> Yr ystyr wreiddiol oedd y tridiau cyn y
+									Grawys pryd y byddid yn gloddesta cyn yr ymryd hir, ond daeth i
+									olygu gloddest yn gyffredinol, gw. GPC 3819.</p> 
+							
+							
+								<p><b>naid</b> Fe ymddengys fod chwarae yn yr englyn
+									hwn ar wahanol ystyron y gair, sef yr ystyr lythrennol wrth
+									sôn am yr hydd, a hefyd ‘ffawd’ gan gyfeirio at y Nadolig,
+									a ‘noddfa’ gan gyfeirio at lys Dafydd.</p> 
+							
+							
+								<p><b>Rhiw Tren</b> Awgryma <i>hon</i> yn nes ymlaen yn y llinell mai enw arall ar lys
+									Dafydd yw hwn, gw. y nodyn cefndir uchod.</p> 
+							
+							
+								<p><b>Tewdwr</b> Hynafiad teulu brenhinol Deheubarth.
+								</p> 
+							
+							
+								<p><b>Dinefwr</b> Prif lys tywysogion Deheubarth.</p> 
+							
+							
+								<p><b>cannwr</b> Cant o wŷr neu o filwyr, h.y.
+									gosgordd fawr. </p> 
+							
+							
+								<p><b>Nudd</b> Sef Nudd Hael ap Senyllt, un o’r Tri
+									Hael y cyfeirir atynt yn gyffredin gan y beirdd fel safon
+									haelioni, gw. TYP3 5–6,
+									464–6.</p> 
+							
+							
+								<p><b>ŵyr Rys</b> Cyfeirir at ei daid ar ochr ei
+									fam, Gwenllïan ferch Rhys, gw. WG1 ‘Rhys Chwith’ 2.</p> 
+							
+							
+								<p><b>Cynog</b> Cynog Sant, mab hynaf Brychan
+									Brycheiniog yn ôl traddodiad.</p> 
+							
+							
+								<p><b>daear Ddewi</b> Mae nifer o eglwysi wedi’u
+									cysegru i Ddewi Sant yn yr ardal o amgylch Henfynyw.</p> 
+							
+							
+								<p><b>Mabwynion</b> Mebwynion, cwmwd i’r gogledd o
+									gwmwd Mabelfyw.</p> 
+							
+							
+								<p><b>Is Coed, Gwynionydd</b> Dau gwmwd i’r gorllewin
+									o gwmwd Mabelfyw, rhwng afonydd Teifi ac Aeron. </p> 
+							
+							
+								<p><b>llyfr Ofydd</b> Cyfeirir at hwn nifer o weithiau
+									yng nghanu serch Dafydd ap Gwilym ac eraill, ac nid yw’n glir ai
+									llyfr penodol gan y bardd Lladin Publius Ovidius Naso a olygir
+									(e.e. yr ‘Ars Amatoria’) ai unrhyw lyfr yn ymwneud â serch
+									yn y traddodiad a gysylltir â’i enw, gw. DG.net 95.1n.
+									Dichon mai llawysgrif yn cynnwys casgliad o ganu serch a olygir
+									yma.</p> 
+							
+							
+								<p><b>Hiriell</b> Arwr a gysylltid yn draddodiadol
+									â Gwynedd, gw. WCD 365–6 ac Williams 1926–7:
+									50–2.</p> 
+							
+						
+						
+							<p>Griffiths, R.A. (1972), <i>The Principality of Wales
+									in the later Middle Ages: i, South Wales, 1277–1535</i> 
+								(Cardiff)</p> 
+							<p>Jones, F. (1987), <i>Historic Carmarthenshire Homes
+									and their Families</i> (Carmarthen)</p> 
+							<p>Williams, I. (1926–7), ‘Hiriell’, B iii: 50–2</p> 
+						
+					</div> 
+			<div id="english-explanatory-notes-tab"> 
+		
+			<p>********</p> 
+			<p>Date</p> 
+			<p>********</p> 
+			<p>The manuscript</p> 
+			<p>********</p> 
+			<p>Previous edition</p> 
+			<p>********</p> 
+			<p>Metre and <i>cynghanedd</i></p> 
+			<p>********</p> 
+		
+		
+			
+				<p>*******</p> 
+			
+		
+		
+			<p>********</p> 
+		
+	</div> 
+		</div> 
+		<div id="stemma-tab"> 
+			<div id="dialog" title="12 – Awdl foliant i Ddafydd ap Tomas ap Dafydd o
+						Flaen-tren - Click to drag"> 
+				<img id="stemma-img-dialog" src="/static/img/guto02stema.png" alt="Stemma for "/> 
+			</div> 
+			<button id="opener">Breakout Stemma</button> - Click to drag
+			<img id="stemma-img" src="/static/img/guto02stema.png" alt="Stemma for "/> 
+		</div> 
+	</div> 
+</div> 
+</div> 
+<!-- Column 2 end --> 
+ 
+</body> 
+</html> 

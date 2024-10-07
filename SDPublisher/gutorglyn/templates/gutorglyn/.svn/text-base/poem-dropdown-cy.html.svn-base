@@ -1,0 +1,186 @@
+{% block poem-dropdown %}
+<select id="poem" name="poem">
+    <option value="#">Dewis...</option>
+    <option value="001">1 &ndash; Moliant i Syr Rhisiart Gethin ap Rhys Gethin o Fuellt, capten
+        Mantes yn Ffrainc</option>
+    <option value="002">2 &ndash; Dathlu rhyddid Syr Rhisiart Gethin ap Rhys Gethin o Fuellt, capten
+        Mantes yn Ffrainc</option>
+    <option value="003">3 &ndash; Moliant i Fathau Goch o Faelor</option>
+    <option value="004">4 &ndash; Brwydr y beirdd yn erbyn gwin Tomas ap Watgyn o Landdewi
+        Rhydderch</option>
+    <option value="005">5 &ndash; Salwch yr Abad Rhys ap Dafydd o Ystrad-fflur</option>
+    <option value="006">6 &ndash; Cwyn am absenoldeb yr Abad Rhys ap Dafydd o Ystrad-fflur</option>
+    <option value="007">7 &ndash; Moliant i'r Abad Rhys ap Dafydd o Ystrad-fflur</option>
+    <option value="008">8 &ndash; Awdl foliant i'r Abad Rhys ap Dafydd o Ystrad-fflur</option>
+    <option value="009">9 &ndash; Marwnad yr Abad Rhys ap Dafydd o Ystrad-fflur</option>
+    <option value="010">10 &ndash; Moliant i Hywel ap Llywelyn Fychan o Lyn Aeron</option>
+    <option value="011">11 &ndash; Moliant i Rys ap Dafydd o Uwch Aeron</option>
+    <option value="012">12 &ndash; Awdl foliant i Ddafydd ap Tomas o Flaen-tren</option>
+    <option value="013">13 &ndash; Moliant i Ddafydd ap Tomas o Flaen-tren</option>
+    <option value="014">14 &ndash; Moliant i Syr Rhys ap Tomas o Abermarlais</option>
+    <option value="015">15 &ndash; Moliant i Rys ap Siancyn o Lyn-nedd</option>
+    <option value="016">16 &ndash; Moliant i Syr Wiliam, offeiriad Merthyr Tudful</option>
+    <option value="017">17 &ndash; Moliant i Ddafydd Mathau o Landaf</option>
+    <option value="018a">18a &ndash; Hywel Dafi yn cyhuddo Guto'r Glyn o ganu celwydd o flaen Morgan
+        ap Rhosier o Wynll&wcirc;g</option>
+    <option value="018">18 &ndash; Ateb cyhuddiad Hywel Dafi ei fod yn wenieithiwr</option>
+    <option value="019">19 &ndash; Moliant i Syr Wiliam ap Tomas o Raglan</option>
+    <option value="020">20 &ndash; Ymryson Guto'r Glyn a Hywel Dafi yn llys Syr Wiliam
+        Herbert</option>	
+    <option value="020a">20a &ndash; Ateb Hywel Dafi</option>
+    <option value="021">21 &ndash; Moliant i Wiliam Herbert o Raglan, iarll cyntaf Penfro, ar
+        &ocirc;l cipio castell Harlech, 1468</option>
+    <option value="022">22 &ndash; Moliant i Golbrwg, cartref Syr Rhisiart Herbert</option>
+    <option value="023">23 &ndash; Moliant i Wiliam Herbert o Raglan, iarll cyntaf Penfro</option>
+    <option value="024">24 &ndash; Marwnad Wiliam Herbert o Raglan, iarll cyntaf Penfro</option>
+    <option value="025">25 &ndash; Annog Wiliam Herbert, ail iarll Penfro, i ddial ei dad</option>
+    <option value="026">26 &ndash; Cysuro Ann Herbert, iarlles Penfro, ar &ocirc;l marwolaeth ei
+        g&wcirc;r</option>
+    <option value="027">27 &ndash; Moliant i Syr Water Herbert</option>
+    <option value="028">28 &ndash; Moliant i Wiliam Herbert o Benfro a Llanfihangel Troddi</option>
+    <option value="029">29 &ndash; Annog Edward IV i adfer trefn yng Nghymru</option>
+    <option value="030">30 &ndash; Moliant i Phylib ap Gwilym Llwyd o Drefgwnter</option>
+    <option value="031">31 &ndash; Moliant i Siancyn Hafart o Aberhonddu</option>
+    <option value="032">32 &ndash; Ymweld &acirc; Harri Gruffudd o'r Cwrtnewydd</option>
+    <option value="033">33 &ndash; Moliant i wallt du Harri Gruffudd o'r Cwrtnewydd</option>
+    <option value="034">34 &ndash; Ymrafael Harri Gruffudd o'r Cwrtnewydd ac Ieuan Gethin am serch
+        Gwladus o Lyn-nedd</option>
+    <option value="035">35 &ndash; Cybydd-dod Harri Gruffudd o'r Cwrtnewydd</option>
+    <option value="036">36 &ndash; Marwnad Harri Gruffudd o'r Cwrtnewydd</option>
+    <option value="037">37 &ndash; Moliant i Ddafydd Llwyd ap Dafydd o'r Drenewydd</option>
+    <option value="038">38 &ndash; Moliant i'r Faenor, cartref Edward ap Hywel a Gwenll&iuml;an
+        ferch Rhys</option>
+    <option value="039">39 &ndash; Gofyn march gan Faredudd ab Ifan Fychan o Gedewain ar ran
+        Rheinallt ap Rhys Gruffudd</option>
+    <option value="040">40 &ndash; Marwnad Hywel ab Owain o Lanbryn-mair</option>
+    <option value="041">41 &ndash; Moliant i law arian Si&ocirc;n Dafi</option>
+    <option value="042">42 &ndash; Marwnad Einion ap Gruffudd o Lechwedd Ystrad</option>
+    <option value="043">43 &ndash; Awdl foliant i Syr Bened, person Corwen</option>
+    <option value="044">44 &ndash; Porthmona</option>	
+    <option value="044a">44a &ndash; Ymateb Tudur Penllyn i Guto'r Glyn a'i gyngor i Syr
+        Bened</option>
+    <option value="045">45 &ndash; Ymateb Guto'r Glyn i Dudur Penllyn</option>
+    <option value="046">46 &ndash; Ymateb Guto'r Glyn i Ieuan ap Tudur Penllyn</option>	
+    <option value="046a">46a &ndash; Dychan gan Ieuan ap Tudur Penllyn i Dudur Penllyn</option>
+    <option value="046b">46b &ndash; Ateb Tudur Penllyn i'r beirdd a'i testuniodd</option>
+    <option value="047">47 &ndash; Marwnad Syr Bened, person Corwen</option>
+    <option value="048">48 &ndash; Moliant i Ieuan ab Einion o'r Cryniarth a'i dylwyth</option>
+    <option value="049">49 &ndash; Moliant i Feurig Fychan ap Hywel Selau o Nannau, ei wraig
+        Angharad ferch Dafydd, eu mab Dafydd a'i wraig yntau Elen ferch Hywel</option>
+    <option value="050">50 &ndash; Marwnad Meurig Fychan ap Hywel Selau a'i wraig Angharad ferch
+        Dafydd o Nannau</option>
+    <option value="051">51 &ndash; Diolch i Ddafydd ap Meurig Fychan ac Elen ferch Hywel o Nannau am
+        farch</option>
+    <option value="052">52 &ndash; Marwnad Gruffudd Fychan ap Gruffudd o Gorsygedol</option>
+    <option value="053">53 &ndash; Gofyn ffaling gan Elen ferch Robert Pilstwn o'r
+        Llannerch</option>
+    <option value="054">54 &ndash; Englynion marwnad Dafydd Nanmor ac Ieuan Deulwyn</option>
+    <option value="055">55 &ndash; Moliant i Wiliam ap Gruffudd o Gochwillan</option>
+    <option value="056">56 &ndash; Moliant i Wiliam Fychan ap Gwilym o'r Penrhyn</option>
+    <option value="057">57 &ndash; Moliant i Wiliam Fychan ap Gwilym o'r Penrhyn a thair ardal ei
+        awdurdod</option>
+    <option value="058">58 &ndash; Diolch i Risiart Cyffin ab Ieuan Llwyd, deon Bangor, am
+        bwrs</option>
+    <option value="059">59 &ndash; Diolch i Risiart Cyffin ab Ieuan Llwyd, deon Bangor, am
+        baderau</option>
+    <option value="060">60 &ndash; Gofyn gwalch gan Huw Bwlclai ap Wiliam Bwlclai o Fiwmares ar ran
+        Rhisiart Cyffin ab Ieuan Llwyd, deon Bangor</option>
+    <option value="061">61 &ndash; Gofyn teils gan Risiart Cyffin ab Ieuan Llwyd, deon Bangor, ar
+        ran Syr Gruffudd ab Einion o Henllan</option>
+    <option value="062">62 &ndash; Moliant i Ddafydd ap Gwilym o Lwydiarth</option>
+    <option value="063">63 &ndash; Moliant i bum mab Llywelyn ap Hwlcyn o F&ocirc;n</option>
+    <option value="064">64 &ndash; Moliant i Huw Lewys ap Llywelyn o Brysaeddfed pan fu bron &acirc;
+        boddi</option>
+    <option value="065a">65a &ndash; Dychan gan Lywelyn ap Gutun i Guto'r Glyn pan haerwyd ei
+        foddi</option>
+    <option value="065">65 &ndash; Ateb i ddychan Llywelyn ap Gutun</option>
+    <option value="066">66 &ndash; Dychan i Ddafydd ab Edmwnd</option>
+    <option value="067">67 &ndash; Dychan i Ddafydd ab Edmwnd</option>
+    <option value="068a">68a &ndash; Dychan i geilliau Guto'r Glyn gan Ddafydd ab Edmwnd</option>
+    <option value="068">68 &ndash; Dychan i gal Dafydd ab Edmwnd</option>
+    <option value="068b">68b &ndash; Dychan gan Ddafydd ab Edmwnd i Guto'r Glyn</option>	
+    <option value="069">69 &ndash; Ymbil &acirc;'r Grog yng Nghaer ar ran Dafydd ab Ieuan</option>
+    <option value="070">70 &ndash; Moliant i Syr Hywel ap Dai o Laneurgain</option>
+    <option value="071">71 &ndash; Moliant i Domas Salbri ap Harri Salbri o Leweni a'i
+        dylwyth</option>
+    <option value="072">72 &ndash; Marwnad Si&ocirc;n ap Madog Pilstwn o Hafod-y-wern</option>
+    <option value="073">73 &ndash; Gofyn saeled gan Wiliam Rodn ap Richard Rodn o Holt ar ran Dafydd
+        Bromffild o Fers</option>
+    <option value="074">74 &ndash; Moliant i Rosier ap Si&ocirc;n Pilstwn o Emral</option>
+    <option value="075">75 &ndash; Moliant i Si&ocirc;n Hanmer ap Si&ocirc;n Hanmer o Halchdyn a'r
+        Llai</option>
+    <option value="076">76 &ndash; Gofyn cyllell hela gan Ruffudd ap Rhys o I&acirc;l ar ran
+        Si&ocirc;n Hanmer ap Si&ocirc;n Hanmer o Halchdyn a'r Llai</option>
+    <option value="077">77 &ndash; Moliant i'r Abad Tomas o Amwythig</option>
+    <option value="078">78 &ndash; Moliant i Si&ocirc;n Talbod, ail iarll Amwythig</option>
+    <option value="079">79 &ndash; Moliant i Syr Rosier Cinast ap Gruffudd o'r Cnwcin</option>
+    <option value="080">80 &ndash; Moliant i Syr Si&ocirc;n Bwrch ap Huw Bwrch o'r Drefrudd</option>
+    <option value="081">81 &ndash; Diolch i Si&acirc;n Bwrch ferch William Clopton o'r Drefrudd am
+        ei gofal</option>
+    <option value="082">82 &ndash; Marwnad Llywelyn ab y Moel</option>
+    <option value="083">83 &ndash; Moliant i Ruffudd Fychan ap Gruffudd Deuddwr o'r
+        Collfryn</option>
+    <option value="084">84 &ndash; Moliant i Syr Si&ocirc;n Mechain, person Llandrinio</option>
+    <option value="085">85 &ndash; Moliant i d&ycirc; newydd Syr Si&ocirc;n Mechain, person
+        Llandrinio</option>
+    <option value="086">86 &ndash; Moliant i Ddafydd Llwyd ap Gruffudd o Abertanad</option>
+    <option value="087">87 &ndash; Diolch i Gatrin ferch Maredudd o Abertanad a'i g&wcirc;r, Dafydd
+        Llwyd ap Gruffudd, am bwrs</option>
+    <option value="088">88 &ndash; Marwnad Gweurful ferch Madog o Abertanad</option>
+    <option value="089">89 &ndash; Marwnad Dafydd Llwyd ap Gruffudd o Abertanad</option>
+    <option value="090">90 &ndash; Ar achlysur ailadeiladu t&ycirc; Hywel ab Ieuan Fychan ym
+        Moeliwrch</option>
+    <option value="091">91 &ndash; Moliant i Hywel ab Ieuan Fychan o Foeliwrch</option>
+    <option value="092">92 &ndash; I iach&aacute;u glin Hywel ab Ieuan Fychan o Foeliwrch</option>
+    <option value="093">93 &ndash; Englynion ymryson rhwng Ieuan ap Gruffudd Leiaf a Guto'r
+        Glyn</option>
+    <option value="094">94 &ndash; Moliant i Ddafydd Cyffin ab Iolyn o Langedwyn</option>
+    <option value="095">95 &ndash; Moliant i Faredudd ap Hywel o Groesoswallt</option>
+    <option value="096">96 &ndash; Moliant i Sieffrai Cyffin ap Morus o Groesoswallt</option>
+    <option value="097">97 &ndash; Moliant i Sieffrai Cyffin ap Morus o Groesoswallt a'i wraig,
+        Si&acirc;n ferch Lawrence Stanstry</option>
+    <option value="098">98 &ndash; Gofyn brigawn gan Sieffrai Cyffin ap Morus o Groesoswallt ar ran
+        Dafydd Llwyd ap Gruffudd o Abertanad</option>
+    <option value="099">99 &ndash; Gofyn corn hela gan Sieffrai Cyffin ap Morus o Groesoswallt ar
+        ran Si&ocirc;n Eutun ap Si&acirc;ms Eutun o Barc Eutun</option>
+    <option value="100">100 &ndash; Gofyn dau filgi gan Robert ab Ieuan Fychan o Goetmor ar ran
+        Sieffrai Cyffin ap Morus o Groesoswallt</option>
+    <option value="101a">101a &ndash; Dychan gan Syr Rhys i Guto'r Glyn ac yntau gartref yn glaf y
+        Nadolig</option>
+    <option value="101">101 &ndash; Ateb i ddychan Syr Rhys</option>
+    <option value="102">102 &ndash; Moliant i Groesoswallt</option>
+    <option value="103">103 &ndash; Moliant i feibion Edward ap Dafydd o Fryncunallt</option>
+    <option value="104">104 &ndash; Marwnad Edward ap Dafydd o Fryncunallt</option>
+    <option value="105">105 &ndash; Marwnad Robert Trefor ab Edward o Fryncunallt</option>
+    <option value="106">106 &ndash; I gymodi ag Ieuan Fychan ab Ieuan o Bengwern</option>
+    <option value="107">107 &ndash; Moliant i Si&ocirc;n Edward o Blasnewydd a'i wraig, Gwenhwyfar
+        ferch Elis Eutun </option>
+    <option value="108">108 &ndash; Gofyn wyth ych ar ran Rhisiart Cyffin ab Ieuan Llwyd, deon
+        Bangor</option>
+    <option value="109">109 &ndash; Diolch i'r Abad Dafydd ab Ieuan o Lyn-y-groes a Rhisiart Cyffin
+        ab Ieuan Llwyd, deon Bangor, am wella briw</option>
+    <option value="110">110 &ndash; Diolch i'r Abad Dafydd ab Ieuan o Lyn-y-groes am fwcled</option>
+    <option value="111">111 &ndash; Awdl foliant i'r Abad Dafydd ab Ieuan o Lyn-y-groes</option>
+    <option value="112">112 &ndash; Moliant i'r Abad Dafydd ab Ieuan o Lyn-y-groes</option>
+    <option value="113">113 &ndash; Awdl foliant i'r Abad Dafydd ab Ieuan o Lyn-y-groes</option>
+    <option value="114">114 &ndash; Gofyn i Drahaearn ab Ieuan o Ben-rhos am gael benthyg Llyfr y
+        Greal ar ran Abad Dafydd ab Ieuan o Lyn-y-groes</option>
+    <option value="115">115 &ndash; Moliant i'r Abad Dafydd ab Owain o Ystrad Marchell</option>
+    <option value="116">116 &ndash; Guto'r Glyn yn amddiffyn ei le yng Nglyn-y-groes</option>
+    <option value="117">117 &ndash; Moliant i'r Abad Dafydd ab Ieuan o Lyn-y-groes</option>
+    <option value="118">118 &ndash; Myfyrdod diwedd oes</option>
+    <option value="119">119 &ndash; Ei englyn olaf</option>
+    <option value="120">120 &ndash; Guto Powys yn gofyn llurig gan Si&ocirc;n Abral o'r
+        Gilwch</option>
+    <option value="121">121 &ndash; Gosteg o englynion ansicr eu hawduraeth ynghylch dagr a roddodd
+        Tudur Aled i Hywel Grythor</option>
+    <option value="122">122 &ndash; Gosteg o englynion ansicr eu hawduraeth i annog Rhys Grythor i
+        ofyn ffaling gan yr Abad Dafydd o Faenan</option>
+    <option value="123">123 &ndash; Englyn ansicr ei awduraeth i was y bardd a oedd yn rhincian
+        dannedd yn ei gwsg</option>
+    <option value="124">124 &ndash; Englyn ansicr ei awduraeth i rywun a rechodd</option>
+    <option value="125">125 &ndash; Marwnad ddienw i Syr Wiliam ap Tomas o Raglan</option>
+    <option value="126">126 &ndash; Marwnad Guto'r Glyn gan Gutun Owain</option>
+</select>
+
+{% endblock %}

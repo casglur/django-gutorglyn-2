@@ -1,0 +1,19 @@
+<div id="poem">
+<div id="texts">
+	<div id="edited-text">
+		<div id="content">
+		{% block editedTextLg %}{{ editedTextLg|safe }}{% endblock editedTextLg%}
+		</div>
+	</div>
+	<div id="paraphrase">
+		<div id="content">
+		{% block paraphraseLg %}{{ paraphraseLg|safe }}{% endblock paraphraseLg%}
+		</div>
+	</div>
+	<div id="translation">
+		<div id="content">
+		{% block translationLg %}{{ translationLg|safe }}{% endblock translationLg%}
+		</div>
+	</div>
+</div>
+</div>

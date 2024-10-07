@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+    <head>
+        <title>Gwaith Guto'r Glyn</title>
+
+
+        <script type="text/javascript">
+            
+function gup( name )
+{
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if( results == null )
+    return "";
+  else
+    return results[1];
+}
+
+var poem_number = gup('poem');
+
+function gotopoem(){
+    document.location.href = '/gutorglyn/poem/' + poem_number;
+}
+
+        </script>     
+        
+    </head>
+    <body onload="gotopoem();">
+        Redirecting to Poem: 
+        <script type="text/javascript">
+            document.write (poem_number);
+        </script>...
+        
+    </body>
+</html>

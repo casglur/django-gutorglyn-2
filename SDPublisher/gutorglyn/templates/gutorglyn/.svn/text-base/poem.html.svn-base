@@ -1,0 +1,165 @@
+{% extends "gutorglyn/text.html" %}
+{% load i18n %}
+
+{% block content %}
+
+{% include "gutorglyn/slide-menu.html" %}
+<!-- Poem Title -->
+<div class="prepend-1 span-22 last" id="main-title">
+	<div class="title">{% block poemTitleMain %}{{ poemTitle|safe }}{%endblock%}</div>
+</div>
+<!-- Poem Title End -->
+<!-- Editor information -->
+<div class="prepend-1 span-6 " class="editor-title">
+	<i>{% trans "Edited by" %} {% block editor %}{{ editor|safe }}{% endblock %}</i>
+</div>
+<div class="prepend-1 span-1 last" class="editor-title">
+	<a target="_blank" href="/gutorglyn/print-this?poemID={{poemNumber}}&poem-part=editedText"><span class="ui-icon ui-icon-print"></span></a>
+</div>
+<!-- Editor information end -->
+<hr class="space" />
+<!-- Column 1 -->
+<div class="span-10 col-1">
+
+	<!-- Edited Text -->
+	<div id="edited-text">
+		<hr class="space" />
+{{ editedText|safe }}
+
+	</div>
+	<!-- Edited Text end -->
+</div>
+<!-- Column 1 end -->
+
+<!-- Column 2 -->
+<div class="span-14 last col-2">
+	<div id="tabs">
+		<ul>
+			<li>
+				<a href="#paraphrase-tab">
+					<span id="paraphrase-tab-label">{% trans "Poem Tabs Paraphrase Label" %}
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#translation-tab">
+					<span>Translation</span>
+				</a>
+			</li>
+			<li>
+				<a href="#notes-tab">
+					<span id="notes-tab-label">{% trans "Poem Tabs Notes Label" %}</span>				
+				</a>
+			</li>
+			<li>
+				<a href="#transcriptions-tab">
+					<span id="manuscripts-tab-label">{% trans "Poem Tabs Manuscripts Label" %}
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#variant-lines-tab">
+					<span id="variants-tab-label">{% trans "Poem Tabs Variants Label" %}</span>
+				</a>
+			</li>
+		</ul>
+		<div id="paraphrase-tab">
+		<a target="_blank" href="/gutorglyn/print-this?poemID={{poemNumber}}&poem-part=paraphrase"><span class="ui-icon ui-icon-print"></span></a>
+		{{ paraphrase|safe }}
+		</div>
+		<div id="translation-tab">
+		<a target="_blank" href="/gutorglyn/print-this?poemID={{poemNumber}}&poem-part=translation"><span class="ui-icon ui-icon-print"></span></a>
+		{{ translation|safe }}
+		</div>
+		<div id="notes-tab">
+			<ul>
+				<li>
+					<a href="#explanatory-notes-tab">
+						<span id="explanatory-tab-label">{% trans "Poem Tabs Explanatory Notes Label" %}</span>
+					</a>
+				</li>
+				<li>
+					<a href="#text-notes-tab">
+						<span id="textual-tab-label">{% trans "Poem Tabs Text Notes Label" %}</span>
+					</a>
+				</li>
+				<li>
+					<a href="#english-explanatory-notes-tab">
+						<span>English Notes</span>
+					</a>
+				</li>
+			</ul>
+			<div class="tab-detail">
+				<div id="text-notes-tab">
+				<a target="_blank" href="/gutorglyn/print-this?poemID={{poemNumber}}&poem-part=textNotes"><span class="ui-icon ui-icon-print"></span></a>
+					{{ textNotes|safe|fix_ampersands}}	
+				</div>
+				<div id="explanatory-notes-tab">
+				<a target="_blank" href="/gutorglyn/print-this?poemID={{poemNumber}}&poem-part=exNotes"><span class="ui-icon ui-icon-print"></span></a>
+					{{ exNotes|safe|fix_ampersands }}
+				</div>
+				<div id="english-explanatory-notes-tab">
+				<a target="_blank" href="/gutorglyn/print-this?poemID={{poemNumber}}&poem-part=exEngNotes"><span class="ui-icon ui-icon-print"></span></a>
+					{{ exEngNotes|safe|fix_ampersands }}		
+				</div>			
+			</div>
+		</div>
+		<div id="transcriptions-tab">
+			<ul>
+				<li>
+					<a href="#transcriptions-sources-tab">
+						<span id="sources-tab-label">{% trans "Poem Tabs Sources Label" %}</span>
+					</a>
+				</li>
+				<li>
+					<a href="#transcriptions-text-tab" id="transcriptions-text-tab-link">
+						<span id="transcripts-tab-label">{% trans "Poem Tabs Transcripts Label" %}</span>
+					</a>
+				</li>
+				<li>
+					<a href="#transcription-images-tab" id="transcription-images-tab-link">
+						<span id="images-tab-label">{% trans "Poem Tabs Images Label" %}</span>
+					</a>
+				</li>
+				<li>
+					<a href="#transcription-stema-tab">
+						<span id="stemma-tab-label">{% trans "Poem Tabs Stemma Label" %}</span>
+					</a>
+				</li>				
+			</ul>
+			<div class="tab-detail">			
+				<div id="transcriptions-sources-tab"></div>
+				<div id="transcriptions-text-tab"></div>
+				<div id="transcription-images-tab"></div>
+				<div id="transcription-stema-tab">
+				    <p><a target="_blank" title="Cerdd {{poemNumber}} Stema" href="/static/img/stemma/{{poemNumber}}stema.png" id="open-stema">{% trans "Poem Tabs Open Stemma Link" %}</a>&nbsp;<a target="_blank" title="Cerdd {{poemNumber}} Stema" href="/static/img/stemma/{{poemNumber}}stema.png" id="open-stema"><img alt="Cerdd {{poemNumber}} Stema" src="/static/img/icons/goto-icon.png" width="16px" height="16px"></a></p>
+					<p>			
+					<img src="/static/img/stemma/{{poemNumber}}stema.png" alt="{{poemNumber}} stemma" style="width:100%;">
+					</p>
+				</div>
+			</div>		
+		</div>
+		<div id="variant-lines-tab">
+		{% trans "Poem Page Variant Lines Tab Message" %}
+		</div>
+	</div>
+</div>
+<!-- Column 2 end -->
+
+<div id="manuscript-image-dialog">Image Dialog</div>
+
+{% include "gutorglyn/block-panel.html" %}
+{% include "gutorglyn/draw-abbrev.html" %}
+
+<script type="text/javascript">
+eraseCookie('gutorglynTranscript');
+var poem = gup('poem-selection');
+if (poem) {
+	createCookie('gutorglynpoem', poem, 3650);
+} 
+
+</script>
+
+
+{% endblock %}
+

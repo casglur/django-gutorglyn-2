@@ -1,0 +1,122 @@
+{% block content %}
+{% load i18n %}
+<p>
+{% if debug == "on" %}
+<div class="debug">
+	Page Name: searchResultsNew.html <br/>
+	Contains Type: {{ containsType }} <br/>
+	Search Type: {{ searchType }} <br/>
+	Search Option: {{ searchOption }} <br/>
+	Explanatory Notes Search Count: {{ expNotesCount }} <br/>
+	Page Start: {{ pageStart }} <br/>
+	Page End: {{ pageEnd }} <br/>
+	Per page: {{ perPage }} <br/>
+	Poem search results: {{ poemSearchLineResultsText }}
+</div>
+
+{% endif %}
+
+{% trans "Search Page Search Term Label" %}: {{searchTrm}}
+<br/>
+<span>{% trans "Search Page Search Type Label" %}: {{searchType|safe}}</span>
+</p>
+<div class="span-20 search-form-1">
+    <form method="GET" action="/gutorglyn/search/" onsubmit="return validateMainSearchBox()">
+        <input type="text" name="searchVal" title="Chwilio" id="searchVal" value="{{searchTrm}}" placeholder="{% trans "Search Page search button" %}" size="50" class="main-search-box" />
+        <select id="search-option-selection" name="search-option" class="search-options">
+	        <option value="match-case">{% trans "Search Page Match Case Label" %}</option>
+	        <option value="ignore-diacritics" selected>{% trans "Search Form Ignore Diacritics Lable" %}</option>
+	        <option value="reg-ex">{% trans "Search Form Regular Expression Lable" %}</option>
+        </select>        
+        <input type="submit" value="{% trans "Search Page search button" %}" />
+	    <input type="hidden" name="per-page"  id="per-page" value="10"/>       
+    </form>
+	<br/>    
+</div>    
+</div>
+<div class="terms">{{searchTrm}}</div>
+<div id="accordion" class="names span-20 last">
+	<h3>{% trans "Search Results Page Guide Title" %}</h3>	
+	<div class="span-19 last">
+		<p>{% trans "Search Results Page Guide Text" %}</p>
+	</div>
+</div>
+<br/>
+<div class="span-20 last view-results-label">{% trans "Search Page View Results In Label" %}</div>
+<div class="span-20 last" id="search-results">
+	<div id="search-tabs">
+		<ul>
+			<li><a href="#poem-results">{% trans "Search Page Tab Poems" %}</a></li>	
+			<li><a href="#paraphrase-results">{% trans "Search Page Tab Paraphrase" %}</a></li>		
+			<li><a href="#trans-results">{% trans "Search Page Tab Translation" %}</a></li>						
+			<li><a href="#exp-notes-results">{% trans "Search Page Tab Explanatory Notes" %}</a></li>	
+			<li><a href="#text-notes-results">{% trans "Search Page Tab Text Notes" %}</a></li>	
+			<li><a href="#sources-results">{% trans "Search Page Tab Sources" %}</a></li>								
+			<li><a href="#names-results">{% trans "Search Page Tab Patrons and Poets" %}</a></li>																					
+		</ul>
+		<div id="poem-results">
+			<div class="hit-count"><strong>{% trans "Search Page Showing Label" %} {% trans "Search Page Poem Results Count label" %} {{ pageStart }} - <span style="display:inline" id="poem-hit-count">{{ pageEnd }} of {{ poemSearchNum }}</span></strong></div>
+			<hr style="background-color:#868686"/>
+			<div class="progress-label">
+				<p>{% trans "Search Page Message" %}</p>
+				<p><img src="/static/img/icons/ajax-loader.gif"></p>
+			</div>			
+		</div>			
+		<div id="paraphrase-results">
+			<div class="hit-count"><strong><span style="display:inline" id="paraphrase-hit-count">{{paraphraseSearchNum}}</span> {% trans "Search Page Paraphrase Results Count label" %}</strong></div>
+			<hr style="background-color:#868686"/>
+			<div class="progress-label">
+				<p>{% trans "Search Page Message" %}</p>
+				<p><img src="/static/img/icons/ajax-loader.gif"></p>
+			</div>			
+		</div>
+		<div id="trans-results">
+			<div class="hit-count"><strong><span style="display:inline" id="trans-hit-count">{{transSearchNum}}</span> {% trans "Search Page Text Translation Results Count label" %}</strong></div>
+			<hr style="background-color:#868686"/>	
+			<div class="progress-label">
+				<p>{% trans "Search Page Message" %}</p>
+				<p><img src="/static/img/icons/ajax-loader.gif"></p>
+			</div>				
+		</div>				 	
+		<div id="exp-notes-results">
+			<div class="hit-count"><strong><span style="display:inline" id="exp-note-hit-count">{{expNotesSearchNum}}</span> {% trans "Search Page Explanatory Notes Results Count label" %}</strong></div>
+			<hr style="background-color:#868686"/>	
+			<div class="progress-label">
+				<p>{% trans "Search Page Message" %}</p>
+				<p><img src="/static/img/icons/ajax-loader.gif"></p>
+			</div>				
+		</div>
+		<div id="text-notes-results">
+			<div class="hit-count"><strong><span style="display:inline" id="text-note-hit-count">{{textNotesSearchNum}}</span> {% trans "Search Page Text Notes Results Count label" %}</strong></div>
+			<hr style="background-color:#868686"/>	
+			<div class="progress-label">
+				<p>{% trans "Search Page Message" %}</p>
+				<p><img src="/static/img/icons/ajax-loader.gif"></p>
+			</div>				
+		</div>		
+		<div id="sources-results">
+			<div class="hit-count"><strong><span style="display:inline" id="sources-hit-count">{{sourcesSearchNum}}</span> {% trans "Search Page Text Sources Results Count label" %}</strong></div>
+			<hr style="background-color:#868686"/>	
+			<div class="progress-label">
+				<p>{% trans "Search Page Message" %}</p>
+				<p><img src="/static/img/icons/ajax-loader.gif"></p>
+			</div>				
+		</div>							
+		<div id="names-results">
+			<div class="hit-count"><strong><span style="display:inline" id="name-hit-count">{{namesSearchNum}}</span> {% trans "Search Page Names Results Count label" %}</strong></div>
+			<hr style="background-color:#868686"/>
+			<div class="progress-label">
+				<p>{% trans "Search Page Message" %}</p>
+				<p><img src="/static/img/icons/ajax-loader.gif"></p>
+			</div>					
+		</div>													
+	</div>
+</div>
+
+<hr class="space" />
+
+<div id="hidden-length-alert-text">{% trans "JavaScript Message Invalid Field Length" %} </div>
+
+<script type="text/javascript" src="/static/js/search-start.js"></script>
+<script type="text/javascript" src="/static/js/search-results.js"></script>
+{% endblock %}    			

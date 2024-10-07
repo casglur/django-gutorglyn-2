@@ -1,0 +1,311 @@
+<!DOCTYPE TEI [
+<!--  iso-lat1.ent (initially distributed with DocBook XML DTD V4.1.1beta1)  -->
+
+<!--  Derived from the corresponding ISO 8879 standard entity set
+and the Unicode character mappings provided by Sebastian Rahtz  -->
+
+<!ENTITY aacute "á"> <!--  LATIN SMALL LETTER A WITH ACUTE  -->
+<!ENTITY Aacute "Á"> <!--  LATIN CAPITAL LETTER A WITH ACUTE  -->
+<!ENTITY acirc "â"> <!--  LATIN SMALL LETTER A WITH CIRCUMFLEX  -->
+<!ENTITY Acirc "Â"> <!--  LATIN CAPITAL LETTER A WITH CIRCUMFLEX  -->
+<!ENTITY agrave "à"> <!--  LATIN SMALL LETTER A WITH GRAVE  -->
+<!ENTITY Agrave "À"> <!--  LATIN CAPITAL LETTER A WITH GRAVE  -->
+<!ENTITY aring "å"> <!--  LATIN SMALL LETTER A WITH RING ABOVE  -->
+<!ENTITY Aring "Å"> <!--  LATIN CAPITAL LETTER A WITH RING ABOVE  -->
+<!ENTITY atilde "ã"> <!--  LATIN SMALL LETTER A WITH TILDE  -->
+<!ENTITY Atilde "Ã"> <!--  LATIN CAPITAL LETTER A WITH TILDE  -->
+<!ENTITY auml "ä"> <!--  LATIN SMALL LETTER A WITH DIAERESIS  -->
+<!ENTITY Auml "Ä"> <!--  LATIN CAPITAL LETTER A WITH DIAERESIS  -->
+<!ENTITY aelig "æ"> <!--  LATIN SMALL LETTER AE  -->
+<!ENTITY AElig "Æ"> <!--  LATIN CAPITAL LETTER AE  -->
+<!ENTITY ccedil "ç"> <!--  LATIN SMALL LETTER C WITH CEDILLA  -->
+<!ENTITY Ccedil "Ç"> <!--  LATIN CAPITAL LETTER C WITH CEDILLA  -->
+<!ENTITY eth "ð"> <!--  LATIN SMALL LETTER ETH  -->
+<!ENTITY ETH "Ð"> <!--  LATIN CAPITAL LETTER ETH  -->
+<!ENTITY eacute "é"> <!--  LATIN SMALL LETTER E WITH ACUTE  -->
+<!ENTITY Eacute "É"> <!--  LATIN CAPITAL LETTER E WITH ACUTE  -->
+<!ENTITY ecirc "ê"> <!--  LATIN SMALL LETTER E WITH CIRCUMFLEX  -->
+<!ENTITY Ecirc "Ê"> <!--  LATIN CAPITAL LETTER E WITH CIRCUMFLEX  -->
+<!ENTITY egrave "è"> <!--  LATIN SMALL LETTER E WITH GRAVE  -->
+<!ENTITY Egrave "È"> <!--  LATIN CAPITAL LETTER E WITH GRAVE  -->
+<!ENTITY euml "ë"> <!--  LATIN SMALL LETTER E WITH DIAERESIS  -->
+<!ENTITY Euml "Ë"> <!--  LATIN CAPITAL LETTER E WITH DIAERESIS  -->
+<!ENTITY iacute "í"> <!--  LATIN SMALL LETTER I WITH ACUTE  -->
+<!ENTITY Iacute "Í"> <!--  LATIN CAPITAL LETTER I WITH ACUTE  -->
+<!ENTITY icirc "î"> <!--  LATIN SMALL LETTER I WITH CIRCUMFLEX  -->
+<!ENTITY Icirc "Î"> <!--  LATIN CAPITAL LETTER I WITH CIRCUMFLEX  -->
+<!ENTITY igrave "ì"> <!--  LATIN SMALL LETTER I WITH GRAVE  -->
+<!ENTITY Igrave "Ì"> <!--  LATIN CAPITAL LETTER I WITH GRAVE  -->
+<!ENTITY iuml "ï"> <!--  LATIN SMALL LETTER I WITH DIAERESIS  -->
+<!ENTITY Iuml "Ï"> <!--  LATIN CAPITAL LETTER I WITH DIAERESIS  -->
+<!ENTITY ntilde "ñ"> <!--  LATIN SMALL LETTER N WITH TILDE  -->
+<!ENTITY Ntilde "Ñ"> <!--  LATIN CAPITAL LETTER N WITH TILDE  -->
+<!ENTITY oacute "ó"> <!--  LATIN SMALL LETTER O WITH ACUTE  -->
+<!ENTITY Oacute "Ó"> <!--  LATIN CAPITAL LETTER O WITH ACUTE  -->
+<!ENTITY ocirc "ô"> <!--  LATIN SMALL LETTER O WITH CIRCUMFLEX  -->
+<!ENTITY Ocirc "Ô"> <!--  LATIN CAPITAL LETTER O WITH CIRCUMFLEX  -->
+<!ENTITY ograve "ò"> <!--  LATIN SMALL LETTER O WITH GRAVE  -->
+<!ENTITY Ograve "Ò"> <!--  LATIN CAPITAL LETTER O WITH GRAVE  -->
+<!ENTITY oslash "ø"> <!--  CIRCLED DIVISION SLASH  -->
+<!ENTITY Oslash "Ø"> <!--  LATIN CAPITAL LETTER O WITH STROKE  -->
+<!ENTITY otilde "õ"> <!--  LATIN SMALL LETTER O WITH TILDE  -->
+<!ENTITY Otilde "Õ"> <!--  LATIN CAPITAL LETTER O WITH TILDE  -->
+<!ENTITY ouml "ö"> <!--  LATIN SMALL LETTER O WITH DIAERESIS  -->
+<!ENTITY Ouml "Ö"> <!--  LATIN CAPITAL LETTER O WITH DIAERESIS  -->
+<!ENTITY szlig "ß"> <!--  LATIN SMALL LETTER SHARP S  -->
+<!ENTITY thorn "þ"> <!--  LATIN SMALL LETTER THORN  -->
+<!ENTITY THORN "Þ"> <!--  LATIN CAPITAL LETTER THORN  -->
+<!ENTITY uacute "ú"> <!--  LATIN SMALL LETTER U WITH ACUTE  -->
+<!ENTITY Uacute "Ú"> <!--  LATIN CAPITAL LETTER U WITH ACUTE  -->
+<!ENTITY ucirc "û"> <!--  LATIN SMALL LETTER U WITH CIRCUMFLEX  -->
+<!ENTITY Ucirc "Û"> <!--  LATIN CAPITAL LETTER U WITH CIRCUMFLEX  -->
+<!ENTITY ugrave "ù"> <!--  LATIN SMALL LETTER U WITH GRAVE  -->
+<!ENTITY Ugrave "Ù"> <!--  LATIN CAPITAL LETTER U WITH GRAVE  -->
+<!ENTITY uuml "ü"> <!--  LATIN SMALL LETTER U WITH DIAERESIS  -->
+<!ENTITY Uuml "Ü"> <!--  LATIN CAPITAL LETTER U WITH DIAERESIS  -->
+<!ENTITY yacute "ý"> <!--  LATIN SMALL LETTER Y WITH ACUTE  -->
+<!ENTITY Yacute "Ý"> <!--  LATIN CAPITAL LETTER Y WITH ACUTE  -->
+<!ENTITY yuml "ÿ"> <!--  LATIN SMALL LETTER Y WITH DIAERESIS  -->
+
+<!ENTITY lab "<">
+<!ENTITY rab ">">
+<!ENTITY amp "&amp;">
+<!ENTITY dash "-">
+<!ENTITY delta "d">
+<!ENTITY macron "-">
+<!ENTITY mdash "-">
+<!ENTITY nbsp "">
+<!ENTITY pound "">
+<!ENTITY cdb "c">
+<!ENTITY ddb "d">
+<!ENTITY ldb "l">
+<!ENTITY rdb "r">
+<!ENTITY udb "u">
+<!ENTITY umac "u">
+<!ENTITY wacute "w">
+<!ENTITY wcirc "w">
+<!ENTITY Wcirc "W">
+<!ENTITY ycirc "y">
+<!ENTITY Ycirc "Y">
+<!ENTITY vbar "vbar">
+<!NOTATION GIF PUBLIC "+//IDN ds.internic.net/rfc/rfc2046.txt//NOTATION
+
+Multipurpose Internet Mail Extensions::image/gif//EN">
+
+]>
+<TEI>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Gwaith Guto'r Glyn</title>
+			</titleStmt>
+			<publicationStmt>
+				<p>Centre for Advanced Welsh and Celtic Studies, University of Wales, Aberystwyth,
+					UK</p>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Compiled from Manuscripts</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div type="pageTitle" xml:id="poems">
+				<head>Y Cerddi</head>
+				<div type="lev0" xml:id="guto08Top">
+					<head n="1">8 &dash; Awdl foliant i Rys ap Dafydd, abad Ystrad-fflur</head>
+					<div type="lev1" xml:id="Guto08testun">
+						<head>Testun Golygedig</head>
+						<lg type="EP" n="1">
+							<l n="1">Cerais y mab &acirc;’r corun,</l>
+							<l n="2">Cared pawb lle c&acirc;i arian.</l>
+							<l n="3">Cair ei fwrdd, c&acirc;r oferddyn,</l>
+							<l n="4">Cryf urddol, carw i feirddion,</l>
+							<l n="5">C&ocirc;r fawrddysg, tapr c&wcirc;yr fyrddwn,</l>
+							<l n="6">Corf urddas tir Caerfyrddin.</l>
+						</lg>
+						<lg type="EP" n="2">
+							<l n="7">Ei win o gaer Fyrddin Fardd</l>
+							<l n="8">Ac aur a gaiff gw&ycirc;r o gerdd.</l>
+							<l n="9">Ei gan a’i fedd a gawn fyrdd</l>
+							<l n="10">A’u derbyn i’w bedwarbwrdd.</l>
+						</lg>
+						<lg type="EUU" n="3">
+							<l n="11">Llyn bwrdd, llawen gwrdd, llawn ged &dash; llu’r Deau,</l>
+							<l n="12">Llew’r barnau llawr Berned.</l>
+							<l n="13">Llyna gapten Sain Bened</l>
+							<l n="14">A llun crair meibion ll&ecirc;n Cred.</l>
+						</lg>
+						<lg type="EUU" n="4">
+							<l n="15">Credwn nad haelach creadur &dash; no Rhys,</l>
+							<l n="16">Rhoes am waith y ffreutur.</l>
+							<l n="17">Cyfodes y cofiadur</l>
+							<l n="18">Cwfent a phlaid cefn t&ycirc; Fflur.</l>
+						</lg>
+						<lg type="EP" n="5">
+							<l n="19">Angel yn nheml Fflur yngod</l>
+							<l n="20">O ffydd a chrefydd a chred,</l>
+							<l n="21">A chleddau abadau byd</l>
+							<l n="22">Yn Neheubarth yw’n habad.</l>
+						</lg>
+						<lg type="EP" n="6">
+							<l n="23">Abad, corff y wlad, caer Fflur,</l>
+							<l n="24">Aberth nef a byrth nifer,</l>
+							<l n="25">A’i byrth heb glo neu borthor</l>
+							<l n="26">I borthi Deheubarthwyr.</l>
+							<l n="27">Berthog a thlawd a borthir</l>
+							<l n="28">Ar barthau yr aberthwr.</l>
+						</lg>
+						<lg type="EUU" n="7">
+							<l n="29">Y g&wcirc;r o orddwr a urdda &dash; menych</l>
+							<l n="30">Ym Maenan a Deuma,</l>
+							<l n="31">A’r G&wcirc;r &acirc;’r gwin a’r bara</l>
+							<l n="32">I Rys deg a ro oes da.</l>
+						</lg>
+						<lg type="EUU" n="8">
+							<l n="33">Da gennym i’w deg ynys &dash; draw redeg</l>
+							<l n="34">Drwy oreudir Powys.</l>
+							<l n="35">Da fy hwyl, dof i’w hoywlys,</l>
+							<l n="36">Dyfod drwy Deifi at Rys.</l>
+						</lg>
+						<lg type="EP" n="9">
+							<l n="37">Rhys Abad, tyfiad Dafydd,</l>
+							<l n="38">Rhys fenychlys fynychwledd,</l>
+							<l n="39">Rhys yn rhad roes ynn aur rhudd,</l>
+							<l n="40">Rhys orau Rhys i roi rhodd.</l>
+						</lg>
+						<lg type="EUU" n="10">
+							<l n="41">Y G&wcirc;r a roddes o gariad &dash; perffaith</l>
+							<l n="42">Iawn obaith yn abad,</l>
+							<l n="43">A rydd, hael o’r Ddeheuwlad,</l>
+							<l n="44">Iesu i Rys oes a rhad.</l>
+						</lg>
+						<lg type="TC" n="11">
+							<l n="45">Rhadau’r Iesu, rhai drawyswr,</l>
+							<l n="46">Rhoed eglwyswr, rhydeg leisiad,</l>
+							<l n="47">Rhol gynhesu, rhuwl gynhwyswr,</l>
+							<l n="48">Rhyw dywyswr rhai dewisiad.</l>
+							<l n="49">Rhoes ebolion i’r hudolion,</l>
+							<l n="50">Rhwysg gynholion, Rhys gynheiliad.</l>
+							<l n="51">Rhoes ysgolion i’r rhentolion,</l>
+							<l n="52">Rhyw urddolion, rhai o’r ddwywlad.</l>
+						</lg>
+						<lg type="TC" n="12">
+							<l n="53">Gwladoedd Eli glud addolant</l>
+							<l n="54">Goroff Rolant, gw&ycirc;r a phrelad,</l>
+							<l n="55">G&acirc;r i Feli, g&wcirc;r a folant,</l>
+							<l n="56">Gl&ecirc;r a holant glarai heiliad.</l>
+							<l n="57">Gwnaeth gyfrestri gwydr ffenestri,</l>
+							<l n="58">Gaer fflowrestri, g&ocirc;r Fflur Ystrad,</l>
+							<l n="59">Gwin fenestri ag aur lestri,</l>
+							<l n="60">Gwalchmai’r festri, gweilch Mair fwstrad.</l>
+						</lg>
+						<lg type="TC" n="13">
+							<l n="61">Mwstwr anant, meistr awenydd,</l>
+							<l n="62">Mael Maelienydd, mawl ymlyniad,</l>
+							<l n="63">Molawd ganant mil atgenydd,</l>
+							<l n="64">Mau lawenydd moli ynad.</l>
+							<l n="65">Myn ganiadau mynych gadau,</l>
+							<l n="66">Medrusiadau mydr osodiad,</l>
+							<l n="67">Mur abadau, maer cariadau,</l>
+							<l n="68">Mawr a radau, Mair a’r Hoywdad.</l>
+						</lg>
+						<lg type="TC" n="14">
+							<l n="69">Tadwys golau tai disgeler,</l>
+							<l n="70">Tref a wneler trwy fain eiliad.</l>
+							<l n="71">Tew yw’r olau o’r t&wcirc;r eler</l>
+							<l n="72">Tua’r seler, pond da’r seiliad?</l>
+							<l n="73">Trefn aur melyn, &wcirc;yr Lywelyn,</l>
+							<l n="74">Terfyn gelyn tra fo’n gwyliad.</l>
+							<l n="75">Tai Gynfelyn, talm a’u gwelyn’,</l>
+							<l n="76">Teimlai delyn, teml adeilad.</l>
+						</lg>
+						<lg type="TC" n="15">
+							<l n="77">Adeiliadau i dylodion</l>
+							<l n="78">Yn herodion yn ei rediad,</l>
+							<l n="79">A gwiw radau ac arodion</l>
+							<l n="80">A gwirodion a gwarediad.</l>
+							<l n="81">Awn hyd yno a’n dilyno,</l>
+							<l n="82">Euraid dyno y rhiw tanad,</l>
+							<l n="83">At a bryno awen gryno,</l>
+							<l n="84">’Y myd yno a’m adweiniad.</l>
+						</lg>
+						<lg type="TC" n="16">
+							<l n="85">Adwaen, y mab, yn d’enau medd,</l>
+							<l n="86">Ac ar y wledd &acirc; gw&ycirc;r y wlad,</l>
+							<l n="87">A gw&ecirc;n y Pab ac wyneb hedd,</l>
+							<l n="88">Y G&wcirc;r a’n medd a g&acirc;r i&ocirc;n mad.</l>
+							<l n="89">Ei wawd a w&ycirc;s, a’i ddwyn ydd &ycirc;s,</l>
+							<l n="90">A’i enw ar frys, ddienwir frad,</l>
+							<l n="91">A’r lle a’r llys, a’r llu ieirll w&ycirc;s,</l>
+							<l n="92">A llyna Rys yn llawn o rad.</l>
+						</lg>
+					</div>
+					<div type="lev2" xml:id="Guto00aralleiriad">
+						<head>Aralleiriad</head>
+						<lg type="stanza" n="1">
+							<l n="1">**y gerdd yma**</l>
+						</lg>
+					</div>
+					<div type="lev2" xml:id="Guto00translation">
+						<head>Translation</head>
+						<lg type="stanza" n="1">
+							<l>00 - *title*</l>
+						</lg>
+						<lg type="stanza" n="1">
+							<l n="1">*y gerdd yma*</l>
+						</lg>
+					</div>
+					<div type="lev3" xml:id="Lsgr000_00_Cymraeg">
+						<head>*teitl yma*</head>
+						<lg type="stanza" n="1">
+							<l>*nodyn brig yma*</l>
+						</lg>
+						<lg type="stanza" n="1">
+							<l n="1">*trawsgrifiad yma*</l>
+						</lg>
+						<lg>
+							<l n="1">*ol-nodyn yma*</l>
+						</lg>
+						<p>Trefn y llinellau: **********</p>
+					</div>
+					<div type="lev3" xml:id="Llsgr000_00_English">
+						<head>*teitl yma*</head>
+						<lg type="stanza" n="1">
+							<l>*nodyn brig yma*</l>
+						</lg>
+						<lg type="stanza" n="1">
+							<l n="1">*trawsgrifiad yma*</l>
+						</lg>
+						<lg>
+							<l n="1">*ol-nodyn yma*</l>
+						</lg>
+						<p>Line order: **********</p>
+					</div>
+					<div type="Testunol" xml:id="Guto00testunol">
+						<head>00 - *teitl*</head>
+						<p>Y llawysgrifau</p>
+						<p>*******</p>
+						<p>Nodiadau testunol</p>
+						<note type="testunol">
+							<p xml:id="xxxxxx" n="1">*******</p>
+						</note>
+						<p>Llyfryddiaeth</p>
+						<p>********</p>
+					</div>
+					<div type="Esboniadol" xml:id="Guto00esboniadol">
+						<head>00 - *teitl*</head>
+						<p>Nodyn cefndir</p>
+						<p>********</p>
+						<p>Nodiadau esboniadol</p>
+						<note type="esboniadol">
+							<p xml:id="xxxxx" n="1">*******</p>
+						</note>
+						<p>Llyfryddiaeth</p>
+						<p>*********</p>
+					</div>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/gutorglyn/!svn/ver/903/templates/templates/gutorglyn
+END
+error.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gutorglyn/!svn/ver/8/templates/templates/gutorglyn/error.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/gutorglyn/!svn/ver/903/templates/templates/gutorglyn/base.html
+END
+text.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/8/templates/templates/gutorglyn/text.html
+END

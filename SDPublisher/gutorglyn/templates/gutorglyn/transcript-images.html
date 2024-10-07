@@ -1,0 +1,80 @@
+{% load i18n %}
+<div class="column span-8">
+{{transcriptTitle|safe}}
+</div>
+<div class="transcript-menu-div" class=span-3 last">
+
+	<form method="get" action="/gutorglyn/transcriptimages/" name="transcript-images-form" id="transcript-images-form">
+		<select id="transcription-images-select" name="transcription-images-select">
+		{{transcriptTitles|safe}}
+		</select>
+		<input type="hidden" value="{{poemNum}}" name="poemID" id="transcript-images-poemID">
+		<input type="hidden" value="{{transcriptIndex}}" id="transcript-images-transIndex"/>
+		<input type="hidden" value="{{transcriptID}}" id="transcript-images-transcriptID"/>
+	</form>
+</div>
+<div class="span-8 last">
+<i>{{transcriptHandText|safe}}, {{transcriptDateText|safe}}</i>
+<br/>
+{{transcriptText|safe}}
+</div>
+
+<div class="span-10 last">
+<strong>{% trans "Transcript Tab Line Orders Heading" %}</strong>
+<br/>
+{{transcriptLineNumsText|safe}}
+<br/>
+<br/>
+<strong>{% trans "Transcript Tab Notes Heading" %}</strong>
+<br/>
+{{transcriptNotesText|safe}}
+</div>
+<script type="text/javascript">
+<!--
+
+//Set Transcript Dropdown menu to selected item on page load
+if ( $("#transcript-images-transIndex").val()) {
+	var transIndex = $("#transcript-images-transIndex").val();
+	$("#transcription-images-select")[0].selectedIndex = transIndex;
+} else {
+	var desiredValue = $("#transcript-images-transcriptID").val();
+	var el = document.getElementById("transcription-images-select");
+	for(var i=0; i<el.options.length; i++) {
+	  if ( el.options[i].value == desiredValue ) { //change .value to .text to match on text value
+	    el.selectedIndex = i;
+	    break;
+	  }
+	}
+}
+//-->
+
+/* code for manuscript image dialog box */
+
+$( "#manuscript-image-dialog" ).dialog({
+	autoOpen: false,
+	width: 'auto',
+	height: '400'
+});
+
+$(".manuscript-image-link").click(function() {
+	var item_id = $(this).attr('id').replace('manuscript-image-', '');
+	var manu_id = item_id
+	var item_id = "<img src='http://dams.llgc.org.uk/behaviour/llgc-id:" + item_id + "/fedora-bdef:image/reference'>"
+    var data = {"item_id":item_id};
+    $( "#manuscript-image-dialog" ).html(item_id);
+    $( "#manuscript-image-dialog" ).dialog( "open" );  
+	$( "#manuscript-image-dialog" ).dialog( "option", "title", transIndex ); 
+});
+
+/* code for manuscript image dialog box End*/
+</script>
+
+
+
+
+
+
+
+
+
+

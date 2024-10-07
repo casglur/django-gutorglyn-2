@@ -1,0 +1,244 @@
+{% extends "gutorglyn/static-base.html" %} {% block content %}
+{% load i18n %}
+<hr class="space">
+<div class="span-22">
+<h2>{% trans "Title List Page Title" %}</h2>
+</div>
+<div class="span-22 search-group">
+<p>{% trans "Title List Usage Blurb" %}.</p>
+  <form name="search_form" id="searchForm" method="GET" action="/gutorglyn/get-poem">
+   <label for="searchVal">{% trans "Title List find button" %}: </label>
+   <input type="text" id="search-title" name="search-title" />
+  </form>
+</div>
+<hr class="space"/>
+<div class="span-22 title-list">
+
+    <a href="/gutorglyn/poem/?poem-selection=001">1 - Moliant i Syr Rhisiart Gethin ap Rhys Gethin o Fuellt, capten
+        Mantes yn Ffrainc</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=002">2 - Dathlu rhyddid Syr Rhisiart Gethin ap Rhys Gethin o Fuellt, capten
+        Mantes yn Ffrainc</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=003">3 - Moliant i Fathau Goch o Faelor</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=004">4 - Brwydr y beirdd yn erbyn gwin Tomas ap Watgyn o Landdewi
+        Rhydderch</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=005">5 - Salwch yr Abad Rhys ap Dafydd o Ystrad-fflur</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=006">6 - Cwyn am absenoldeb yr Abad Rhys ap Dafydd o Ystrad-fflur</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=007">7 - Moliant i'r Abad Rhys ap Dafydd o Ystrad-fflur</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=008">8 - Awdl foliant i'r Abad Rhys ap Dafydd o Ystrad-fflur</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=009">9 - Marwnad yr Abad Rhys ap Dafydd o Ystrad-fflur</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=010">10 - Moliant i Hywel ap Llywelyn Fychan o Lyn Aeron</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=011">11 - Moliant i Rys ap Dafydd o Uwch Aeron</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=012">12 - Awdl foliant i Ddafydd ap Tomas o Flaen-tren</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=013">13 - Moliant i Ddafydd ap Tomas o Flaen-tren</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=014">14 - Moliant i Syr Rhys ap Tomas o Abermarlais</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=015">15 - Moliant i Rys ap Siancyn o Lyn-nedd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=016">16 - Moliant i Syr Wiliam, offeiriad Merthyr Tudful</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=017">17 - Moliant i Ddafydd Mathau o Landaf</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=018a">18a - Hywel Dafi yn cyhuddo Guto'r Glyn o ganu celwydd o flaen Morgan
+        ap Rhosier o Wynll&wcirc;g</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=018">18 - Ateb cyhuddiad Hywel Dafi ei fod yn wenieithiwr</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=019">19 - Moliant i Syr Wiliam ap Tomas o Raglan</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=020a">20a - Ateb Hywel Dafi</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=020">20 - Ymryson Guto'r Glyn a Hywel Dafi yn llys Syr Wiliam
+        Herbert</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=021">21 - Moliant i Wiliam Herbert o Raglan, iarll cyntaf Penfro, ar
+        &ocirc;l cipio castell Harlech, 1468</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=022">22 - Moliant i Golbrwg, cartref Syr Rhisiart Herbert</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=023">23 - Moliant i Wiliam Herbert o Raglan, iarll cyntaf Penfro</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=024">24 - Marwnad Wiliam Herbert o Raglan, iarll cyntaf Penfro</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=025">25 - Annog Wiliam Herbert, ail iarll Penfro, i ddial ei dad</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=026">26 - Cysuro Ann Herbert, iarlles Penfro, ar &ocirc;l marwolaeth ei
+        g&wcirc;r</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=027">27 - Moliant i Syr Water Herbert</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=028">28 - Moliant i Wiliam Herbert o Benfro a Llanfihangel Troddi</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=029">29 - Annog Edward IV i adfer trefn yng Nghymru</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=030">30 - Moliant i Phylib ap Gwilym Llwyd o Drefgwnter</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=031">31 - Moliant i Siancyn Hafart o Aberhonddu</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=032">32 - Ymweld &acirc; Harri Gruffudd o'r Cwrtnewydd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=033">33 - Moliant i wallt du Harri Gruffudd o'r Cwrtnewydd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=034">34 - Ymrafael Harri Gruffudd o'r Cwrtnewydd ac Ieuan Gethin am serch
+        Gwladus o Lyn-nedd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=035">35 - Cybydd-dod Harri Gruffudd o'r Cwrtnewydd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=036">36 - Marwnad Harri Gruffudd o'r Cwrtnewydd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=037">37 - Moliant i Ddafydd Llwyd ap Dafydd o'r Drenewydd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=038">38 - Moliant i'r Faenor, cartref Edward ap Hywel a Gwenll&iuml;an
+        ferch Rhys</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=039">39 - Gofyn march gan Faredudd ab Ifan Fychan o Gedewain ar ran
+        Rheinallt ap Rhys Gruffudd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=040">40 - Marwnad Hywel ab Owain o Lanbryn-mair</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=041">41 - Moliant i law arian Si&ocirc;n Dafi</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=042">42 - Marwnad Einion ap Gruffudd o Lechwedd Ystrad</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=043">43 - Awdl foliant i Syr Bened, person Corwen</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=044a">44a - Ymateb Tudur Penllyn i Guto'r Glyn a'i gyngor i Syr
+        Bened</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=044">44 - Porthmona</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=045">45 - Ymateb Guto'r Glyn i Dudur Penllyn</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=046a">46a - Dychan gan Ieuan ap Tudur Penllyn i Dudur Penllyn</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=046b">46b - Ateb Tudur Penllyn i'r beirdd a'i testuniodd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=046">46 - Ymateb Guto'r Glyn i Ieuan ap Tudur Penllyn</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=047">47 - Marwnad Syr Bened, person Corwen</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=048">48 - Moliant i Ieuan ab Einion ac Angharad ferch Dafydd o'r Cryniarth
+        a'u hwyth plentyn</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=049">49 - Moliant i Feurig Fychan ap Hywel Selau o Nannau, ei wraig
+        Angharad ferch Dafydd, eu mab Dafydd a'i wraig yntau Elen ferch Hywel</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=050">50 - Marwnad Meurig Fychan ap Hywel Selau a'i wraig Angharad ferch
+        Dafydd o Nannau</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=051">51 - Diolch i Ddafydd ap Meurig Fychan ac Elen ferch Hywel o Nannau am
+        farch</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=052">52 - Marwnad Gruffudd Fychan ap Gruffudd o Gorsygedol</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=053">53 - Gofyn ffaling gan Elen ferch Robert Pilstwn o'r
+        Llannerch</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=054">54 - Englynion marwnad Dafydd Nanmor ac Ieuan Deulwyn</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=055">55 - Moliant i Wiliam ap Gruffudd o Gochwillan</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=056">56 -Moliant i Wiliam Fychan ap Gwilym o'r Penrhyn</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=057">57 - Moliant i Wiliam Fychan ap Gwilym o'r Penrhyn a thair ardal ei
+        awdurdod</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=058">58 - Diolch i Risiart Cyffin ab Ieuan Llwyd, deon Bangor, am
+        bwrs</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=059">59 - Diolch i Risiart Cyffin ab Ieuan Llwyd, deon Bangor, am
+        baderau</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=060">60 - Gofyn gwalch gan Huw Bwlclai ap Wiliam Bwlclai o Fiwmares ar ran
+        Rhisiart Cyffin ab Ieuan Llwyd, deon Bangor</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=061">61 -Gofyn teils gan Risiart Cyffin ab Ieuan Llwyd, deon Bangor, ar ran
+        Syr Gruffudd ab Einion o Henllan</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=062">62 - Moliant i Ddafydd ap Gwilym o Lwydiarth</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=063">63 - Moliant i bum mab Llywelyn ap Hwlcyn o F&ocirc;n</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=064">64 - Moliant i Huw Lewys ap Llywelyn o Brysaeddfed pan fu bron &acirc;
+        boddi</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=065a">65a - Dychan gan Lywelyn ap Gutun i Guto'r Glyn pan haerwyd ei
+        foddi</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=065">65 - Ateb i ddychan Llywelyn ap Gutun</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=066">66 - Dychan i Ddafydd ab Edmwnd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=067">67 - Dychan i Ddafydd ab Edmwnd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=068a">68a - Dychan i geilliau Guto'r Glyn gan Ddafydd ab Edmwnd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=068b">68b - Dychan gan Ddafydd ab Edmwnd i Guto'r Glyn</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=068">68 - Dychan i gal Dafydd ab Edmwnd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=069">69 - Ymbil &acirc;'r Grog yng Nghaer ar ran Dafydd ab Ieuan</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=070">70 - Moliant i Syr Hywel ap Dai o Laneurgain</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=071">71 - Moliant i Domas Salbri ap Harri Salbri o Leweni a'i
+        dylwyth</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=072">72 - Marwnad Si&ocirc;n ap Madog Pilstwn o Hafod-y-wern</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=073">73 - Gofyn saeled gan Wiliam Rodn ap Richard Rodn o Holt ar ran Dafydd
+        Bromffild o Fers</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=074">74 - Moliant i Rosier ap Si&ocirc;n Pilstwn o Emral</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=075">75 - Moliant i Si&ocirc;n Hanmer ap Si&ocirc;n Hanmer o Halchdyn a'r
+        Llai</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=076">76 - Gofyn cyllell hela gan Rruffudd ap Rhys o I&acirc;l ar ran
+        Si&ocirc;n Hanmer ap Si&ocirc;n Hanmer o Halchdyn a'r Llai</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=077">77 - Moliant i'r Abad Tomas o Amwythig</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=078">78 - Moliant i Si&ocirc;n Talbod, trydydd iarll Amwythig</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=079">79 - Moliant i Syr Rosier Cinast ap Gruffudd o'r Cnwcin</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=080">80 - Moliant i Syr Si&ocirc;n Bwrch ap Huw Bwrch o'r Drefrudd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=081">81 - Diolch i Si&acirc;n Bwrch ferch William Clopton o'r Drefrudd am
+        ei gofal</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=082">82 - Marwnad Llywelyn ab y Moel</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=083">83 - Moliant i Ruffudd Fychan ap Gruffudd Deuddwr o'r
+        Collfryn</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=084">84 - Moliant i Syr Si&ocirc;n Mechain, person Llandrinio</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=085">85 - Moliant i d&ycirc; newydd Syr Si&ocirc;n Mechain, person
+        Llandrinio</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=086">86 - Moliant i Ddafydd Llwyd ap Gruffudd o Abertanad</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=087">87 - Diolch i Gatrin ferch Maredudd o Abertanad a'i g&wcirc;r, Dafydd
+        Llwyd ap Gruffudd, am bwrs</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=088">88 - Marwnad Gweurful ferch Madog o Abertanad</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=089">89 - Marwnad Dafydd Llwyd ap Gruffudd o Abertanad</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=090">90 - Ar achlysur ailadeiladu t&ycirc; Hywel ab Ieuan Fychan ym
+        Moeliwrch</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=091">91 - Moliant i Hywel ab Ieuan Fychan o Foeliwrch</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=092">92 - I iach&aacute;u glin Hywel ab Ieuan Fychan o Foeliwrch</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=093">93 - Englynion ymryson rhwng Ieuan ap Gruffudd Leiaf a Guto'r
+        Glyn</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=094">94 - Moliant i Ddafydd Cyffin ab Iolyn o Langedwyn</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=095">95 - Moliant i Faredudd ap Hywel o Groesoswallt</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=096">96 - Moliant i Sieffrai Cyffin ap Morus o Groesoswallt</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=097">97 - Moliant i Sieffrai Cyffin ap Morus o Groesoswallt a'i wraig,
+        Si&acirc;n ferch Lawrence Stanstry</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=098">98 - Gofyn brigawn gan Sieffrai Cyffin ap Morus o Groesoswallt ar ran
+        Dafydd Llwyd ap Gruffudd o Abertanad</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=099">99 - Gofyn corn hela gan Sieffrai Cyffin ap Morus o Groesoswallt ar
+        ran Si&ocirc;n Eutun ap Si&acirc;ms Eutun o Barc Eutun</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=100">100 - Gofyn dau filgi gan Robert ab Ieuan Fychan o Goetmor ar ran
+        Sieffrai Cyffin ap Morus o Groesoswallt</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=101a">101a - Dychan gan Syr Rhys i Guto'r Glyn ac yntau gartref yn glaf y
+        Nadolig</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=101">101 - Ateb i ddychan Syr Rhys</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=102">102 - Moliant i Groesoswallt</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=103">103 - Moliant i feibion Edward ap Dafydd o Fryncunallt</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=104">104 - Marwnad Edward ap Dafydd o Fryncunallt</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=105">105 - Marwnad Robert Trefor ab Edward o Fryncunallt</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=106">106 - I gymodi ag Ieuan Fychan ab Ieuan o Bengwern</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=107">107 - Moliant i Si&ocirc;n Edward o Blasnewydd a'i wraig, Gwenhwyfar
+        ferch Elis Eutun </a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=108">108 - Gofyn wyth ych ar ran Rhisiart Cyffin ab Ieuan Llwyd, deon
+        Bangor</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=109">109 - Diolch i'r Abad Dafydd ab Ieuan o Lyn-y-groes a Rhisiart Cyffin
+        ab Ieuan Llwyd, deon Bangor, am wella briw</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=110">110 - Diolch i'r Abad Dafydd ab Ieuan o Lyn-y-groes am fwcled</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=111">111 - Awdl foliant i'r Abad Dafydd ab Ieuan o Lyn-y-groes</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=112">112 - Moliant i'r Abad Dafydd ab Ieuan o Lyn-y-groes</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=113">113 - Awdl foliant i'r Abad Dafydd ab Ieuan o Lyn-y-groes</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=114">114 - Gofyn i Drahaearn ab Ieuan o Ben-rhos am gael benthyg Llyfr y
+        Greal ar ran Abad Dafydd ab Ieuan o Lyn-y-groes</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=115">115 - Moliant i'r Abad Dafydd ab Owain o Ystrad Marchell</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=116">116 - Guto'r Glyn yn amddiffyn ei le yng Nglyn-y-groes</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=117">117 - Moliant i'r Abad Dafydd ab Ieuan o Lyn-y-groes</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=118">118 - Myfyrdod diwedd oes</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=119">119 - Ei englyn olaf</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=120">120 - Cowydd gan Guto Powys i ofyn llurig gan Si&ocirc;n Abral o'r Gilwch,
+        swydd Henffordd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=121">121 - Gosteg o englynion ansicr eu hawduraeth ynghylch dagr a roddodd
+        Tudur Aled i Hywel Grythor</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=122">122 - Gosteg o englynion ansicr eu hawduraeth i annog Rhys Grythor i
+        ofyn ffaling gan yr Abad Dafydd o Faenan</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=123">123 - Englyn ansicr ei awduraeth i was y bardd a oedd yn rhincian
+        dannedd yn ei gwsg</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=124">124 - Englyn ansicr ei awduraeth i rywun a rechodd</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=125">125 - Marwnad ddienw i Syr Wiliam ap Tomas o Raglan</a><br/>
+    <a href="/gutorglyn/poem/?poem-selection=126">126 - Marwnad Guto'r Glyn gan Gutun Owain</a><br/>
+    <br/>
+    <br/>
+
+</div>
+
+<script>
+ $(document).ready(function() {	
+ var myArr = [];
+
+ $.ajax({
+   type: "GET",
+   url: "/static/docs/titles.xml",
+   dataType: "xml",
+   success: parseXml,
+   complete: setupAC,
+   failure: function(data) {
+     alert("XML File could not be found");
+   }
+ });
+
+ function parseXml(xml)
+ {
+   $(xml).find("option").each(function()
+   {
+     myArr.push($(this).text());
+   });
+ }
+
+ function setupAC() {
+   $("input#search-title").autocomplete({
+   source: myArr,
+   minLength: 3,
+   select: function(event, ui) {
+     $("input#search-title").val(ui.item.value);
+     $("#searchForm").submit();
+   },
+   open: function() { 
+       $('.ui-menu')
+           .width(650);
+   } 
+  });
+ }  
+});
+</script>
+<hr class="space">
+<hr class="space">
+{% endblock %}

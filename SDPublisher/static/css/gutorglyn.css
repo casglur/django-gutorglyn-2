@@ -1,0 +1,561 @@
+a {
+    color: #000000;
+}
+#link-content {
+    position: absolute;
+    width: 280px;
+    padding: 10px;
+    background: #eeeeee;
+    color: #000000;
+    border: 1px solid #1a1a1a;
+    font-size: 90%;
+}
+#main-title {
+    font-size:1.5em;
+}
+#top-line {
+    /*background: url('../img/logo/knot-small.gif') repeat-x;
+    height: 19px;*/
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);     
+    margin:0;
+}
+.top-nav {
+    float:left;
+    padding-top: 12px;
+}
+.top-nav a {
+    font-size:1.1em;
+    text-decoration: none;
+}
+.top-nav a:hover {
+    font-size:1.1em;
+    text-decoration: underline;
+}
+#manuscript {
+    background-image:url('../img/bg/manuscript-bg.jpg');
+}
+#welcome {
+    padding-top:0.2em;
+    font-size: 1.8em;
+    text-align:center;
+}
+#disclaimer {
+    line-height:1.1em;
+    text-align:center;    
+}
+#footer {
+    padding-top:2em;
+    background-color:#dddccc;
+    border: 1px solid #AFAE99;
+    border-width: 1px 0 1px;
+}
+
+#links-holder {
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 40px !important;   
+}
+
+.home-page-links  {
+    margin: 0;
+    text-align:center;
+    list-style:none;
+    padding:0;
+}
+.home-page-links ul li {
+    display:inline;
+}
+.home-page-links li {
+    padding-left:15px;
+    padding-right:15px;
+    float:left;
+}
+.home-page-links a {
+    font-size:large;
+}
+#funding-logos {
+    text-align:center;
+}
+#copyright {
+    padding-top:40px;
+    text-align:center;
+}
+#editor-title {
+    font-size:1em;
+}
+.top-head a {
+    text-decoration:none;
+    color: #000000;
+    font-family: georgia;
+}
+.top-head a:hover {
+    color: #000000;
+}
+.top-head a:visited {
+    text-decoration:none;
+    color: #000000;
+}
+#black-bar {
+    background-color: #000;
+    color: #dce3c1;
+}
+.top-links {
+    float:right;
+    padding-top: 7px;
+    padding-right: 30px;
+}
+.top-links a {
+    color: #dce3c1;
+}
+.title {
+    font-weight: bold;
+    padding-top:20px;
+}
+.hidden-title {
+    visibility: hidden;
+}
+.slide-menu {
+    position: relative;
+    /*With top knot top: -17px;*/    
+    padding:20px;
+    vertical-align: middle;
+    background:#222222;
+    border-style: solid;
+    border-color:#959595;
+    border-width: 1px 0 0 0;
+}
+form {
+    float:left;
+    display:block;
+}
+#poem {
+    width: 200px;
+    margin-left:16px;
+}
+#first-line {
+    width: 150px;
+}
+/*
+  * Edited Text
+ */
+.col-1 {
+    height: 67%;
+}
+#edited-text {
+    overflow: auto;
+    height: 100%;
+    margin-top: 1px;
+}
+#stema-dialog {
+    background-color:#80943E;
+}
+/* Tabs */
+.col-2 {
+    height: 67%;
+}
+#tabs {
+    height: 99%;
+    margin-top: -34px;
+    padding-bottom: 39px;
+}
+#paraphrase-tab {
+    overflow: scroll;
+    height: 97%;
+}
+#translation-tab {
+    overflow: scroll;
+    height: 97%;
+}
+#notes-tab {
+    height: 97%;
+    overflow: auto;
+}
+#transcriptions-tab {
+    overflow: hidden;
+    height: 97%;
+}
+/* variant line tab */
+#ui-tabs-1 {
+    height: 97%;
+}
+.tab-detail {
+    height: 92%;
+    width: 100%;
+    overflow:auto;
+}
+/*
+  * Transcription
+ */
+#transcript-title {
+    font-weight: bold;
+    padding-top: 10px;
+}
+#transcript-form {
+    padding-top: 2px;
+}
+/*
+  * variant styling
+ */
+.variant-title {
+    font-weight: bold;
+}
+/* default color for line numbers is color: #8B7D6B; */
+a.variant-line-link-hide:link {
+    visibility: hidden;
+}
+a.variant-line-link-show:link {
+    text-decoration: none;
+}
+/*
+  * Panels
+ */
+.panel-heading {
+    color: #fff;
+    padding: 3px 10px;
+    position: relative;
+    background-color:#9b4700;
+}
+.patron-panel {
+    padding: 10px;
+    overflow:auto;
+    height:90%;
+}
+#patron-div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.abbrev-panel-content {
+    padding: 10px;
+    background-color: #DBE3C0;
+    overflow:auto;
+    height:90%;
+}
+/*
+  * Pop Ups
+ */
+.name-note {
+    padding: 10px;
+    background-color: #DBE3C0;
+}
+/*
+  * Stemma
+ */
+#stemma-img, #stemma-img-dialog {
+    cursor:move;
+}
+/*
+  * Poem line group
+ */
+.CH-group {
+    position: relative;
+    left: 10px;
+}
+.clog-group {
+    position: relative;
+    left: 10px;
+}
+.CNB-group {
+    position: relative;
+    left: 10px;
+}
+.cywydd-group {
+/*
+  position: relative;
+  left: 10px;
+ */
+    margin-left:10px;
+}
+.EUU-group {
+    position: relative;
+    left: 10px;
+}
+.EP-group {
+    position: relative;
+    left: 10px;
+}
+.stanza {
+    position: relative;
+    left: 10px;
+}
+.TC-group {
+    position: relative;
+    left: 10px;
+}
+/*
+  * Poem line group line number
+ */
+.CH-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.clog-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.CNB-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.cywydd-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.EUU-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.EP-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.TC-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.line-number {
+    position:relative;
+    left: 0px;
+    width: 30px;
+    float:left;
+}
+.variant-line-number {
+    position:relative;
+    left: 0px;
+    width: 30px;
+    float:left;
+}
+/*
+  * Poem line
+ */
+.CH-line-even {
+    position: relative;
+    left:-11px;
+}
+.CH-line-odd {
+    position: relative;
+    left:-25px;
+}
+.clog-line-first {
+    position: relative;
+    left:-10px;
+}
+.clog-line-second {
+    position: relative;
+    left:-10px;
+}
+.clog-line-third {
+    position: relative;
+    left:-35px;
+}
+.clog-line-fourth {
+    position: relative;
+    left:15px;
+}
+.CNB-line {
+    position: relative;
+    left: -22px;
+}
+.cywydd-line {
+    position: relative;
+    left:-5px;
+}
+.cywydd-line-1 {
+    position: relative;
+    left:-5px;
+}
+.cywydd-line-first {
+    position: relative;
+    left:13px;
+}
+.EP-line {
+    position: relative;
+    left:-5px;
+}
+.EUU-line-first {
+    position: relative;
+    left: -35px;
+}
+.EUU-line-second {
+    position: relative;
+    left: 15px;
+}
+.EUU-line-third {
+    position: relative;
+    left: 0px;
+}
+.EUU-line-fourth {
+    position: relative;
+    left: 0px;
+}
+.TC-line {
+    position: relative;
+    left: -10px;
+}
+.variant-line {
+    position: relative;
+    left:0px;
+}
+.line {
+    position: relative;
+    left:0px;
+}
+/*
+  * Icons
+ */
+ul#icons {
+    margin: 0;
+    padding: 0;
+}
+ul#icons li {
+    margin: 2px;
+    position: relative;
+    padding: 4px 0;
+    cursor: pointer;
+    float: left;
+    list-style: none;
+}
+ul#icons span.ui-icon {
+    float: left;
+    margin: 0 4px;
+}
+/*
+  * Search Results
+ */
+#hit-count {
+    color: #868686;
+}
+.terms {
+    visibility: hidden;
+}
+.found {
+    background-color: #ffff00;
+    padding: 4px 4px 2px 7px;
+    box-shadow: 1px 2px 5px #272626;
+    border:1px solid #5A5858;
+    border-radius:3px;
+    -moz-border-radius:3px;
+/* Old Firefox */
+    background-image: linear-gradient(bottom, rgb(255,255,0) 4%, rgb(250,245,195) 62%, rgb(255,252,219) 76%);
+    background-image: -o-linear-gradient(bottom, rgb(255,255,0) 4%, rgb(250,245,195) 62%, rgb(255,252,219) 76%);
+    background-image: -moz-linear-gradient(bottom, rgb(255,255,0) 4%, rgb(250,245,195) 62%, rgb(255,252,219) 76%);
+    background-image: -webkit-linear-gradient(bottom, rgb(255,255,0) 4%, rgb(250,245,195) 62%, rgb(255,252,219) 76%);
+    background-image: -ms-linear-gradient(bottom, rgb(255,255,0) 4%, rgb(250,245,195) 62%, rgb(255,252,219) 76%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.04, rgb(255,255,0)),
+    color-stop(0.62, rgb(250,245,195)),
+    color-stop(0.76, rgb(255,252,219))
+    );
+}
+#search-results {
+    height: 75%;
+}
+#results {
+    height: 92%;
+    overflow: auto;
+}
+/*
+  * option boxes
+ */
+.option-text {
+    padding: 10px;
+    background-color: #F7EFD8;
+    width: 231px;
+}
+#option-box-1 {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('/static/img/options/adnoddau.jpg');
+    width: 250px;
+    height: 115px;
+}
+#option-box-2 {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('/static/img/options/canllawiau.jpg');
+    width: 250px;
+    height: 115px;
+}
+#option-box-3 {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('/static/img/options/cerddi.jpg');
+    width: 250px;
+    height: 115px;
+}
+#option-box-4 {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('/static/img/options/cymru.jpg');
+    width: 250px;
+    height: 115px;
+}
+#option-box-5 {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('/static/img/options/guto_cymraeg.jpg');
+    width: 250px;
+    height: 115px;
+}
+#option-box-6 {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('/static/img/options/prosiect.jpg');
+    width: 250px;
+    height: 115px;
+}
+/*
+  * manuscript image dialog
+ */
+#manuscript-image-dialog {
+    display: none;
+}
+/*
+  * quotes
+ */
+.poem-quote {
+    margin-left: 6em;
+}
+
+/* 
+ * Title List
+ */
+
+.title-list a, .patron-list a {
+    text-decoration:none;
+}
+.title-list a:hover, .patron-list a:hover {
+    text-decoration:none;
+    background-color:#ccc;
+    color:#000;
+    margin:5px;
+}
+.title-list a:hover, .patron-list a:active {
+    text-decoration:none;
+    background-color:#ccc;
+    color:#000;
+    margin:5px;
+}

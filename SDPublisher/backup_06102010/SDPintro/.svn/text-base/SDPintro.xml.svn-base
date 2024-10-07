@@ -1,0 +1,2521 @@
+<!DOCTYPE tei.2 [ 
+
+<!--  TEI Lite DTD -->
+<!--  This is the TEI Lite DTD.  It can be referred to using the
+formal public identifier 
+ 
+       -//TEI//DTD TEI Lite 1.0//EN
+
+or the slightly more specific 
+
+       -//TEI//DTD TEI Lite 1.6//EN
+
+      This is version 1.6, generated 25 June 1995 
+      and tweaked manually by CMSMcQ (tei@uic.edu).
+
+--> 
+
+<!--  Text Encoding Initiative: Guidelines for Electronic      -->
+<!--  Text Encoding and Interchange. Document TEI P3, 1994.    -->
+<!--  Copyright (c) 1994 ACH, ACL, ALLC. Permission to copy    -->
+<!--  in any form is granted, provided this notice is          -->
+<!--  included in all copies.                                  -->
+<!--  These materials may not be altered; modifications to     -->
+<!--  these DTDs should be performed as specified in the       -->
+<!--  Guidelines in chapter "Modifying the TEI DTD."           -->
+<!--  These materials subject to revision. Current versions    -->
+<!--  are available from the Text Encoding Initiative.         -->
+
+<!--  Revisions:                                               -->
+<!--  1996-09-24 : CMSMcQ : suppress trailing blank in FPI     -->
+<!--  1995-06-25 : CMSMcQ : Version 1.6.  Add notations, ISO   -->
+<!--                        entity sets for characters         -->
+<!--                        Add eg to x.common                 -->
+<!--  1995-06-08 : CMSMcQ : Version 1.5.  Add divGen to front  -->
+<!--  1995-02-28 : CMSMcQ : Version 1.4.  Add biblFull at the  -->
+<!--                        request of David Seaman            -->
+<!--  1995-02-17 : CMSMcQ : Version 1.3.  Add ident, code ...  -->
+<!--                        (and add teilitex.dtd)             -->
+<!--  1995-01-27 : CMSMcQ : Version 1.2?  LB changes of 23 Jan -->
+<!--  1995-01-21 : CMSMcQ : first cut at selection             -->
+<!--  1995-01-21 : CMSMcQ : made file from skelmods.ent        -->
+<!--  A TEI document is a text preceded by a TEI header.       -->
+
+<!ELEMENT TEI.2  (teiHeader, text)>
+
+<!ATTLIST TEI.2 
+     ana IDREFS #IMPLIED 
+     corresp IDREFS #IMPLIED 
+     next IDREF #IMPLIED 
+     prev IDREF #IMPLIED 
+     id ID #IMPLIED 
+     n CDATA #IMPLIED 
+     lang IDREF #IMPLIED 
+     rend CDATA #IMPLIED 
+     TEIform CDATA "TEI.2" >
+
+<!ELEMENT gi  (#PCDATA)>
+
+<!ATTLIST gi 
+     ana IDREFS #IMPLIED 
+     corresp IDREFS #IMPLIED 
+     next IDREF #IMPLIED 
+     prev IDREF #IMPLIED 
+     id ID #IMPLIED 
+     n CDATA #IMPLIED 
+     lang IDREF #IMPLIED 
+     rend CDATA #IMPLIED 
+     TEI (yes | no) "yes" 
+     TEIform CDATA "gi" >
+
+<!ELEMENT eg  (#PCDATA)>
+
+<!ATTLIST eg 
+     ana IDREFS #IMPLIED 
+     corresp IDREFS #IMPLIED 
+     next IDREF #IMPLIED 
+     prev IDREF #IMPLIED 
+     id ID #IMPLIED 
+     n CDATA #IMPLIED 
+     lang IDREF #IMPLIED 
+     rend CDATA #IMPLIED 
+     TEIform CDATA "eg" >
+
+<!ELEMENT code  (#PCDATA)>
+
+<!ATTLIST code 
+     ana IDREFS #IMPLIED 
+     corresp IDREFS #IMPLIED 
+     next IDREF #IMPLIED 
+     prev IDREF #IMPLIED 
+     id ID #IMPLIED 
+     n CDATA #IMPLIED 
+     lang IDREF #IMPLIED 
+     rend CDATA #IMPLIED >
+
+<!ELEMENT ident  (#PCDATA)>
+
+<!ATTLIST ident 
+     ana IDREFS #IMPLIED 
+     corresp IDREFS #IMPLIED 
+     next IDREF #IMPLIED 
+     prev IDREF #IMPLIED 
+     id ID #IMPLIED 
+     n CDATA #IMPLIED 
+     lang IDREF #IMPLIED 
+     rend CDATA #IMPLIED >
+
+<!ELEMENT kw  (#PCDATA)>
+
+<!ATTLIST kw 
+     ana IDREFS #IMPLIED 
+     corresp IDREFS #IMPLIED 
+     next IDREF #IMPLIED 
+     prev IDREF #IMPLIED 
+     id ID #IMPLIED 
+     n CDATA #IMPLIED 
+     lang IDREF #IMPLIED 
+     rend CDATA #IMPLIED >
+
+<!ELEMENT teiHeader  (fileDesc, (encodingDesc)*, (profileDesc)*,
+(revisionDesc)?)>
+
+<!ATTLIST teiHeader 
+     ana IDREFS #IMPLIED 
+     corresp IDREFS #IMPLIED 
+     next IDREF #IMPLIED 
+     prev IDREF #IMPLIED 
+     id ID #IMPLIED 
+     n CDATA #IMPLIED 
+     lang IDREF #IMPLIED 
+     rend CDATA #IMPLIED 
+     type CDATA "text" 
+     creator CDATA #IMPLIED 
+     status (new | update) "new" 
+     date.created CDATA #IMPLIED 
+     date.updated CDATA #IMPLIED 
+     TEIform CDATA "teiHeader" >
+
+<!ELEMENT fileDesc  (titleStmt, (editionStmt)?, (extent)?,
+publicationStmt, (seriesStmt)?, (notesStmt)?, (sourceDesc)+)>
+
+<!ATTLIST fileDesc 
+     ana IDREFS #IMPLIED 
+     corresp IDREFS #IMPLIED 
+     next IDREF #IMPLIED 
+     prev IDREF #IMPLIED 
+     id ID #IMPLIED 
+     n CDATA #IMPLIED 
+     lang IDREF #IMPLIED 
+     rend CDATA #IMPLIED 
+     TEIform CDATA "fileDesc" >
+
+<!ELEMENT titleStmt  (((title)+, (author | editor | sponsor |
+funder | principal | respStmt)*))>
+
+<!ATTLIST titleStmt 
+     ana IDREFS #IMPLIED 
+     corresp IDREFS #IMPLIED 
+     next IDREF #IMPLIED 
+     prev IDREF #IMPLIED 
+     id ID #IMPLIED 
+     n CDATA #IMPLIED 
+     lang IDREF #IMPLIED 
+     rend CDATA #IMPLIED 
+     TEIform CDATA "titleStmt" >
+
+<!ELEMENT sponsor 	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)*>
+
+<!ATTLIST sponsor 
+     ana IDREFS #IMPLIED 
+     corresp IDREFS #IMPLIED 
+     next IDREF #IMPLIED 
+     prev IDREF #IMPLIED 
+     id ID #IMPLIED 
+     n CDATA #IMPLIED 
+     lang IDREF #IMPLIED 
+     rend CDATA #IMPLIED 
+     TEIform CDATA "sponsor" >
+
+<!ELEMENT funder  	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)*>
+
+<!ATTLIST funder 
+     ana IDREFS #IMPLIED 
+     corresp IDREFS #IMPLIED 
+     next IDREF #IMPLIED 
+     prev IDREF #IMPLIED 
+     id ID #IMPLIED 
+     n CDATA #IMPLIED 
+     lang IDREF #IMPLIED 
+     rend CDATA #IMPLIED 
+     TEIform CDATA "funder" >
+
+<!ELEMENT principal 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST principal 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "principal" >
+
+
+<!ELEMENT edition 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST edition 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "edition" >
+
+
+<!ELEMENT extent 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST extent 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "extent" >
+
+
+<!ELEMENT distributor 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST distributor 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "distributor" >
+
+
+<!ELEMENT authority 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST authority 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "authority" >
+
+
+<!ELEMENT encodingDesc 
+	(projectDesc*, samplingDecl*, editorialDecl*, tagsDecl?, 
+	classDecl*, p*) >
+
+
+<!ATTLIST encodingDesc 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "encodingDesc" >
+
+
+<!ELEMENT projectDesc 
+	(p)+ >
+
+
+<!ATTLIST projectDesc 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	default (YES | NO) "NO"
+	TEIform CDATA "projectDesc" >
+
+
+<!ELEMENT samplingDecl 
+	(p)+ >
+
+
+<!ATTLIST samplingDecl 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	default (YES | NO) "NO"
+	TEIform CDATA "samplingDecl" >
+
+
+<!ELEMENT editorialDecl 
+	(p+ | (stdVals+, p*)) >
+
+
+<!ATTLIST editorialDecl 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	default (YES | NO) "NO"
+	TEIform CDATA "editorialDecl" >
+
+
+<!ELEMENT stdVals 
+	(p)+ >
+
+
+<!ATTLIST stdVals 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	default (YES | NO) "NO"
+	TEIform CDATA "stdVals" >
+
+
+<!ELEMENT tagsDecl 
+	(rendition*, tagUsage*) >
+
+
+<!ATTLIST tagsDecl 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "tagsDecl" >
+
+
+<!ELEMENT tagUsage 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST tagUsage 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	gi NMTOKEN #REQUIRED
+	occurs NMTOKEN #IMPLIED
+	ident NMTOKEN #IMPLIED
+	render IDREF #IMPLIED
+	TEIform CDATA "tagUsage" >
+
+
+<!ELEMENT rendition 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST rendition 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "rendition" >
+
+
+<!ELEMENT classDecl 
+	(taxonomy)+ >
+
+
+<!ATTLIST classDecl 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "classDecl" >
+
+
+<!ELEMENT taxonomy 
+	(category+ | (bibl, category*)) >
+
+
+<!ATTLIST taxonomy 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "taxonomy" >
+
+
+<!ELEMENT category 
+	(catDesc, category*) >
+
+
+<!ATTLIST category 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "category" >
+
+
+<!ELEMENT profileDesc 
+	(creation?, langUsage*, listPerson*, handList*, textClass*) >
+
+
+<!ATTLIST profileDesc 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "profileDesc" >
+
+
+<!ELEMENT creation 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST creation 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "creation" >
+
+
+<!ELEMENT langUsage 
+	(p | language)+ >
+
+
+<!ATTLIST langUsage 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	default (YES | NO) "NO"
+	TEIform CDATA "langUsage" >
+
+
+<!ELEMENT language 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST language 
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	id ID #IMPLIED
+	wsd ENTITY #IMPLIED
+	usage NMTOKEN #IMPLIED
+	TEIform CDATA "language" >
+
+
+<!ELEMENT textClass 
+	(classCode | catRef | keywords)* >
+
+
+<!ATTLIST textClass 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	default (YES | NO) "NO"
+	TEIform CDATA "textClass" >
+
+
+<!ELEMENT keywords 
+	(term+ | list) >
+
+
+<!ATTLIST keywords 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	scheme IDREF #IMPLIED
+	TEIform CDATA "keywords" >
+
+
+<!ELEMENT classCode 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST classCode 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	scheme IDREF #IMPLIED
+	TEIform CDATA "classCode" >
+
+
+<!ELEMENT catRef 
+	EMPTY >
+
+
+<!ATTLIST catRef 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	scheme IDREF #IMPLIED
+	target IDREFS #REQUIRED
+	TEIform CDATA "catRef" >
+
+
+<!ELEMENT revisionDesc 
+	(list | change+) >
+
+
+<!ATTLIST revisionDesc 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "revisionDesc" >
+
+
+<!ELEMENT change 
+	(date, respStmt+, item) >
+
+
+<!ATTLIST change 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "change" >
+
+
+<!ELEMENT p 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST p 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "p" >
+
+
+<!ELEMENT foreign 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST foreign 
+	id ID #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	lang IDREF #IMPLIED
+	TEIform CDATA "foreign" >
+
+
+<!ELEMENT hi 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST hi 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	n CDATA #IMPLIED
+	rend CDATA #IMPLIED
+	TEIform CDATA "hi" >
+
+
+<!ELEMENT q 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| msDescription | l | lg | p | index | cb | lb | milestone 
+	| pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST q 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	who CDATA #IMPLIED
+	type CDATA #IMPLIED
+	direct (y | n | unspecified) "unspecified"
+	TEIform CDATA "q" >
+
+
+<!ELEMENT term 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST term 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	type CDATA #IMPLIED
+	TEIform CDATA "term" >
+
+
+<!ELEMENT gloss 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST gloss 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	target IDREF #IMPLIED
+	TEIform CDATA "gloss" >
+
+
+<!ELEMENT num 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST num 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	value CDATA #IMPLIED
+	type CDATA #IMPLIED
+	TEIform CDATA "num" >
+
+
+<!ELEMENT date 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST date 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	value CDATA #IMPLIED
+	calendar CDATA #IMPLIED
+	certainty CDATA #IMPLIED
+	TEIform CDATA "date" >
+
+
+<!ELEMENT dateRange 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST dateRange 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	to CDATA #IMPLIED
+	exact (to | from | both | none) #IMPLIED
+	from CDATA #IMPLIED
+	calendar CDATA #IMPLIED
+	TEIform CDATA "dateRange" >
+
+
+<!ELEMENT abbr 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST abbr 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	cert CDATA #IMPLIED
+	expan CDATA #IMPLIED
+	resp IDREF #IMPLIED
+	type CDATA #IMPLIED
+	TEIform CDATA "abbr" >
+
+
+<!ELEMENT expan 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST expan 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	cert CDATA #IMPLIED
+	abbr CDATA #IMPLIED
+	resp IDREF #IMPLIED
+	type CDATA #IMPLIED
+	TEIform CDATA "expan" >
+
+
+<!ELEMENT sic 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| msDescription | l | lg | p | index | cb | lb | milestone 
+	| pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST sic 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	cert CDATA #IMPLIED
+	corr CDATA #IMPLIED
+	resp IDREF #IMPLIED
+	TEIform CDATA "sic" >
+
+
+<!ELEMENT corr 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| msDescription | l | lg | p | index | cb | lb | milestone 
+	| pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST corr 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	cert CDATA #IMPLIED
+	sic CDATA #IMPLIED
+	resp CDATA #IMPLIED
+	TEIform CDATA "corr" >
+
+
+<!ELEMENT reg 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST reg 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	orig CDATA #IMPLIED
+	resp CDATA #IMPLIED
+	TEIform CDATA "reg" >
+
+
+<!ELEMENT orig 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST orig 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	reg CDATA #IMPLIED
+	resp CDATA #IMPLIED
+	TEIform CDATA "orig" >
+
+
+<!ELEMENT gap 
+	EMPTY >
+
+
+<!ATTLIST gap 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	desc CDATA #IMPLIED
+	extent CDATA #IMPLIED
+	resp IDREF #IMPLIED
+	hand IDREF #IMPLIED
+	reason CDATA #IMPLIED
+	agent CDATA #IMPLIED
+	TEIform CDATA "gap" >
+
+
+<!ELEMENT add 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| msDescription | l | lg | p | index | cb | lb | milestone 
+	| pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST add 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	cert CDATA #IMPLIED
+	place CDATA #IMPLIED
+	resp IDREF #IMPLIED
+	hand IDREF #IMPLIED
+	TEIform CDATA "add" >
+
+
+<!ELEMENT del 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST del 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	n CDATA #IMPLIED
+	cert CDATA #IMPLIED
+	resp IDREF #IMPLIED
+	hand IDREF #IMPLIED
+	status CDATA "unremarkable"
+	rend CDATA #IMPLIED
+	type CDATA #IMPLIED
+	TEIform CDATA "del" >
+
+
+<!ELEMENT unclear 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST unclear 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	cert CDATA #IMPLIED
+	resp CDATA #IMPLIED
+	hand IDREF #IMPLIED
+	reason CDATA #IMPLIED
+	agent CDATA #IMPLIED
+	TEIform CDATA "unclear" >
+
+
+<!ELEMENT ptr 
+	EMPTY >
+
+
+<!ATTLIST ptr 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	crdate CDATA #IMPLIED
+	evaluate (all | one | none) #IMPLIED
+	resp CDATA #IMPLIED
+	targOrder (Y | N | U) "U"
+	type CDATA #IMPLIED
+	targType NMTOKENS #IMPLIED
+	target IDREFS #REQUIRED
+	TEIform CDATA "ptr" >
+
+
+<!ELEMENT ref 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST ref 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	crdate CDATA #IMPLIED
+	evaluate (all | one | none) #IMPLIED
+	resp CDATA #IMPLIED
+	targOrder (Y | N | U) "U"
+	type CDATA #IMPLIED
+	targType NMTOKENS #IMPLIED
+	target IDREFS #IMPLIED
+	TEIform CDATA "ref" >
+
+
+<!ELEMENT item 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| msDescription | l | lg | p | index | cb | lb | milestone 
+	| pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST item 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "item" >
+
+
+<!ELEMENT label 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST label 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "label" >
+
+
+<!ELEMENT head 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST head 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	type CDATA #IMPLIED
+	TEIform CDATA "head" >
+
+
+<!ELEMENT note 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| msDescription | l | lg | p | index | cb | lb | milestone 
+	| pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST note 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	target IDREFS #IMPLIED
+	place CDATA "unspecified"
+	targetEnd IDREFS #IMPLIED
+	resp CDATA #IMPLIED
+	anchored (yes | no) "yes"
+	n CDATA #IMPLIED
+	type CDATA #IMPLIED
+	TEIform CDATA "note" >
+
+
+<!ELEMENT index 
+	EMPTY >
+
+
+<!ATTLIST index 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	level1 CDATA #REQUIRED
+	index CDATA #IMPLIED
+	level3 CDATA #IMPLIED
+	level4 CDATA #IMPLIED
+	level2 CDATA #IMPLIED
+	TEIform CDATA "index" >
+
+
+<!ELEMENT milestone 
+	EMPTY >
+
+
+<!ATTLIST milestone 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	ed CDATA #IMPLIED
+	n CDATA #IMPLIED
+	unit CDATA #REQUIRED
+	TEIform CDATA "milestone" >
+
+
+<!ELEMENT pb 
+	EMPTY >
+
+
+<!ATTLIST pb 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	ed CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "pb" >
+
+
+<!ELEMENT lb 
+	EMPTY >
+
+
+<!ATTLIST lb 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	ed CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "lb" >
+
+
+<!ELEMENT cb 
+	EMPTY >
+
+
+<!ATTLIST cb 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	ed CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "cb" >
+
+
+<!ELEMENT editor 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST editor 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	role CDATA "editor"
+	TEIform CDATA "editor" >
+
+
+<!ELEMENT resp 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST resp 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "resp" >
+
+
+<!ELEMENT title 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST title 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	level (a | m | j | s | u) #IMPLIED
+	type CDATA #IMPLIED
+	TEIform CDATA "title" >
+
+
+<!ELEMENT publisher 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST publisher 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "publisher" >
+
+
+<!ELEMENT biblScope 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST biblScope 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	type CDATA #IMPLIED
+	TEIform CDATA "biblScope" >
+
+
+<!ELEMENT pubPlace 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST pubPlace 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	reg CDATA #IMPLIED
+	key CDATA #IMPLIED
+	TEIform CDATA "pubPlace" >
+
+
+<!ELEMENT l 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST l 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	enjamb CDATA #IMPLIED
+	real CDATA #IMPLIED
+	met CDATA #IMPLIED
+	rhyme CDATA #IMPLIED
+	part (Y | N | I | M | F) "N"
+	TEIform CDATA "l" >
+
+
+<!ELEMENT trailer 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST trailer 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "trailer" >
+
+
+<!ELEMENT epigraph 
+	((bibl | msDescription | l | lg | p | q | label | list | 
+	listBibl | note), (index | cb | lb | milestone | pb | addSpan 
+	| delSpan | gap)*)* >
+
+
+<!ATTLIST epigraph 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "epigraph" >
+
+
+<!ELEMENT salute 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST salute 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "salute" >
+
+
+<!ELEMENT signed 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST signed 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "signed" >
+
+
+<!ELEMENT titlePart 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST titlePart 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	type CDATA "main"
+	TEIform CDATA "titlePart" >
+
+
+<!ELEMENT docAuthor 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST docAuthor 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "docAuthor" >
+
+
+<!ELEMENT docDate 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST docDate 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	value CDATA #IMPLIED
+	TEIform CDATA "docDate" >
+
+
+<!ELEMENT addSpan 
+	EMPTY >
+
+
+<!ATTLIST addSpan 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	cert CDATA #IMPLIED
+	to IDREF #REQUIRED
+	place CDATA #IMPLIED
+	resp IDREF #IMPLIED
+	hand IDREF #IMPLIED
+	type CDATA #IMPLIED
+	TEIform CDATA "addSpan" >
+
+
+<!ELEMENT delSpan 
+	EMPTY >
+
+
+<!ATTLIST delSpan 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	cert CDATA #IMPLIED
+	to IDREF #REQUIRED
+	resp IDREF #IMPLIED
+	hand IDREF #IMPLIED
+	status CDATA "unremarkable"
+	type CDATA #IMPLIED
+	TEIform CDATA "delSpan" >
+
+
+<!ELEMENT restore 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST restore 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	wit CDATA #IMPLIED
+	cause CDATA #IMPLIED
+	varSeq NMTOKEN #IMPLIED
+	cert CDATA #IMPLIED
+	desc CDATA #IMPLIED
+	resp IDREF #IMPLIED
+	hand IDREF #IMPLIED
+	type CDATA #IMPLIED
+	TEIform CDATA "restore" >
+
+
+<!ELEMENT supplied 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST supplied 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	source CDATA #IMPLIED
+	resp CDATA #IMPLIED
+	hand IDREF #IMPLIED
+	reason CDATA #IMPLIED
+	agent CDATA #IMPLIED
+	TEIform CDATA "supplied" >
+
+
+<!ELEMENT hand 
+	EMPTY >
+
+
+<!ATTLIST hand 
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	first CDATA #IMPLIED
+	scribe CDATA #IMPLIED
+	id ID #REQUIRED
+	style CDATA #IMPLIED
+	lang CDATA #IMPLIED
+	hand CDATA #IMPLIED
+	character CDATA #IMPLIED
+	resp CDATA #IMPLIED
+	ink CDATA #IMPLIED
+	TEIform CDATA "hand" >
+
+
+<!ELEMENT handShift 
+	EMPTY >
+
+
+<!ATTLIST handShift 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	style CDATA #IMPLIED
+	new IDREF #IMPLIED
+	old IDREF #IMPLIED
+	character CDATA #IMPLIED
+	resp IDREF #IMPLIED
+	ink CDATA #IMPLIED
+	TEIform CDATA "handShift" >
+
+
+<!ELEMENT handList 
+	(hand)* >
+
+
+<!ATTLIST handList 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "handList" >
+
+
+<!ELEMENT damage 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST damage 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	extent CDATA #IMPLIED
+	resp IDREF #IMPLIED
+	hand IDREF #IMPLIED
+	type CDATA #IMPLIED
+	agent CDATA #IMPLIED
+	degree CDATA #IMPLIED
+	TEIform CDATA "damage" >
+
+
+<!ELEMENT space 
+	EMPTY >
+
+
+<!ATTLIST space 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	extent CDATA #IMPLIED
+	dim (horizontal | vertical) #IMPLIED
+	resp CDATA #IMPLIED
+	TEIform CDATA "space" >
+
+
+<!ELEMENT fw 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST fw 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	place CDATA #IMPLIED
+	type CDATA #IMPLIED
+	TEIform CDATA "fw" >
+
+
+<!ELEMENT settlement 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | index | 
+	cb | lb | milestone | pb | addSpan | delSpan | gap)* >
+
+
+<!ATTLIST settlement 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	reg CDATA #IMPLIED
+	key CDATA #IMPLIED
+	type CDATA #IMPLIED
+	full (yes | abb | init) "yes"
+	TEIform CDATA "settlement" >
+
+
+<!ELEMENT region 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST region 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	reg CDATA #IMPLIED
+	key CDATA #IMPLIED
+	type CDATA #IMPLIED
+	full (yes | abb | init) "yes"
+	TEIform CDATA "region" >
+
+
+<!ELEMENT country 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST country 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	reg CDATA #IMPLIED
+	key CDATA #IMPLIED
+	type CDATA #IMPLIED
+	full (yes | abb | init) "yes"
+	TEIform CDATA "country" >
+
+
+<!ELEMENT cell 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST cell 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	role CDATA "data"
+	rows NMTOKEN "1"
+	cols NMTOKEN "1"
+	TEIform CDATA "cell" >
+
+
+<!ELEMENT figDesc 
+	(#PCDATA | dimensions | locus | origDate | origPlace | msIdentifier 
+	| material | signatures | catchwords | secFol | heraldry 
+	| abbr | date | dateRange | expan | name | num | persName 
+	| add | corr | damage | del | orig | reg | restore | sic 
+	| space | supplied | unclear | foreign | gloss | hi | term 
+	| title | ptr | ref | xptr | xref | formula | fw | handShift | bibl | 
+	q | label | list | listBibl | note | figure | table | text 
+	| index | cb | lb | milestone | pb | addSpan | delSpan | 
+	gap)* >
+
+
+<!ATTLIST figDesc 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	TEIform CDATA "figDesc" >
+
+
+<!ELEMENT listPerson 
+	(p+ | person+) >
+
+
+<!ATTLIST listPerson 
+	id ID #IMPLIED
+	lang IDREF #IMPLIED
+	rend CDATA #IMPLIED
+	n CDATA #IMPLIED
+	default (YES | NO) "NO"
+	TEIform CDATA "particDesc" >
+
+<!--  14.2.1:  Extended pointers                               -->
+
+<!ELEMENT xref  
+(#PCDATA | ident | code | kw | abbr | address |
+date | name | num | rs | time | add | corr | del | gap | orig | reg |
+sic | unclear | emph | foreign | gloss | hi | mentioned | soCalled |
+term | title | ptr | ref | xptr | xref | anchor | s | seg | gi |
+formula | eg | bibl | biblFull | cit | q | label | list | listBibl |
+note | figure | stage | table | text)*>
+
+<!ATTLIST xref 
+     ana IDREFS #IMPLIED 
+     corresp IDREFS #IMPLIED 
+     next IDREF #IMPLIED 
+     prev IDREF #IMPLIED 
+     id ID #IMPLIED 
+     n CDATA #IMPLIED 
+     lang IDREF #IMPLIED 
+     rend CDATA #IMPLIED 
+     type CDATA #IMPLIED 
+     resp CDATA #IMPLIED 
+     crdate CDATA #IMPLIED 
+     targType CDATA #IMPLIED 
+     targOrder (Y | N | U) "U" 
+     evaluate (all | one | none) #IMPLIED 
+     doc ENTITY #IMPLIED 
+     from CDATA "ROOT" 
+     to CDATA "DITTO" 
+     TEIform CDATA "xref" >
+
+<!ELEMENT xptr 
+	EMPTY>
+
+<!ATTLIST xptr 
+     ana IDREFS #IMPLIED 
+     corresp IDREFS #IMPLIED 
+     next IDREF #IMPLIED 
+     prev IDREF #IMPLIED 
+     id ID #IMPLIED 
+     n CDATA #IMPLIED 
+     lang IDREF #IMPLIED 
+     rend CDATA #IMPLIED 
+     type CDATA #IMPLIED 
+     resp CDATA #IMPLIED 
+     crdate CDATA #IMPLIED 
+     targType CDATA #IMPLIED 
+     targOrder (Y | N | U) "U" 
+     evaluate (all | one | none) #IMPLIED 
+     doc ENTITY #IMPLIED 
+     from CDATA "ROOT" 
+     to CDATA "DITTO" 
+     TEIform CDATA "xptr" >
+
+
+<!ENTITY aacute "&#225;">
+<!ENTITY eacute "&#233;">
+<!ENTITY Aacute "&#193;">
+<!ENTITY acirc  "&#226;">
+<!ENTITY Acirc  "&#194;">
+<!ENTITY agrave "&#224;">
+<!ENTITY Agrave "&#192;">
+<!ENTITY aring  "&#229;">
+<!ENTITY Aring  "&#197;">
+<!ENTITY atilde "&#227;">
+<!ENTITY Atilde "&#195;">
+<!ENTITY auml   "&#228;">
+<!ENTITY Auml   "&#196;">
+<!ENTITY aelig  "&#230;">
+<!ENTITY AElig  "&#198;">
+<!ENTITY ccedil "&#231;">
+<!ENTITY Ccedil "&#199;">
+<!ENTITY eth    "&#240;">
+<!ENTITY ETH    "&#208;">
+<!ENTITY lab    "<">
+<!ENTITY rab    ">">
+<!ENTITY iacute "&#237;">
+<!ENTITY oacute "&#243;">
+<!ENTITY uacute "&#250;">
+
+
+]>
+<TEI.2>
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>
+Reference documentation for SDPublisher
+</title>
+
+<editor n="1">
+Prepared by <name>Peter Robinson</name>
+</editor>
+<sponsor>
+Scholarly Digital Editions (SDE)
+</sponsor>
+<sponsor>
+Institute for Textual Scholarship and Electronic Editing, University of Birmingham
+</sponsor>
+
+
+<respStmt>
+<resp>
+Stylesheets, etc, 
+</resp>
+<name>Peter Robinson</name>
+</respStmt>
+
+</titleStmt>
+
+<publicationStmt>
+<publisher n="1">Scholarly Digital Editions, Birmingham </publisher><date>2009</date>
+<publisher n="2">Institute for Textual Scholarship and Electronic Editing, University of Birmingham </publisher><date>2009</date>
+</publicationStmt>
+
+<sourceDesc>
+<bibl>Scholarly Digital Editions, Birmingham, and Institute for Textual Scholarship and Electronic Editing, University of Birmingham</bibl>
+</sourceDesc>
+</fileDesc>
+<revisionDesc>
+  <change>September 20, 2009.  Update for first SDPublisher workshop; includes new modify xml functions; reflects changes in the Python and Django worlds; fixes various bugs.</change>
+<change>April 28, 2009.  Changes for first public release (delayed for several days following a particularly nasty computer crash for PR).  We now have real support for multiple databases, elment methods have been made consistent, management functions (rmxml putallxml indexxml) have been added and refined.</change>
+ <change>March 24, 2009.  Changes reflecting wrapping of extra DB XML functions; refinement of startxml and addition of startXMLspecimen</change>
+ <change>March 16, 2009.  Revised for first limited release: extra warning notices added.</change>
+ <change>March 11, 2009.  Drafted for SDPublisher 0.1, with warnings.</change>
+</revisionDesc>
+
+</teiHeader>
+<text>
+<body>
+<div>
+<div n="1">
+<head rend="Getting started">1. Getting started with Scholarly Digital Publisher
+</head>
+<p rend="red">This is the documentation for SDPublisher, to accompany the public release of SDPublisher 1.1 in September 2009.   Areas where further change is likely or desirable are noted in red text.  Patience!</p>
+<p rend="centre">Comments, suggestions: to <xref type="mail" rend="mailto:peter@sd-editions.com">Peter Robinson</xref></p>
+<p>
+This document sets out a series of exercises introducing the Scholarly Digital Publisher ('SDPublisher') system.  By the end of this series of exercises, you will:
+</p>
+<list>
+<item>
+Have seen how SDPublisher works 
+</item>
+<item>
+Have met most of the commands which enable SDPublisher to work 
+</item>
+<item>
+Have seen enough of SDPublisher to know if it can do what you want it to do (if the answer is not 'yes' we would like to know what it cannot do) - and to decide if you like the way it does it 
+</item>
+<item>
+Have learnt enough to make your own electronic publications with SDPublisher.
+</item>
+</list>
+<div n="1.1">
+<head rend="Introduction">1.1 Introducing SDPublisher
+</head>
+<p>
+SDPublisher can be thought of as a next-generation version of the Anastasia Publishing System, also developed by people associated with Scholarly Digital Editions, UK: see <xref type="link" rend="http://www.sd-editions.com/anastasia">www.sd-editions.com/anastasia</xref>.  SDPublisher retains the distinctive model of Anastasia: it sees XML as a stream as well as a hierarchy.  Accordingly, it does not fit either of the common models of XML processors: it is neither a 'push XML' nor a 'pull XML' system, but a 'stream XML' system.  It is therefore highly suited to processing documents characterized by multiple overlapping hierarchies: showing a book by pages, or by chapters, for example.  Another distinctive feature of SDPublisher is that <hi rend="bold">you do NOT have to use XSLT</hi> (though you can if your really want to).  For many of us, this is a notable advantage. </p>
+<p>SDPublisher incorporates the 'Pixelise' application first developed by Andrew West, and carried on further by Andrew, Zeth Green, Ralph Janke and Peter Robinson.  Andrew West was responsible for the key decisions, to use Berkeley DB XML as the 'back end' database, to use Python as the scripting language, and to use the Django framework as the Python environment.  As of 28 April 2009, the code for SDPublisher was at <xref type="link" rend="http://pixelise.org/">pixelise.org</xref>. </p>
+<p>While SDPublisher shares the same model of text as does Anastasia, it is different from Anastasia in almost every other respect.  Anastasia required that the XML be transformed into a series of binary files before it could be published (using the 'GroveMaker' application), which meant that even the smallest changes to the document required complete reprocessing of all the data.  Further, the publishing system of Anastasia was built as a C-language module compiled into Apache 1, and used TCL as a scripting language.  This meant that Anastasia could only run with Apache webservers, and indeed the restriction to Apache 1, now outdated, together with the use of 'C', made maintenance of Anastasia increasingly difficult.  Further, TCL is not a popular language.  In contrast, SDPublisher:</p>
+<list>
+<item>Uses a database for all data storage.  This means document fragments can be updated dynamically and the results seen immediately.  By default, SDPublisher uses Berkeley DB XML, an exceptionally powerful and robust native XML database (<xref type="link" rend="http://www.oracle.com/database/berkeley-db/xml/">www.oracle.com/database/berkeley-db/xml/</xref>).  However, we have designed SDPublisher so that one could use another XML database, or indeed any database at all.</item>
+<item>Uses Python as the program environment and language.  This means that SDPublisher could run on any server supporting Python: that is, all major server systems.  Python is a very popular and powerful language.</item>
+<item>Uses the Django framework in Python.  This is a very widely-used publishing system, much-favoured in high-traffic websites.</item>
+</list>
+</div>
+<div n="1.2">
+<head rend="Starting out">1.2 Starting out with SDPublisher; what you need
+</head>
+<p>We suggest you work your way through this document first.  This contains a simplified introduction to show how SDPublisher works.  After you work your way through this, you could go to the Reference documentation section, for a more formal account of the functions and tools available in SDPublisher.</p>
+<p>You will need the following:</p>
+<list>
+<item>Networked access with an up-to-date web browser</item>
+<item>A reasonable knowledge of XML</item>
+<item>A text-only editor, for example NoteTab on Windows or BBEdit on the Macintosh.  Do NOT try and use Microsoft Word.</item>
+</list>
+<p>This documentation has been written for Macintosh OS X, Windows, and Linux systems.  </p>
+</div>
+
+<div n="1.3">
+<head rend="Getting ready">1.3  Getting ready to start
+</head>
+<p>First, you have to have get an appropriate version of Python.  As of 21 September 2009, for Macintosh this was 2.5 or later (up to 2.6.2: we have not tested SDPublisher with the in-process Python 3).  For Windows, you have to use a 2.5 version (2.5.4, for example).  If you have Windows, you have to get it as follows: </p>
+<list>
+<item>Download and install Python 2.5 (2.5.4; not 2.6 or later) from <xref type="link" rend="http://www.python.org/">http://www.python.org/</xref>.  By default, Python will install in C:\Python25 (for Python 2.5).  Currently (September 2009) the Python bindings for Berkeley DB XML only work with Python 2.5.</item>
+<item>You will need to run Python from the command prompt.  To do this, start the command prompt application and type 'set path=%path%;C:\python25' at the prompt, followed by return.  In Windows XP, you get to the command prompt by choosing 'Run' from the start menu and typing 'cmd'.</item>
+<item>Check that Python is correctly installed by typing 'Python' at the prompt.  If all is well, you will receive cheering messages</item>
+</list>
+<p>If you have a Mac with later than 10.5, no trouble: Python 2.5 is already installed. You could also install 2.6.2 over this, if you wish, from <xref type="link" rend="http://www.python.org/">http://www.python.org/</xref>.  It will automatically be installed in the right place.  You can check that Python is correctly installed by typing 'Python' at the terminal prompt. (We have not tested SDPublisher on Mac systems older than 10.4.)</p>
+<p>Second, you have to get Berkeley DB XML.  Download and install from <xref type="link" rend="http://www.oracle.com/technology/software/products/berkeley-db/xml/index.html">http://www.oracle.com/technology/software/products/berkeley-db/xml/index.html</xref>.  As of September 2009 the operational version for Windows was 2.4.13: install this version, not the later 2.4.16 or 2.5.13.  Installation on a Mac is much more demanding.  There is no binary, so you have to compile it yourself from the terminal.  You will need to have the Mactinosh developer tools, including the gcc compiler: get these from <xref type="link" rend="http://developer.apple.com/Tools/">http://developer.apple.com/Tools/</xref> (warning! this is a 1 GB download!).  Then download the Unix/Posix version of DB XML; cd into the toplevel of the downloaded directory, type 'sh buildall.sh' and wait several hours.  As of September 2009, 2.4.16 worked on Macintosh 10.5; we have not yet tested 2.5.13.</p>
+<p>Third, you have to install the Python bindings for DB XML.  This is easily done in Windows.  In the folder 'C:\Program Files\Oracle\Berkeley DB XML 2.4.13\python' you will see the executable 'dbxml-2.4.13.win32-py2.5'.  Just double click on that and the bindings will install into the Python 2.5 installation.  On a Macintosh, you will need to cd into the 'dbxml/src/python' folder and type 'sudo python setup.py install' (and be prepared to wait some time).</p>
+<p>Fourth, you have to get Django, from <xref type="link" rend="http://www.djangoproject.com/download/">http://www.djangoproject.com/download/</xref>.  As of September 2009, the latest official version was 1.1.  Download the Django-1.1-final.tar.gz file from here.  For Windows, you will need PKZip, or WinZip, or similar, to unpack this into the folder Django-1.1-final.  You should have this folder in your C:\Program Files folder.  Now, install Django.  You may be able to do this just by double-clicking on the 'set up' icon in the Django-1.1-final folder (however, this often fails).   Alternatively, do this from the command line by cd-ing into the folder ('cd C:\Program Files\Django-1.1-final') and then typing 'python setup.py install'.  On the Mac, the installer should do all this for you.</p>
+<p>Finally, you are ready to get SDPublisher.  
+SDPublisher is distributed as a single folder, from a link in <xref type="link" rend="http://www.sd-editions.com/SDPublisher/">www.sd-editions.com/SDPublisher</xref>, or directly at <xref type="link" rend="http://www.sd-editions.com/SDPublisher/SDP110/SDPublisher.zip">http://www.sd-editions.com/SDPublisher/SDP110/SDPublisher.zip</xref>. (If you just wanted the latest Pixelise, without the SDPublisher wrapping, you could get it by typing 'bzr branch lp:pixelise' into the terminal; you need Bazaar installed for this.)  Download that folder and uncompress it somewhere accessible.  Now cd into that folder ('cd SDPublisher').  You can (at last) see something happen now by typing 'python manage.py runserver' at the prompt.  You will get various messages, to the effect that a 'development server is running at http://127.0.0.1:8000/'.  You can check that it actually is by starting an internet browser and typing the address ' <xref type="link" rend="http://127.0.0.1:8000/">http://127.0.0.1:8000/</xref>' into the browser.  You should see a Django 'page not found' page.  We are getting close!  Type  ' <xref type="link" rend="http://127.0.0.1:8000/SDPintro/text">http://127.0.0.1:8000/SDPintro/text</xref>'.  You will see this documentation appear in the browser window, as a SDPublisher electronic book.</p>
+<p>Before we go on, let's look at what we have downloaded.  You will see in the SDPublisher folder the following:</p>
+<list>
+<item>__init__.py (and possibly __init__.pyc): files used internally by Python/Django.  You should never need to deal with these</item>
+<item>manage.py: this file gives access to various management functions in SDPublisher.  See <xref type="link" rend="http://127.0.0.1:8000/SDPintro/text/#3.1">3.1</xref> below</item>
+<item>origin: this folder contains the material (from the first three chapters of Darwin's 'Origin of Species') used in the next sections of this tutorial to introduce how a SDPublisher digital book is made</item>
+<item>pixelise: this folder contains the core 'pixelise' application: the XML processing engine used by SDPublisher.  Pixelise, named after Andrew West's cat, is the core application within SDPublisher</item>
+<item>SDPintro: this folder contains this documentation, presented as a SDPublisher electronic book</item>
+<item>settings.py: this file holds information needed by Django and Python, governing how SDPublisher works</item>
+<item>urls.py: this file tells Python and Django about the URLs used by SDPublisher</item></list>
+<p>Open up settings.py.  Most of this is internal information used by Django and Python, which you do not need to know about.  You do need to understand the section 'INSTALLED_APPS':</p>
+<p rend="indent1">INSTALLED_APPS = (<lb rend="indent1"/>
+'django.contrib.auth',<lb rend="indent1"/>
+'django.contrib.contenttypes',<lb rend="indent1"/>
+'django.contrib.sessions',<lb rend="indent1"/>
+'django.contrib.sites', <lb rend="indent1"/>
+'SDPublisher.pixelise', <lb rend="indent1"/>
+'SDPublisher.SDPintro', <lb rend="indent1"/>
+'SDPublisher.origin', <lb/>
+)</p>
+<p>The first four lines are used by Django.  The last three lines concern us:</p>
+<list>
+<item>SDPublisher.pixelise: this tells Django about the pixilise application, contained in the folder 'pixelise'</item>
+<item>SDPublisher.SDPinto and SDPublisher.origin: this tells Django about the SDPublisher books 'SDPintro'  and 'origin', which Django thinks are actually applications contained in the folders 'SDPintro'  and 'origin'</item>
+</list>
+
+</div>
+<div n="1.4">
+<head rend="Showing the text">1.4 Your first SDPublisher publication: showing the text</head>
+<p>Now, we are really ready to go!  We are now going to make our first XML SDPublisher-powered application, using a specimen XML file 'origin.xml', containing the text of the first three chapters of the 1859 edition of Darwin's 'On the Origin of Species'.  The 'origin' folder contains the 'origin.xml' file and various other useful files and folders to help you on your way:</p>
+<list>
+<item>__init__.py and models.py (and possibly __init__.pyc, models.pyc): files used internally by Python/Django</item>
+<item>origin.xml: the source XML for this tutorial publication, encoded in TEIlite form.  You could open this up to check that indeed what we have is XML</item>
+<item>origin.dbxml: the DB XML database ready to receive the XML for the 'origin' publication.  This should be empty when you start</item>
+<item>pixelates: a folder containing a single subfolder, 'origin', containing a file 'base.py'.  This file holds what we call 'pixelates': instructions on exactly how individual XML elements should be presented.</item>
+<item>templates: a folder containing a single subfolder, 'origin', containing various html files.  This file are actually html templates, providing the frame for the html we will create from the origin.xml</item>
+<item>urls.py: this file is used together with the 'urls.py' file in the parent SDPublisher folder to construct the URLs for the 'origin' SDPublisher book</item>
+<item>views.py: this file holds the key processing scripts used by SDPublisher for this book</item>
+<item>www: this folder contains materials, such as static HTML and other files, which might be needed by the publication</item></list>
+<p>First, load the file origin.xml into your new publishing system by typing 'python manage.py putxml origin -f origin/origin.xml -n text' at the terminal prompt (make sure you are in the SDPublisher directory).  This should load 'origin.xml' into the Berkeley DB XML dabatase system, ready for you to publish.  It is possible that this file is already included in the database, in which case you will get an error message 'origin/origin.xml is already in the database. Skipped.'  In that case, you could either carry straight on, or type 'python manage.py rmxml origin -n text' into the terminal to remove it, followed by 'python manage.py putxml origin -f origin/origin.xml -n text' to put it back.
+</p>
+<p>We can start work on this publication.  We need to create an appropriate URL for our publication.  First, you have to edit the urls.py file in the 'SDPublisher' folder.  Open this and add the line</p>
+<p rend="indent1">(r'^origin/', include('origin.urls')),
+</p>
+<p>to the urlpatterns variable, so that this reads, ignoring the lines commented out by #:</p>
+<p rend="indent1">urlpatterns = patterns('', <lb rend="indent1"/>
+     (r'^SDPintro/', include('SDPintro.urls')),<lb rend="indent1"/>
+     (r'^origin/', include('origin.urls')), <lb/>
+)</p>
+<p>This line tells SDPublisher that when a URL request arrives  beginning '..origin/', look in the file 'urls.py' inside the 'origin' folder for the rest of the URL.  So now, we have to edit the second 'urls.py' file, contained in the 'origin' folder.   In that file, add the line</p>
+<p rend="indent1"> (r'text/', 'origin.views.text'),</p>
+<p>to the urlpatterns variable, so that this reads, ignoring the lines commented out by #:</p>
+<p rend="indent1">urlpatterns = patterns('', <lb rend="indent1"/>
+        (r'text/', 'origin.views.text'),
+<lb/>
+)</p>
+<p>The effect of the two urls files is to link the URL '/origin/text/' with the Python function 'origin.views.text': this is the function 'text' in the file 'views.py' in the folder 'origin'.  We now need to restart the server to see these changes take effect.  Stop the server by using control-c in the terminal/command prompt window, and restart it with 'python manage.py runserver'.  If you now type 'http://127.0.0.1:8000/' into your browser, you should be told 'Page not found' and told that Django expects a URL beginning 'origin/'.  So this time, try 'http://127.0.0.1:8000/origin/text/'.  You will get a different message: Django has recognized the url, but gives the error "Tried text in module origin.views. Error was: 'module' object has no attribute 'text'". </p>
+<p>We have to edit the 'views.py' file, in the 'origin' folder.  Open it, and you will see the following:</p>
+<p rend="indent1">from pixelise.core import Collection<lb/>
+from django.shortcuts import render_to_response<lb/>
+<lb/> 
+def foo(request):<lb rend="indent1"/>
+p = Collection(request, 'origin')<lb rend="indent1"/>
+results = p.query("//text")<lb rend="indent1"/>
+if results.hasNext():<lb rend="indent2"/>
+text = results.next()<lb rend="indent1"/>
+else:<lb rend="indent2"/>
+return render_to_response('origin/error.html', {'message': "Can't find text element"})<lb rend="indent1"/>
+text_content = p.process_element(text, 'origin/base.py',  False, None)<lb rend="indent1"/>
+return render_to_response('origin/text.html', {'page_content': text_content})</p>
+<p>SDPublisher expected there to be a function 'text' in this file.  There is no such function.  Change the line 'def foo(request):' to 'def text(request)' and save the file.  Now there is a function 'text', and things should begin to happen.</p>
+<p>Access 'http://127.0.0.1:8000/SDPublisher/origin/text/' again.  This time, you should see the text of the first three chapters of the 1859 editon of Darwin's 'Origin of the Species' leap out at you</p>
+<p>We are making progress.  This is what 'views.py' does:</p>
+<list>
+<item>The first two lines import functions SDPublisher needs to operate, from Pixelise and Django.</item>
+<item>The line "p = Collection(request, 'origin')" opens up the 'origin.dbxml' database we have made, holding all the xml (try replacing 'origin' by 'SDPintro' in this line to see what happens! why?)</item>
+<item>"results = p.query("//text")" goes and finds the 'text' element in the database (try replacing 'text' by 'TEI.2' or 'teiHeader' or 'XXX' to see what happens)</item>
+<item>The next lines test if the element sought has been found. If it has, the element found is put in the variable 'text'. If it has not, we are sent an error message.  </item>
+<item>The next line (containing the process_element call) is the core of SDPublisher.  The element is sent for processing by the file 'base.py' in the 'origin' folder within the 'pixelates' folder, and the results put in the variable 'text_content'</item>
+<item>The last line is the Django 'render_to_response' variable: this sends the result back to the browser, using the template file 'origin/text.html' and assigning the content of the 'text_content' variable to 'page_content'</item>
+</list>
+</div>
+<div n="1.5">
+<head rend="Formatting elements">1.5 Your first SDPublisher publication: formatting elements</head>
+
+<p>So far, we have done nothing with the XML except return the raw text, which looks rather ugly.  To refine it, we have to use the XML itself to determine how each element should be presented.  We do this through a 'pixlelate' file: in this case, the 'base.py' file, found in the origin/pixelates/origin folder.  (Notice that this file is placed in the subfolder 'origin', not directly within the 'pixelates' folder.  This is to ensure that we use the 'base.py' file for 'origin', not any other 'base.py' file for any other book.  This could actually be very useful: if you wanted all your publications to use the same 'base.py' file, just put it directly in a 'pixelates' folder for any book -- for example, in a 'pixelates' folder within the 'pixelise' folder -- and it will be found by every book.)</p>
+<p>Open that file.  At the beginning, you will see the lines: </p>
+<p rend="indent1">PIXELISE_PATTERNS = {<lb rend="indent1"/>
+'div': 'div',<lb/>
+}</p>
+<p>The PIXELISE_PATTERNS structure is how SDPublisher associates XML elements with functions.  Here, the XML element 'div' is associated with a function called 'div'.  Add to this structure the line </p>
+<p rend="indent2">'p': 'p',</p>
+<p>so that it appears: </p>
+<p rend="indent1">PIXELISE_PATTERNS = {<lb rend="indent1"/>
+'div': 'div',<lb rend="indent1"/>
+'p': 'p',<lb/>
+}</p>
+<p>Now, we define what we want to do with the XML p elements.  Add this to the base.py file, below the PIXELISE_PATTERNS statement:</p>
+<p rend="indent1">def p(element, state, context):<lb rend="indent1"/>
+if state == 'begin':<lb rend="indent2"/>
+html = "&amp;lt;p&gt;"<lb rend="indent2"/>
+return html<lb rend="indent1"/>
+if state == 'end':<lb rend="indent2"/>
+ html = "&amp;lt;/p&gt;"<lb rend="indent2"/>
+return html</p>
+<p>This function will be called every time a &amp;lt;p&gt; element is met as the SDPublisher traverses the document.  It is called with three parameters:</p>
+<list>
+<item>The element itself, as a Python object with a distinct set of properties (see below)</item>
+<item>State: this is one of 'begin', 'content' or 'end' depending on whether we are at the start of the element itself, dealing with its content, or at the end of the element</item>
+<item>Context: this is a Django response object.  This can be very useful in some contexts: you can, for example, have one function store information by writing it to the response object and another function can then extract that information, effectively as a global variable.  See the Django documentation on this.</item> 
+</list>
+<p>The next lines say simply: if we are at the beginning of the element, insert a &amp;lt;p&gt; into the HTML stream; if we are at the end of the element, insert a &amp;lt;/p&gt;.</p>
+<p>Here is a more complex instance, which begins to show the power and ease of SDPublisher.  We want the title of the whole document to appear in larger, bold type.  The title is held in a &amp;lt;head&gt; element, which is the child of &amp;lt;div&gt; element with an attribute 'type' set to 'book'.  This code tests whether a &amp;lt;head&gt; element is  the child of a &amp;lt;div&gt; element with an attribute 'type' set to 'book'; if it is, it places the text within a HTML  &amp;lt;H1&gt; element.  Here is the code which enables this, in the views.py file.  First, you need to include this line in the PIXELISE_PATTERNS declaration:</p>
+<p rend="indent1">PIXELISE_PATTERNS = {<lb rend="indent1"/>
+'div': 'div',<lb rend="indent1"/>
+'p': 'p',<lb rend="indent1"/>
+'head': 'head',<lb/>
+}</p>
+
+<p>Then you need to have the function for treatment of &amp;lt;head&gt; elements, as follows:
+</p>
+<p rend="indent1">def head(element, state, context):<lb rend="indent1"/>
+isbookhead = False<lb rend="indent1"/>
+html=""<lb rend="indent1"/>
+div = element.get_parent_element()<lb rend="indent1"/>
+try:<lb rend="indent2"/>
+if div.get_attribute_value('type')=="book":<lb rend="indent3"/>
+isbookhead = True<lb rend="indent1"/>
+except:<lb rend="indent2"/>
+return<lb rend="indent1"/>
+else:<lb rend="indent2"/>
+if state == 'begin' and isbookhead:<lb rend="indent3"/>
+html = "&amp;lt;H1>"<lb rend="indent2"/>
+if state == 'end' and isbookhead:<lb rend="indent3"/>
+html = "&amp;lt;/H1>"<lb rend="indent2"/>
+return html</p>
+<p>The first two lines of this function set the variable 'isbookhead' to the default value of 'False', and initialize the variable 'html' as an empty string. The third line locates the &amp;lt;div&gt; element which is the parent of this &amp;lt;head&gt; element, and puts it in the variable 'div'.  The next lines get the value of the attribute 'type' on this &amp;lt;div&gt; element and tests: is it equal to 'book'? If so, the variable 'isbookhead' is set to 'True'.  Note that this is done within a 'try/except' block: this is to catch the case where the element has no 'type' attribute.  For cases where 'isbookhead'  is 'True', the following lines place the HTML &amp;lt;H1&gt; element  around the text of the header.  </p>
+</div>
+<div n="1.6">
+<head rend="Viewing by chapter">1.6 Your first SDPublisher publication: viewing by chapter</head>
+
+<p>So far, we have been doing rather simple things.  Let's move on.  The 'Origin' is divided into chapters, and an obvious step would be to let the reader view one chapter at at time.  Here is how we do this.</p>
+<p>First, we need to add a line to the  'urls.py' file, so that SDPublisher can pick up calls by chapter number.  We add this line to the 'urls.py' file in the 'origin' folder:</p>
+<p rend="indent1">(r'chapter/(?P&amp;lt;chapter>[^/]+)$', 'origin.views.chapter'),</p>
+<p>to the urlpatterns variable (so that this reads, ignoring the lines commented out by #) </p>
+<p rend="indent1">urlpatterns = patterns('', <lb rend="indent1"/>
+ (r'text/', 'origin.views.text'), <lb rend="indent1"/>
+ (r'chapter/(?P&amp;lt;chapter>[^/]+)$', 
+ 'origin.views.chapter'),<lb/>
+)</p>
+<p>This activates the URL "http://127.0.0.1:8000/origin/chapter/xxx" and links it to a 'chapter' function in the views.py file, passing this function the string 'xxx' as the value of a 'chapter' parameter.  We now need to write a 'chapter' function to pick up and process this url call, in views.py:</p>
+<p rend="indent1">def chapter(request, chapter=None):<lb rend="indent1"/>
+     print "%s" % (chapter)<lb rend="indent1"/>
+     p = Collection(request, 'origin')<lb rend="indent1"/>
+     results = p.query("//div[@n='CH%s']" % (str(chapter)))<lb rend="indent1"/>
+     if results.hasNext():<lb rend="indent2"/>
+         text = results.next()<lb rend="indent1"/>
+     else:<lb rend="indent2"/>
+         return render_to_response('origin/error.html', {'message': "Can't find chapter %s" % (str(chapter))})<lb rend="indent1"/>  
+     the_content = p.process_element(text, 'origin/base.py', False, None)<lb rend="indent1"/>
+     return render_to_response('origin/text.html', {'page_content': the_content})</p>
+<p>Now, type "http://127.0.0.1:8000/SDPublisher/origin/chapter/1" into your browser, and you should see the whole of the first chapter appear; chapter two will appear for "http://127.0.0.1:8000/SDPublisher/origin/chapter/2"; etc. (Note the use of the "print" statement to write the chapter number out to the command window.   This is a very useful diagnostic device, similar to the use of 'puts' in Anastasia.)</p>
+</div>
+<div n="1.7">
+<head rend="Viewing by page">1.7 Your first SDPublisher publication: viewing by page</head>
+
+<p>All XML publishing systems can (or should) do what we have just done.  The next example shows what is special about SDPublisher (and its predecessor, Anastasia).</p>
+<p>The 'Origin', like every other book (and indeed most manuscripts), is divided into pages.  Obviously, one would like to view the book page by page.  It is exactly this which most XML systems make difficult.  The second thing everyone learns about XML is that it has problems with overlapping hierarchies.  As almost every edition of a text from a primary source is going to have overlapping hierarchies (text divided into chapters, paragraphs, sentences; but the primary source spreads the text across different pages, with the breaks between pages not corresponding with the breaks in the text) this is a problem.  Thus: every chapter break in the 1859 'Origin' falls on a page break.  But, the paragraph and sentence breaks do not: paragraphs and sentences run across page breaks. </p>
+<p>SDPublisher, like its predecessor Anastasia, is designed explicitly to cope with this situation.  Essentially, unlike virtually every other XML processing tool, SDPublisher (like Anastasia) treats the XML not as a tree, but as a stream.  Thus, it is possible to start processing at any point in the stream and end at any point in the stream: for example, to start at the beginning of a page and end at the end of a page.</p>
+<p>So, let's make this happen.  We are going to ask SDPublisher to show us one page, and only one page, of the 'Origin'.  First, we need to add a line to the  'urls.py' file, so that SDPublisher can pick up calls by page number.  We add this line to the urls.py file:</p>
+<p rend="indent1">(r'page/(?P&amp;lt;page>[^/]+)$', 'origin.views.page'),</p>
+<p>to the urlpatterns variable (so that this reads, ignoring the lines commented out by #) </p>
+<p rend="indent1">urlpatterns = patterns('', <lb rend="indent1"/>
+ (r'text/', 'origin.views.text'), <lb rend="indent1"/>
+ (r'chapter/(?P&amp;lt;chapter>[^/]+)$', 
+ 'origin.views.chapter'),<lb rend="indent1"/>
+ (r'page/(?P&amp;lt;page>[^/]+)$', 
+ 'origin.views.page'),<lb/>
+)</p>
+<p>This activates the URL "http://127.0.0.1:8000/SDPublisher/origin/page/xxx" and links it to a 'page' function in the views.py file, passing this function the string 'xxx' as the value of a 'page' parameter.  We now need to write a 'page' function to pick up and process this url call, in views.py:</p>
+<p rend="indent1">def page(request, page=None):<lb rend="indent1"/>
+    p = Collection(request, 'origin')<lb rend="indent1"/>
+    #Grab all the page breaks<lb rend="indent1"/>
+    pbn, page, pb = getAllPages(p, page)<lb rend="indent1"/>
+    print 'pages found %s' % (len(pbn))<lb rend="indent1"/>
+    if pbn == False or page == None:<lb rend="indent2"/>
+        return render_to_response('origin/error.html', {'message': "Can't find page %s" % (str(page))})<lb rend="indent1"/>
+    else:<lb rend="indent2"/>
+        page_content = p.process_element(pb, 'origin/base.py',  True, None)<lb rend="indent2"/>
+        #Work out the next and previous pages<lb rend="indent2"/>
+        thispb = pbn.index(page)<lb rend="indent2"/>
+        if thispb==0:<lb rend="indent3"/>
+            previouspb = None<lb rend="indent2"/>
+        else:<lb rend="indent3"/>
+            previouspb = pbn[thispb-1]<lb rend="indent2"/>
+        if thispb+1 == len(pbn):<lb rend="indent3"/>
+            nextpb = None<lb rend="indent2"/>
+        else:<lb rend="indent3"/>
+            nextpb = pbn[thispb+1]<lb rend="indent2"/>
+        return render_to_response('origin/text.html', {'page_content': page_content,  'current_page': page, 'previouspb': previouspb, 'nextpb': nextpb})
+    </p>
+ <p>This function calls another function:</p>
+<p rend="indent1">def getAllPages(p, page):<lb rend="indent1"/>
+    #Grab all the page breaks<lb rend="indent1"/>
+    results = p.query("//pb")<lb rend="indent1"/>
+    if results == None:<lb rend="indent2"/>
+        return (False, False, False)<lb rend="indent1"/>
+    pbn = []<lb rend="indent1"/>
+    while results.hasNext():<lb rend="indent2"/>
+        if results.next().get_attribute_value('id')[0]=='S':<lb rend="indent3"/>
+		pbn.append(results.next().get_attribute_value('n'))<lb rend="indent1"/>
+    #Grab the pb<lb rend="indent1"/>
+    pb = None<lb rend="indent1"/>
+    page = str(page)<lb rend="indent1"/>
+    results = p.query("//pb[@n='%s']" % page, 1, 1)<lb rend="indent1"/>
+    if results.hasNext():<lb rend="indent2"/>
+        pb = results.next()<lb rend="indent1"/>
+    else:<lb rend="indent2"/>
+        page = None<lb rend="indent1"/>
+    return (pbn, page, pb)</p>
+<p>The first function, 'page', receives the number of the page sought.  It then calls the function 'getallpages' with this page number.  This function gets all the pages by an XQuery-formatted call: 'results = p.query("//pb")' and puts them in a 'results' list.  Our example file follows the 'Trojan Horse' treatment devised by Steve DeRose, where each pb element marking the beginning of a page is matched by another pb element marking the end of the page: the start of page 7 is marked with &amp;lt;pb id="S-7-1859" corres="E-7-1859" n="7"/> , and the end with &amp;lt;pb id="E-7-1859" corres="S-7-1859" n="7"/>.   The function  tests the id attribute of each pb element found: if it begins with 'S' it appends each page break found to a list 'pbn'.  The function then searches for the particular page sought, with another XQuery call ('p.query("//pb[@n='%s']" % page, 1, 1)'): if it finds it, the element is put into the 'pb' variable, and the function then returns three values: the list of page-break 'n' values, the 'n' value of the page sought and the  &amp;lt;pb> element corresponding to the page sought.</p>
+<p>The 'page' function then resumes, and takes up these three values returned by 'getallpages'.  It prints out the number of pages found (72). It then calls the process_element function with the  &amp;lt;pb> element found.  Note that the third parameter is set to 'True': this tells SDPublisher to process not just this element, but every following element found.  Thus, in your browser you should see the whole text beginning with the page sought.  If you set the third parameter to 'False' you will see that the text disappears, as only the content of the &amp;lt;pb> is shown: and as it has no content, nothing is shown. </p>
+<p>But, this is not doing what we want.  It is showing every page to the end of the book, not just the page we want.  We want to stop at the end &amp;lt;pb> element, corresponding to the start  &amp;lt;pb> element for this page.  We do this by changing what happens when we meet a  &amp;lt;pb> element, in the 'base.py' file called by process_element.  First, we add   to the PIXELISE_PATTERNS structure at the beginning of the file the line </p>
+<p rend="indent2">'pb': 'pb',</p>
+<p>so that it appears: </p>
+<p rend="indent1">PIXELISE_PATTERNS = {<lb rend="indent1"/>
+'div': 'div',<lb rend="indent1"/>
+'p': 'p',<lb rend="indent1"/>
+'head': 'head',<lb rend="indent1"/>
+'pb': 'pb',<lb/>
+}</p>
+<p>Now, we add a 'pb' function to the 'base.py' file, as follows:</p>
+<p rend="indent1">def pb(element, state, context):<lb rend="indent1"/>
+    id = element.get_attribute_value('id')<lb rend="indent1"/>
+    if id[0]=='E':<lb rend="indent2"/>
+	return {'stop_processing':True}</p>
+<p>As SDPublisher traverses the document from the starting page requested, this element is called every time a &amp;lt;pb> element is met.  The function then tests the value of the 'id' attribute.  If it begins with an 'E' then it is the end &amp;lt;pb> element corresponding to the start &amp;lt;pb> element we began with, and the function then returns with the value 'stop_processing' set to 'True' (this 'stop_processing' variable is the equivalent of the Anastasia 'finish' variable).  This stops SDPublisher at that point. Thus you will see the text of only this page in the browser , just as we want.</p>
+</div>
+<div n="1.8">
+<head rend="Links; template files">1.8 Your first SDPublisher publication: generating links; template files</head>
+
+<p>The 'page' function in 'views.py' does a few more things, after it puts the content of the page into the 'page_content' variable.  First, it finds out if there are pages preceding and following this page: if there are, their page numbers are put into the 'previouspb' and 'nextpb' variables.  Then, rather opaquely, all this information (the  'page_content', the 'page', 'previouspb' and 'nextpb' variables) all appears in this line, which creates the text we see in our browser:</p>
+        <p rend="indent1">return render_to_response('origin/text.html', {'page_content': page_content,  'current_page': page, 'previouspb': previouspb, 'nextpb': nextpb})</p>
+<p>This is a Django function, designed to send content in response to a browser request ('render_to_response').  The first parameter gives the name of a template file, 'origin/text.html', while the following parameters state variables to be used in this template file.  You will find the template file 'text.html' in the subfolder 'origin' in the folder 'templates' in the 'origin' folder:</p>
+ <p rend="indent1">{% extends "origin/base.html" %}<lb/>
+{% block content %}<lb/>
+&amp;lt;div class="nav"><lb rend="indent1"/>
+  {% if previouspb %}<lb rend="indent2"/>
+  &amp;lt;a href="{% url origin.views.page previouspb %}" target="_parent">Previous {{previouspb}}&amp;lt;/a><lb rend="indent1"/>
+  {% endif %}<lb rend="indent1"/>
+  {{ current_page }}<lb rend="indent1"/>
+  {% if nextpb %}<lb rend="indent2"/>
+  &amp;lt;a href="{% url origin.views.page nextpb %}" target="_parent">Next {{nextpb}}&amp;lt;/a><lb rend="indent1"/>
+  {% endif %}<lb/>
+&amp;lt;/div><lb/>
+&amp;lt;div id="page"><lb rend="indent1"/>
+{{ page_content|safe }}
+&amp;lt;/div><lb/>
+{% endblock %}</p>
+<p>What is happening here? The first line tells us that this file 'extends' another file, 'base.html', which we will look at in a moment.  The next line says: all that follows is the content of a 'block' variable, named 'content'.  The next lines state what is to go into that variable: first, some html (&amp;lt;div class="nav">) and then a Django construct '{% if previouspb %}'.  We recall that the number of the previous page was assigned to a variable 'previouspb' in the Django 'render_to_response' call.  If there was a page before this (that is, previouspb is not 'None') then the following line comes into play:</p>
+<p rend="indent1">&amp;lt;a href="{% url origin.views.page previouspb %}" target="_parent">Previous {{previouspb}}&amp;lt;/a></p>
+<p>This Django call constructs the url for the previous page.  First, the '% url' indicates that we are making a url.  Then, the function corresponding to the url, origin.views.page, is given.  Django looks up the urls declared in the urls.py file and finds that this function corresponds to the url declared in the line </p>
+<p rend="indent1">(r'^page/(?P&amp;lt;page>[^/]+)$', 'origin.views.page')</p>
+<p>It then places the value of the previouspb variable in the url, so creating the url 'http://127.0.0.1:8000/SDPublisher/origin/page/7' when the value of 'previouspb' is '7'.  Similarly, another url is created for the link to the next page.  Then, all the HTML contained in the 'page_content' variable is written into a &amp;lt;/div> element, and the page is ready for display in the browser.</p>
+<p>We are almost finished this demonstration of SDPublisher.  There is one more piece of the puzzle we have not yet explained.  The template file 'text.html' contains the line '% extends "origin/base.html"'.  Open the file 'base.html' in the subfolder 'origin' of the 'templates' folder:</p>
+<p rend="indent1">&amp;lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><lb/>
+&amp;lt;html><lb rend="indent1"/>
+	&amp;lt;head><lb rend="indent2"/>
+		&amp;lt;title>Darwin's Origin&amp;lt;/title><lb rend="indent2"/>
+		&amp;lt;link type="text/css" rel="stylesheet" href="origin/static/origin.css"  /><lb rend="indent2"/>
+		&amp;lt;meta http-equiv="content-type" content="text/html; charset=utf-8" /><lb rend="indent1"/>
+	&amp;lt;/head><lb rend="indent1"/>
+	&amp;lt;body><lb rend="indent1"/>
+	  {% block content %}{% endblock %}<lb rend="indent1"/>
+	&amp;lt;/body><lb/>
+&amp;lt;/html></p>
+<p>Here we see the familiar frame of an HTML page: the opening &amp;lt;html> statement, followed by the &amp;lt;head> element, and further on, within the &amp;lt;body> element, the Django {% block content %} statement, which embeds the text returned to the 'text.html' template file.  We also see, in the &amp;lt;head> element, a link to a css stylesheet, 'origin.css', contained in a folder 'origin/origin/www'.  At present this document is not being found.  To find this document we need to add a line to the urls.py file (in the 'origin' folder), to handle the call to the 'origin.css' file:</p>
+<p rend="indent1">(r'www/(?P&amp;lt;path>.*)$', 'django.views.static.serve', {'document_root': 'www'}),</p>
+<p>Thus, the whole urlpatterns variable now looks like:</p>
+<p rend="indent1">urlpatterns = patterns('', <lb rend="indent1"/>
+ (r'text/', 'origin.views.text'), <lb rend="indent1"/>
+ (r'chapter/(?P&amp;lt;chapter>[^/]+)$', 
+ 'origin.views.chapter'),<lb rend="indent1"/>
+ (r'page/(?P&amp;lt;page>[^/]+)$', 
+ 'origin.views.page'),<lb rend="indent1"/>
+ (r'www/(?P&amp;lt;path>.*)$', 'django.views.static.serve', {'document_root': 'www'}),<lb/>
+)</p>
+<p>This added line allows us to feed requests for files (html, css, image files, etc) into SDPublisher, and tells SDPublisher where to look for them: in this case, in a 'www' folder within the 'origin' folder.  Thus, the call to the css file 'origin/static/origin.css' will look for the file in that 'origin' folder.  </p>
+<p>You will see that we have a 'www' folder within the 'origin' folder, containing the file 'origin.css'. This file contains the line:</p>
+<p rend="indent1">body {background-color: yellow;}</p>
+<p>Now, when you reload the text, the browser will now find this file, and use this command to set the background colour to a rather horrible yellow.  You can use the same technique to display image files: a call to 'http://127.0.0.1:8000/origin/static/fig1.gif' would display the image file 'fig1.gif' in the 'www' folder.</p>
+</div>
+<div n="1.9">
+<head rend="Your project">1.9 Starting your own project</head>
+<p>So far, we have been working with the specimen XML file 'origin.xml' and the files provided with it.  You may now be ready to start out with your own XML file.  Presuming you have your own xml file in TEI format, 'mybook.xml', this is how you can get started fast on making an SDPublisher book from this file:</p>
+<list>
+<item>Start the new SDPublisher book by typing 'python manage.py startxml mybook' at the prompt. You should see the folder 'mybook' now appear in the 'newedition' folder</item>
+<item>Tell SDPublisher about this new book (as outlined in 1.4 above) by editing the 'settings.py' file (that is: adding 'SDPublisher.mybook' to the INSTALLED_APPS variable)</item>
+<item>Copy your 'mybook.xml' file into the new 'mybook' folder.  Then, input it into the database by typing 'python manage.py putxml mybook -f mybook/mybook.xml -n text' at the prompt</item>
+<item>Edit the urls.py file in the SDPublisher folder so that the urlpatterns variable contains the line '(r'^mybook/', include('mybook.urls')),'.  Create a new urls.py file (or copy one over) in the 'mybook' folder, and edit it so that the urlpatterns variable contains the line '(r'text/', 'mybook.views.text'), )</item>
+<item>Edit the 'views.py' file in the 'mybook' folder, so that it contains these lines:</item>
+</list>
+<p rend="indent1">from pixelise.core import Collection<lb/>
+from django.shortcuts import render_to_response<lb/>
+<lb/> 
+def text(request):<lb rend="indent1"/>
+p = Collection(request, 'mybook')<lb rend="indent1"/>
+results = p.query("//text")<lb rend="indent1"/>
+if results.hasNext():<lb rend="indent2"/>
+text = results.next()<lb rend="indent1"/>
+else:<lb rend="indent2"/>
+return render_to_response('mybook/error.html', {'message': "Can't find text element"})<lb rend="indent1"/>
+text_content = p.process_element(text, 'mybook/base.py',  False, None)<lb rend="indent1"/>
+return render_to_response('mybook/text.html', {'page_content': text_content})</p>
+<list>
+<item>Make a new subfolder 'mybook' inside the 'mybook/pixelates' folder, and move the 'base.py' file inside the 'pixelates' folder into that subfolder. </item>
+<item>Make a new folder 'templates' in the 'mybook' folder, and a new subfolder 'mybook' within it.  Copy over the files 'text.html', 'error.html' and 'base.html' from the 'origin/templates/origin' folder into that directory.  You will need to open 'templates/mybook/text.html' and alter the line '{% extends "origin/base.html" %}' to {% extends "mybook/base.html" %}'</item>
+</list>
+<p>Once you have done this: stop and restart the server by typing 'Control-C' followed by  'python manage.py runserver' into the terminal.  Now, if you type 'http://127.0.0.1:8000/mybook/text/' into your browser, you should see all the text of your XML.  Now, you can start refining your book using the methods outlined in this document. </p>
+<p>We have now reached the end of this 'Getting started' documentation.  The following sections provide reference documentation for SDPublisher, and notes on some useful utility functions and tools to work with SDPublisher.</p>
+
+</div>
+</div>
+
+<div n="2">
+<head rend="Reference documentation">2  SDPublisher Reference Documentation</head>
+<div n="2.1">
+<head rend="The Pixelise processor">2.1  The Pixelise processor</head>
+<p>The core processing module of SDPublisher is Pixelise.  Typically, SDPublisher works as follows:</p>
+<list>
+<item>The server recognizes a URL (e.g. 'SDPintro/..') as requiring handling by the SDPublisher system, and passes the whole URL to SDPublisher.  In a production system, SDPublisher will be running within a Python server module.</item>
+<item>SDPublisher matches the URL to those listed in the 'urls.py' files in the main folder and in the subfolder for each book, and identifies the SDPublisher book, module and function which should handle the call.  Thus, the call 'SDPublisher/origin/text/' is mapped to 'origin.views.text': that is, to the book 'origin', to the module 'views', instantiated as a file 'views.py', to be handled by the function 'text' in that file.</item>
+<item>Up to this point, we have been using Django to receive the URL and work out what should be done with it.  Now, we invoke Pixelise.  First, we work out what XML body of data corresponds to the SDPublisher book.  We do this by importing the pixelise 'Collection' object, using the line 'from pixelise.core import Collection'.  From this Collection object, you gain access to the XML you want through the call 'p = Collection(request, 'mybook')'.  This finds the XML database for 'mybook' in the 'Collection' object and places it in the variable 'p'.  Then we work out just what XML element in that book corresponds to the URL call and we have Pixelise retrieve that element, from the XML database for this book, contained in the 'p' variable. </item>
+<item>Now we have retrieved the element: we send the element for processing by the core Pixelise function, process_element (see below).  Essentially, this allows us to transform the XML into HTML (or anything we like), in a very efficient fashion.</item>
+<item>After Pixelise does its work, we return to Django, and use the sophisticated Django template language to 'plug' the Pixelise output into a webpage.</item>
+</list>
+<p>Pixelise (the core processing module of SDPublisher) has a few specialized constructs (keywords, variables, etc), of which you need to be aware.  You have met most of them in the 'Getting started' section.  The two most important single functions in Pixelise are 'Collection' and 'process_element'.   'Collection' is the entire single body of XML data known to the publisher system: that is, all the XML databases which it has access to, and from which you wish to extract all the information you want to supply the reader.  In the model above, SDPublisher works out which Pixelise Collection corresponds to the book sought.  It then uses an XQuery function, 'query', to retrieve the element sought, and then passes the element to the process_element function.</p>
+
+<p>process_element is called with four parameters, thus process_element(text, "base.py", True, None):</p>
+<table>
+<row><cell>text</cell><cell>The first parameter must be a valid XML element mapped to a Python object.  See below for details of the properties of the object.</cell></row>
+<row><cell>base.py</cell><cell>The second parameter must be the name of a Python script file contained in the 'Pixelates' folder.  This file must contain a PIXELISE_PATTERNS statement, mapping elements to functions.</cell></row>
+<row><cell>True</cell><cell>This third parameter is what distinguishes Pixelise, and SDPublisher, from most XML processors.  When set to True, this parameter tells Pixelise: process this element AND carry on past the end of element, either to the end of the document or until a stop_processing (see below) is met.  When set to False (the default) the processor stops at the end of the element, and returns.</cell></row>
+<row><cell>None</cell><cell>This is a Django response object, and Pixelise will pass this parameter into every element method function in the 'pixelates' files. This can be very useful in some contexts: you can, for example, have one function store information by writing it to the response object and another function can then extract that information, effectively as a global variable.  See the Django documentation on this.</cell></row>
+</table>
+<p>Note that process_element can be used recursively.  That is: you could call (say) a  &amp;lt;ref> element, and discover that you would like to embed the contents of a &amp;lt;note> element at that point.  You could call that process_element for that &amp;lt;note> and append what is returned to the output stream.</p>
+<p rend="red">We have discussed a further Pixelise core function, process_element_range.  This would take at least one further parameter: the XML element at which processing should stop, thus avoiding the use of the stop_processing construct.  For example, one could call this function with the start and end &amp;lt;pb> elements for a particular page and so show only the text on that page.  Additional parameters for character offsets from the XML elements might also be passed in: so one could start 16 characters after (or before?) a particular element, and process the XML span up to 30 characters after (or before?) a particular element.  You can see why we have not yet done it!</p>
+<p>Every time the Pixelise processor meets an element, it looks up that element in the PIXELISE_PATTERNS list at the beginning of the .py file called to process that element, as the second parameter of the process_element call.  Note that one can qualify elements by their paths in the  PIXELISE_PATTERNS list, and have the same function called for any number of element and element combinations.  In this example, head elements one or two divs deep in the document will both be processed by a function 'head1'; all other head elements will be processed by a function 'generic_head'</p>
+<p rend="indent1">PIXELISE_PATTERNS = {<lb rend="indent1"/>
+    'body/div/head': 'head1',<lb rend="indent1"/>
+    'body/div/div/head': 'head1',<lb rend="indent1"/>
+    'head': 'generic_head',<lb/>
+}</p>
+<p>If the processor finds the element name specified in the list, it calls the function in the list specified for that element three times as it processes the element, with three parameters.  The first parameter is the XML element itself that you want to process, mapped to a Python object: you can use the object methods in the next sections to get information about the XML element.  The second parameter is set as indicated below.</p>
+<table>
+<row><cell>begin</cell><cell>When given as the value of the second parameter in an element call, indicates that the Pixelise processor is at the beginning of the element</cell></row>
+<row><cell>content</cell><cell>When given as the value of the second parameter in an element call, indicates that the processor is about to process the content of the element</cell></row>
+<row><cell>end</cell><cell>When given as the value of the second parameter in an element call, indicates that the processor is at the end of the element</cell></row>
+</table>
+<p>The function call can return with three possible values: text, to be written to the output stream; 'hide_content' and 'stop_processing':</p>
+<table>
+<row><cell>text</cell><cell>Text returned by the element call is appended by the processor to the output stream. Thus: 'return html' adds whatever text is contained in the 'html' variable to the output stream.</cell></row>
+<row><cell>hide_content</cell><cell>If this Pixelise variable is set to 'True' when an element call (with the second parameter set to 'content') returns, the content of this element is hidden -- that is, the processor skips past all element content to the end of the element.  Thus: if the element function  returns with the statement "return {'hide_content':True}" the content is hidden.</cell></row>
+<row><cell>stop_processing</cell><cell>If this Pixelise variable is set to 'True' when an element call (with the second parameter set to 'end') returns, the Pixelise processor stops and returns control to the function which called process_element.  Thus: if the element function  returns with the statement "return {'stop_processing':True}" the processing stops.</cell></row>
+</table>
+<p>There is one other Pixelise variable which you might meet: PIXELISE_OUTPUT_LIMIT.  This is a safety net: if the number of elements processed exceeds the number set in PIXELISE_OUTPUT_LIMIT, Pixelise will stop.  You can set PIXELISE_OUTPUT_LIMIT in the settings.py file.  It is a good idea to set this to something real: it is quite possible to send Pixelise into an endless loop (e.g. by using process_element to call an ancestor, which then calls the starting element, which calls the ancestor, and so on forever) and this will guard against that.</p>
+</div>
+<div n="2.2">
+<head rend="Getting elements">2.2  Element methods: getting elements</head>
+<p>Within SDPublisher, every XML element is mapped to a Python object, with a rich set of methods.  For a notional &amp;lt;div> element, there are many methods available for every Python object in SDPublisher, corresponding to the &amp;lt;div> element (see 3.3 for information on how to list all the methods available for any element).  We here describe the Pixelise methods created by us to allow retrieval of XML elements or of information about them. All of these take the form  'xxx_xxx', with underscores: get_attribute_value for example.   In a DBXML implementation, there are many other methods for each element: 'getNextSibling' for example. We  provide Pixelise wrappers for those 'native' DB XML functions which we have found useful: thus, instead of calling getNextSibling you should call get_next_sibling.  This is intended to make it possible for SDPublisher to be implemented with other database systems.  We recommend that you use only the Pixelise functions described here.  If you do this, you will find it very easy to use your SDPublisher files with any database which provides an implementation of SDPublisher.  Formal documentation of the SDPublisher API is given at <xref type="link" rend="http://demo.pixelise.org/api/">demo.pixelise.org/api/</xref>.  </p>
+<p>Many of these methods are self-explanatory, and called without parameters.  For example:</p>
+<p rend="indent1">firstchild = div.get_first_child()</p>
+<p>retrieves the first XML element which is a child of this particular div element, and assigns it to the variable firstchild.</p>
+<p>We give details of all Pixelise methods.  In this section, we list methods which for, any given element, retrieve related elements: siblings, parents, children, etc..  Note that throughout, if the method cannot find the element sought, it will return a Pixelise exception error.  This allows the calling function to deal gracefully with the failure to find the element, by placing the call in a 'try...except' block.  This guards against the situation, all too familiar from Anastasia, where the program cannot find an element but carries on as if it had, usually with dire consequences.</p>
+<table>
+<row><cell>get_parent_element</cell><cell>Has no parameters: retrieves the element which is the immediate parent. If there is no such element, an exception is thrown.  Example: div.get_parent_element() returns the immediate parent of the &amp;lt;div> element.</cell></row>
+<row><cell>get_ancestor_by_name</cell><cell>Has one parameter, the name of the element sought; retrieves that ancestor, regardless of how far above in the document tree that ancestor is.  If there is no such ancestor, an exception is thrown.  Example: div.get_ancestor_by_name('body') retrieves the &amp;lt;body> element which is the nearest ancestor of the &amp;lt;div> element. </cell></row>
+<row><cell>get_first_child</cell><cell>Has no parameters: retrieves the element which is the first child. If there is no such element, an exception is thrown.  Example: div.get_first_child() returns the first child of the &amp;lt;div> element.</cell></row>
+<row><cell>get_last_child</cell><cell>Has no parameters: retrieves the element which is the last child. If there is no such element, an exception is thrown.  Example: div.get_last_child() returns the last child of the &amp;lt;div> element.</cell></row>
+<row><cell>get_child</cell><cell>Has one optional parameter, the name of the element sought.  If the name of the element sought is given, retrieves the child which is an immediate child (not a grandchild, or more distant descendant) of the parent element and which matches the name sought.  If there is no such child, an exception is thrown.  If the name of the element sought is not given, then retrieves the first child found.  Example: div.get_child('p') retrieves the &amp;lt;p> element which is the first child of the &amp;lt;div> element; div.get_child() retrieves the first child of the &amp;lt;div> element.</cell></row>
+<row><cell>get_child_by_name</cell><cell><seg rend="red">[Deprecated in 1.1: use get_child with the name of the element sought as a parameter]</seg></cell></row>
+<row><cell>get_descendant_by_name</cell><cell>Has one parameter, the name of the element sought; retrieves the child which is a descendant (child, grandchild, or more distant descendant) of the parent element.  If there is no such child, an exception is thrown. Example: div.get_descendant_by_name('p') retrieves the first &amp;lt;p> element which is a descendant of the &amp;lt;div> element</cell></row>
+<row><cell>get_children</cell><cell>Has one optional parameter, the name of the elements sought.  If the name of the elements sought is given, returns a Python list of the immediate children of the parent element which match the name sought.  If the name of the element sought is not given, then retrieves a Python list of all the immediate children of the parent element. If there is no such child, an exception is thrown. Example: allps=div.get_children('p') retrieves a list of the &amp;lt;p> elements which are children of the &amp;lt;div> element and puts the list in the variable 'allps'.  You can iterate through this list using the Python 'for' call: 'for p in allps:'.</cell></row>
+<row><cell>get_children_by_name</cell><cell><seg rend="red">[Deprecated in 1.1: use get_children with the name of the element sought as a parameter]</seg></cell></row>
+<row><cell>get_next_element</cell><cell>Has one optional parameter: the name of the element sought.  If the name of the element sought is given, retrieves the next element which matches the name sought.  If there is no such element, an exception is thrown. If the name of the element sought is not given, retrieves the next element, of any kind (including text elements) in the document stream.  If the next element is a child, it retrieves the first child; if it is a right sibling, it retrieves that; else it looks up the element ancestors and through their children and siblings till it finds the next element. If there is no next element (we are at the end of the document), an exception is thrown. Example: div.get_next_element() retrieves the next element from the beginning (not the end) of the &amp;lt;div> element</cell></row>
+<row><cell>get_next_element_by_name</cell><cell><seg rend="red">[Deprecated in 1.1: use get_next_element with the name of the element sought as a parameter]</seg></cell></row>
+<row><cell>get_previous_element</cell><cell>Has one optional parameter: the name of the element sought.  If the name of the element sought is given, retrieves the previous element which matches the name sought.  If there is no such element, an exception is thrown.  If the name of the element sought is not given, retrieves the previous element, of any kind (including text elements) in the document stream.  If the previous element is the last child of the left sibling, it retrieves that last child; if it is a left sibling, it retrieves that; else it looks up the element ancestors and through their children and siblings till it finds the previous element.  If there is no previous element (we are at the beginning of the document), an exception is thrown. Example: div.get_previous_element() retrieves the last element before the beginning (not the end) of the &amp;lt;div> element</cell></row>
+<row><cell>get_previous_element_by_name</cell><cell><seg rend="red">[Deprecated in 1.1: use get_previous_element with the name of the element sought as a parameter]</seg></cell></row>
+<row><cell>get_next_node</cell><cell>Works as for get_next_element, but ignores '#text' nodes (that is, nodes containing only character data).   It has one parameter, set to either 'True' or 'False': if 'True' it ignores the children of the starting node, iterating only through siblings and ancestors.   If there is no next node, an exception is thrown.  Example: div.get_next_node('True') finds the next node from the beginning (not the end) of the &amp;lt;div> element which is not a child of the &amp;lt;div> element or a '#text' node.</cell></row>
+<row><cell>get_previous_node</cell><cell>Works as for get_next_node, but locates the previous node in the document stream, not the next node.  If there is no previous node, an exception is thrown.</cell></row>
+<row><cell>has_right_sibling</cell><cell>Has no parameters; returns 'True' if the element has a right sibling of any kind; 'False' if it does not.   Example: div.has_right_sibling() returns 'True' if the &amp;lt;div> element has a right sibling of any kind; 'False' if it does not.</cell></row>
+<row><cell>has_left_sibling</cell><cell>Has no parameters; returns 'True' if the element has a left sibling of any kind; 'False' if it does not.   Example: div.has_left_sibling() returns 'True' if the &amp;lt;div> element has a left sibling of any kind; 'False' if it does not.</cell></row>
+<row><cell>get_next_sibling</cell><cell>Has one optional parameter, the name of the element sought.  If the name of the element sought is given, retrieves the element with this name which is the next (right) sibling. If there is no such element, an exception is thrown.  If the name of the element sought is not given, retrieves the next sibling. Example: p.get_next_sibling('l') returns the &amp;lt;l> element if the &amp;lt;p> element has a right sibling which is a &amp;lt;l> element; throws an exception if it has not.</cell></row>
+<row><cell>get_next_sibling_by_name</cell><cell><seg rend="red">[Deprecated in 1.1: use get_previous_element with the name of the element sought as a parameter]</seg></cell></row>
+<row><cell>get_previous_sibling</cell><cell>Has one optional parameter, the name of the element sought.  If the name of the element sought is given, retrieves the element with this name which is the previous (left) sibling. If there is no such element, an exception is thrown.  If the name of the element sought is not given, retrieves the left sibling. Example: p.get_previous_sibling('l') returns the &amp;lt;l> element if the &amp;lt;p> element has a left sibling which is a &amp;lt;l> element; throws an exception if it has not.</cell></row>
+<row><cell>get_previous_sibling_by_name</cell><cell><seg rend="red">[Deprecated in 1.1: use get_previous_element with the name of the element sought as a parameter]</seg></cell></row>
+</table>
+<p>Note that character data nodes (that is, nodes containing only text, not elements) have the name '#text'.</p>
+</div>
+<div n="2.3">
+<head rend="Element information">2.3  Element properties: getting information about elements</head>
+<p>In this section, we list Pixelise methods for retrieving information about particular elements:</p>
+<table>
+<row><cell>get_attribute_names</cell><cell>Has no parameters: retrieves a list of the names of attributes for the element. If there are no attributes, the method returns 'None'.  Example: div.get_attribute_names() returns a list of the attributes for the &amp;lt;div> element.</cell></row>
+<row><cell>get_attribute_value</cell><cell>Has one parameter, the name of the attribute whose value is sought.  If the element has an attribute of that name, the method returns the attribute value as a string.  If there is no attribute with this name, an exception is thrown.  Example:  for the element &amp;lt;div type="book"> div.get_attribute_value('type') returns the string 'book'.</cell></row>
+<row><cell>create_path</cell><cell>Has no parameters; retrieves the element path from the top of the document to the element as a Python list.  Example:  within this document, the path to this element &amp;lt;cell> element would be returned as TEI.2 text body div div div table row cell.</cell></row>
+<row><cell>print_element_debug</cell><cell>Has no parameters; retrieves the name of the element and its attributes.  Example:  for the element &amp;lt;div type="book"> div.print_element_debug() returns the string '&amp;lt;div type="book">'.</cell></row>
+<row><cell>get_node_name</cell><cell>Has no parameters: what this method returns depends on the type of object calling this method.  If the object is an XML element, the method returns the name of the element.  Examples:  for the element &amp;lt;div> div.get_node_name() returns the string 'div';  for the attribute 'type="book"'  attribute.get_node_name() returns the string 'type'.</cell></row>
+<row><cell>get_node_value</cell><cell>Has no parameters: what this method returns depends on the type of object calling this method.  If the object is an XML attribute, the method returns the value of the attribute.  Example:  for the attribute 'type="book"'  attribute.get_node_value() returns the string 'book'. (It's hard to see how this could work with an element instead of an attribute!)</cell></row>
+<row><cell>isspace</cell><cell>Has no parameters: returns 'True' if the element contents are just white space (spaces, tabs); 'False' if they are not. Example:  div.isspace() returns 'True' if the &amp;lt;div> element contains only white space; 'False' if it does not.</cell>
+</row>
+</table>
+</div>
+<div n="2.4">
+<head rend="Query functions">2.4 Query functions</head>
+<p>SDPublisher provides support for most (if not all) XQuery searches via the method 'query', available on every XML collection within Pixelise.  You retrieve the XML collection you are interested in by a call to the Pixelise Collection object: "p=Collection(request, 'origin')" retrieves the XML for the book 'origin'. In the DB XML implementation, this is the contents of a single .dbxml database ('container' in DB XML parlance).  The typical process in SDPublisher is as follows (see 2.1 above):</p>
+<list>
+<item>A SDPublisher function (eg 'chapter') is called, with a parameter pointing to the document section to be processed (e.g. '1' for chapter 1)</item>
+<item>SDPublisher identifies and initializes the Pixelise collection appropriate to this document, thus: 'p=Collection(request, 'origin')'</item>
+<item>For this 'p' object, representing the entire XML document, Pixelise then retrieves the XML element sought by 'p.query'</item>
+</list>
+<p>The 'query' method is called with three parameters, thus p.query("//pb", 1, 50):</p>
+<table>
+<row><cell>//pb</cell><cell>The first parameter must be the query itself, formatted as an XQuery string.  This searches for all &amp;lt;pb> elements</cell></row>
+<row><cell>1</cell><cell>The second parameter specifies the first result we want returned.  If this is '1'  then the first 'hit' is the first result returned; if it is '50', the 50th hit is the first result returned</cell></row>
+<row><cell>50</cell><cell>The third parameter specifies the last result we want returned.  If this is '1' then the first 'hit' is the last result returned; if it is '50', the 50th hit is the last result returned</cell></row>
+</table>
+<p>Thus: using p.query with only one parameter will return all matches of the query string: hence, p.query("//pb") will return all &amp;lt;pb> elements.  If you wish to limit the hits returned, you must specify both the second and third parameters.  p.query("//pb", None, 1, 50) will return the first 50 hits; p.query("//pb", None, 51, 100) the next 50, etc.</p>
+<p>Here are some sample XQuery commands, embedded in p.query:</p>
+<table>
+<row><cell>p.query("//text")</cell><cell>Retrieves all &amp;lt;text> elements</cell></row>
+<row><cell>p.query("//pb[@n='7']", 1, 1)</cell><cell>Retrieves the first &amp;lt;pb n="7"/> element</cell></row>
+<row><cell>p.query("//p[contains(., "deviation")]')</cell><cell>Retrieves all &amp;lt;p> elements containing the word "deviation".</cell></row>
+<row><cell>p.query("//feed/author="peterrr73"'')</cell><cell>Retrieves all &amp;lt;feed> elements containing an &amp;lt;author> element which contains the text 'peterrr73'.</cell></row>
+</table>
+<p>Note that the results of a query method are always returned as a Python list.  If nothing is found, the query returns 'None'; if something is found, you can extract it by using the Python 'next()' method, and iterate through the results using the Python 'hasNext method()' (or just use the Python 'for' method, thus:</p>
+<p rend="indent1">results = p.query("//pb")<lb rend="indent1"/>
+    if results == None:<lb rend="indent2"/>
+        return (False)<lb rend="indent1"/>
+    pbs =[]<lb rend="indent1"/>
+    while results.hasNext():<lb rend="indent2"/>
+    	pbs.append(results.next())<lb rend="indent1"/>
+    return (pbs)</p>
+<p>This fragment runs a search for all page breaks.  If it finds any, it initializes a Python list (pbs) and appends each page break to the list.</p>
+</div>
+<div n="2.5">
+<head rend="File locations">2.5 Template and Pixelate file locations</head>
+<p>In the 'Origin of Species' example given above, we place the Pixelate file 'base.py' inside a subfolder 'origin', inside the 'pixelates' folder.  We then call that file by requesting 'origin/base.py' in the process_element call.  Similarly, we have the templates files 'text.html' and others in a subfolder 'origin' within the 'templates' folder, and we request 'origin/text.html' in the render_to_response call.</p>
+<p>We could have done without the 'origin' subfolders, placed the 'base.py' and 'text.html' files directly within the 'templates' and 'pixelates' folders, and called them simply by invoking 'base.py' and 'text.html'.  Why do we not do that, and instead use the apparently unnecessary 'origin' subfolders?</p>
+<p>We do this because of how Django finds pixelate and template files.  Django knows to look for these in 'pixelates' and 'templates' folders.  Thus, when it is told to find 'base.py' it looks in <hi rend="ital">every</hi> pixelate folder it knows about: that is, in the pixelate folders for both 'SDPintro', 'origin', and every other book you have.  As soon as it finds a 'base.py' file in any of these, it stops looking and uses that one.  Thus, when we call 'base.py' while processing the book' origin' it could easily bring back the 'base.py' file for 'SDPintro' (or any other book at all).  Django does exactly the same for templates: the request for 'text.html' while processing 'origin' could bring back the 'text.html' file for 'SDPintro', not 'origin'.</p>
+<p>You can stop Django returning the 'wrong' pixelate or template file by specifying a path for the file, thus 'origin/base.py' will find only the 'base.py' file in a folder 'origin' in a 'pixelates' folder.  That is how we do it in these examples.</p>
+<p>Although this seems annoying, you can make good use of how Django does this.  You could have a single 'base.py' or 'text.html' file which you want used by all your books.  Just place this file in a 'pixelates' or 'templates' folder within one of your books, invoke it as plain 'base.py' or 'text.html' without a path, and every book which invokes plain 'base.py' or 'text.html' without a path will find it.</p>
+   
+</div>
+</div>
+
+<div n="3">
+<head rend="Utility functions">3  Utility functions and tools</head>
+<div n="3.1">
+<head rend="Management functions">3.1  SDPublisher management functions: startxml and others</head>
+<p>SDPublisher provides a few useful functions, for setting up and managing publications.  These are all run from the command line, inside the folder containing the books you want to publish.  The next commands presume you have typed 'cd SDPublisher' from the command line to move into the SDPublisher folder.</p>
+<table>
+<row><cell>startxml</cell><cell>Example: python manage.py startxml mybook<lb/>
+This creates a folder 'mybook' within the Django project folder, containing various starting folders and files which SDPublisher will need (for example:  a skeleton 'views.py' file; a 'pixelates' folder, and an empty DB XML container 'mybook.dbxml' etc.) <lb/>Note that after running startxml the user has to edit the settings.py file in the parent folder, by editing the INSTALLED_APPS list and adding various lines; see 1.4 above.  
+</cell></row>
+<row><cell>indexxml</cell><cell>Example: python manage.py indexxml mybook -f mybook/mybook.xml <lb/>
+This creates an index of the xml in 'mybook.xml', in the folder 'mybook'.  For larger documents, this can speed up various operations immensely.  Counterintuitively, in DB XML it is faster to create the index before inputting the XML into the database, using the next command.
+</cell></row>
+<row><cell>putxml</cell><cell>Example: python manage.py putxml  mybook -f mybook/mybook.xml -n text<lb/>
+This inserts the xml in 'mybook.xml', in the folder 'mybook', as the document 'text' into the DB XML container 'mybook.dbxml'.  If there is already a document 'text' in that DB XML container, an error message is generated (see rmxml below) <seg rend="red">This makes use of the document feature in DB XML -- not supported, I expect, in all XML or other databases</seg>
+</cell></row>
+<row><cell>rmxml</cell><cell>Example: python manage.py rmxml mybook -n text<lb/>
+This removes the document 'text' from 'mybook'.  You can then run 'putxml' to reinput the edited document.</cell></row>
+<row><cell>putallxml</cell><cell>Example: python manage.py putallxml mybook -d mybook/mybookxml<lb/>
+This locates the folder 'mybookxml' in 'mybook', finds all the files with the extension '.xml' in that folder, and adds all of them to book 'mybook'.   You can specify all files with a different extension by adding an '-e' flag to the call: '-e tei' will add all files with the extension '.tei'.</cell></row>
+</table>
+<p rend="red">There is scope for adding many more command line management functions -- and for refining the ones we have.  But, beyond the most basic level, this might be excessively dependent on the individual database we happen to be using.  Perhaps we should not go down that route.  </p>
+</div>
+<div n="3.2"><head rend="DB XML functions">3.2  DB XML command line functions</head>
+<p>It can be useful to manipulate the DB XML database directly, rather than through the Python interface.  To do so, you need to move into the same folder as the dbxml file for your book: thus, if you are in the folder 'SDPublisher' holding the folder 'mybook' you would need to type 'cd mybook' to move into the 'mybook' folder holding 'mybook.dbxml'.</p>
+<p>Before executing any of the following commands, you need to start the dbxml interpreter from the command line, after making sure that you are in the folder holding the dbxml file.  You can start the interpreter just by typing</p>
+<p rend="indent1">dbxml</p>
+<p>Followed by the return key at the command prompt.  You may have to give the full path to the dbxml application: thus (for example):</p>
+<p rend="indent1">"C:\Program Files\Oracle\Berkeley DB XML 2.4.13\bin\dbxml"</p>
+<p>You should then get the command prompt 'dbxml>'.  The following commands are then available:</p>
+<table>
+<row><cell>openContainer</cell><cell>example: openContainer origin.dbxml<lb/>
+Opens the specified .dbxml container file.  All subsequent operations are on this file until it is closed.  All the following examples presume that the container origin.dbxml has been opened by an openContainer call.</cell></row>
+<row><cell>putDocument</cell><cell>example: putDocument text origin.xml f<lb/>
+Inserts the document 'origin.xml' into the container under the name 'text'.</cell></row>
+<row><cell>removeDocument</cell><cell>example: removeDocument text<lb/>
+Removes the document with the name 'text' from the container.</cell></row>
+<row><cell>query</cell><cell>example: query 'collection("origin.dbxml")//ab[@id="CH1-100-100-1859"]'<lb/>
+Finds the &amp;lt;ab> element with id="CH1-100-100-1859" in origin.dbxml (the first sentence of the 1859 'Origin').</cell></row>
+<row><cell>print</cell><cell>example: print<lb/>
+Prints the last object found.  Following the last call, the &amp;lt;ab> element and its content will be printed.</cell></row>
+<row><cell>removeNodes</cell><cell>example: removeNodes 'collection("origin.dbxml")//div[@n="CH1"]//ab'<lb/>
+Removes all &amp;lt;ab> elements in the &amp;lt;div n="CH1"> element.</cell></row>
+<row><cell>sync</cell><cell>example: sync <lb/>
+Writes the .dbxml container to disc, so saving all changes made.</cell></row>
+<row><cell>exit</cell><cell>example: exit <lb/>
+Quits DB XML.</cell></row>
+</table>
+<p>Like all industrial-strength databases, DB XML has a  powerful indexing capacity.  Once your source XML grows beyond a certain size, you will find that  DB XML indices dramatically increases performance: on a 28 megabyte XML file we have found search performance improving by a factor of 30,000 to one.  Here are some indexing commands, to be executed from the command line after the .dbxml container has been opened:</p>
+<table>
+<row><cell>addIndex "" target node-attribute-equality-string</cell><cell>Indexes all attributes with the name 'target'.</cell></row>
+<row><cell>addIndex "" id node-attribute-equality-string</cell><cell>Indexes all attributes with the name 'id'.</cell></row>
+<row><cell>addIndex "" w node-element-presence</cell><cell>Indexes all &amp;lt;w> elements.</cell></row>
+<row><cell>addIndex "" p node-element-presence</cell><cell>Indexes all &amp;lt;p> elements.</cell></row>
+</table>
+<p>We have found that it is not only queries which are sped up by indexing: all DB XML operations appear faster. There is an overhead, as indices might add 25% or more to the database size, which might itself be around three times larger than the original XML.  But the speed advantage is worth the extra storage needed. </p>
+</div>
+<div n="3.3">
+<head rend="Shell operation">3.3  Running Pixelise from the shell</head>
+<p>An advantage of the Python scripting environment is that one can open a Python 'shell' and access the full range of SDPublisher functions from the shell.  This is a useful way of checking what is happening for any given book inside SDPublisher.  Here is an example of a Python shell session within SDPublisher:</p>
+
+<p rend="indent1">C:\Documents and Settings\All Users\editions>python manage.py shell <lb rend="indent2"/>
+Python 2.5.4 (r254:67916, Dec 23 2008, 15:10:54) <lb rend="indent2"/>
+[MSC v.1310 32 bit (Intel)] on win32<lb rend="indent2"/>
+Type "help", "copyright", "credits" or "license" for more information.<lb rend="indent2"/>
+(InteractiveConsole)<lb rend="indent1"/>
+>>> from pixelise.core import Collection<lb rend="indent1"/>
+>>> p = Collection('origin')<lb rend="indent1"/>
+>>> results = p.query("//ab[@id='CH2-100-100-1859']")<lb rend="indent1"/>
+>>> firstab = results.next()<lb rend="indent1"/>
+>>> print firstab<lb/>
+&amp;lt;ab n="100" id="CH2-100-100-1859">BEFORE applying the principles ... &amp;lt;/ab></p>
+<p>The key here is the first command: 'python manage.py shell'.  This starts the shell.  The next command imports the Collection method from Pixelise, and the line 'p = Collection('origin')' initializes the dbxml database for the book 'origin' and attaches it to the variable 'p'.  Thereafter, all happens exactly as it would in a .py script: we retrieve the first sentence of the second chapter and print it to the window.</p>
+<p>There are many other useful tools you can run from the shell.  For example, you can see a list of all the methods available for a given object by typing the object name and then pressing the tab key twice (this may require IPython installation).</p>
+
+</div>
+
+
+</div>
+</div>
+</body>
+</text>
+</TEI.2>

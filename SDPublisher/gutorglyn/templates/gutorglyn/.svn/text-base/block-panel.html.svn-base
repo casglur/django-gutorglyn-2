@@ -1,0 +1,24 @@
+{% load i18n %}
+
+{% block panel %}
+
+<!-- sliding left panel -->
+<div class="panel">
+	<div style="clear:both;"></div>
+		<div class="panel-heading"><strong><span id="patrons-and-poets-draw-title"></span></strong></div>
+		<div class="patron-panel">
+		<a id="top"></a>
+		{{patronIds|safe}}
+		<br/>
+		<br/>
+		{{patron|safe}}
+		<br/>
+		<a href="#top">Top</a>
+		</div>
+	<div style="clear:both;"></div>
+	<div style="clear:both;"></div>
+</div>
+<a class="trigger" id="trigger" href="#"></a>
+<!-- sliding left panel end -->
+{% endblock panel%}
+

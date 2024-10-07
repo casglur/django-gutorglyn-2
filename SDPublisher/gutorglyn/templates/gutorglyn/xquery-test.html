@@ -1,0 +1,15 @@
+{% block content %}
+{% load i18n %}
+<div>
+<h2>{{containsType}}</h2>
+{{ query }}
+</div>
+<div id="poem-results">
+	<div class="hit-count"><strong><span style="display:inline" id="poem-hit-count">{{poemSearchNum}}</span> {% trans "Search Page Poem Results Count label" %}</strong></div>
+	<hr style="background-color:#868686"/>
+    <div class="results-group" id="poem-results-group">
+    	 {{searchLineHits|safe}}
+    </div>
+</div>	
+
+{% endblock %}

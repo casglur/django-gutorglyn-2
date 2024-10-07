@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/gutorglyn/!svn/ver/1415/lighttpd
+END
+lighttpd-wsgi.conf
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/gutorglyn/!svn/ver/1366/lighttpd/lighttpd-wsgi.conf
+END
+lighttpd-new.conf
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/gutorglyn/!svn/ver/1415/lighttpd/lighttpd-new.conf
+END
+lighttpd.conf
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gutorglyn/!svn/ver/1415/lighttpd/lighttpd.conf
+END

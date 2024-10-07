@@ -1,0 +1,2901 @@
+{% extends "gutorglyn/static-base.html" %} {% block content %}
+{% load i18n %}
+<div class="prepend-1 span-22" id="cy-biog">
+	<br />
+	<div class="stdheader">
+		<h1 class="maintitle">{% trans "Biography Page title" %}</h1>
+	</div>
+	<h2>{% trans "Biography Page contents label" %}</h2>
+	<ul class="toc toc_body">
+		<li class="toc"><span class="headingNumber"></span><a
+			class="toc toc_0" href="#index.xml-body.1_div.1"> Bywyd Guto'r
+				Glyn</a>
+		<ul class="toc">
+				<li class="toc"><span class="headingNumber">1. </span><a
+					class="toc toc_1" href="#index.xml-body.1_div.1_div.1"> Y canu
+						cynnar, c.1430-50</a>
+				<ul class="toc">
+						<li class="toc"><span class="headingNumber">1.1 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.1_div.1">
+								Y canu cynharaf</a></li>
+						<li class="toc"><span class="headingNumber">1.2 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.1_div.2">
+								Bardd o filwr yn Normandi</a></li>
+						<li class="toc"><span class="headingNumber">1.3 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.1_div.3">
+								Cylch clera yn y De?</a></li>
+						<li class="toc"><span class="headingNumber">1.4 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.1_div.4">
+								Morgannwg a Gwent</a></li>
+						<li class="toc"><span class="headingNumber">1.5 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.1_div.5">
+								Yr Abad Rhys ap Dafydd</a></li>
+						<li class="toc"><span class="headingNumber">1.6 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.1_div.6">
+								Clera yn y Gogledd</a></li>
+					</ul></li>
+				<li class="toc"><span class="headingNumber">2. </span><a
+					class="toc toc_1" href="#index.xml-body.1_div.1_div.2"> Guto yn
+						ystod Rhyfeloedd y Rhosynnau, c.1450-70</a>
+				<ul class="toc">
+						<li class="toc"><span class="headingNumber">2.1 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.2_div.1">
+								Clera yn y gogledd-ddwyrain</a></li>
+						<li class="toc"><span class="headingNumber">2.2 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.2_div.2">
+								Croesoswallt</a></li>
+						<li class="toc"><span class="headingNumber">2.3 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.2_div.3">
+								Clera yn y canolbarth a'r gorllewin</a></li>
+						<li class="toc"><span class="headingNumber">2.4 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.2_div.4">
+								Dafydd ab Edmwnd</a></li>
+						<li class="toc"><span class="headingNumber">2.5 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.2_div.5">
+								Wiliam Herbert a'i deulu</a></li>
+						<li class="toc"><span class="headingNumber">2.6 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.2_div.6">
+								Brwydr Edgecote (Banbury), 1469</a></li>
+					</ul></li>
+				<li class="toc"><span class="headingNumber">3. </span><a
+					class="toc toc_1" href="#index.xml-body.1_div.1_div.3"> Yr
+						ugain mlynedd olaf, c.1470-90</a>
+				<ul class="toc">
+						<li class="toc"><span class="headingNumber">3.1 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.3_div.1">
+								Y saithdegau</a></li>
+						<li class="toc"><span class="headingNumber">3.2 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.3_div.2">
+								Yr wythdegau</a></li>
+						<li class="toc"><span class="headingNumber">3.3 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.3_div.3">
+								Rhisiart Cyffin, deon Bangor</a></li>
+						<li class="toc"><span class="headingNumber">3.4 </span><a
+							class="toc toc_2" href="#index.xml-body.1_div.1_div.3_div.4">
+								Yr Abad Dafydd ab Ieuan</a></li>
+					</ul></li>
+				<li class="toc"><span class="headingNumber">4. </span><a
+					class="toc toc_1" href="#index.xml-body.1_div.1_div.4">
+						Llyfryddiaeth</a></li>
+			</ul></li>
+	</ul>
+	<div class="teidiv0" id="index.xml-body.1_div.1">
+		<h2>
+			<span class="topHeading">Bywyd Guto'r Glyn</span>
+		</h2>
+		<p>EURIG SALISBURY A BARRY J. LEWIS</p>
+		<p>Perthyn i Guto'r Glyn hynodrwydd nid yn unig fel un o feirdd
+			mwyaf y bymthegfed ganrif yng Nghymru, ond fel y bardd Cymraeg cyntaf
+			y gellir llunio amlinelliad gweddol ddiogel o'i fywyd. Yn wahanol i'w
+			ragflaenydd enwocaf, Dafydd ap Gwilym, roedd Guto'n fardd mawl
+			proffesiynol. Ni roes ei fryd ar ganu cerddi serch i ferched na
+			wyddys fawr ddim amdanynt heddiw, eithr fe ganodd yn uniongyrchol i
+			ddynion y mae eu henwau a'u gweithredoedd yn aml wedi eu cofnodi mewn
+			dogfennau o'r cyfnod. At hynny, cafodd Guto yrfa faith iawn a chanodd
+			gerddi i nifer o bobl bwysicaf ei oes.</p>
+		<p>Wedi dweud hyn oll, mae'n debygol mai cyfran gymharol fechan
+			o'i waith sydd ar glawr. Goroesodd tua 120 o'i gerddi yn y
+			llawysgrifau (cyfanswm o 7569 o linellau), swm go helaeth o'i gymharu
+			&acirc; mwyafrif beirdd y cyfnod, ond cyfanswm llai trawiadol mewn
+			cymhariaeth &acirc;'r cruglwyth o 238 o gerddi Lewys Glyn Cothi a oroesodd,
+			y mwyafrif yn llaw'r bardd ei hun. Ac ystyried bod Guto wedi cael oes
+			feithach na Lewys i bob golwg, ac o gymryd ei fod lawn mor
+			gynhyrchiol ag ef, mae'n debygol fod dros hanner cynnyrch Guto wedi
+			mynd yn angof. At hynny, mae'r rhan fwyaf o'r hyn a fu unwaith yn
+			hysbys amdano wedi mynd dros gof hefyd, megis ym mhle y cafodd ei
+			eni, pwy oedd ei athro barddol a phryd y bu farw.</p>
+		<p>Mae'r ychydig sydd wedi goroesi, er hynny, yn nodedig am ddau
+			reswm. Y cyntaf yw rhychwant amseryddol canu Guto'r Glyn;
+			cynrychiolir yn ei waith y rhan fwyaf o'r bymthegfed ganrif wedi
+			gwrthryfel Owain Glyndwr. Yr ail yw ehangder daearyddol y canu; yr
+			unig ran o Gymru lle na bu Guto'n arbennig o weithgar, hyd y gwyddys,
+			yw'r de-orllewin. Er mor anghyflawn yw'r darlun ar adegau, eto fe
+			gawn gipolygon cyffrous ar Guto mewn lleoliadau arbennig ar adegau
+			arbennig, ac yn raddol fe ddaw i'r amlwg amlinelliad o yrfa bardd ac
+			iddi arwyddoc&acirc;d gwir genedlaethol a rhyngwladol.</p>
+		<p class="heading 3">
+			<a id="Toc369616088">
+				<!--anchor-->
+			</a>Ailddarganfod y bardd
+		</p>
+		<p>
+			Yn 1939 y cyhoeddwyd y casgliad cyntaf o farddoniaeth Guto gan Wasg
+			Prifysgol Cymru dan olygyddiaeth Ifor Williams, <span
+				style="font-style: italic">Gwaith Guto'r Glyn</span>, a'r cerddi
+			wedi eu casglu gan J. Llywelyn Williams. Ers hynny cafwyd sawl
+			ymdriniaeth ar fywyd y bardd, yn fwyaf nodedig gan Saunders Lewis
+			(1976) a J.E. Caerwyn Williams (1997). Er cyfoethoced yr
+			ymdriniaethau hynny, fe'u seiliwyd o reidrwydd ar olygiad cymharol
+			annigonol o waith Guto a luniwyd ar frys ac a gwblhawyd 'ar fyrder'
+			yn nannedd yr Ail Ryfel Byd (GGl vii). Rhaid cydnabod bellach fod
+			llawer o'r hyn sydd wedi ei ysgrifennu am fywyd Guto'n frith o f&acirc;n
+			gamdybiaethau sy'n seiliedig ar destunau annerbyniol o'i gerddi.
+			Mae'r unig gofiant a luniwyd iddo (Rees 2008), yn pwyso ar yr un
+			seiliau simsan ac, at hynny, mae'n euog o hau rhai camdybiaethau
+			newydd am y bardd. Gobaith yr ymdriniaeth bresennol yw y bydd modd
+			elwa ar olygiad trylwyr o waith Guto er mwyn claddu rhai o'r
+			camdybiaethau hynny a rhoi astudiaethau ar fywyd y bardd ar sail
+			gadarnach. Er hynny, mae llawer yn ansicr o hyd, a'n gobaith yw y
+			bydd yr astudiaeth hon yn ysbardun i eraill i fynd i'r afael &acirc;'r
+			problemau a erys.
+		</p>
+		<p class="heading 3">
+			<a id="Toc369616089">
+				<!--anchor-->
+			</a>Bywyd bardd yn y bymthegfed ganrif
+		</p>
+		<p>Cyn troi at yrfa Guto'n benodol, byddai'n fuddiol amlinellu'r
+			hyn a wyddys am weithgarwch y beirdd proffesiynol yn ei amser ef. Eu
+			gwaith, yn y b&ocirc;n, oedd diddanu noddwyr. Amrywiai'r rhain o wyr uchel
+			iawn eu statws, fel Wiliam Herbert o Raglan a ddaeth yn iarll cyntaf
+			Penfro, i f&acirc;n ysgwieriaid fel Phylib ap Gwilym Llwyd o Drefgwnter.
+			Ond uchelwyr - gwyr o dras a feddai ar ystadau a chartrefi cyfforddus
+			yn &ocirc;l safon eu hoes - oeddynt i gyd. Byddai rhai aelodau o'r dosbarth
+			hwn yn dilyn gyrfa yn yr Eglwys ac, unwaith eto, amrywio a wn&acirc;i
+			statws y gwyr hyn. Canai Guto i ddeon Bangor ac i offeiriaid plwyf, a
+			hefyd i abadau rhai o'r tai Sistersaidd, hwythau'n perthyn i
+			deuluoedd uchelwrol lleol. Ar adegau, byddai nawdd ar gael gan
+			ferched a gwragedd, weithiau ochr yn ochr &acirc;'u gwyr, droeon eraill yn
+			rhinwedd eu statws fel gweddwon. Rhaid hefyd grybwyll noddwyr
+			eithriadol, megis Si&ocirc;n Talbod, ail iarll Amwythig, ac yn bennaf oll y
+			Brenin Edward IV. Mae'n annhebygol y byddai'r gwyr dyrchafedig hyn yn
+			medru Cymraeg, ac mae lle i ddadlau a fwriadwyd y cerddi ar gyfer
+			cynulleidfa o'u cefnogwyr lleol yn unig ynteu, os oeddynt mewn
+			gwirionedd yno i'w clywed, a gyfl&euml;wyd byrdwn y canu iddynt yn Saesneg
+			o flaen y perfformiad neu ar ei &ocirc;l. Yn y 1470au derbyniodd Guto arian
+			am ganu i Edward, Tywysog Cymru, yn Amwythig, felly ni ddylid gwrthod
+			yn ddifeddwl y posibilrwydd fod y cerddi i'r iarll ac i'r brenin wedi
+			eu datganu yn eu gwydd.</p>
+		<p>
+			Pennaf gorchwyl y bardd oedd canmol ei noddwr ar fydr. Mae'r math hwn
+			o farddoniaeth, y canu mawl, mor greiddiol i waith y beirdd fel ei
+			fod bron yn gyfystyr &acirc;'u crefft. Un enw go gyffredin ar y canu mawl
+			oedd <span style="font-style: italic">y glod</span>. Defnyddid hefyd
+			y ferf <span style="font-style: italic">prydu</span>. Ystyr wreiddiol
+			y ferf hon yw 'ffurfio' neu 'siapio', ond daeth i olygu 'llunio mawl'
+			yn benodol. Sonnid hefyd am y <span style="font-style: italic">cywydd
+				gwr</span>, ac mae Guto yn ei alw ei hun yn <span
+				style="font-style: italic">[b]rydydd gwr</span>. Mae'r termau hyn yn
+			crisialu gwirionedd pwysig am y canu mawl: dathliad o wryweidd-dra
+			ydyw yn anad unpeth. Y cyneddfau a folir yw'r rheini a nodweddai'r
+			gwr delfrydol, sef dewrder ar faes y gad; cadernid wrth amddiffyn ei
+			fuddiannau ei hun a sicrhau lles y sawl a ddibynnai arno; haelioni a
+			charedigrwydd tuag at y sawl a oedd yn deilwng o dderbyn y rhain (sef
+			dilynwyr, beirdd, gwesteion yn gyffredinol); ac ymlyniad wrth
+			gyfiawnder ac wrth gadw trefn a thegwch o fewn y gymdeithas.
+			Mynegiant gloyw o'r syniadau hyn yw'r topos 'gwrdd wrth wrdd, gw&acirc;r
+			wrth w&acirc;r' sy'n digwydd drosodd a throsodd yn y farddoniaeth. Dylai
+			ymddygiad y gwr delfrydol amrywio yn &ocirc;l natur y sawl yr oedd yn
+			ymwneud &acirc; hwy. Hynny yw, dylai ddangos cadernid a beiddgarwch hyd at
+			greulonder tuag at ei elynion a'r sawl a'i heriai, ond disgwylid iddo
+			drin ei gyfeillion a'i ddilynwyr, fel hefyd y gwan a'r diamddiffyn -
+			sef merched yn gyffredinol a chardotwyr - gyda haelioni di-ben-draw
+			ac wyneb siriol. Cysylltid y rhinweddau hyn yn dynn wrth arucheledd
+			tras. Cred holl gyffredin yn y gymdeithas ganoloesol oedd mai tras a
+			fyddai'n gwarantu bod gwr yn meddu ar gyneddfau felly. Tras gwr hefyd
+			a oedd yn pennu ei hawl i etifeddu tir a statws cymdeithasol ei
+			deulu. Dyna paham y mae'n cymryd lle mor fawr yn y canu mawl.
+		</p>
+		<p>
+			Er bod them&acirc;u'r mawl yn eithaf cyfyng ac ailadroddus, ceir amrywiaeth
+			diderfyn yng nghyflawniad y weithred o foli. Nid yw unrhyw gywydd neu
+			awdl o fawl yn dilyn patrwm yn slafaidd, a cheir amrywiaeth o ran y
+			dewis o them&acirc;u, y drefn y cyflwynir hwy, y mynegiant a'r delweddau,
+			a'r pwysleisiau. Gellir adnabod rhai <span style="font-style: italic">genres</span>,
+			neu is-<span style="font-style: italic">genres</span>, o fewn y canu
+			mawl. Cenid cerddi gofyn i ymbil am ffafr neu rodd, weithiau er lles
+			y bardd ei hun, droeon eraill ar gais noddwr arall. Cenid hefyd i
+			ddiolch am rodd a roddwyd. Cenid i ddathlu priodas ac i goff&aacute;u codi
+			ty newydd. Ond y pwysicaf a'r mwyaf nodedig o'r is-<span
+				style="font-style: italic">genres</span> oedd y farwnad, a genid nid
+			yn unig i gadw cof am y marw ond hefyd i sicrhau bod ffynhonnell y
+			nawdd i'r beirdd yn parhau i'r genhedlaeth nesaf.
+		</p>
+		<p>Diddanwch yn ystyr helaethaf y gair a geir yn y canu mawl. Yr
+			oedd, fodd bynnag, rai mathau eraill o farddoniaeth nad oedd mor agos
+			gysylltiedig &acirc; moli unigolyn. Un dull o esgor ar ddigrifwch oedd
+			gosod y beirdd i ddychanu ei gilydd. Cymerodd Guto ran mewn sawl
+			ymryson (sef cystadleuaeth farddol). Sail yr hiwmor yn yr ymrysonau
+			hyn oedd gor-ddweud byrlymus a defnydd ffraeth a gwreiddiol o
+			ddelweddau. Gallai'r pynciau a osodid fod yn rhai digon pigog, megis
+			cyhuddo bardd arall o or-ddweud a hau anwiredd, o ddangos diffyg
+			menter, o fod yn feddwyn esgeulus neu o fod yn dioddef gan ryw salwch
+			annymunol. Nid oedd ymddangosiad nac effeithiolrwydd yr organau
+			rhywiol y tu hwnt i gwestiwn ychwaith.</p>
+		<p>
+			Mae corff gwaith Guto'n nodedig ymhlith beirdd y bymthegfed ganrif am
+			ei fod yn gyfyngedig, i bob pwrpas, i'r <span
+				style="font-style: italic">genres</span> a grybwyllwyd uchod. Ni
+			cheir canu serch na chanu crefyddol ganddo, ac eithrio un cywydd
+			crefyddol a ganwyd, fel y mae Guto ei hun yn cyfaddef, ar gais noddwr
+			o glerigwr a gwynai nad oedd y bardd yn ymboeni ddigon am gyflwr ei
+			enaid ei hun (cerdd 118). Efallai nad oedd Guto yn arfer ymh&eacute;l &acirc;'r <span
+				style="font-style: italic">genres</span> hyn, ond peryglus fyddai
+			dweud hynny ar sail y ganran o'i waith sydd wedi goroesi. Yn sicr,
+			dengys cerdd i offeiriad Merthyr Tudful (cerdd 16), sy'n darlunio'r
+			berthynas rhyngddo a'i nawddsantes yn nhermau carwriaeth, a'r cywydd
+			digrif am serch Gwladus o Lyn-nedd (cerdd 34), ei fod yn llwyr
+			gyfarwydd &acirc; dulliau'r canu crefyddol a'r canu serch fel ei gilydd.
+		</p>
+		<p>Mae ochr ymarferol y grefft farddol yn anodd iawn ei hail-greu
+			heddiw ar sail y dystiolaeth annigonol sydd wedi goroesi. Mae'n
+			demtasiwn troi at ddogfennau'r unfed ganrif ar bymtheg, sy'n dweud
+			mwy am waith, trefn a rheolau'r urdd farddol, ond mae'n anodd gwybod
+			pa mor ddilys yw'r cyfarwyddyd hwnnw o'i gymhwyso ar gyfer y
+			bymthegfed ganrif. Diogelach yw pwyso ar dystiolaeth canu Guto a'i
+			gyfoeswyr yn unig.</p>
+		<p>Ni wyddys sut y deuai dyn yn fardd yn y bymthegfed ganrif. Yn
+			sicr, roedd rhai beirdd yn dilyn traddodiad teuluol, megis meibion
+			Hywel Swrdwal, Tudur Penllyn a Huw Cae Llwyd. Ond ni cheir
+			tystiolaeth fod tad Guto'n fardd, ac mae hynny'n wir am lawer o
+			feirdd eraill. Mae addysg y beirdd yn fwlch mawr yn ein gwybodaeth, a
+			thrafodir isod yr ychydig y gellir ei gasglu neu, a bod yn gywirach,
+			ei ddyfalu. Ni wyddys ychwaith sut y datblygai bardd ei rwydwaith o
+			noddwyr yn y lle cyntaf, ond y tebyg yw bod disgwyl iddo ddilyn ei
+			feistr o gwmpas y tai, cyn mynd yn annibynnol ei hun.</p>
+		<p>
+			Treuliai'r beirdd proffesiynol amser maith ar y ffordd, ac mae
+			blinderau teithio'n bwnc achlysurol yn y canu. Ymwelai beirdd &acirc;'u
+			noddwyr ar dri achlysur rheolaidd yn ystod y flwyddyn, sef adeg y
+			Nadolig, y Pasg a'r Sulgwyn - y tair gwyl arbennig y sonnir yn dra
+			aml amdanynt. At hynny, ymwelai beirdd ar ddyddiau gwyl y seintiau
+			hefyd, yn enwedig ar wyl nawddsant y plwyf. Achlysuron eraill a'u
+			denai oedd priodasau, codi ty newydd ac, yn amlach o lawer,
+			farwolaethau. Ni chenid y marwnadau o reidrwydd yn ystod yr angladd
+			ei hun neu unrhyw wledd a'i dilynai. Cymerai amser i'r newyddion
+			trist gyrraedd clustiau'r bardd yn y lle cyntaf, ble bynnag y
+			digwyddai fod, ac yna byddai arno angen amser i gyfansoddi marwnad
+			deilwng, ac yna fwy byth o amser i deithio i gartref y marw. Cynhelid
+			gwasanaethau coffa fis a blwyddyn ar &ocirc;l marwolaeth - y <span
+				style="font-style: italic">month's mind</span> a'r <span
+				style="font-style: italic">year's mind </span>yn Saesneg - a gall
+			mai yn ystod y rhain y cenid marwnadau gan amlaf. Ar wah&acirc;n i
+			amgylchiadau arbennig fel y rhain, ni wyddys a allai beirdd daro
+			heibio ar hap, neu a oedd rhai cartrefi'n agored iddynt drwy'r amser
+			- efallai mai dyna yw ystyr y gair <span style="font-style: italic">rhydd</span>
+			a arferir droeon gan Guto wrth ganmol rhai cartrefi nawdd penodol
+			(13.1-8). Sut, hefyd, y gwyddai bardd y byddai croeso iddo? Ceir peth
+			s&ocirc;n am <span style="font-style: italic">wahoddion</span>, sy'n
+			awgrymu bod disgwyl i fardd aros am gael ei wahodd (47.17-20; 55.1-8;
+			63.1-2).
+		</p>
+		<p>Cwestiwn diddorol arall yw ble yr arhosai bardd dros nos tra
+			oedd ar ei ffordd i rywle penodol. A g&acirc;i alw ar noddwyr heb fod
+			ganddo gerdd benodol yn barod ar eu cyfer? Gellir amau y c&acirc;i, ac y
+			byddai'n talu am ei fwyd a'i wely drwy adrodd cerddi eraill, megis
+			rhai Dafydd ap Gwilym (tystia un o gywyddau Guto i Harri Gruffudd o'r
+			Cwrtnewydd fod galw am glywed y rheini; cerdd 35). Os felly, byddai
+			rhai o'i ymweliadau'n llai ffurfiol nag eraill. Nid yw'n eglur o gwbl
+			faint o amser y disgwyliai bardd ei dreulio ym mhob ty, a'r tebyg yw
+			fod hynny'n amrywio yn &ocirc;l adnoddau, haelioni neu amynedd y noddwr.
+			Mae'n bosibl nad oedd Guto'n meddu ar ei aelwyd ei hun ar bob amser
+			yn ei yrfa, yn enwedig tua'r dechrau, ond ei fod yn hytrach yn
+			treulio ei holl amser yn symud o dy nawdd i dy nawdd. Gallai abaty
+			Ystrad-fflur neu Raglan fod wedi cynnig lloches iddo am amser
+			estynedig, efallai. Fodd bynnag, mae'n ddigon posibl hefyd fod gan
+			Guto gartref yn rhywle. Gwyddys iddo fyw yng Nghroesoswallt ar ryw
+			adeg yn ei yrfa.</p>
+		<p>
+			Ar lafar, o flaen y noddwr ac yn ngwydd cynulleidfa ehangach y
+			datgenid barddoniaeth Guto a'i gyfoeswyr. Mae'r dystiolaeth y
+			seiliwyd y gosodiad hwn arni i gyd yn deillio o'r cerddi eu hunain,
+			ond dim ond cop&iuml;au ysgrifenedig o'r rhain sydd ar gael, ac mae felly
+			berygl o ddadlau mewn cylch o ran natur lafar y canu. Eto i gyd,
+			mae'r cyfeiriadau yn y farddoniaeth at berfformio cyhoeddus - gan
+			gynnwys yr achlysuron, y cyfeiliant cerddorol ac arferion y beirdd o
+			ymweld &acirc;'u noddwyr er mwyn elwa o'u perchentyaeth - mor niferus fel
+			nad oes angen poeni'n ormodol am hyn. Mae angen ystyried, fodd
+			bynnag, berthynas y bardd &acirc; thestunau ysgrifenedig. Sonia Guto am
+			ddarllen llyfrau gyda'i noddwyr, yn enwedig Rhys ap Siancyn o
+			Lyn-nedd (cerdd 15). Yn eu plith roedd y <span
+				style="font-style: italic">Brut</span>, sef rhyw fersiwn Cymraeg o
+			'Historia Regum Britanniae' Sieffre o Fynwy, mae'n debyg, a hefyd
+			fucheddau'r saint, Trioedd ac <span style="font-style: italic">ystor&iuml;au</span>,
+			sef chwedlau rhyddiaith a allai fod yn grefyddol yn ogystal &acirc;
+			secwlar. Crybwyllir hefyd farddoniaeth y gorffennol - yn benodol,
+			cerddi Cynddelw Brydydd Mawr - barddoniaeth a oedd erbyn amser Guto
+			yn ddigon hynafol ei naws ac yn anodd ei deall, gellir amau, hyd yn
+			oed i fardd dysgedig. Eto, Rhys ap Siancyn oedd yr athro a Guto oedd
+			y disgybl, o leiaf yn &ocirc;l y cywydd. Cymerir bod Guto'n llythrennog,
+			heb fod modd profi hynny'n derfynol. Byddai'n dda gwybod a ofynnai
+			rhai o'i noddwyr am gael cop&iuml;au ysgrifenedig o'i gerddi. Un
+			llawysgrif yn unig a erys o'i amser ef ei hun sy'n cynnwys casgliad
+			o'i gerddi, sef Peniarth 57, gwaith a gomisiynwyd gan yr Abad Rhys o
+			Ystrad-fflur, yn &ocirc;l pob tebyg. Mae'r testunau ynddi yn gywir iawn yr
+			olwg, a gall yn hawdd mai o destunau llafar neu ysgrifenedig gan Guto
+			ei hun y'u codwyd - dwy law a fu wrthi yn eu cop&iuml;o, ac nid yw'n
+			amhosibl fod y naill neu'r llall yn eiddo Guto ei hun (Johnston 2013:
+			22).
+		</p>
+		<p class="heading 3">
+			<a id="Toc369616090">
+				<!--anchor-->
+			</a>Ei enw
+		</p>
+		<p>
+			Ffurf anwes yw <span style="font-style: italic">Guto</span> ar yr enw
+			mwy safonol, <span style="font-style: italic">Gruffudd</span> (Morgan
+			and Morgan 1985: 102-5), ond ni cheir tystiolaeth iddo erioed arddel
+			y ffurf safonol honno. <span style="font-style: italic">Guto</span>
+			ydoedd, yn &ocirc;l pob tebyg, o'r cychwyn, er i rai o'i gyd-feirdd
+			gyfeirio ato wrth ffurf anwes arall debyg, sef <span
+				style="font-style: italic">Gutun</span>, gan amlaf yn sgil gofynion
+			y gynghanedd (101a.1n). Credai rhai o ysgolheigion yr ugeinfed ganrif
+			nad yr un gwr oedd Guto'r Glyn a Guto ap Siancyn, ond tanseiliwyd y
+			gred honno bellach (Salisbury 2007a). Guto ap Siancyn oedd yr enw a
+			arddelai ar gychwyn ei yrfa, ond mabwysiadodd yn fuan wedyn ail enw
+			ei dad, Siancyn y Glyn. Roedd ei enw cyntaf yntau, fel ei fab, yn
+			ffurf anwes ar enw safonol, sef <span style="font-style: italic">Ieuan</span>
+			(Morgan and Morgan 1985: 137-8). Ceir y dystiolaeth gynharaf ynghylch
+			enw Guto yn llawysgrif Peniarth 57, a ysgrifennwyd cyn <span
+				style="font-style: italic">c</span>.1440 ac a gysylltir ag
+			Ystrad-fflur, lle priodolir cerddi i <span style="font-style: italic">Gutto
+				ap Jankyn</span>. Ategir yr wybodaeth honno mewn cywydd o waith Ieuan ap
+			Hywel Swrdwal a berthyn, o bosibl, i'r cyfnod <span
+				style="font-style: italic">c</span>.1437-41 (gw. isod). Geilw Ieuan
+			ef <span style="font-style: italic">Y Guto</span>, <span
+				style="font-style: italic">eos y Glyn</span> a <span
+				style="font-style: italic">Guto'r mawl</span>, a dywed mai ef yw <span
+				style="font-style: italic">mab Siancyn y Glyn</span> (GHS 24.38, 42,
+			54, 62). Ategir y ffurfiau hyn gan ddau briodoliad diweddarach: y
+			naill gan law anhysbys wrth gywydd lled-ddychan i Harri Gruffudd o'r
+			Cwrtnewydd yn swydd Henffordd (cerdd 35) yn llawysgrif Peniarth 55 (<span
+				style="font-style: italic">c</span>.1500), <span
+				style="font-style: italic">y gyto ab siankyn y glyn</span>; a'r
+			llall gan Thomas Rees o Gaerfyrddin wrth gywydd i ofyn saeled gan ac
+			ar ran uchelwyr o'r gogledd-ddwyrain (cerdd 73) yn llawysgrif LlGC
+			16964A (<span style="font-style: italic">c</span>.1600-50), <span
+				style="font-style: italic">Gytto ssiankyn y glyn</span>. Mae cyswllt
+			Peniarth 57, Peniarth 55 a LlGC 16964A &acirc; de Cymru yn awgrymu bod y
+			cof am y ffurf gynnar ar enw Guto wedi goroesi'n hirach mewn rhai
+			ardaloedd deheuol.
+		</p>
+		<p>
+			Torrwyd enw Guto ar restr fwstwr byddin Richard dug Iorc ar ddiwedd
+			mis Mai 1441, yn &ocirc;l pob tebyg gan swyddog o Sais yn Portsmouth a
+			hepgorodd y fannod gan drin <span style="font-style: italic">Glyn</span>
+			fel cyfenw yn unol &acirc;'r dull Seisnig: <span style="font-style: italic">Gitto
+				Glyn</span> (Salisbury 2007a: 1). Goroesodd tair enghraifft arall gyfoes
+			o'i enw. Perthyn y ddwy gyntaf i'r un cyd-destun, sef dau achlysur
+			rhwng 1476 ac 1478 pan dderbyniodd Guto daliad ar y cyd &acirc; gwr o'r enw
+			<span style="font-style: italic">Walter Harper</span> am ei wasanaeth
+			fel bardd yn Amwythig (ceir trafodaeth isod). Fel yn achos y rhestr
+			filwyr o 1441, mae'r fannod yn absennol gan mai Sais, yn &ocirc;l pob
+			tebyg, a dorrodd yr enw <span style="font-style: italic">Gutto
+				Glyn</span> ar y memrwn. Priodoliad yw'r drydedd enghraifft, yn llaw'r
+			bardd Hywel Dafi, wrth gywydd i ofyn corn hela gan ac ar ran uchelwyr
+			o'r gogledd-ddwyrain (cerdd 99) yn llawysgrif Peniarth 67 (<span
+				style="font-style: italic">c</span>.1483). Y ffurf yno yw <span
+				style="font-style: italic">Gytto or glynn</span>.
+		</p>
+		<p>
+			Fel <span style="font-style: italic">Guto'r Glyn</span>, felly, yr
+			adwaenid ef yn gyffredinol wedi <span style="font-style: italic">c</span>.1440,
+			fel y gwelir yng ngwaith pump o'i gyd-feirdd a gyfeiriodd ato wrth yr
+			enw hwnnw, sef Ieuan ap Gruffudd Leiaf (93.3-4), Hywel Dafi (18a.68),
+			Dafydd ab Edmwnd (68a.10), Llywelyn ap Gutun (65a.2) a Gutun Owain
+			(126.6, 23). Fel y gwelir yn rhai o'r enghreifftiau uchod, defnyddid
+			y fannod weithiau wrth gyfeirio ato wrth ei enw cyntaf yn unig, hynny
+			yw, <span style="font-style: italic">y Guto</span>. Ceir y ffurf
+			honno yng ngwaith Hywel Dafi (18a.9, 59; 20a.60) a Llywelyn ap Gutun
+			(65a.49, 54) ac, yn wir, yng ngwaith Guto wrth iddo gyfeirio ato ef
+			ei hun (113.31; 114.61). Ffurfiau anwes yn bennaf, megis Guto, Dai a
+			Bedo, a ddefnyddid gyda'r fannod yn y dull hwnnw (TC 3; Morgan and
+			Morgan 1985: 34).
+		</p>
+		<p class="heading 3">
+			<a id="Toc369616091">
+				<!--anchor-->
+			</a>Ei linach
+		</p>
+		<p>
+			Mae'r ffaith fod Guto'n arddel ffurf anwes ar ei enw yn lle'r ffurf
+			safonol <span style="font-style: italic">Gruffudd</span> yn cyd-fynd
+			i raddau ag absenoldeb ei linach o'r achresi. Yr awgrym cryf yw nad
+			oedd yn perthyn i'r un haen gymdeithasol &acirc;'r noddwyr yr oedd yn eu
+			moli. Nid oes fawr ddim yn hysbys am ei linach ac eithrio enw ei dad,
+			Siancyn y Glyn, a'i gaifn (sef ei drydydd cefnder), Gruffudd ap
+			Dafydd. Roedd Gruffudd yn un o dri bardd iau a geisiodd ddisodli Guto
+			o abaty Glyn-y-groes, yn &ocirc;l cerdd a ganodd Guto yn ei henaint, a
+			disgrifir y berthynas waed rhwng y ddau fel [<span
+				style="font-style: italic">c</span>]<span style="font-style: italic">erennydd
+				gron</span> 'perthynas lawn'. Hyd nes y lleolir y Gruffudd hwnnw (am
+			drafodaeth, gw. 116.31-3n), rhaid pwyso ar gyfeiriadau eraill llai
+			penodol at ei linach, megis yr un yng ngherdd Guto. Canodd Guto'r
+			cywydd hwnnw er mwyn cystwyo Gruffudd a'r ddau fardd arall, gan
+			ddadlau mai ef oedd y bardd gorau er gwaethaf y ffaith fod y tri
+			bardd arall yn <span style="font-style: italic">Uwch o waed
+				achau</span> nag ef (116.49). Ac yntau'n perthyn i un ohonynt, cesglir nad
+			oedd Guto'n dlotyn di-dras a bod rhywfaint o waed uchelwrol ynddo,
+			eithr nad oedd ei dras yn ddiledryw.
+		</p>
+		<p>Ceir rhywfaint o ateg i dras cymysg Guto yn ei ymryson byr ag
+			Ieuan ap Gruffudd Leiaf (cerdd 93), lle cydnebydd ei fod o dras is
+			na'i gyd-fardd. Fodd bynnag, ac ystyried bod Ieuan yn disgyn yn
+			uniongyrchol o dywysogion Gwynedd, ni ddywed hynny fawr ddim am
+			statws Guto. Ni wnaed ei linach yn destun gwawd gan yr un o'r beirdd
+			a ganodd gywyddau dychan iddo ac, at hynny, go brin y byddai wedi
+			derbyn addysg farddol pe na bai gan ei deulu rywfaint o fodd i fyw.
+			Gall yn syml fod Siancyn y Glyn yn f&acirc;n uchelwr yr aeth ei linach ar
+			ddifancoll. Ond rhaid ystyried hefyd y posibilrwydd nad oedd yn
+			uchelwr, ond yn hytrach yn ddeiliad o fath a wasanaethai uchelwr ac a
+			oedd yn gaeth i'r tir ond a fedrai, mewn achosion arbennig, ennill ei
+			ryddid (Carr 1982: 128, 144-50). Nid yw'n amhosibl fod Siancyn y Glyn
+			wedi manteisio yn y dull hwnnw yn sgil y cyni a ddilynodd
+			ymweliadau'r pla &acirc; Chymru yn ystod ail hanner y bedwaredd ganrif ar
+			ddeg. Bu ad-drefnu cymdeithasol pellach yn dilyn methiant gwrthryfel
+			Owain Glyndwr, pan aeth nifer o daeogion ati i brynu eu rhyddid ar
+			draul uchelwyr a gollasant eu grym (Davies 1995: 318-19).</p>
+		<p>
+			A s&ocirc;n am Owain Glyndwr, rhaid rhoi sylw i un posibilrwydd diddorol
+			ynghylch tad Guto. Canodd Llawdden gywydd i ofyn cleddyf a bwcled gan
+			Phylib ap Rhys, mab yng nghyfraith i Owain, ar ran gwr o'r enw
+			Siancyn y Glyn. Yn y cywydd hwnnw gelwir Siancyn yn [<span
+				style="font-style: italic">f</span>]<span style="font-style: italic">rawd
+				o gyfraith</span> i'r noddwr ac yn [<span style="font-style: italic">g</span>]<span
+				style="font-style: italic">&acirc;r</span> i'w wraig, Gwenll&iuml;an, a oedd yn
+			ferch i Owain Glyndwr. Y tebyg yw, felly, mai mab anghyfreithlon i
+			Owain, a elwid yn aml yn Owain y Glyn, oedd Siancyn (GLl 181).
+			Trafodir isod y posibilrwydd fod Guto wedi ei eni yng Nglyndyfrdwy,
+			er na ellir torri'r ddadl yn derfynol. Ac yntau'n fab i wr o'r enw
+			Siancyn y Glyn, mae'n nodedig fod gwr o'r enw hwnnw'n fab i'r enwocaf
+			o drigolion Glyndyfrdwy. Serch hynny, ac ystyried y cyfeiriadau uchod
+			at dras cymharol isel Guto, mae'n bur annhebygol ei fod mewn
+			gwirionedd yn wyr i Owain Glyndwr, pennaf olynydd tywysogion Cymru yn
+			ei ddydd.
+		</p>
+		<p class="heading 3">
+			<a id="Toc369616092">
+				<!--anchor-->
+			</a>Bro ei febyd
+		</p>
+		<p>
+			Ni cheir sicrwydd ynghylch lleoliad y Glyn yn enw Guto'r Glyn.
+			Awgrymwyd yn ddiweddar Lanfihangel Genau'r Glyn, gan fod gwr o'r enw
+			Guto ap Siancyn ap Llawdden yn weithgar yng nghantref Penweddig <span
+				style="font-style: italic">c</span>.1434-46 (Salisbury 2009: 58-60),
+			ond ni cheir tystiolaeth bellach o blaid credu bod Guto'n wr o
+			Geredigion. Y gred gyffredinol yw mai Glyn Ceiriog oedd cartref
+			gwreiddiol Guto, gan mai dyna oedd barn Ifor Williams yn ei
+			ragymadrodd i <span style="font-style: italic">Gwaith Guto'r
+				Glyn</span> (GGl xxii), ond nid yw'r dystiolaeth lawn mor ddiamwys &acirc;'r
+			disgwyl.
+		</p>
+		<p>
+			Pwysodd Ifor Williams ar linellau agoriadol cywydd mawl Guto i dref
+			Croesoswallt, lle dywed Guto iddo fod yn <span
+				style="font-style: italic">flaeneuwr</span> yn ei ieuenctid (102.1),
+			sef llanc o'r mynydd-dir. Dadleuodd Ifor Williams 'y dylid chwilio am
+			ei gartref yn y bryniau cyfagos', a hynny'n unol &acirc;'r ffaith fod Guto
+			wedi canu mwyafrif ei gerddi i 'wyr o Bowys a'r Goror' ac wedi
+			disgrifio Syr Rhys, a gysylltir gan Ifor Williams &acirc;'r Dre-wen ger
+			Croesoswallt, fel <span style="font-style: italic">f'eglwyswr
+				i</span> a [<span style="font-style: italic">f</span>]<span
+				style="font-style: italic">y nghurad</span> (101.13, 14). Yn sicr,
+			yn y gogledd-ddwyrain, ac yng nghyffiniau Llangollen yn arbennig, y
+			canodd Guto fwyafrif ei gerddi yn &ocirc;l tystiolaeth y llawysgrifau. Fodd
+			bynnag, ni ellir pwyso'n drwm ar y ffaith honno gan fod mwy o
+			destunau o'r gogledd-ddwyrain wedi goroesi nag o unrhyw ran arall o
+			Gymru. Yn y gornel honno o'r wlad y blodeuodd gweithgarwch
+			cadwriaethol mawr o'r unfed ganrif ar bymtheg ymlaen, sy'n rhoi'r
+			argraff mai prin, mewn cymhariaeth, oedd y nawdd a roed i feirdd mewn
+			ardaloedd eraill. Dengys cerddi Lewys Glyn Cothi, ar y llaw arall,
+			fod digonedd o nawdd ar gael i feirdd yng Ngheredigion a Sir G&acirc;r ond,
+			am resymau cadwriaethol, fe gollwyd mwyafrif y cerddi a ganwyd yn y
+			rhan honno o'r wlad. Perthyn mwyafrif cerddi cynharaf Guto i'r De,
+			ond nid yw hynny'n sail i gredu mai deheuwr ydoedd. At hynny, er bod
+			modd cysylltu Syr Rhys &acirc;'r Dre-wen, ni pherthyn arwyddoc&acirc;d arbennig i
+			ddisgrifiadau Guto o'i gyd-fardd ac eithrio fel modd i ddangos fod y
+			ddau'n byw yn ardal Croesoswallt pan ganwyd y gerdd. Ni cheir
+			sicrwydd, felly, fod Guto'n s&ocirc;n yn benodol am yr ucheldir i'r
+			gorllewin o Groesoswallt ar ddechrau ei gywydd i'r dref honno.
+		</p>
+		<p>Tynnodd Ifor Williams sylw at un darn arall o dystiolaeth er
+			mwyn cefnogi ei ddadl ynghylch Glyn Ceiriog, sef cyfeiriad mewn
+			erthygl yn 1879 at fan geni Guto yng Nglyn Ceiriog, 'whence he
+			derived the appellation ... of Guto (or Griffith) of the Glen' (Lloyd
+			1879: 43). Diau fod yr wybodaeth honno, ynghyd &acirc; gwybodaeth debyg a
+			gyhoeddwyd yng ngwaith llu o hynafiaethwyr o ail hanner y bedwaredd
+			ganrif ar bymtheg ymlaen (cf. Watkin 1920: 66; Huws 2011: 57), yn
+			deillio o lyfryn ar hanes Croesoswallt a gyhoeddwyd yn 1819 dan enw'r
+			hynafiaethydd enwog o blwyf Chwitffordd yn sir y Fflint, Thomas
+			Pennant (Pennant 1819: 35):</p>
+		<p class="cefndir">Gutto or Griffith a native of Glyn Ceiriog, who
+			lived in the middle of the fifteenth century ...</p>
+		<p>
+			Cyfeirir at Guto yn y llyfryn hwnnw mewn cyswllt &acirc;'r cywydd mawl a
+			ganodd i Groesoswallt, a dyfynnir cyfieithiad Saesneg o rannau o'r
+			gerdd honno. Bu farw Pennant yn 1798, felly dygwyd y llyfryn drwy'r
+			wasg gan Thomas Edwards (a fu farw yn 1871), argraffydd o
+			Groesoswallt a fu, yn &ocirc;l teitl y llyfryn, yn gyfrifol am lunio <span
+				style="font-style: italic">Notes and Considerable Additions</span> i
+			waith Pennant (Watkin 1920: 85, 198). Nid yw'n eglur ar hyn o bryd
+			pwy oedd awdur yr wybodaeth am Guto, ai Pennant ynteu Edwards. Os
+			Pennant, ymddengys y dylid olrhain yr wybodaeth i draddodiad lleol a
+			oedd yn fyw ar ddechrau'r 1770au, pan fu'r hynafiaethydd yn teithio
+			drwy Gymru yn casglu gwybodaeth a gyhoeddwyd yn ddiweddarach yn ei <span
+				style="font-style: italic">Tours of Wales</span> (1778-83). Ni
+			chyfeirir at Guto yn yr adran ar Groesoswallt yn y gwaith enwog
+			hwnnw, felly mae'n bosibl mai Edwards a gofnododd yr wybodaeth yn
+			1819. Gan nad oes llawer yn hysbys am y gwr hwnnw, ac eithrio iddo
+			olynu ei dad fel argraffydd a chael ei benodi'n faer Croesoswallt yn
+			1853 (Cathrall 1885: 166; Watkins 1920: 187, 198), ni ellir ond
+			dyfalu a gododd yntau ei wybodaeth o draddodiad lleol.
+		</p>
+		<p>
+			Ymddengys fod traddodiad lleol am Guto yn fyw yng nghyffiniau Glyn
+			Ceiriog yn negawdau cyntaf yr ugeinfed ganrif, pan gofnododd William
+			Rhys Jones (Gwenith Gwyn), gweinidog y Bedyddwyr yn y pentref rhwng
+			1912 ac 1923, y gred fod y bardd wedi ei eni 'yn y rhan honno o blwyf
+			Llangollen a elwir Traian [<span style="font-style: italic">sic</span>]
+			y Glyn, neu ar lafar gwlad y Glyn, sef y rhan o blwyf Llangollen a
+			orwedd yn nyffryn Ceiriog' (LlGC Papurau Gwenith Gwyn I, 330; Huws
+			2011: 57-8). Dyma gysylltu Guto gydag ardal gymharol anadnabyddus a
+			oedd yn agos eithr ar wah&acirc;n i Lyn Ceiriog, a hawdd credu y gallai
+			Glyn Ceiriog fod wedi disodli Traean y Glyn mewn cyswllt &acirc; Guto gan
+			fod Glyn Ceiriog yn fwy adnabyddus y tu hwnt i ddyffryn Ceiriog.
+		</p>
+		<p>Fodd bynnag, er mor ddeniadol yw'r cyswllt posibl &acirc; Glyn
+			Ceiriog ac &acirc; Thraean y Glyn, rhaid ei drin yn ofalus iawn fel
+			tystiolaeth ynghylch man geni Guto. Gan mor fawr yw'r bwlch rhwng y
+			bymthegfed ganrif a dechrau'r bedwaredd ganrif ar bymtheg, mae'n
+			bosibl mai sail yr hyn a gofnodwyd gan Pennant (neu Edwards) a Jones
+			ill dau oedd ymgais gan drigolion dyffryn Ceiriog i hawlio'r bardd
+			mawr yn wyneb y ffaith fod yr wybodaeth am ei fan geni wedi hen fynd
+			yn angof. Ac ystyried yr holl dystiolaeth ynghyd, mae'n bosibl fod y
+			gred am gyswllt bore oes Guto &acirc; dyffryn Ceiriog yn bennaf seiliedig
+			ar y ffaith fod y dyffryn hwnnw'n gorwedd rhwng Croesoswallt, lle
+			ymgartrefodd Guto'n oedolyn, ac abaty Glyn-y-groes, lle treuliodd
+			flynyddoedd olaf ei fywyd. Gall ystyriaethau o'r fath fod yn
+			gamarweiniol, oherwydd go brin yr honnid bod Lewys Glyn Cothi'n
+			ogleddwr ar sail y ffaith iddo ymgartrefu am gyfnod yng Nghaer (GLGC
+			xxvi-xxvii).</p>
+		<p>
+			Mentrodd Enid Roberts (1977: 14-15) anghytuno &acirc; barn Ifor Williams,
+			gan ddadlau y byddai'n fwy priodol ystyried Glyndyfrdwy fel man geni
+			Guto. Cyfeiria, heb fanylu, at ddarlleniadau mewn cop&iuml;au llawysgrif o
+			gywydd cymod Guto i Ieuan Fychan ab Ieuan o Bengwern nas defnyddiwyd
+			yng ngolygiad Ifor Williams sy'n 'awgrymu fod Guto'n perthyn i Ieuan
+			Fychan'. Ar sail yr honiad hwnnw, dadleuir y gallai Guto fod yn
+			perthyn i deuluoedd a oedd &acirc;'u gwreiddiau yn nyffryn Dyfrdwy, er
+			gwaethaf y ffaith fod Pengwern i'r de o Langollen gryn dipyn yn
+			agosach at Lyn Ceiriog na Glyndyfrdwy. Fodd bynnag, ni cheir lle i
+			gredu bod Guto ac Ieuan Fychan yn perthyn ar sail y golygiad newydd
+			o'r cywydd hwnnw, a seiliwyd ar dystiolaeth yr holl lawysgrifau
+			(cerdd 106). Prif sail dadl Enid Roberts yw'r honiad mai Glyndyfrdwy
+			oedd y glyn enwocaf 'i bobl y cyfnod'. Mae'n sicr y defnyddid
+			Glyndyfrdwy fel cyfenw (ac <span style="font-style: italic">(Y)
+				Glyn</span> fel ffurf gryno) gan ei drigolion yn ystod y bymthegfed ganrif.
+			Geilw Guto ei hun yr enwocaf ohonynt, Owain Glyndwr, yn <span
+				style="font-style: italic">Owain Glyn</span> (52.21-2; 107.46). Fodd
+			bynnag, dadl fregus yw honno mewn gwirionedd gan nad yw enwogrwydd
+			Glyndyfrdwy ar ei ben ei hun yn sail ddigonol i gysylltu'r fan honno
+			gyda Guto. Yr un fyddai ei enw pe bai wedi ei eni yng Nglyn Ceiriog
+			neu yn Nhraean y Glyn.
+		</p>
+		<p>
+			Daethpwyd o hyd i ddau gyfeiriad at y glyn yn enw Guto mewn
+			llawysgrifau o'r ddeunawfed ganrif sy'n cynnwys rhai o'i gerddi.
+			Mae'r cynharaf yn debygol o fod yn llaw David Lewis o Goetre yn
+			Llanelltyd ac o Fronw&iuml;on ym Mrithdir (<span
+				style="font-style: italic">fl.</span>1738-m.1766). Rywbryd rhwng
+			1752 ac 1758, ychwanegodd nodyn wrth enw Guto wrth droed y cywydd
+			'Porthmona' (cerdd 44) yn llawysgrif Harvard Welsh e 8 (LlGC 16129D):
+			<span style="font-style: italic">Glyndyfrdwy maen debygol Glyn
+				ceiriog rwy'n meddwl</span>. Tystia i'r ansicrwydd a fodolai ynghylch man
+			geni'r bardd ym Meirionnydd erbyn canol y ddeunawfed ganrif. O ran yr
+			ail gyfeiriad, ceir ar dudalennau olaf llawysgrif Cwrtmawr 10 (1766)
+			fynegai fesul bardd yn llaw David Ellis o Ddolgellau (1736-95) sy'n
+			cynnwys enw <span style="font-style: italic">Gutto'r Glynn
+				Dyfrdwy</span>. Fel y dywed Ellis ar dudalen vi, ysgrifennodd gynnwys y
+			llawysgrif pan oedd yn byw yn Llanberis, a hynny'n &ocirc;l pob tebyg cyn
+			iddo dreulio cyfnod fel curad yn Nerwen i'r gogledd o Gorwen rywdro
+			rhwng 1764 ac 1788 (ByCy Ar-lein). Nid yw'n amhosibl fod y cyfeiriad
+			at Guto'n deillio o wybodaeth leol yn nyffryn Dyfrdwy, ond mae'n fwy
+			tebygol, ac ystyried y ffaith fod o leiaf 80 o gop&iuml;au o gerddi Guto
+			yn llaw Ellis (ceir tair yn Cwrtmawr 10, yn cynnwys cerdd 118 i'r
+			Abad Dafydd ab Ieuan), mai dyfaliad ydoedd ar sail cyswllt Guto &acirc;
+			Glyn-y-groes.
+		</p>
+		<p>Rhy ddiweddar o lawer, mewn gwirionedd, yw'r dystiolaeth a
+			gyflwynwyd hyd yn hyn ynghylch bro mebyd Guto. Rhaid troi at
+			dystiolaeth gyfoes &acirc;'r bardd ei hun am fwy o oleuni. A chanolbwyntio
+			ar Lyn Ceiriog a Glyndyfrdwy, gall fod yn arwyddocaol iawn fod y
+			naill le ym Mhowys a'r llall, fe ymddengys, yng Ngwynedd.</p>
+		<p>
+			Ceir dau gyfeiriad mewn llawysgrifau o'r bymthegfed ganrif at wr o'r
+			enw <span style="font-style: italic">y gutto o bywys</span> neu <span
+				style="font-style: italic">y gutto powys</span>. A chymryd mai at yr
+			un gwr y cyfeirir yn y ddau achos, roedd y Guto hwnnw i. yn fardd a
+			ganodd gywydd cynganeddol gaeth iawn i ofyn llurig gan Si&ocirc;n Abral o'r
+			Gilwch yn swydd Henffordd cyn <span style="font-style: italic">c</span>.1443
+			(cerdd 120, ceir y copi cynharaf yn Peniarth 53, <span
+				style="font-style: italic">c</span>.1484); ii. yn wr a dorrodd ei
+			enw ar gopi o 'Frut y Brenhinedd' (<span style="font-style: italic">c</span>.1330)
+			tra oedd yn abaty Glyn-y-groes, fe ymddengys, rywbryd yn ystod ail
+			hanner y bymthegfed ganrif. Ar yr olwg gyntaf, ymddengys yn
+			gyd-ddigwyddiad hynod fod Guto'r Glyn yntau wedi canu mawl i uchelwyr
+			yn swydd Henffordd a'r cyffiniau cyn <span style="font-style: italic">c</span>.1443
+			a'i fod yn gysylltiedig &acirc; Glyn-y-groes o <span
+				style="font-style: italic">c</span>.1465 ymlaen, os nad cyn hynny.
+			Os yr un gwr oedd y ddau, yna Powys oedd ei gynefin a'r tebyg yw mai
+			Glyn Ceiriog a'r cyffiniau oedd ei gartref. Eto i gyd, anodd deall
+			pam y byddai Guto, ac yntau'n enwog fel Guto'r Glyn o <span
+				style="font-style: italic">c</span>.1441 ymlaen (gw. uchod), yn ei
+			alw ei hun <span style="font-style: italic">y gutto powys</span> yn
+			ystod ail hanner y ganrif. Llawer mwy tebygol, fe ymddengys, yw bod y
+			Guto o Bowys yn fardd gwahanol a fabwysiadodd ei ail enw rhag cymysgu
+			&acirc; Guto'r Glyn. Os felly, rhaid chwilio am leoliadau y tu hwnt i Bowys
+			ar gyfer y glyn yn enw Guto.
+		</p>
+		<p>
+			A bwrw nad oedd Guto'n wr o Bowys, rhaid diystyru'r gred ei fod wedi
+			ei eni yng Nglyn Ceiriog neu yn Nhraean y Glyn. Rhaid wedyn ystyried
+			o ddifrif y posiblirwydd mai gwr o Wynedd ydoedd. Fel y dywed Hywel
+			Dafi, nid oedd Guto'n wr o dde Cymru, eithr yn <span
+				style="font-style: italic">Un o feirdd ... / Gwynedd</span>
+			(20a.39-40). Geilw Guto yntau Hywel yn <span
+				style="font-style: italic">un o'r Deheuwyr</span> (20.47), a gwyddys
+			i sicrwydd fod Hywel wedi ei fagu yn y de-ddwyrain, o bosibl yn
+			Rhaglan. Eto i gyd, nid yw bwriad Hywel wrth gyfeirio at Wynedd yn
+			gwbl ddiamwys. Canodd ei gywydd mewn ymateb i gerdd ddychan gan Guto
+			sy'n cloi gyda'r haeriad fod Guto'n wr o F&ocirc;n (20.77 <span
+				style="font-style: italic">Eled i F&ocirc;n, y wlad fau</span>). Nid yw'n
+			amhosibl fod Guto wedi ei fagu ym M&ocirc;n ond, fel yn achos Llanfihangel
+			Genau'r Glyn, ni cheir unrhyw dystiolaeth arall i ategu hynny. Mae'n
+			annhebygol fod Guto'n cyfeirio at yr ynys fel bro ei febyd. Yn
+			hytrach, y tebyg yw fod M&ocirc;n, a oedd yn enwog am ei nawdd, yn
+			cynrychioli Gwynedd yn ei chrynswth, a diau fod safle'r ynys ym mhen
+			draw gogleddol y wlad yn ddefnyddiol fel gwrthbwynt daearyddol llwyr
+			i gartref Hywel yng Ngwent. Mewn cywydd mawl i Ddafydd ap Gwilym o
+			Lwydiarth ym M&ocirc;n, geilw Guto'r ynys <span style="font-style: italic">Fy
+				nhrigfan, fy nhiriogaeth / ... lle gorau fy maeth, / Fy nghartref, fy
+				nghynefin</span>, a sonia am fynd <span style="font-style: italic">Adref
+				unwaith drwy Fenai</span>, hynny yw, i F&ocirc;n (62.35-7, 42). Y tebyg yw mai
+			gwthio confensiwn barddol i'w bendraw a wneir yma, sef uniaethu
+			cartref y bardd &acirc; chartref ei noddwr, oherwydd deil Guto yn llinell
+			olaf ei gerdd i Ddafydd fod ei <span style="font-style: italic">enaid
+				ym M&ocirc;n</span> (44). Hynny yw, syniai Guto am yr ynys fel cartref ysbrydol
+			(cf. 65.63-6) ar sail y ffaith fod haelioni ei huchelwyr yn
+			ddiarhebol drwy Gymru gyfan. Er enghraifft, canmolodd Guto Hywel ap
+			Llywelyn Fychan o Lyn Aeron yng Ngheredigion, gwr heb fawr ddim
+			cyswllt &acirc; Gwynedd, fel <span style="font-style: italic">Pennaeth
+				byrddau maeth beirdd M&ocirc;n</span> (10.10; cf. 91.15n). O ganlyniad, mae'n
+			bosibl fod Hywel Dafi yntau'n parhau &acirc;'r cys&ecirc;t hwnnw pan eilw Guto'n
+			<span style="font-style: italic">Un o feirdd ... / Gwynedd</span>, a
+			hynny <span style="font-style: italic">tu yma i Ddyfi</span>
+			(20a.45), gan gyfeirio at ymlyniad Guto wrth F&ocirc;n yn hytrach nag at ei
+			gartref gwirioneddol.
+		</p>
+		<p>
+			Er gwaethaf yr amwysedd, mae'n annhebygol y byddai Hywel wedi galw
+			Guto'n <span style="font-style: italic">Un o feirdd ... /
+				Gwynedd</span> pe na bai Guto'n agos gysylltiedig &acirc;'r rhan honno o'r wlad.
+			O chwilio am lyn amlwg yng Ngwynedd yn y bymthegfed ganrif, yr
+			amlycaf o dipyn yw Glyndyfrdwy, a oedd yn rhan o gwmwd Edeirnion
+			(Lewis 2013: 173). Y ddadl honno, mewn gwirionedd, yw'r ddadl gryfaf
+			o blaid lleoli cartref Guto, er na ellir torri'r ddadl yn derfynol ar
+			sail y dystiolaeth sy'n hysbys ar hyn o bryd.
+		</p>
+		<p>
+			Ni rydd yr unig ddisgrifiad o'r glyn yng ngwaith Guto fawr o
+			arweiniad. Mewn cywydd diolch a ganodd i Risiart Cyffin, deon Bangor,
+			geilw ef ei hun <span style="font-style: italic">y mab o'r
+				Glyn maith</span> (58.42). Gallai'r <span style="font-style: italic">Glyn
+				maith</span> fod yn ddisgrifiad digon addas o unrhyw ddyffryn sylweddol,
+			ond gall hefyd mai cyfeiriad syml ydyw at ddyffryn a oedd gryn
+			bellter i ffwrdd o blas y deon yn Arfon. Yn wir, yn sgil absenoldeb
+			unrhyw gyfeiriad dadlennol at y glyn yng ngwaith Guto nac yng ngwaith
+			ei gyfoeswyr, rhaid ystyried faint o gyswllt mewn gwirionedd a oedd
+			gan Guto &acirc;'r glyn hwnnw. Ym marwnad enwog Lewys Glyn Cothi i'w fab
+			fe'i henwir yn <span style="font-style: italic">Si&ocirc;n y Glyn</span>,
+			gan ddilyn ffurf ar enw Lewys ei hun a ddefnyddiai o dro i dro wrth
+			lofnodi cop&iuml;au o'i gerddi, <span style="font-style: italic">Lewys
+				y Glyn</span> (GLGC xxii, 237.6). Nid yw'n eglur a aned Si&ocirc;n y Glyn yng
+			Nglyn Cothi, ond gall fod <span style="font-style: italic">y
+				Glyn</span> yn gyfenw yn ei achos ef a drosglwyddid i'r genhedlaeth nesaf
+			ni waeth beth oedd cyswllt y genhedlaeth honno &acirc; Glyn Cothi. Tybed a
+			oedd yr un peth yn wir yn achos Guto fab Siancyn y Glyn, ac nad oedd
+			cyswllt Guto &acirc;'r Glyn lawn mor agos &acirc; chyswllt ei dad? Cofier mai
+			Guto ap Siancyn yw'r enw wrth droed cywyddau Guto a gofnodwyd yn
+			Peniarth 57, a ysgrifennwyd cyn <span style="font-style: italic">c</span>.1440,
+			ac mai Guto'r Glyn yw'r enw ar restr y milwyr a hwyliodd i Ffrainc yn
+			1441. Diau y byddai'r swyddog o Sais a luniodd y rhestr honno mewn
+			dwy golofn hirfaith, y naill ar gyfer enwau cyntaf a'r llall ar gyfer
+			cyfenwau, wedi holi Guto beth oedd ei gyfenw. Tybed a ddaeth ef i'r
+			casgliad fod 'Glyn', er nad oedd wedi arddel yr enw hwnnw'n
+			gyffredinol cyn hynny, yn ateb cais y swyddog hwnnw'n well nag enw ei
+			dad, Siancyn?
+		</p>
+		<p class="heading 3">
+			<a id="Toc369616093">
+				<!--anchor-->
+			</a>Ei ddyddiadau
+		</p>
+		<p>
+			Fel y trafodir isod yng nghyswllt gyrfa gynnar Guto, mae'n bur
+			debygol ei fod yn weithgar fel bardd erbyn <span
+				style="font-style: italic">c</span>.1431. Ni cheir tystiolaeth
+			ynghylch pryd y gallai bardd ifanc a gawsai hyfforddiant er yn
+			blentyn ddechrau ennill ei fywoliaeth, ond gellid dyfalu na fyddai
+			fawr iau na phymtheg oed. Os felly, gall fod Guto wedi ei eni <span
+				style="font-style: italic">c</span>.1415, a'i fod ychydig dros ugain
+			oed pan ganodd y cerddi cynharaf sydd ar glawr <span
+				style="font-style: italic">c</span>.1437.
+		</p>
+		<p>
+			Fodd bynnag, yn union islaw enw <span style="font-style: italic">Gitto
+				Glyn</span> ar restr y milwyr a deithiodd i Ffrainc yn 1441 (gw. isod) fe
+			geir yr enw <span style="font-style: italic">Thomas Gitto</span>.
+			Awgrymodd Johnston (2008: 141) y gall mai mab y bardd oedd y Tomas
+			hwnnw, a'i fod wedi teithio i Normandi fel gwas i'w dad. Yn enwau'r
+			ddeuddyn hyn y ceir yr unig ddwy enghraifft o'r enw <span
+				style="font-style: italic">Gitto</span> yn rhestr gyfan y milwyr,
+			dogfen sy'n cynnwys dros bedair mil o enwau, a byddai'n gryn
+			gyd-ddigwyddiad pe bai enwau'r ddau wedi eu cofnodi ynghyd heb fod
+			rhyw gymaint o gyswllt rhyngddynt. Pe bai <span
+				style="font-style: italic">Thomas Gitto</span> yn llanc ifanc iawn
+			ac yn was i Guto yng ngwir ystyr y gair (efallai fel saer saethau),
+			go brin y cawsai ei enw ei gofnodi fel milwr ar restr o gatrodau'r
+			fyddin. Roedd y cofnod hwnnw'n dyst i'r ffaith fod pob milwr unigol
+			wedi ymrwymo'n ffurfiol i wasanaethu arweinydd ei gatrawd am gyfnod
+			penodol o amser. Os felly, rhaid derbyn nad oedd Tomas yn iau na thua
+			un ar bymtheg oed yn 1441, a'i fod wedi ei eni <span
+				style="font-style: italic">c</span>.1425 ar yr hwyraf (am oedrannau
+			milwyr yn yr Oesoedd Canol, gw. Boardman 1998: 73, 75, 182). A bwrw
+			am eiliad mai Guto oedd ei dad, rhaid ei fod yntau'n ddigon hen i
+			genhedlu <span style="font-style: italic">c</span>.1425, a dylid
+			gwthio dyddiad geni Guto'n &ocirc;l i <span style="font-style: italic">c</span>.1410
+			neu hyd yn oed <span style="font-style: italic">c</span>.1405. Os
+			felly, byddai Guto'n agosach at ddeg ar hugain oed pan deithiodd i
+			Ffrainc yn 1441, ac wedi ei eni yn ystod gwrthryfel Owain Glyndwr.
+			Mae'r gwaith a wnaed ar ddyddio cerddi Guto'n dangos yn eglur iddo
+			weithio fel bardd proffesiynol am chwe degawd rhwng <span
+				style="font-style: italic">c</span>.1430 a <span
+				style="font-style: italic">c</span>.1490, a go brin y gallai neb
+			ddadlau ag ef pan honnodd yn un o'i gerddi olaf mai <span
+				style="font-style: italic">Hynaf oll heno wyf i</span> (117.2). Fel
+			y trafodir isod, canodd ei gerddi olaf yn ystod y blynyddoedd wedi
+			1485, ond ni cheir sicrwydd ynghylch union flwyddyn ei farwolaeth. Ni
+			ellir ond awgrymu iddo farw <span style="font-style: italic">c</span>.1490
+			ac yntau oddeutu pedwar ugain oed, un o nifer o feirdd mawr a gafodd
+			oes faith ac a fu farw ar ddiwedd y ganrif.
+		</p>
+		<p class="heading 3">
+			<a id="Toc369616094">
+				<!--anchor-->
+			</a>Ei addysg
+		</p>
+		<p>
+			Ac ystyried ehangder ei wybodaeth a gloywder y grefft yn ei gerddi
+			cynharaf fel yn ei gerddi olaf, rhaid bod Guto wedi derbyn addysg
+			farddol drylwyr pan oedd yn ifanc iawn. Yn ei henaint yn abaty
+			Glyn-y-groes mae'n datgan iddo [<span style="font-style: italic">f</span>]<span
+				style="font-style: italic">oli ... ymylau byd</span> a <span
+				style="font-style: italic">chablu er yn chweblwydd</span> (118.9,
+			11) - nid yn llythrennol, efallai, ond mae'r cyfeiriad yn rhyw
+			gymaint o awgrym iddo ddod i gyswllt &acirc; cherdd dafod cyn ei arddegau.
+			Dwg hyn i gof sylw Lewys Glyn Cothi am <span
+				style="font-style: italic">fy nghyw yn dysgu fy ngh&acirc;n</span> yn ei
+			farwnad ingol i'w fab, Si&ocirc;n y Glyn, a fu farw'n bum mlwydd oed yn &ocirc;l
+			un ffynhonnell (GLGC 237.37 a thudalen 633). At hynny, yn &ocirc;l
+			traddodiad darganfu Rhys Goch Eryri ddawn farddol Dafydd Nanmor yntau
+			pan oedd yn blentyn (Powell 2004: 101-12).
+		</p>
+		<p>
+			Ni ellir ond dyfalu ym mhle y derbyniodd Guto ei addysg farddol a
+			phwy a fu'n gyfrifol am ei addysgu. Ar sail y gred ei fod wedi ei eni
+			yng nghyffiniau Llangollen (gw. uchod), awgrymwyd abatai Ystrad
+			Marchell (Lewis 1976: 81-2) a Glyn-y-groes (Huws 2011: 59) fel
+			lleoliadau posibl, yn arbennig am fod mwy nag un abad Sistersaidd
+			wedi rhoi nawdd iddo maes o law. Mae'n bur debygol fod ysgol yng
+			Nglyn-y-groes yn ystod ail hanner y bymthegfed ganrif a'i bod yn
+			gysylltiedig &acirc; theulu'r Treforiaid, prif noddwyr Guto yn nyffryn
+			Dyfrdwy (Thomson 1982: 76-7). Perthyn dwy lawysgrif sy'n tystio i
+			fodolaeth ysgol yn yr abaty i'r cyfnod <span
+				style="font-style: italic">c</span>.1460-1480au (LlGC 423D; Peniarth
+			356), pan fu dau abad o Gymro wrth y llyw, Si&ocirc;n ap Rhisiart a Dafydd
+			ab Ieuan. Mater arall yw a geid ysgol debyg yno yn negawdau cyntaf
+			cythryblus y ganrif dan nawdd Robert o Lancaster, a fu'n abad 1409-33
+			(Williams 2001: 298).
+		</p>
+		<p>
+			Os cafodd Guto erioed addysg mewn abaty, yna addysg eglwysig a
+			gafodd. Er mor ddeniadol yw'r posibilrwydd, ni cheir tystiolaeth fod
+			mynachlogydd yn ganolfannau dysg farddol. Aeth Ystrad Marchell &acirc; bryd
+			Saunders Lewis am mai yno y canodd Guto farwnad i Lywelyn ab y Moel
+			yn 1440, ond gan mai fel <span style="font-style: italic">athro
+				gwawd</span> y disgrifir Llywelyn (82.40), ac nid yn ddiamwys fel [<span
+				style="font-style: italic">fy</span>]<span
+				style="font-style: italic">athro gwawd</span>, nid aeth Saunders mor
+			bell &acirc;'i enwi'n athro barddol Guto eithr honna bod ei ddylanwad ar y
+			bardd ifanc yn fawr. Hawdd credu hynny, gan fod Llywelyn a Guto'n
+			feirdd-filwyr a chan fod &ocirc;l dylanwad awen y naill ar y llall
+			(Salisbury 2007b: 151-2). Yr hyn sy'n debygol yw bod Guto wedi
+			cydglera gyda Llywelyn yn ystod tridegau'r ganrif ac, o bosibl, ar
+			ddiwedd yr ugeiniau. Gwyddys bod yr unig noddwr y gellir ei
+			gysylltu'n agos &acirc; Llywelyn wedi rhoi nawdd i Guto yntau, sef Syr
+			Wiliam ap Tomas o Raglan. Symbylwyd Llywelyn i ganu cywydd i Wiliam
+			gan gywydd Rhys Goch Eryri i'r un noddwr, lle gofynna Rhys am wregys
+			aur yn rhodd, a'r tebyg yw bod y ddwy gerdd wedi eu canu yn Rhaglan
+			ddiwedd 1433 neu ddechrau 1434 (GRhGE 207; GSCyf 183). Ni fyddai'n
+			fawr o syndod pe bai Guto'n bresennol yn llys Wiliam pan ganwyd y
+			cerddi hyn ac mai drwy ei gyswllt &acirc; Llywelyn y teithiodd i Went am y
+			tro cyntaf. Roedd Rhys Goch yntau, a fu'n ymrysona &acirc; Llywelyn ar fwy
+			nag un achlysur ac a ganodd farwnad iddo, yn enwog am ei ganu i
+			deulu'r Penrhyn yng Ngwynedd, llys pwysig arall y ceir tystiolaeth
+			fod Guto wedi ymweld ag ef yn ei ieuenctid.
+		</p>
+		<p>
+			Ni ellir rhoi llawer o goel ar awgrym Williams (1997: 201) ynghylch
+			addysg Guto, sef iddo dderbyn hyfforddiant farddol yn ogystal &acirc; nawdd
+			gan Ddafydd Cyffin o Langedwyn, a hynny ar sail y ffaith fod Guto'n
+			cyfeirio ato fel yr <span style="font-style: italic">Athro
+				Ddafydd</span> mewn cywydd mawl i Syr Si&ocirc;n Mechain, person Llandrinio
+			(84.5). Nid oherwydd rhyw arwyddoc&acirc;d personol ynghylch ei addysg
+			gynnar y dewisodd Guto gyfeirio at Ddafydd ac at noddwr arall iddo,
+			Syr Bened, person Corwen, eithr yn syml am y byddai Si&ocirc;n yn gyfarwydd
+			&acirc; hwy fel gwyr dysgedig yn ei ran ef o'r wlad. At hynny, cyfeiriad at
+			ddysg Dafydd yw'r teitl <span style="font-style: italic">Athro</span>,
+			yn hytrach nag at unrhyw addysg a dderbyniodd Guto ganddo, ac ni
+			cheir lle i gredu ei fod yn arbenigo mewn addysg farddol eithr yn y
+			Gyfraith Ganon a'r Gyfraith Sifil (a hynny o <span
+				style="font-style: italic">c</span>.1444 ymlaen).
+		</p>
+		<p>Y casgliad mwyaf tebygol o ran addysg Guto yw bod y gwr a'i
+			cyflwynodd i gerdd dafod yn fardd yn hytrach nag yn fynach, neu'n
+			gywirach, efallai, m&acirc;n fardd a oedd yn troi mewn cylchoedd a
+			gynhwysai'n achlysurol feirdd o bwys, megis Llywelyn ab y Moel a Rhys
+			Goch Eryri. Gellid ei gymharu ag athro barddol Llywelyn yntau (ac, o
+			bosibl, Rhys Goch), sef Rhys ap Dafydd, gwr nad oes odid ddim yn
+			hysbys amdano ac y diogelwyd ganddo wyth llinell yn unig (GSCyf 171;
+			GRhGE cerdd Atodiad 2). Yn absenoldeb unrhyw dystiolaeth arall, ni
+			ellir ond awgrymu bod a wnelo tad Guto, Siancyn y Glyn, ryw gymaint &acirc;
+			chamau cyntaf ei fab ym myd cerdd dafod. Lluniodd Saunders Lewis
+			(1976: 81) ddarlun o ryw ddeallusyn yn sylwi ar 'addewid eithriadol'
+			Guto pan oedd yn ifanc iawn ac yn rhoi iddo addysg, ond go brin y c&acirc;i
+			llanc cyffredin gyfle i arddangos unrhyw addewid pe na bai gan ei
+			deulu ryw gymaint o gyswllt &acirc; cherdd dafod yn y lle cyntaf.</p>
+		<p class="heading 3">
+			<a id="Toc369616095">
+				<!--anchor-->
+			</a>Ei bryd a'i wedd
+		</p>
+		<p>Lluniodd Saunders Lewis (1976: 81) ddarlun pur ddeniadol o Guto
+			fel '[b]achgen eithriadol ... [a] dyfodd yn gyflym i fod yn llanc tal,
+			mawr o gorff, pryd tywyll, gwrdd wyneb, bwyall o drwyn, gwallt du -
+			fe aeth yn foel cyn canol oed - dwylo fel dwylo gof - ai gof oedd ei
+			dad? - yn bencampwr ar fwrw maen ac ar farchogaeth.' Diau y perthyn
+			rhai o'r manylion hyn i ddychymyg byw Saunders, ond ategir y darlun
+			cyffredinol yng ngwaith Guto a'i gyfoeswyr.</p>
+		<p>Canodd Syr Rhys a Llywelyn ap Gutun ill dau gerddi dychan i
+			Guto, y naill yn chwedegau'r bymthegfed ganrif a'r llall yn yr
+			wythdegau. Ergyd y gwawd yn y ddwy gerdd yw'r ffaith fod Guto wedi
+			bod yn wr cydnerth yn ei ieuenctid, ond ei fod yn wannach o lawer yn
+			ei henaint (65a.29; 101a.31-6). Ategir yr wybodaeth honno gan
+			gyfeiriad Guto ei hun at y clod a enillodd wrth daflu maen (33.43-4),
+			camp y cyfeiriodd Gutun Owain yntau ati yn ei farwnad i Guto
+			(126.16). Mae'n werth nodi hefyd mai fel saethydd yr ymunodd Guto &acirc;
+			byddin Richard, dug Iorc, yn 1441. Dengys nifer o gyfeiriadau at
+			saethu yn ei gerddi ei fod yn gyfarwydd iawn &acirc;'r gamp (cerdd 11;
+			31.33-62), a diau fod ei gryfder ac, o bosibl, ei daldra yn
+			gaffaeliad iddo yn hynny o beth (cf. Hardy 1994: 179; am drafodaeth
+			lawnach am Guto fel saethydd ac fel milwr, gw. Day 2013).</p>
+		<p>
+			Rhaid lliniaru rhywfaint ar ddychan Syr Rhys a Llywelyn ynghylch
+			eiddiledd y Guto oedrannus, oherwydd cyfeddyf y ddau ei fod, er
+			hynny, yn wr o gryn faint. Geilw'r ddau ef yn [<span
+				style="font-style: italic">g</span>]<span style="font-style: italic">yff</span>
+			'boncyff', a diau mai maintioli Guto sy'n amodi disgrifiadau digrif
+			Llywelyn o wahanol rannau o'i gorff fel trigfan i lu o greaduriaid y
+			m&ocirc;r (65a.7-32; 101a.55). Rhaid lliniaru hefyd ar rai o ddisgrifiadau
+			Dafydd ab Edmwnd o Guto mewn cywydd dychan lle honnir i'r bardd
+			ddioddef anaf yn sgil codi pwysau pan oedd yn ifanc. Er nad yw'n
+			eglur a dorrodd Guto ei lengig ai peidio, ymddengys fod maintioli
+			Guto'n darged hawdd i fardd a oedd, yn &ocirc;l y dychan a roes Guto iddo,
+			yn wr llawer llai o faint. Deil Dafydd fod Guto'n <span
+				style="font-style: italic">foliog</span> (68a.11), a cheir
+			cyfeiriadau mewn cerddi eraill at natur fwyteig y bardd (cf.
+			Salisbury 2011: 101-2). Fodd bynnag, y tebyg yw mai at y tor llengig
+			y cyfeiria Dafydd. Ac ystyried y ffaith i Guto gael oes faith iawn ac
+			iddo deithio'n helaeth gydol ei oes, mae'n annhebygol ei fod yn dew
+			eithr fod ei gorff yn naturiol fawr. Yn wir, disgrifia Syr Rhys ef
+			fel <span style="font-style: italic">annair gul</span> 'heffer denau'
+			yn ei dostrwydd honedig yng Nghroesoswallt (101a.26).
+		</p>
+		<p>
+			Cyfeiria Llywelyn ap Gutun at <span style="font-style: italic">fwyall
+				drwyn</span> ac <span style="font-style: italic">wyneb arth</span> ei
+			gyd-fardd (65a.14, 20), a cheir gan Guto ei hun ddisgrifiad arall
+			digon cofiadwy o'i wyneb a'i ben mawr mewn cywydd mawl i'r Abad Tomas
+			o Amwythig: <span style="font-style: italic">Mae i mi wyneb
+				padr&iuml;arch / A chorun mwy no charn march</span> (77.59-60). Yr ergyd, fe
+			ymddengys, yw fod ganddo wyneb mawr hen ei olwg pan ganodd i'r abad,
+			a'i fod yn moeli. Dywed mewn cerdd arall a berthyn i ddegawd olaf ei
+			fywyd fod ganddo [<span style="font-style: italic">d</span>]<span
+				style="font-style: italic">rawswch</span> a [<span
+				style="font-style: italic">b]arf</span> (109.40, 55), ond mae'n
+			debygol mai ei farf oedd yr unig dyfiant a oedd ganddo ar ei ben bryd
+			hynny, oherwydd diau iddo golli ei wallt yn bur ifanc. Geilw Hywel
+			Dafi ef yn [<span style="font-style: italic">f</span>]<span
+				style="font-style: italic">oel brydydd</span> mewn cerdd ddychan a
+			berthyn, yn &ocirc;l pob tebyg, i hanner cyntaf y bymthegfed ganrif
+			(18a.64). Cyngor Guto ei hun i'w gyd-fwrdeisiaid yng Nghroesoswallt
+			yw y dylid gohirio ei daliad am fwrdeisiaeth <span
+				style="font-style: italic">nes ym dyfu gwallt</span> (102.47-50) -
+			hynny yw, byth! Gall fod y gerdd honno'n perthyn i chwedegau'r
+			ganrif. Ryw ddau ddegawd yn ddiweddarach, fe'i ceir yn ei ddisgrifio
+			ei hun yn ystod yr wythdegau fel <span style="font-style: italic">eidion
+				moel</span> yn llys Wiliam ap Gruffudd yng Nghochwillan (55.31-2).
+		</p>
+		<p>
+			Ond roedd gan Guto wallt un tro, a hwnnw'n wallt du yn &ocirc;l pob tebyg.
+			Yn sgil canmol gwallt tywyll Harri Gruffudd, ymddengys fod Guto'n ei
+			enwi ei hun ymysg y pethau gwych eraill sy'n dwyn y lliw du, ynghyd &acirc;
+			gwallt Iesu, felfed a muchudd (33.1-10). Mewn cywydd mawl i noddwr
+			arall o bryd tywyll, deil Guto mai <span style="font-style: italic">gorau
+				lliw dyn</span> ydyw ac, at hynny, dychana Dafydd ab Edmwnd ef drwy
+			gyfeirio at ei <span style="font-style: italic">geilliau duon</span>
+			(17.13; 68a.65).
+		</p>
+		<p>
+			Un nodwedd arall y mae'n werth ei chrybwyll yw'r ffaith fod Guto wedi
+			colli ei olwg ar ddiwedd ei oes. Perthyn yr holl gyfeiriadau at ei
+			ddallineb ac eithrio un i'w flynyddoedd yng Nglyn-y-groes (114.62;
+			116.45-8; 117.14, 49-50; 119.3), lle bu'n dioddef o ddiffyg yn ei
+			glyw hefyd (119.4), ond dengys cywydd i ddiolch am farch gan Ddafydd
+			ap Meurig Fychan ac Elen ferch Hywel o Nannau iddo barhau i glera am
+			gyfnod pan oedd ei olwg yn dirywio. Mae'n ei gymharu ei hun &acirc; gwr
+			arall a gollodd ei olwg ond a wrthododd ildio i'w anabledd, sef Ffwg
+			fab Gwarin, a deil Guto fod gwir angen y march arno er mwyn efelychu
+			ei arwr ac ymlid fel o'r blaen <span style="font-style: italic">fil
+				o'r gl&ecirc;r f&acirc;n</span> (51.41-52).
+		</p>
+		<div class="teidiv1" id="index.xml-body.1_div.1_div.1">
+			<h3>
+				<span class="headingNumber">1. </span><span class="topHeading"><a
+					id="Toc369616096">
+						<!--anchor-->
+				</a>Y canu cynnar, c.1430-50</span>
+			</h3>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.1_div.1">
+				<h4>
+					<span class="headingNumber">1.1 </span><span class="head"><a
+						id="Toc369616097">
+							<!--anchor-->
+					</a>Y canu cynharaf</span>
+				</h4>
+				<p>
+					Er nad yw union flwyddyn geni Guto'n hysbys, mae'n bur debygol iddo
+					ddod i'r byd naill ai yn ystod neu'n fuan wedi gwrthryfel Owain
+					Glyndwr. Daeth y brwydro ffyrnicaf i ben yn 1406 ond parhaodd y
+					gwrthdaro hyd <span style="font-style: italic">c</span>.1417. Erbyn
+					y flwyddyn honno roedd Owain yn ei fedd a thiroedd nifer fawr o
+					wrthryfelwyr wedi eu fforffedu a'u trosglwyddo i afael
+					tirfeddianwyr newydd. Ond roedd nifer o gyn-wrthryfelwyr ymhlith y
+					tirfeddianwyr hynny, gwyr a ddaliodd eu gafael ar eu tiroedd
+					fforffed, gan ailymsefydlu, yn aml er gwell, yn y gymdeithas
+					newydd. Yr uchelwyr hyn, a'u meibion yn benodol, a fu'n cynnal awen
+					Guto.
+				</p>
+				<p>Un cyn-wrthryfelwr a fu'n arwain y ffordd wrth feddiannu
+					tiroedd fforffed oedd Gwilym ap Gruffudd o'r Penrhyn, uchelwr
+					grymusaf y Gogledd ar ddechrau'r ganrif. Er na oroesodd cerdd gan
+					Guto i Wilym, ef yw'r noddwr cynharaf y ceir tystiolaeth i Guto ei
+					foli. Mewn cywydd i fab Gwilym, Wiliam Fychan, dywed Guto'n bur
+					ddiamwys iddo dderbyn nawdd gan y tad (56.19-20n):</p>
+				<p class="cefndir">Adeilais glod i Wilym,<br/> Adail ei fab awdl fu ym.</p>
+				<p>Bu farw Gwilym ar ddechrau 1431 (Carr 1990: 17). Os canodd
+					Guto farwnad iddo'r flwyddyn honno (fel y gwnaeth Rhys Goch Eryri a
+					Gwilym ap Sefnyn, GRhGE cerdd 2; Bowen 2002: 74), mae'n nodedig fod
+					bwlch o rai blynyddoedd rhwng hynny a'r cerddi cynharaf sydd ar
+					glawr, ond nid yw'n amhosibl ychwaith iddo ganu mawl i Wilym pan
+					oedd hwnnw ar dir y byw.</p>
+				<p>
+					Bu'r cyfeiriad cynnar hwn at ganu coll yn faen tramgwydd i Roberts
+					(1977: 14) rhag uniaethu Guto'r Glyn a Guto ap Siancyn, gan ei bod
+					yn honni mai tua 1455/60 y dechreuodd Guto'r Glyn ganu. Ond, a'r
+					ddau bellach wedi eu huniaethu'n derfynol, nid yw fawr o syndod,
+					mewn gwirionedd, fod Guto'n canu mor gynnar &acirc; <span
+						style="font-style: italic">c</span>.1430. Crefft farddol aeddfed
+					iawn a welir yn y cerddi cynharaf a oroesodd, tyst i'r ffaith fod
+					Guto wedi meithrin ei ddawn ar deithiau clera cynnar na wyddys fawr
+					ddim amdanynt. Os cafodd Guto ei fagu yng nghyffiniau Llangollen,
+					byddai wedi bod yn naturiol iddo gyrchu Gwynedd ar ei deithiau
+					clera cynharaf y tu hwnt i fro ei febyd, cyn mentro i'r De rai
+					blynyddoedd yn ddiweddarach. Yn wir, efallai fod cysylltiadau
+					priodasol rhwng teulu'r Penrhyn a theulu'r Treforiaid yn nyffryn
+					Dyfrdwy wedi hwyluso ei yrfa. Cesglir bod corff o'i ganu i noddwyr
+					yn y Gogledd a'r De <span style="font-style: italic">c</span>.1430-5
+					wedi ei golli, o bosibl oherwydd nad oedd eto wedi ennill ei blwyf
+					fel bardd.
+				</p>
+			</div>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.1_div.2">
+				<h4>
+					<span class="headingNumber">1.2 </span><span class="head"><a
+						id="Toc369616098">
+							<!--anchor-->
+					</a>Bardd o filwr yn Normandi</span>
+				</h4>
+				<p>Perthyn y cerddi cynharaf sydd ar glawr y gellir eu dyddio ag
+					unrhyw sicrwydd i ddiwedd 1437 neu ddechrau 1438, ac fe'u canwyd i
+					uchelwr o Gymro a fu'n byw yn Ffrainc er o leiaf 1424. Yn wir, gall
+					mai eu hynodrwydd yn hynny o beth a sicrhaodd eu goroesiad. Dau
+					gywydd mawl ydynt i Syr Rhisiart Gethin o Fuellt, rhyfelwr
+					proffesiynol a enillodd fri yn ymladd dros y Goron yn Normandi
+					(cerddi 1 a 2). Ac yntau'n fab i Rys Gethin, gwr a fu'n ymladd ym
+					mhlaid Owain Glyndwr ddechrau'r ganrif, roedd rhyfela'n ffordd o
+					fyw i Risiart, ac enwir ef fel capten Mantes o 1432 ymlaen. Dyma
+					ddegawdau olaf yr hyn a elwir heddiw y Rhyfel Can Mlynedd rhwng
+					Lloegr a Ffrainc, ymgiprys hir a chostus am dir a choron Ffrainc a
+					ddaeth i ben yn 1453, pan fwriwyd y Saeson yn derfynol o Normandi a
+					Gwasgwyn. Fel y trafodir yn nes ymlaen, gwyddys i sicrwydd fod Guto
+					wedi gwasanaethu Richard dug Iorc yn 1441 fel rhan o ail ymgyrch
+					filwrol y dug yn Ffrainc. Ond y tebyg yw iddo hefyd fod yn rhan o
+					ymgyrch gyntaf y dug ac yn aelod o fyddin a laniodd yn Honfleur ar
+					7 Mehefin 1436 (Johnson 1988: 29). Yn anffodus, nid ymddengys fod
+					rhestr y milwyr a fwstriwyd yn Honfleur wedi goroesi. Mae'r ffaith
+					fod enw Rhisiart Gethin yn absennol o'r cofnodion o ddiwedd 1438
+					ymlaen yn awgrymu'n gryf ei fod wedi marw tua diwedd y flwyddyn
+					honno neu'n fuan wedyn. Mae'n bur debygol fod Guto wedi teithio i
+					Normandi yn 1436/7 ac wedi cyfarfod ei noddwr yno. Teithiodd y dug
+					i Rouen, ei bencadlys yn Ffrainc, ond ni ellir manylu ymhellach
+					ynghylch symudiadau Guto. Mae'n bosibl iddo deithio i Mantes, lle'r
+					oedd Rhisiart yn gapten, ond mae hefyd yn bosibl fod y dug wedi
+					gwysio Rhisiart i Rouen ac mai yno y cyfarfu'r bardd &acirc;'i noddwr.
+					Dychwelodd y dug i Loegr oddeutu 8 Tachwedd 1437 (ibid. 30), ond
+					gall fod Guto wedi dychwelyd gryn dipyn yn gynharach wedi i'w
+					gyfnod swyddogol fel milwr ddod i ben, sef chwe mis yn &ocirc;l yr arfer
+					gyffredin. Fe olygai hynny ei fod wedi gadael Ffrainc naill ai
+					ddiwedd 1436 neu ddechrau 1437, ac mae'n bur debygol ei fod wedi
+					canu ei ddau gywydd i Risiart yn fuan wedi iddo ddychwelyd i Gymru
+					(nid yn Ffrainc, fel yr honnodd Saunders Lewis 1976: 86-90).</p>
+				<p>
+					Tua'r un adeg fe ganodd Ieuan ap Hywel Swrdwal yntau gywydd nodedig
+					ar ran Guto i ddiolch i Risiart am hugan aur a gawsai Guto ganddo'n
+					rhodd, yn &ocirc;l pob tebyg yn gyfnewid am y cerddi mawl a ganodd iddo
+					(GHS cerdd 24). Yr awgrym cryf yw bod Ieuan yn bwriadu cludo diolch
+					Guto o Gymru i Ffrainc er mwyn ei gyflwyno i Risiart yn y cnawd. Er
+					na cheir tystiolaeth fod Ieuan wedi gwasanaethu fel milwr yn
+					Normandi, cofnodir enw ei dad, Hywel Swrdwal, fel milwr yng
+					ngwasanaeth Richard dug Iorc yn Rouen yn 1445 ac 1447 (Soldier LME
+					s.n. <span style="font-style: italic">Howell Sourdoual</span>, <span
+						style="font-style: italic">Houel Sourdonel</span>). A chymryd bod
+					y cywydd diolch i Risiart wedi ei briodoli'n gywir i Ieuan yn y
+					llawysgrifau, yn hytrach na Hywel ei dad, mae'n debygol fod Ieuan
+					yntau naill ai wedi teithio i Ffrainc neu wedi bwriadu mynd yno ryw
+					ben.
+				</p>
+				<p>
+					Dychwelodd Guto i Normandi yn niwedd Mehefin 1441. Cofnodir ei enw
+					fel <span style="font-style: italic">Gitto Glyn</span> ar restr o
+					filwyr a fwstriwyd yn Portsmouth yn niwedd Mai (Salisbury 2007a: 1;
+					Johnson 1988: 35). Saethydd ydoedd yng nghatrawd bersonol dug Iorc.
+					Roedd y dug yn arweinydd ar fyddin lawer mwy sylweddol ar ei ail
+					ymgyrch yn Normandi, a'r tebyg yw fod y profiadau a gawsai Guto
+					yntau gryn dipyn yn wahanol i'r rhai a gafodd yn 1436. Mae'n
+					rhesymol tybio iddo deithio gyda'r dug yn syth i Pontoise er mwyn
+					adfer y dref o afael Siarl VII. Cyfarfu'r fyddin &acirc; Si&ocirc;n Talbod a'i
+					fyddin yntau yn Juziers ar 13/14 Gorffennaf a chipiasant Pontoise
+					yn ddiwrthwynebiad rai dyddiau'n ddiweddarach (Pollard 1983: 55-6).
+					Wedi atgyfnerthu'r dref, aethant ati i erlid Siarl gan groesi afon
+					Oise yn Beaumont cyn i Siarl ymgilio i Poissy i'r de o afon Seine.
+					Ar 24 Gorffennaf aeth byddinoedd y dug a Thalbod ar drywydd Siarl
+					eto, gan ailgroesi afon Oise yn Heuville. Ond daeth byddin y dug i
+					wrthdrawiad &acirc; lluoedd Ffrengig gan ddioddef colledion difrifol, a'r
+					tebyg yw fod y dug wedi arwain ei fyddin i Rouen yn fuan wedyn a
+					bod Talbod wedi arwain ei lu yntau ymlaen i Poissy mewn ymgais
+					aflwyddiannus i ddal Siarl. Cyrhaeddodd y dug Rouen ar 1 Awst, 'his
+					troops haggard, starving and exhausted' (ibid. 57). Dros fis yn
+					ddiweddarach, ailgipiodd Siarl dref Pontoise. Os cymerodd Guto ran
+					yn y digwyddiadau hyn, y mwyaf y gallai ymfalch&iuml;o ynddo oedd ei fod
+					wedi cyfrannu at y gwaith o atal cynnydd y Ffrancwyr yn Normandi. Y
+					tebyg yw iddo dreulio cyfnod o chwe mis yn Ffrainc cyn dychwelyd i
+					Gymru naill ai ddiwedd 1441 neu ddechrau 1442.
+				</p>
+				<p>
+					Mae dwy gerdd arall yn tystio i ymwneud agos Guto &acirc; Ffrainc. Y
+					cyntaf yw cywydd mawl i Fathau Goch, rhyfelwr arall o Gymro a fu'n
+					brwydro dramor o 1423 <span style="color: 1F497D">hyd at
+						1450, ychydig flynyddoedd cyn diwedd y rhyfel</span> (cerdd 3). Fel y
+					cerddi a ganodd Guto i Risiart Gethin, y tebyg yw fod y gerdd i
+					Fathau wedi ei chanu yng Nghymru, ac nid yw'n eglur a gyfarfu Guto
+					ei noddwr erioed. Nid yw'n hysbys ym mhle'r oedd Mathau yn 1436/7
+					yn ystod ymweliad cyntaf tebygol Guto &acirc; Normandi, er y gellid
+					disgwyl y byddai Mathau'n ymweld yn gymharol gyson &acirc; phrifddinas yr
+					ardal yn Rouen. Roedd yn gapten Bayeux o 1439 i 1442, dinas i'r
+					gorllewin o Caen, gryn bellter o'r ardal rhwng Pontoise a Rouen lle
+					bu Guto'n milwra yn 1441. Ond cymerodd Mathau ran yn y gwaith o
+					warchae a chipio Harfleur ym mis Hydref 1440, ac nid yw'n amhosibl
+					ei fod yn y dref o hyd pan laniodd byddin y dug yno, o bosibl, ym
+					mis Mehefin 1441. Ond os na welodd Guto'r rhyfelwr enwog erioed,
+					mae'n sicr y byddai wedi clywed digon amdano gan Risiart Gethin, a
+					fu'n cydfrwydro ag ef yn erbyn Jeanne o Arc yn Beaugency yn 1429.
+				</p>
+				<p>
+					Mae'r ail gerdd sy'n ymwneud &acirc; Ffrainc yn un o gywyddau mwyaf
+					nodedig Guto, sef mawl i Domas ap Watgyn o Landdewi Rhydderch yng
+					Ngwent (cerdd 4). Yn y gerdd mae Guto'n rhag-weld ymgyrch filwrol
+					yn Ffrainc drwy lwyfannu ffug frwydr rhwng Tomas, ei feirdd a'i
+					ddatgeiniaid ar y naill law a gwinoedd Ffrengig, i gynrychioli
+					arweinwyr enwog y Ffrancwyr, ar yr ochr arall. Mae'n byrlymu o
+					asbri a chynnwrf criw o ddynion a oedd yn paratoi i fynd i ryfel,
+					ac mae'n bosibl fod Guto wedi ei chanu cyn iddo deithio i Ffrainc
+					yn 1436. Fodd bynnag, gan na cheir sicrwydd fod Tomas yn rhan o'r
+					ymgyrch honno, mae'n llawer mwy diogel cymryd bod y gerdd yn
+					perthyn i wanwyn neu ddechrau haf 1441, oherwydd ceir enw <span
+						style="font-style: italic">Thomas Watkyns</span> fel saethydd
+					(ynghyd &acirc;'i frawd, <span style="font-style: italic">Johan
+						Watkyns</span>, fel milwr arfog ar geffyl) ar restr y milwyr a hwyliodd o
+					Portsmouth ym Mehefin y flwyddyn honno (Salisbury 2007a: 44n115;
+					Soldier LME s.n.).
+				</p>
+				<p>
+					Ceir enwau dau o noddwyr eraill Guto ar y rhestr honno o filwyr ym
+					myddin dug Iorc yn 1441. Y mwyaf nodedig oedd Syr Wiliam ap Tomas o
+					Raglan (Salisbury 2007a: 39n52; Soldier LME s.n. <span
+						style="font-style: italic">William ap Thomas</span>), uchelwr o
+					gryn awdurdod a gododd yn gyflym yng ngwasanaeth y dug yn ystod y
+					tridegau ac a oedd yn aelod o'i gyngor yn 1441. Canodd Guto gywydd
+					mawl trawiadol i Wiliam lle geilw ef yn <span
+						style="font-style: italic">iustus doeth</span> (19.18), cyfeiriad
+					at swydd dirprwy ustus tywysogaeth y De a ddaliodd Wiliam o 1439
+					hyd ei farwolaeth yn 1445. Fel y soniwyd eisoes, mae'n bosibl fod
+					Guto wedi ymweld &acirc; Rhaglan mor gynnar ag 1433 yng nghwmni Llywelyn
+					ab y Moel a Rhys Goch Eryri, ac nid yw'n syndod ei weld yn derbyn
+					nawdd gan Wiliam rai blynyddoedd yn ddiweddarach. Mae'n bosibl
+					hefyd mai Guto oedd awdur marwnad a ganwyd i Wiliam yn 1445 na
+					ddiogelwyd ond dryll ohoni yn y llawysgrifau (cerdd 125). At hynny,
+					ac eithrio cartref Rhisiart Gethin ym Muallt a chartref Mathau Goch
+					ym Maelor, go brin y ceid lleoliad gwell yng Nghymru na Rhaglan i
+					berfformio'r cerddi a ganodd Guto yn absenoldeb y ddau ryfelwr
+					hynny.
+				</p>
+				<p>
+					Mae rhestr y milwyr yn cynnwys hefyd enw <span
+						style="font-style: italic">Henry Griffith Eskuier</span>, uchelwr
+					o blwyf Bacton yn swydd Henffordd a elwid gan Gymry'n Harri
+					Gruffudd (Salisbury 2007a: 39n51; Soldier LME s.n.). Diau fod Guto
+					a Harri'n gyfoeswyr go agos a bod a wnelo'r ffaith fod Guto wedi
+					milwra o gwbl gryn dipyn &acirc;'r ffaith fod Harri yntau'n gyfarwydd
+					iawn &acirc; byd y rhyfelwr. Roedd Harri'n aelod o arsiwn Carentan yng
+					ngogledd Normandi yn 1431 dan awdurdod Syr Nicholas Burdet o swydd
+					Warwick (Chapman 2013: 108). Er mai cerddi Guto i Risiart Gethin
+					yw'r rhai cynharaf y gellir eu dyddio ag unrhyw sicrwydd, mae'n
+					ddigon posibl fod rhai cerddi eraill wedi eu canu cyn 1436, ac un
+					o'r rheini yw cywydd mawl i Harri (cerdd 32). Cofnodwyd y gerdd yn
+					llawysgrif Peniarth 57 rywdro cyn <span style="font-style: italic">c</span>.1440
+					(RepWM; Salisbury 2007a: 11-12), er mai dryll ohoni'n unig a
+					oroesodd. Trueni o'r mwyaf yw'r ffaith fod y rhan fwyaf o'r gerdd
+					wedi ei cholli, oherwydd gallai ei chynnwys yn hawdd iawn daflu mwy
+					o oleuni ar y cyfnod cyffrous hwn yng ngyrfa gynnar Guto. Yn ei
+					absenoldeb, rhaid pwyso ar yr hyn a ddywed Guto yn ei farwnad i
+					Harri (36.23-5):
+				</p>
+				<p class="cefndir">Dug fi at y dug of Iorc<br/>
+				Dan amod cael deunawmorc.<br/>
+				Fy ngwaith fu eilwaith foliant,<br/>
+				Fwrw gwawd hwn i frig tant.</p>
+				<p>Gwelir mai dan anogaeth Harri, yn &ocirc;l pob tebyg, yr aeth Guto
+					ati i wasanaethu'r dug fel milwr, a hynny rywbryd rhwng tuag 1433,
+					pan oedd Harri wedi dychwelyd i Gymru o Carentan (Chapman 2013:
+					109), ac 1436. Ceir agosatrwydd anghyffredin yng ngherddi Guto i
+					Harri sy'n adlewyrchu cyfeillgarwch y tu hwnt i berthynas arferol
+					bardd a'i noddwr. Canodd Guto gywydd mawl nodedig i foli gwallt du
+					Harri - o bosibl gan fod gan Guto ei hun wallt tywyll - lle
+					cyfeiria at ragoriaeth y ddau yn y gamp o daflu maen (cerdd 33).
+					Harri, wrth reswm, sydd drechaf, fel y mae hefyd mewn cywydd arall
+					diddorol a ganodd Guto ar ei ran er mwyn cystadlu yn erbyn y bardd
+					Ieuan Gethin am serch Gwladus o Lyn-nedd (cerdd 34). Ymddengys fod
+					Gwladus, a allai fod yn ferch i un o noddwyr Guto, Rhys ap Siancyn
+					o Lyn-nedd, yn ddisgybl barddol i Ieuan, ond cyngor Guto iddi yw
+					peidio ag ymh&eacute;l &acirc;'r henwr hwnnw ac yn hytrach gyrchu llys Harri
+					ifanc, lle caiff ei digoni'n llwyr. Cyfeirir at Wladus eto mewn
+					cywydd arall a ganodd Guto i Harri, y tro hwn er mwyn cystwyo ei
+					noddwr am wrthod talu arian i'w feirdd (cerdd 35). Rhydd Harri
+					ddigonedd o win eithr prin yw ei d&acirc;l ariannol, cwyn a fyddai'n sicr
+					o fod wedi ei gythruddo ac sy'n adlewyrchu natur ei berthynas &acirc;
+					Guto. Go brin y byddai Guto wedi teimlo'n ddigon cartrefol yng
+					nghwmni noddwyr eraill i fedru lleisio'r un gwyn am gybydd-dod.
+					Mae'n eglur fod Guto'n adnabod Harri'n ddigon da i deimlo y gallai
+					ddweud a fynnai yn ei gerddi iddo, a ganwyd yn &ocirc;l pob tebyg yn
+					ystod y pedwardegau a'r pumdegau.</p>
+				<p>
+					Rhaid cyfeirio at un gerdd arall mewn cyswllt &acirc; gyrfa filwrol Guto,
+					sef cywydd mawl i Si&ocirc;n Talbod, ail iarll Amwythig (cerdd 78). A
+					chymryd bod Guto wedi gweld tad ei noddwr, y rhyfelwr Si&ocirc;n Talbod
+					(a wnaed yn iarll cyntaf Amwythig yn 1442), yn cydfilwra &acirc; dug Iorc
+					yn Pontoise a'r cyffiniau yn 1441, mae'n demtasiwn awgrymu iddo
+					ddod i gyswllt &acirc;'r ail iarll drwy ei gysylltiadau milwrol. Mae
+					tystiolaeth fewnol y gerdd yn awgrymu iddi gael ei chanu rhwng <span
+						style="font-style: italic">c</span>.1437 a dechrau 1445. Nid
+					cyd-ddigwyddiad, efallai, yw bod Guto wedi canu mawl i fab dug Iorc
+					yntau maes o law (cerdd 29).
+				</p>
+			</div>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.1_div.3">
+				<h4>
+					<span class="headingNumber">1.3 </span><span class="head"><a
+						id="Toc369616099">
+							<!--anchor-->
+					</a>Cylch clera yn y De?</span>
+				</h4>
+				<p>
+					Yn ogystal &acirc; gweddillion cywydd mawl i Harri Gruffudd, ceir yn
+					llawysgrif Peniarth 57 ddyrnaid o gerddi eraill gan Guto a ganwyd
+					cyn <span style="font-style: italic">c</span>.1440. Gellir cysylltu
+					un gerdd &acirc; Harri, sef cywydd mawl i'w ewythr, Phylib ap Gwilym
+					Llwyd o Drefgwnter yn nyffryn Gwy (cerdd 30). Gall fod Phylib yn
+					ddeiliad i Harri, ond nid yw Guto'n cyfeirio at berthynas yr ewythr
+					a'i nai eithr at un arall o'i noddwyr - yn wir, ei brif noddwr yn
+					ei ieuenctid - sef yr Abad Rhys ap Dafydd o Ystrad-fflur. Fe
+					ymddengys fod Guto wedi tyngu llw i Phylib y byddai'n ymweld ag ef
+					yn hytrach na'r abad, ond torrodd ei air gan mor hael oedd y nawdd
+					a gawsai yn yr abaty. Bellach rhoes yr abad rwydd hynt i Guto
+					gyrchu llys Phylib. Y tebyg yw na ddylid deall y cyfyngiadau a roes
+					yr abad ar symudiadau ei fardd yn rhy llythrennol, ond yr awgrym
+					cryf yw bod Guto ar ganol taith glera a oedd yn cwmpasu rhannau o
+					Geredigion, y de-ddwyrain a'r Cymoedd. Mae'n debygol fod y cylch
+					hwnnw'n cynnwys y Cwrtnewydd, cartref Harri yn swydd Henffordd, a
+					chartrefi o leiaf ddau noddwr arall y ceir cerddi iddynt yn
+					Peniarth 57, sef Syr Wiliam, offeiriad Merthyr Tudful, a Rhys ap
+					Siancyn o Lyn-nedd. Mae'r ddwy gerdd yn nodedig: y naill, y gerdd
+					gynharaf y gellir ei chysylltu &acirc; Merthyr, am ei phortread
+					meistrolgar o serch offeiriad tuag at nawddsantes ei blwyf (cerdd
+					16); a'r llall am y cipolwg a rydd o noddwr yn darllen ac yn
+					cyd-drafod ceinion llenyddol gyda'i fardd (cerdd 15).
+				</p>
+				<p>Nid yw'n amhosibl fod Rhaglan ac, efallai, gartref Tomas ap
+					Watgyn yn Llanddewi Rhydderch yn rhan o'r un cylch clera, ynghyd &acirc;
+					chartref Siancyn Hafart yn Aberhonddu. Yn ei gywydd mawl i Siancyn
+					(cerdd 31), cymhara Guto ei noddwr i fwa o bren ywen da sy'n anelu
+					saethau o aur at ei feirdd, adlais cryf o'r ffaith mai fel saethydd
+					y recriwtiwyd Guto i fyddin dug Iorc. Ond gan na ddiogelwyd y gerdd
+					yn Peniarth 57, hyd y gwyddys, efallai ei bod yn fwy diogel tybio
+					bod Guto wedi ei chanu ar ymweliad diweddarach ag Aberhonddu, o
+					bosibl yn ystod y pedwardegau a thua'r un adeg ag y canodd ei
+					gywydd miniog o led-ddychan i Harri Gruffudd (cerdd 35), a drafodir
+					uchod. Lleisir yr un gwyn gyffredinol yn y cywydd i Siancyn, lle
+					cymherir uchelwyr sy'n gyndyn o roi nawdd i fw&acirc;u brau, toredig, a'u
+					melltithio am gefnu ar eu gwreiddiau Cymreig (31.29-32):</p>
+				<p class="cefndir">Yr hwn a fu'n rhoi ennyd,<br/>
+					Ef&ocirc; fydd gybydd i gyd,<br/>
+					Ac eraill gynt a gerais<br/>
+					A bryn swydd a breiniau Sais.</p>
+				<p>Mae'r ddwy gerdd yn gofnod pwysig o'r anawsterau y byddai
+					rhaid i'r beirdd eu hwynebu'n achlysurol, ac adleisir eu hagwedd
+					gan f&acirc;n gyfeiriadau mewn cerddi eraill gan Guto ar hyd ei yrfa. Yr
+					argraff a gr&euml;ir gan fwyafrif y cerddi sydd ar glawr yw bod y genedl
+					yn llawn noddwyr gwaetgoch a gadwai ddrysau eu haelwydydd yn gyson
+					agored i bob clerwr a ddigwyddai alw heibio. Deil rhai o gerddi
+					Guto y gallai realiti'r sefyllfa fod gryn dipyn yn wahanol i
+					ddelfryd y farddoniaeth, gyda rhai noddwyr yn rhwym o flaenoriaethu
+					lles eu gyrfaoedd ar draul eu haelioni fel noddwyr. Tystiant hefyd
+					i barodrwydd Guto yntau i fynegi ei anfodlonrwydd yn &ocirc;l y galw.</p>
+				<p>
+					Cerdd arall sy'n arddangos adnabyddiaeth Guto o gamp y saethydd yw
+					ei gywydd mawl i Rys ap Dafydd o Uwch Aeron yng Ngheredigion (cerdd
+					11). Fel yn ei gywydd i Siancyn Hafart, mae'r saethu yn drosiadol,
+					ond y tro hwn y noddwr yw targed y bardd a'i fawl iddo yw'r
+					saethau, trosiad estynedig a gynhelir o'r llinell gyntaf hyd yr
+					olaf. Diogelwyd y gerdd yn Peniarth 57, ynghyd &acirc; chywydd mawl i
+					noddwr arall o gyffiniau afon Aeron, Hywel ap Llywelyn Fychan o Lyn
+					Aeron (cerdd 10). Y trosiad y tro hwn yw gafael Hywel ar fawl y
+					beirdd fel petai'n b&ecirc;l ddwyfol a drosglwyddwyd i'w feddiant o
+					genhedlaeth i genhedlaeth er cyfnod y Tri Hael. Prawf y ffaith fod
+					y ddwy gerdd wedi eu diogelu yn Peniarth 57 eu bod wedi eu canu cyn
+					<span style="font-style: italic">c</span>.1440 (at hynny, bu farw
+					Rhys yn 1439/40), ac mae'n bosibl hefyd eu bod yn rhan o'r un cylch
+					clera &acirc; rhai o'r cerddi uchod a ganwyd yn y de-ddwyrain. O'u
+					hystyried oll ynghyd, gall fod y cerddi'n ffrwyth taith farddol a
+					groesai'r ucheldir o Ystrad-fflur i ddyffrynnoedd y Mynyddoedd Duon
+					ar y Gororau, cyn troi i Ferthyr Tudful ac yna flaenau dyffryn
+					Nedd. Oddi yno byddai'r daith yn &ocirc;l i'r abaty wedi arwain y bardd
+					drwy sir G&acirc;r i Geredigion, ac ni fyddai'n syndod pe bai aelwydydd
+					Rhys a Hywel wedi ei ddenu i olwg y m&ocirc;r. Os felly y bu, diddorol yw
+					nodi y gall fod y daith o'r Cymoedd i ddyffryn Aeron wedi arwain
+					heibio Llanybydder a chartref uchelwr arall a roes ei nawdd i Guto,
+					sef Dafydd ap Tomas o Flaen-tren. Fodd bynnag, fel yn achos y gerdd
+					fawl i Siancyn Hafart a'r lled-ddychan i Harri Gruffudd, mae'r
+					ffaith fod y cerddi a ganodd Guto i Ddafydd yn absennol o lawysgrif
+					Peniarth 57 yn awgrymu eu bod yn perthyn i gyfnod diweddarach. Yn
+					wir, yn ei awdl fawl feistrolgar i Ddafydd, cyfeiria Guto at ei [<span
+						style="font-style: italic">d</span>]<span
+						style="font-style: italic">aith faith</span> i lys ei noddwr<span
+						style="font-style: italic">o F&ocirc;n i oror Aeron / ... drwy
+						Fabwynion</span> (12.47-8), a <span style="font-style: italic">dyfod
+						trwy Deifi</span> a wnaeth er mwyn canu ei gywydd mawl iddo (13.4). At
+					hynny, dywed Guto ei fod wedi treulio <span
+						style="font-style: italic">pedair blynedd</span> (15) yn y Mers
+					cyn dychwelyd i Flaen-tren, awgrym cryf ei fod wedi clera yn sir
+					G&acirc;r wedi <span style="font-style: italic">c</span>.1440, o bosibl
+					yn ystod y pedwardegau neu'r pumdegau. Canmolir Dafydd, ymhlith
+					pethau eraill, am ei ddawn fel bardd serch (12.37-42), cyfeiriad
+					cynnar yng ngwaith Guto at noddwr a ymddiddorai yng nghrefft cerdd
+					dafod yn ogystal &acirc;'i noddi.
+				</p>
+			</div>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.1_div.4">
+				<h4>
+					<span class="headingNumber">1.4 </span><span class="head"><a
+						id="Toc369616100">
+							<!--anchor-->
+					</a>Morgannwg a Gwent</span>
+				</h4>
+				<p>Cafodd Guto nawdd gan o leiaf ddau noddwr arall yn y
+					de-ddwyrain yn ystod y pedwardegau neu'r pumdegau, ond ni cheir lle
+					i gredu bod eu llysoedd yn rhan o'r cylch clera a amlinellir uchod.
+					Y noddwr cyntaf y gwyddys i sicrwydd fod Guto wedi canu iddo yn yr
+					ardal hon yw Dafydd Mathau, gwr o Landaf a thestun cywydd mawl lle
+					canmolir hefyd ei bedwar mab a'i wraig, Gwenll&iuml;an, a oedd yn
+					gyfnither i Syr Wiliam ap Tomas. Gwelir corffddelw Dafydd hyd
+					heddiw yn yr eglwys gadeiriol yn Llandaf.</p>
+				<p>Yr ail yw Morgan ap Rhosier o Wynllwg ger Casnewydd, noddwr
+					dau gywydd hynod gan Guto a Hywel Dafi. Eiddo Hywel yw'r cywydd
+					cyntaf, lle cyhudda Guto (gyda'i dafod yn ei foch, efallai) o
+					wenieithio wrth ganu mawl i'w noddwyr (cerdd 18a). Ni fyn Hywel ei
+					hun fod yn euog o'r bai hwnnw, a cheisia foli Morgan heb ildio i'r
+					demtasiwn o organmol. Ateb onest Guto yw ei fod, wedi'r cyfan, yn
+					canu gweniaith weithiau, eithr nad yw hynny'n anghydnaws &acirc; natur y
+					grefft farddol (cerdd 18). Mae mawl Guto'n llawn gorganmol gan mai
+					cerdd felly y myn ei noddwr a'i gynulleidfa ei chlywed. At hynny,
+					mae mawl yn y dull hwnnw'n llawer tecach na'r hyn y mae Hywel yn ei
+					gynnig, a phrawf Guto hynny drwy foli Morgan yn ei ddull dihafal ei
+					hun. Mae'r ddau gywydd yn ffurfio trafodaeth ddiddorol a
+					soffistigedig ynghylch prif weithgarwch y beirdd, sef canu mawl, ac
+					yn rhagflaenu mwy o ddadlau cellweirus rhwng y ddau fardd yng
+					nghastell Rhaglan maes o law.</p>
+				<p>Noddwr arall y mae'n bosibl i Guto ganu mawl iddo yn y cyfnod
+					hwn yw Trahaearn ab Ieuan o Ben-rhos. Fel y gwelir isod, canodd
+					Guto gywydd gofyn iddo yn yr wythdegau, lle ceir yr argraff ei fod
+					yn adnabod Trahaearn yn dda. Tybed a aeth cerddi cynharach iddo
+					dros gof?</p>
+			</div>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.1_div.5">
+				<h4>
+					<span class="headingNumber">1.5 </span><span class="head"><a
+						id="Toc369616101">
+							<!--anchor-->
+					</a>Yr Abad Rhys ap Dafydd</span>
+				</h4>
+				<p>Ni waeth faint o gartrefi yr ymwelodd Guto &acirc; hwy ar ei
+					deithiau clera cynnar yn y De, mae'n sicr iddo ddychwelyd dro ar &ocirc;l
+					tro i abaty Ystrad-fflur. Diogelwyd yn Peniarth 57 dri chywydd i'r
+					gwr a'i 'rhwystrodd' rhag cyrchu llys Phylib ap Gwilym Llwyd yn
+					Nhrefgwnter, yr Abad Rhys ap Dafydd. Mae Rhys yn haeddu sylw
+					arbennig gan mai ef, hyd y gwyddys, oedd prif noddwr Guto yn ei
+					ieuenctid. Rhys, yn &ocirc;l pob tebyg, a fu'n gyfrifol am noddi'r gwaith
+					o gynhyrchu Peniarth 57 yn Ystrad-fflur, ac nid yw'n amhosibl mai
+					ef biau un o ddwy brif law'r llawysgrif (Salisbury 2007a: 18-19).
+					Pe na bai'r llawysgrif fechan honno wedi ei chomisiynu yn y lle
+					cyntaf, a phe na bai wedi goroesi, byddai'r hyn sy'n hysbys am yrfa
+					gynnar Guto yn dlotach o gryn dipyn. Canodd Guto ddwy gerdd arall i
+					Rys nas ceir yn Peniarth 57, sef awdl fawl a marwnad. Yn achos y
+					rhan fwyaf o noddwyr, un neu ddwy gerdd iddynt ar y mwyaf a
+					oroesodd, cerddi digon cyfoethog mewn rhai agweddau eithr rhai sy'n
+					aml yn cyfleu un agwedd yn unig ar berthynas y bardd a'i noddwr.
+					Rhydd y tri chywydd i Rys yn Peniarth 57 gipolwg llawnach ar y
+					berthynas honno, oherwydd nid mawl digymysg yn unig yw eu cynnwys
+					eithr hefyd bryder ac ansicrwydd ynghylch helyntion yr abad a'i
+					absenoldeb mynych o'r abaty.</p>
+				<p>
+					Yn &ocirc;l un cywydd roedd Rhys yn dioddef o ryw afiechyd neu anaf
+					corfforol a'i gorfododd i adael Ystrad-fflur (onid oedd eisoes oddi
+					cartref pan drawyd ef yn wael), a deil Guto y bydd yn trechu'r
+					cystudd hwnnw'n union fel y trechodd y gelynion a geisiodd ei
+					ddisodli o'i abadaeth (cerdd 5; Salisbury 2009: 65-9). Mewn cywydd
+					arall, gwelir Guto'n mynegi ei anfodlonrwydd ynghylch y ffaith fod
+					Rhys wedi gadael yr abaty er mwyn ymweld &acirc; Rhydychen, o bosibl adeg
+					sefydlu coleg Sistersaidd Berned Sant yno yn 1437/8 (cerdd 6;
+					Salisbury 2009: 69-74). Mae'n debygol fod y ddwy gerdd hyn wedi eu
+					canu ar ymweliad &acirc;'r abaty rhwng cyfnod cyntaf Guto fel milwr yn
+					Ffrainc yn 1436 a'i ail gyfnod yn 1441. Ceir llai o sicrwydd yn
+					achos y trydydd cywydd i Rys, lle darlunnir ymddiddan rhwng y bardd
+					a'i dafod ynghylch yr abad (cerdd 7; Salisbury 2007b: 149-55; 2009:
+					74-7). Cywydd byr ydyw mewn cymhariaeth &acirc; phob cerdd arall a
+					berthyn i'r cyfnod cyn <span style="font-style: italic">c</span>.1450
+					(namyn 44 llinell), a gwelir arno'n eglur ddylanwad awen Llywelyn
+					ab y Moel, a ganodd yntau gywydd ymddiddan &acirc;'i dafod (Salisbury
+					2007b: 151-2; GSCyf cerdd 12). Mae hynny, ynghyd ag adeiladwaith
+					syml y gerdd, yn awgrymu'n gryf mai hi yw'r gerdd gynharaf o waith
+					Guto a oroesodd. Ac ystyried ei fod yn weithgar fel bardd mor
+					gynnar &acirc; <span style="font-style: italic">c</span>.1431, nid yw'n
+					amhosibl fod y gerdd wedi ei chanu rhwng 1429/30, pan benodwyd Rhys
+					yn abad Ystrad-fflur, ac 1436.
+				</p>
+				<p>Tystia cerddi Guto i Rys, a'i awdl yn arbennig (cerdd 8), i
+					weithgarwch diwylliannol a phensaern&iuml;ol yr abad yn Ystrad-fflur.
+					Ceisiodd Rhys ei orau i adfer cyflwr a ffyniant Ystrad-fflur wedi
+					cyfnod o ddifrodi helaeth yn ystod gwrthryfel Owain Glyndwr, ond
+					aeth ei weledigaeth yn drech nag ef ac fe'i carcharwyd yng
+					Nghaerfyrddin yn sgil ei ddyledion yn 1439/40. Bu farw yn y carchar
+					tua diwedd 1440 neu ddechrau 1441, a chanodd Guto farwnad fawreddog
+					iddo (cerdd 9). Mae'r gerdd honno ymhlith y cywyddau hiraf a ganodd
+					Guto ac yn deyrnged deimladwy i noddwr a oedd, o bosibl, yn
+					gyfoeswr agos iddo. Ond ceir yn y gerdd awgrym hefyd fod meddwl
+					Guto ar grwydr a'i fod eisoes wedi ymrwymo i wasanaethu dug Iorc
+					fel milwr ym misoedd yr haf 1441, rai cannoedd o filltiroedd i
+					ffwrdd o gythrwfl yr abaty yng Ngheredigion (9.13-20).</p>
+			</div>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.1_div.6">
+				<h4>
+					<span class="headingNumber">1.6 </span><span class="head"><a
+						id="Toc369616102">
+							<!--anchor-->
+					</a>Clera yn y Gogledd</span>
+				</h4>
+				<p>
+					Canwyd yr holl gerddi a drafodwyd hyd yn hyn i uchelwyr yn ne
+					Cymru. Yr unig eithriad posibl yw'r gerdd i Fathau Goch o Faelor,
+					ond nid oes wybod ym mhle'n union y canwyd y gerdd honno ac
+					ystyried bod ei gwrthrych yn rhyfela yn Ffrainc ar y pryd. Gwyddys
+					bod Guto wedi canu yn y Penrhyn ger Bangor <span
+						style="font-style: italic">c</span>.1431, ond rhaid neidio ymlaen
+					bron ddegawd cyn bod cerdd ogleddol ar glawr y gellir ei dyddio'n
+					bendant. Ym mis Chwefror 1440, oddeutu blwyddyn cyn iddo ganu ei
+					farwnad drawiadol i'r Abad Rhys yn Ystrad-fflur, canodd Guto
+					farwnad i Lywelyn ab y Moel yn Ystrad Marchell (cerdd 82). Fel y
+					nodwyd eisoes uchod, mae'n debygol iawn fod a wnelo Llywelyn gryn
+					dipyn &acirc; gyrfa gynnar Guto fel bardd proffesiynol, er nad ymddengys
+					mai ef oedd ei athro barddol. Canodd Rhys Goch Eryri yntau farwnad
+					i Lywelyn, y gerdd olaf o'i eiddo y gellir ei dyddio ag unrhyw
+					sicrwydd (GRhGE cerdd 10). Roedd achlysur canu'r ddwy gerdd yn
+					groesffordd yn hanes arddull y cywydd, y naill gan yr henwr Rhys yn
+					goferu'n sangiadol yn unol &acirc;'r hen ddull, a'r llall gan y Guto
+					ifanc yn symud yn gyson o'r naill gwpled taclus i'r nesaf.
+				</p>
+				<p>Dim ond dwy gerdd arall a berthyn i yrfa gynnar Guto y gellir
+					bwrw amcan go sicr ynghylch dyddiadau eu canu. Y gyntaf yw cywydd
+					mawl i bedwar mab Edward ap Dafydd o Fryncunallt yn arglwyddiaeth y
+					Waun, gwr a oedd yn perthyn i Owain Glyndwr ac a ymladdodd yn ei
+					blaid yn ystod y gwrthryfel (cerdd 103). Er mai rhinweddau'r
+					meibion yw prif bwnc y gerdd, molir Edward hefyd am rai llinellau
+					ac mae'n eglur ei fod yn fyw adeg ei pherfformio. Bu farw Edward ar
+					25 Ebrill 1445, a chanodd Guto farwnad iddo (cerdd 104). Er na
+					ellir cynnig dyddiad manylach ar gyfer y cywydd mawl i feibion
+					Edward, ac ystyried y ffaith fod Guto yn abaty Ystrad Marchell adeg
+					marwolaeth Llywelyn ab y Moel yn 1440, nid yw'n amhosibl ei fod yn
+					perthyn i'r un cyfnod. Y cerddi hyn yw'r rhai cynharaf y gellir eu
+					cysylltu &acirc;'r gogledd-ddwyrain.</p>
+				<p>Mae'r gerdd nesaf y gellir cynnig dyddiad pendant ar ei
+					chyfer yn perthyn i gyfnod ychydig yn ddiweddarach yng ngyrfa Guto,
+					sef ei farwnad i Robert Trefor (a drafodir isod), ond y tebyg yw
+					fod rhai cerddi eraill ar glawr sy'n perthyn i'w yrfa gynnar.
+					Canwyd un gerdd yn Amwythig, arwydd eglur o ehangder daearyddol y
+					cylchoedd clera yng nghyfnod Guto (cerdd 77). Noddwr y gerdd oedd
+					yr Abad Tomas o abaty Benedictaidd y dref, a deil Guto'n gellweirus
+					y myn droi'n glerigwr fel y gall dreulio ei holl amser yng
+					nghwmni'r abad.</p>
+				<p>
+					Canodd Guto dri chywydd mawl o gryn hynodrwydd i Hywel ab Ieuan
+					Fychan o Foeliwrch ger Llansilin, gwr y ceir ei enw mewn cofnodion
+					rhwng 1408/9 ac 1416/17. Roedd ei dad, Ieuan Fychan ab Ieuan
+					Gethin, yn bresennol yng Nglyndyfrdwy ym Medi 1400 pan gyhoeddwyd
+					Owain Glyndwr yn Dywysog Cymru. Safai llys enwog Owain yn Sycharth
+					nid nepell o gartref Ieuan ym Moeliwrch, a llosgwyd y ddau le'n ulw
+					gan luoedd y Saeson ym Mai 1403 (Huws 2007: 106-7). Canodd Guto un
+					o'i gerddi i Hywel ar achlysur ailadeiladu Moeliwrch (cerdd 90),
+					digwyddiad o gryn bwys a ddenodd feirdd eraill i'r ty gwyngalchog
+					ar lethr uchel uwchben Llansilin, megis Ieuan ap Gruffudd Leiaf ac,
+					o bosibl, Syr Rhys. Yn wir, mae'n bosibl mai Moeliwrch oedd
+					lleoliad canu englynion rhwng Ieuan a Guto, lle dywed y naill na
+					fyn rannu ei wely &acirc;'r llall gan ei fod yn <span
+						style="font-style: italic">un o'r gl&ecirc;r</span> (cerdd 93). Etyb
+					Guto drwy atgoffa Ieuan nad oedd ei linach yntau'n gwbl ddiledryw.
+					Fel yn achos y ddau gywydd arall a ganodd Guto i Hywel, ni ellir
+					cynnig dyddiad manwl ar gyfer y gerdd fawl i Foeliwrch, ond mae
+					dyddiadau hysbys Hywel, ynghyd &acirc; gwneuthuriad cynganeddol y cerddi,
+					yn awgrymu dyddiad cynnar, o bosibl <span
+						style="font-style: italic">c</span>.1440. Mewn cywydd arall i
+					Hywel, cyfeiriodd Guto at <span style="font-style: italic">abad
+						draw</span> yr oedd wedi gwneud <span style="font-style: italic">amodau</span>
+					iddo na fyddai'n ei adael (91.59-62). Ni cheir dim yn y gerdd i
+					awgrymu at ba abad y cyfeirir, ond dwg y llinellau i gof yr hyn a
+					ddywedodd Guto yn ei gywydd mawl i Phylib ap Gwilym Llwyd o
+					Drefgwnter, sef ei fod wedi tyngu llw i'r Abad Rhys o Ystrad-fflur
+					na fyddai'n ymweld &acirc; noddwyr eraill. Os at Rys y cyfeirir, gellid
+					cyfrif cerddi Guto i Hywel ymhlith ei gerddi cynharaf.
+				</p>
+				<p>
+					Mae cywydd Guto i Hywel sy'n cynnwys y cyfeiriad at yr abad ymhlith
+					ei gerddi hynotaf (cerdd 91). Tua hanner ffordd drwy'r gerdd dywed
+					fod beirdd eraill yn anfodlon &acirc;'r ffaith ei fod yn canu cyn lleied
+					i noddwyr eraill, cyhuddiad sy'n deillio, fe haerir, o genfigen am
+					y berthynas agos rhyngddo a Hywel. Ateb Guto yw cyflwyno'r
+					berthynas honno ar lun priodas, ond nid priodas ddaearol rhwng <span
+						style="font-style: italic">gwas a gwen</span> eithr un ddwyfol a
+					weinyddid gan Dduw. Rhydd y cywydd ddarlun cain ac unigryw o
+					berthynas gyd-ddibynnol y bardd a'i noddwr, ac felly hefyd gywydd
+					arall a ganodd Guto i Hywel pan anafodd y noddwr ei ben-glin (cerdd
+					92). Mae Guto'n gwneud defnydd llawn o dopos cyffredin mewn cerddi
+					tosturi, lle gwelir y bardd ei hun yn dioddef yn enbyd pan fo ei
+					noddwr yn wael. Ond nid bardd cyffredin mo Guto, a chynigia iach&aacute;u
+					Hywel drwy rym ei farddoniaeth yn union fel y llwyddodd y Taliesin
+					chwedlonol i ryddhau ei noddwr yntau, Elffin, o garchar gyda'i
+					awen. Geilw Guto wedyn ar gymorth lliaws o seintiau er mwyn
+					gwella'r briw a sicrhau y bydd Hywel yn iach eto i'w noddi.
+				</p>
+				<p>Roedd Mali ferch Iolyn, un o gyfnitherod Hywel, yn wraig i un
+					o noddwyr Guto yng nghwmwd Deuddwr, sef Gruffudd Fychan ap Gruffudd
+					Deuddwr o'r Collfryn. Ceir enw Guto wrth yr unig gopi o gerdd fawl
+					a ganwyd i Ruffudd, cywydd treisgar iawn sy'n coff&aacute;u campau'r
+					noddwr yn ymladd rhyw Sais a ddaeth i ysbeilio ei fro (cerdd 83). Y
+					tebyg yw mai gwrthdaro coll yn ystod neu yn sgil gwrthryfel Owain
+					Glyndwr oedd hyn. Mae arddull sangiadol y gerdd yn bur wahanol i'r
+					rhan fwyaf o'r cerddi eraill a ganodd Guto yn ei ieuenctid, ond
+					gall fod yn arwyddocaol nad yw'r bardd ei hun yn cofio'r
+					digwyddiad, ac felly, o bosibl, wedi ei eni ar &ocirc;l yr ymladd
+					(83.49-58). Os Guto yw'r awdur, gallai'n hawdd fod yn atgoffa
+					Gruffudd a'i gynulleidfa o ddewrder ei noddwr flynyddoedd yn &ocirc;l, a
+					gall fod y gerdd ymhlith ei gerddi cynharaf oll.</p>
+				<p>
+					Perthyn yr unig gerdd arall sydd wedi goroesi o gyfnod ieuenctid
+					Guto i'r gogledd-orllewin, sef cywydd i ofyn ffaling gan Elen ferch
+					Robert Pilstwn o'r Llannerch yn Llyn (cerdd 53). Yn wir, hon yw'r
+					unig gerdd a ganwyd yn y gogledd-orllewin y gellir ei chysylltu &acirc;
+					gyrfa gynnar Guto, a hynny ar sail ei gwneuthuriad cynganeddol a'r
+					ffaith fod Elen yn nith i Owain Glyndwr. At hynny, hon yw cerdd
+					ofyn gynharaf Guto, <span style="font-style: italic">genre</span> y
+					gwnaeth ddefnydd helaeth ohoni yn ddiweddarach yn ei yrfa. Dengys y
+					cais cynnar hwn am fantell Wyddelig allu dyfeisgar Guto i
+					ddisgrifio rhodd yn ddychmygus, ynghyd &acirc;'i hoffter o frolio'r
+					ffaith ei fod yn fardd &acirc;'i lygad ar ffasiynau'r oes.
+				</p>
+			</div>
+		</div>
+		<div class="teidiv1" id="index.xml-body.1_div.1_div.2">
+			<h3>
+				<span class="headingNumber">2. </span><span class="head"><a
+					id="Toc369616103">
+						<!--anchor-->
+				</a>Guto yn ystod Rhyfeloedd y Rhosynnau, c.1450-70</span>
+			</h3>
+			<p>Ceir awgrym cryf yn y canu sydd wedi goroesi fod Guto wedi
+				treulio'r rhan fwyaf o'i amser yn y cyfnod hwn mewn dwy ardal yn y
+				Gororau. Gellir synio am dref Croesoswallt, lle bu'n byw fel bwrdais
+				am gyfnod, fel canolfan i'w weithgarwch yn y Gogledd, a chastell
+				Rhaglan, gorsedd nawdd rymus yr Herbertiaid yng Ngwent, yn y De.
+				Eithr nid dyna'r stori'n llawn, ac mae'n debygol iddo glera cryn
+				dipyn mewn ardaloedd eraill, yn arbennig yng Ngwynedd.</p>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.2_div.1">
+				<h4>
+					<span class="headingNumber">2.1 </span><span class="head"><a
+						id="Toc369616104">
+							<!--anchor-->
+					</a>Clera yn y gogledd-ddwyrain</span>
+				</h4>
+				<p>Un gerdd yn unig o eiddo Guto y gellir ei dyddio'n bendant yn
+					ystod pumdegau'r ganrif, sef marwnad i un o swyddogion dug Iorc yn
+					arglwyddiaeth Dinbych, Robert Trefor o Fryncunallt, mab hynaf i'r
+					Edward ap Dafydd a fuasai'n noddwr iddo gynt. Yn y farwnad
+					fawreddog hon i Robert (cerdd 105), a gyfansoddwyd yn 1452,
+					cyfeirir at ei feibion fel pedwar twr sy'n debyg i dyrau enwog
+					castell Caernarfon. Roedd Si&ocirc;n Trefor yn un o'r meibion hynny, gwr
+					a roes ei nawdd i Guto maes o law eithr ni oroesodd dim o'r cerddi.</p>
+				<p>Mae'n bosibl fod cerddi eraill wedi eu canu ar y Gororau yn
+					ystod y pumdegau, megis dau gywydd a ganwyd ar aelwyd Syr Si&ocirc;n
+					Bwrch a'i wraig Si&acirc;n yn y Drefrudd, swydd Amwythig, a berthyn i'r
+					cyfnod 1439-71. Maent yn codi cwestiwn diddorol, am ei bod yn
+					ansicr iawn a allai'r naill na'r llall o'r p&acirc;r priod ddeall
+					Cymraeg: Saeson oeddynt i bob golwg. A fedrai Guto'r iaith Saesneg?
+					Anodd peidio &acirc; meddwl ei fod. Ond pam, wedyn, y noddai'r rhain
+					farddoniaeth mewn iaith na ddeallent? Diau am fod esiampl y
+					dosbarth uchelwrol yng Nghymru yn ddylanwadol yng nghymdeithas
+					gymysg y Gororau. Canodd Guto gywydd mawl i Syr Si&ocirc;n (cerdd 80) a
+					chywydd mawl i'w wraig, Si&acirc;n (cerdd 81). Mae'n diolch yn wresog i
+					Si&acirc;n a'i merch Isbel am ofalu amdano tra oedd yn s&acirc;l yn eu ty.</p>
+				<p>Cerdd arall ddigon problematig a ganwyd rywbryd yn ystod y
+					blynyddoedd 1448-1476/7 yw cywydd a ganodd Guto i ofyn cymod Ieuan
+					Fychan ab Ieuan o Bengwern ger Llangollen (cerdd 106). Nid yw'n
+					hysbys beth oedd asgwrn y gynnen rhwng y bardd a'i noddwr, ond, ac
+					ystyried mor ysgafn yw naws y cywydd, anodd ei gysylltu &acirc;
+					charchariad meibion Ieuan Fychan yn 1457, fel y gwna ambell
+					lawysgrif a rhai ysgolheigion diweddar.</p>
+				<p>
+					A symud i'r Gororau ac i Faelor Gymraeg, canodd Guto gerdd farwnad
+					i Si&ocirc;n ap Madog Pilstwn o Hafod-y-wern ger Wrecsam rywbryd wedi
+					1461 (cerdd 72). Mae'n bosibl ei fod yn cylch-droi yn yr ardal
+					oddeutu'r adeg honno, a bod un o'i gerddi gofyn mwyaf trawiadol yn
+					perthyn i'r un cyfnod. Canodd gywydd i ofyn saeled gan Wiliam Rodn
+					o Holt ar ran Dafydd Bromffild o Fers (cerdd 73), lle darlunnir
+					arfwisg gyfan ac eithrio'r helmed ddur ar ei phen. Dyfelir y saeled
+					yn hynod ddyfeisgar, gan ei hymrithio'n <span
+						style="font-style: italic">lamp</span>, yn <span
+						style="font-style: italic">esgopty</span>, yn [<span
+						style="font-style: italic">d</span>]<span
+						style="font-style: italic">orth ddur</span> ac, yn llinellau olaf
+					y gerdd, yn <span style="font-style: italic">haul</span> llachar a
+					fydd yn gwawrio yn y dwyrain ac yn machludo yn y gorllewin - gan
+					ddilyn hynt arfaethedig y rhodd o Holt i'r Bers. Tybed hefyd a
+					deithiodd Guto i Gaer yn yr un cyfnod, ac ymbil yno ar y grog enwog
+					yn eglwys Ioan Fedyddiwr i wella briw un o'i noddwyr? Canodd gywydd
+					yn datgan ei fwriad i wneud hynny ar ran Dafydd ab Ieuan, a gawsai
+					anaf i'w goes gan saeth (cerdd 92), ond yn anffodus ni ellir
+					lleoli'r noddwr hwnnw'n hyderus.
+				</p>
+				<p>Soniwyd eisoes am ganu trawiadol Guto i Hywel ab Ieuan Fychan
+					o Foeliwrch, a berthyn i'w gyfnod cynnar fel bardd, ond fe barhaodd
+					i ganu i aelodau eraill o deulu estynedig Hywel yn nyffrynnoedd
+					dwyreiniol y Berwyn yn ystod y pumdegau a'r chwedegau. Ymgartrefodd
+					cefnder Hywel, Dafydd Cyffin ab Iolyn, yng nghyffiniau Llangedwyn
+					yn nyffryn Tanad, a chanodd Guto gywydd mawl iddo rywdro rhwng 1444
+					ac 1462 (cerdd 94). O ddilyn afon Tanad i lawr y dyffryn fe
+					gyrhaeddir cartref un arall o noddwyr Guto yn ystod y cyfnod hwn,
+					sef Abertanad, ar y ffin rhwng Powys ac arglwyddiaeth Croesoswallt.
+					Dyma gartref un o frodyr Hywel o Foeliwrch, sef Gruffudd ab Ieuan
+					Fychan. Achlysur trist a ysgogodd y cywydd cyntaf sydd ar glawr i
+					deulu Abertanad, sef marwolaeth gwraig Gruffudd, Gweurful ferch
+					Madog (cerdd 88). Cawn ynddo ddarlun pruddglwyfus o'r ty gwag a'r
+					bedd tawel yn eglwys Llanymlodwel. Yn yr ardal ffiniol hon, roedd
+					Cymro uniaith yn destun digrifwch i rai o'i gymdogion, fel yn achos
+					mab Gruffudd a Gweurful, Dafydd Llwyd ap Gruffudd. Mae cerdd fawl a
+					ganodd Guto i Ddafydd yn amddiffyniad gloyw o ymlyniad Dafydd wrth
+					ei famiaith, yn ogystal &acirc; rhinweddau mwy arferol, megis ei gadernid
+					a'i haelioni wrth ei westeion (cerdd 86). Awgrymir yno, fel yn y
+					cywydd marwnad i fam Dafydd, fod Guto'n ymwelydd eithaf cyson ag
+					Abertanad ers amser hir. Ar achlysur arall, canodd Guto i ddiolch i
+					wraig Dafydd, sef Catrin ferch Maredudd, am roi pwrs newydd iddo
+					(cerdd 87). Bu farw Dafydd a Chatrin yn 1465. Teimladwy iawn yw'r
+					cywydd marwnad a ganodd Guto i goff&aacute;u Dafydd (cerdd 89), lle
+					cyfeirir at y cornwyd a ymddangosodd ar ei gorff dri diwrnod
+					ynghynt, yn arwydd ei fod yn dioddef o'r pla. Bu farw ei wraig
+					Catrin ynghynt, yn &ocirc;l pob tebyg o'r un afiechyd.</p>
+			</div>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.2_div.2">
+				<h4>
+					<span class="headingNumber">2.2 </span><span class="head"><a
+						id="Toc369616105">
+							<!--anchor-->
+					</a>Croesoswallt</span>
+				</h4>
+				<p>
+					Perthynai Dafydd Llwyd o Abertanad i noddwr arall, sef Sieffrai
+					Cyffin o Groesoswallt, un o brif noddwyr Guto yn y
+					gogledd-ddwyrain. Er mai anodd yw dyddio'n hyderus yr un o'r cerddi
+					i Sieffrai, mae'n sicr fod Guto'n canu iddo cyn marwolaeth Dafydd
+					Llwyd yn 1465. Canodd Guto gywydd i ofyn brigawn gan Sieffrai ar
+					ran Dafydd (cerdd 98), lle dywed fod Sieffrai'n dal swydd yn nhref
+					Croesoswallt a elwir yn <span style="font-style: italic">gapteniaeth</span>.
+					Gwyddys bod Sieffrai'n un o feil&iuml;aid y dref yn 1463, a gall, felly,
+					fod y gerdd honno'n perthyn i hanner cyntaf y chwedegau, ond mae
+					dyddiad yn y pumdegau'n bosibl hefyd. Mae'r un peth yn wir am y
+					cywydd mawl sy'n enwi gwraig Sieffrai, Si&acirc;n (cerdd 97). Os dilynwn
+					yr hynafiaethydd o'r unfed ganrif ar bymtheg, Gruffudd Hiraethog,
+					yna fe briododd Sieffrai &acirc;'i ail wraig Ann yn 1467, sy'n rhoi <span
+						style="font-style: italic">terminus ante quem</span> ar gyfer y
+					gerdd honno. Ar y llaw arall, mae'n debygol fod dwy gerdd arall a
+					ganwyd i Sieffrai, sef cywydd mawl (cerdd 96) a chywydd i ofyn dau
+					filgi gan Robert ab Ieuan Fychan o Goetmor (cerdd 100), yn perthyn
+					i gyfnod diweddarach. Mae'n bur debygol fod y cywydd i ofyn corn
+					hela ar ran Si&ocirc;n Eutun (cerdd 99) wedi ei ganu <span
+						style="font-style: italic">c</span>.1475, pan oedd Sieffrai'n
+					ddistain arglwyddiaeth swydd y Waun. Nodedig iawn yw'r sylw a roes
+					Guto i Sieffrai fel teithiwr, yn enwedig yn y gerdd a ganwyd iddo
+					ef a'i wraig (cerdd 97), lle dywedir iddo fynd ar bererindod i
+					Rufain ac ymhellach fyth i'r Tir Sanctaidd. Yn &ocirc;l Guto, roedd tad
+					Sieffrai, Morus, yn deithiwr o fri hefyd - aeth ef i Prussia ac i
+					Aras.
+				</p>
+				<p>
+					Mae'r canu i Sieffrai Cyffin yn agos gysylltiedig ag un o gerddi
+					mwyaf nodedig Guto, sef ei gywydd mawl i dref Croesoswallt (cerdd
+					102). Canmolir y dref yn hael a dywed Guto ei fod yn fwrdais yno.
+					Cadarnheir, mewn dogfen o'r unfed ganrif ar bymtheg, fod Guto wedi
+					ennill statws bwrdais drwy ganu cerdd o fawl i'r dref. Dywed Guto
+					ei fod gynt, pan oedd yn ifanc, yn <span style="font-style: italic">flaeneuwr</span>
+					- hynny yw, rhywun a drigai mewn bryndir - ond ei fod bellach yn
+					hen wr sy'n dewis y bywyd trefol cyfforddus. Mae'n bosibl fod y
+					gerdd wedi ei chanu yn ystod y chwedegau a bod a wnelo cwnstablaeth
+					Sieffrai yng Nghroesoswallt gryn dipyn &acirc;'r ffaith fod Guto wedi ei
+					dderbyn yn fwrdais yn y dref ar gownt ei awen. Fodd bynnag, nid
+					yw'n eglur pryd yn union yr ymgartrefodd yno nac ychwaith a oedd
+					wedi byw yno am beth amser cyn ennill statws bwrdais.
+				</p>
+				<p>
+					Er nad enwa Guto'r un o'i gyd-fwrdeiswyr yn y cywydd i
+					Groesoswallt, mae'n bur debygol fod Sieffrai a'i nai, Maredudd ap
+					Hywel, yn eu plith. Canodd Guto gywydd mawl grymus i Faredudd sy'n
+					perthyn, yn &ocirc;l pob tebyg, i'r un cyfnod (cerdd 95). Cerddi eraill
+					sy'n sicr yn perthyn i'r un cyfnod yw'r cerddi ymryson rhwng Guto
+					a'r bardd-offeiriad Syr Rhys, oherwydd mae Guto'n cyfeirio ato mewn
+					cywydd mawl i Sieffrai (97.25-8). Yn &ocirc;l Syr Rhys, roedd Guto wedi
+					methu teithio i abaty Glyn-y-groes oherwydd salwch, ac &acirc; Syr Rhys
+					rhagddo i ddychanu'r bwyd pitw a gafodd Guto yn ei gartref ei hun
+					yn lle'r wledd fawreddog a arhosai amdano yn yr abaty (cerdd 101a).
+					Etyb Guto drwy gyhuddo Syr Rhys o dderbyn gwahoddiad ganddo yntau i
+					fwyta yn ei gartref, ac yna o ymddwyn yn floesg ac yn afradlon yn
+					ei ddiod (cerdd 101). Ni ddywedir mai yng Nghroesoswallt yr oedd
+					Guto'n byw ar y pryd, ond mae'r bara ar ei fwrdd yn [<span
+						style="font-style: italic">f</span>]<span
+						style="font-style: italic">wrdeisiaidd</span>, sy'n hynod
+					awgrymog. Yn y cywyddau ymryson hyn y ceir yr unig wybodaeth
+					ynghylch y ffaith fod Guto'n wr priod. Dwgws yw enw ei wraig, sef
+					ffurf anwes ar <span style="font-style: italic">Dyddgu</span>. Nid
+					yw'n eglur pa mor hir y buasai Guto'n briod &acirc; hi. Mae'r sylw gan
+					Syr Rhys fod Guto wedi mynd yn wan yn ei henaint o gymharu &acirc;'r gwr
+					cryf a fu gynt, a bod y ffaith yn annymunol i Ddwgws, yn awgrymu eu
+					bod yn briod ers ieuenctid Guto - ond ni ddywedir hynny'n hollol
+					ddiamwys. Si&ocirc;n ap Rhisiart oedd abad Glyn-y-groes ar y pryd, gwr a
+					lywodraethodd yr abaty o <span style="font-style: italic">c</span>.1455
+					hyd 1480 ond, ysywaeth, ni chadwyd gair o fawl Guto iddo. Eto,
+					mae'n eglur fod Guto eisoes yn ymwelydd go ffyddlon &acirc; Glyn-y-groes
+					yn y chwedegau.
+				</p>
+			</div>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.2_div.3">
+				<h4>
+					<span class="headingNumber">2.3 </span><span class="head"><a
+						id="Toc369616106">
+							<!--anchor-->
+					</a>Clera yn y canolbarth a'r gorllewin</span>
+				</h4>
+				<p>Ymddengys fod Guto'n treulio'r rhan helaethaf o'i amser tua
+					chanol y ganrif yn nwyrain y wlad ac yn y Gororau. Yn wir, un gerdd
+					yn unig i noddwr y tu allan i'r ardaloedd hynny y gellir ei
+					dyddio'n bendant yn ystod y cyfnod hwnnw. Cwta fis ar &ocirc;l coroni
+					Edward IV yng Ngorffennaf 1461, bu ffrwgwd yn ei lys rhwng Sais na
+					wyddys ei enw a Si&ocirc;n Dafi, Cymro o Felwern yn swydd Amwythig yn
+					wreiddiol a ymgartrefodd yn Llundain. Cosbwyd Si&ocirc;n drwy dorri ei
+					law yn gyhoeddus yn y farchnad yn Cheapside, ryw ddydd Gwener o fis
+					Awst. Canodd Guto gywydd brathog i goff&aacute;u'r achlysur (cerdd 41).
+					Ymddengys mai yn y Cemais, ger Machynlleth, y'i canwyd ef, yn
+					absenoldeb Si&ocirc;n, a oedd yn Llundain. Nid yw cysylltiad Si&ocirc;n Dafi
+					&acirc;'r lle hwnnw yn hysbys, ond canodd y bardd lleol, Dafydd Llwyd o
+					Fathafarn, gywydd dychan iddo rywbryd yn ystod teyrnasiad Edward
+					IV, yn cyhuddo Si&ocirc;n o fod wedi pardduo ei enw o flaen Edward, felly
+					gallwn hyderu bod Si&ocirc;n yn wyneb cyfarwydd yn yr ardal honno.</p>
+				<p>
+					Fodd bynnag, ceir wrth enw Guto nifer o gerddi i noddwyr yn y
+					canolbarth a'r gogledd-orllewin. Ni ellir dyddio'r cerddi hyn yn
+					fanwl, ond y tebygrwydd cryf yw eu bod yn perthyn i'r cyfnod
+					1450-70. Ceir cywydd mawl i Ddafydd Llwyd ap Dafydd o'r Drenewydd,
+					er enghraifft, a ganwyd cyn i Ddafydd farw rywdro rhwng 1465 ac
+					1469 (cerdd 37). Ynddo mae Guto'n rhyw ffug-gwyno nad oes deunydd
+					cerddi ar &ocirc;l iddo ganu i Ddafydd gan fod cymaint o feirdd eraill
+					wedi canu i'r noddwr hwnnw, gyda Gwilym ab Ieuan Du, Llawdden ac un
+					o'r Swrdwaliaid yn eu plith. Nid nepell i'r gogledd o'r Drenewydd
+					roedd cartref noddwr arall, sef Maredudd ab Ifan Fychan o Gedewain.
+					Canodd Guto gywydd i ofyn march ganddo ar ran perthynas iddo o'r
+					Trallwng, sef Rheinallt ap Rhys Gruffudd (cerdd 39). A dilyn afon
+					Hafren i'r dwyrain, deuir at y Faenor, cartref Edward ap Hywel a
+					Gwenll&iuml;an ferch Rhys ychydig i'r de-orllewin o Aberriw. Mae'n
+					bosibl fod y Faenor wedi ei difrodi yn ystod gwrthryfel Owain
+					Glyndwr, a chanodd Guto gywydd mawl i'r adeilad newydd a gododd
+					Edward a Gwenll&iuml;an ar <span style="font-style: italic">y
+						bryn uwch Aberriw</span> (cerdd 38). Cymherir y ty &acirc; hen gartref Owain ei
+					hun yn Sycharth ar<span style="font-style: italic">fryn gynt
+						yn nwyfron garth</span>, ac roedd yn enghraifft dda o'r gweithgarwch
+					adeiladu mawr a welwyd yng Nghymru yn ystod y bymthegfed ganrif.
+				</p>
+				<p>Os gwir yw nodyn yn llaw Thomas Evans (a ysgrifennwyd rhwng
+					1604 ac 1624), i'r de o'r Drenewydd, rywle yng nghyffiniau Llananno
+					yn &ocirc;l pob tebyg, y canodd Guto ac eraill gyfresi o englynion i
+					ddychan Tudur Penllyn yn neithior Dafydd ap Maredudd Fychan. Dyma'r
+					enghraifft gynharaf sicr o'r hyn a elwir yn draddodiad y cyff cl&ecirc;r,
+					lle gwnaed pencerdd yn destun gwawd gan ddyrnaid o feirdd ar sail
+					rhyw stori led-ffug, cyn y canai'r pencerdd yntau ei ateb. Y testun
+					y tro hwnnw oedd fod blaidd wedi llarpio ceilliau Tudur, ac roedd
+					ei fab, Ieuan, ymhlith y rhai a dynnodd ei goes (cerdd 46a). Yn
+					wir, englynion Ieuan a Guto (cerdd 46) yn unig a oroesodd o blith y
+					cerddi sy'n dychanu Tudur, er i Dudur enwi wyth o feirdd eraill yn
+					ei englynion yntau, yn cynnwys Gutun Owain (cerdd 46b). Ni ellir
+					dyddio'r achlysur yn fanwl, ond roedd y beirdd a enwir yn eu blodau
+					rhwng y pumdegau a'r saithdegau.</p>
+				<p>
+					Y tebyg yw fod Guto wedi ymweld &acirc; Nannau, cartref nawdd enwog ger
+					Dolgellau, rywdro yn ystod y chwedegau er mwyn canu mawl i Feurig
+					Fychan ap Hywel Selau a'i wraig, Angharad ferch Dafydd, eu mab,
+					Dafydd, a'i wraig yntau hefyd, Elen ferch Hywel (cerdd 49). Rhydd
+					Guto sylw i'r pedwar unigolyn yn eu tro, mawl digon arferol ac
+					eithrio'r hyn a ddywed am Elen (49.37-48). Rhoes Elen, a oedd yn
+					wyres i Weurful ferch Madog, ymgeledd i'r bardd ac eraill rywdro yn
+					y gorffennol, a hynny yn y Bala, nid nepell o'i chartref teuluol yn
+					y Rug ger Corwen. Mae Guto'n datgan ei fwriad i ymweld &acirc; Nannau eto
+					<span style="font-style: italic">od af i oes hen</span>, ac
+					ymddengys iddo gyflawni ei addewid maes o law. Ceir adlais cryf o
+					gywydd mawl a ganodd Llywelyn Goch ap Meurig Hen yn y bedwaredd
+					ganrif ar ddeg i daid noddwr Guto, Meurig Llwyd, a'i frawd yntau,
+					Hywel, lle mae Llywelyn yn datgan ei fwriad i gyd-fyw &acirc; noddwyr
+					Nannau yn ei henaint (GLlG cerdd 8).
+				</p>
+				<p>Os ymwelodd Guto erioed &acirc; chartref teulu Elen ferch Hywel yn
+					y Rug, yn anffodus ni oroesodd ddim o'i farddoniaeth i'r teulu
+					hwnnw. Ond gwyddys iddo dreulio cryn amser yn Edeirnion yn ystod y
+					pumdegau neu'r chwedegau, yn arbennig ar aelwyd Syr Bened, person
+					Corwen. Enwir Syr Bened fel deiliad y swydd honno yn 1439, felly
+					gall fod peth o ganu Guto iddo'n ymestyn yn &ocirc;l i'r tridegau neu'r
+					pedwardegau. Canodd Guto awdl foliant iddo (cerdd 43), ond mwy
+					arbennig o lawer yw'r cywydd 'porthmona' (cerdd 44). Edrydd hanes
+					helyntion Guto yn mynd ag wyn Syr Bened i'w gwerthu ym marchnadoedd
+					canolbarth Lloegr. Er bod ganddo ddau was i'w gynorthwyo, ni fu
+					porthmona'r bardd yn llwyddiant, os credir yr hyn a ddywed yn ei
+					gywydd. Collodd lawer o'r wyn mewn damweiniau, ac nid oedd neb yn
+					fodlon cynnig pris teg iddo am y lleill. Aeth mor bell &acirc; Coventry a
+					phendroni a ddylai fynd ymhellach i Efrog, ond yn y pen draw fe
+					fodlonodd ar ymweld &acirc; Lichfield a Stafford, cyn ymlwybro'n &ocirc;l i
+					Edeirnion. Ac er bod Syr Bened yn fodlon ei gyflogi eto, taera na
+					fydd byth eto'n mentro ar y fath fusnes. Diau fod Guto'n disgrifio
+					taith nad oedd yn hollol ffuglennol, oherwydd nododd mewn cywydd i
+					Syr Si&ocirc;n Mechain (cerdd 84) ei fod wedi ymgymryd &acirc; theithiau
+					porthmona ar ran Syr Bened yn aml. Ysgogodd y cywydd ateb digrif
+					gan y bardd Tudur Penllyn (cerdd 44a), ac aeth yn gystadleuaeth
+					rhwng y ddau (cerdd 45). Ceir hefyd farwnad gan Guto ar gyfer Syr
+					Bened, a fu farw yn 1464 (cerdd 47).</p>
+				<p>Ychydig i'r de o Gorwen, yn y bryniau uwchben afon Dyfrdwy
+					rhwng Cynwyd a Llandrillo, ceid cartref un arall o noddwyr Guto yn
+					Edeirnion, sef Ieuan ab Einion o'r Cryniarth. Molodd Guto ei noddwr
+					a'i wraig, Angharad ferch Dafydd, ynghyd &acirc;'u hwyth plentyn, gan roi
+					sylw arbennig i Ddafydd ab Ieuan, a oedd eisoes wedi bod yn ymladd
+					yn Ffrainc ac a fyddai, maes o law, yn amddiffyn castell Harlech yn
+					erbyn yr Herbertiaid, noddwyr grymus Guto yn y de-ddwyrain (cerdd
+					48). Yn nghantref cyfagos Penllyn roedd cartref nawdd arall, sef
+					Llechwedd Ystrad yn y bryniau uwchben Llangywer ar lan Llyn Tegid.
+					Dyma gartref Einion ap Gruffudd, gwr y canodd Guto farwnad
+					deimladol iddo lle molir ef fel bardd o fri yn ogystal &acirc; noddwr
+					hael, a chrybwyll ei gladdu dros y Berwyn yn eglwys Pennant
+					Melangell (cerdd 42).</p>
+				<p>
+					Diau fod Guto wedi clera'n aml yn sir Gaernarfon yn y pumdegau a'r
+					chwedegau, ond yn anffodus ni ellir dyddio'n hyderus fawr ddim
+					cerddi i noddwyr yr ardal hon yn ystod y cyfnod hwnnw. Soniwyd
+					eisoes fod Guto wedi ymweld &acirc;'r Penrhyn ger Bangor pan oedd yn
+					fardd ifanc iawn er mwyn moli Gwilym ap Gruffudd, a dychwelodd yno
+					i foli mab Gwilym, Wiliam Fychan, efallai rhwng 1457 ac 1463.
+					Diogelwyd dwy gerdd fawl i Wiliam yn y llawysgrifau, y naill yn
+					cynnwys cyfeiriad at grefft y saethydd (nid yn annhebyg i gerddi
+					Guto i Rys ap Dafydd ac i Siancyn Hafart) a'r llall yn nodi
+					dylanwad Wiliam mewn gwahanol ardaloedd yng Ngwynedd (cerddi 56 a
+					57). Cyfeirir ar ddechrau'r ail gerdd at reolaeth Wiliam dros fferi
+					Porthaethwy, a gludai deithwyr yn &ocirc;l ac ymlaen o'r tir mawr i F&ocirc;n.
+					Diau fod Guto wedi defnyddio'r fferi honno er mwyn ymweld &acirc; noddwyr
+					ym M&ocirc;n tua'r un adeg ag y canodd i Wiliam, gan ganu i un teulu o
+					noddwyr yn benodol, sef disgynyddion Llywelyn ap Hwlcyn o
+					Brysaeddfed. Canodd Guto gywydd mawl i un o wyrion Llywelyn, Dafydd
+					ap Gwilym o Lwydiarth, rywdro wedi 1450/1, lle cyfeiria at F&ocirc;n fel
+					cartref ei enaid (cerdd 62). Mae'n sicr iddo dderbyn llawer o nawdd
+					ar yr ynys, oherwydd ceir cerdd arall ganddo i bum mab Llywelyn ap
+					Hwlcyn, cerdd a berthyn, o bosibl, i'r chwedegau (cerdd 63).
+					Neilltuir dau gwpled o fawl i bob brawd, gan ddechrau gyda'r hynaf
+					a gorffen gyda'r ieuengaf, cyn dwyn i gof gywydd Iolo Goch yntau i
+					bedwar mab Tudur Fychan o F&ocirc;n (GIG cerdd V). Yna ceir dau gwpled
+					arall o fawl i bob brawd, lle uniaethir pob un yn ei dro &acirc; charreg
+					wyrthiol: Meurig yw maen yr athronydd, Huw Lewys yw'r diemwnt,
+					Dafydd y riwbi, Gruffudd yr almwnt a saffir yw Rhys. Tebyg yw'r
+					gerdd o ran ei <span style="font-style: italic">genre</span> i'r
+					cerddi mawl a ganodd Guto i bedwar mab Edward ap Dafydd o
+					Fryncunallt ac i wyth plentyn Ieuan ab Einion o'r Cryniarth, eithr
+					mae'r gerdd i'r pum mab ym M&ocirc;n yn rhagori o ran cywreindeb ei
+					hadeiladwaith.
+				</p>
+			</div>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.2_div.4">
+				<h4>
+					<span class="headingNumber">2.4 </span><span class="head"><a
+						id="Toc369616107">
+							<!--anchor-->
+					</a>Dafydd ab Edmwnd</span>
+				</h4>
+				<p>Bu Guto'n ymryson &acirc; nifer o'i gyd-feirdd - Hywel Dafi, Tudur
+					Penllyn, Syr Rhys a Llywelyn ap Gutun - ond ceir rhywfaint o
+					ddirgelwch ynghylch natur ei berthynas &acirc; bardd arall a oedd yn un o
+					benceirddiaid mwyaf dylanwadol y bymthegfed ganrif. Ceir wrth enw
+					Guto dri chywydd dychan i Ddafydd ab Edmwnd o Bwll Gwepra yn
+					Llaneurgain (cerddi 66, 67 a 68), bardd a ddaeth i amlygrwydd fel
+					enillydd y gadair arian mewn eisteddfod a gynhaliwyd yng
+					Nghaerfyrddin tua 1451 dan nawdd Gruffudd ap Nicolas, ac a fu'n
+					athro barddol i Gutun Owain a Thudur Aled.</p>
+				<p>
+					Ymddengys mai rhyw <span style="font-style: italic">fost</span> a
+					wnaeth Dafydd oedd sail o leiaf un o'r cerddi dychan, efallai mewn
+					cyswllt &acirc;'i gais i ddiwygio cerdd dafod yn yr eisteddfod yng
+					Nghaerfyrddin (66.6, 26). Enwir pump o feirdd a fydd yn erlid
+					Dafydd fel haid o gwn, ond ni cheir sicrwydd ynghylch awduraeth y
+					gerdd gan ei bod yn debygol fod Guto'n un o'r beirdd a enwir. Er
+					nad enwir Gwilym ab Ieuan Hen yn un o'r beirdd hynny, gall fod ei
+					gywydd dychan yntau i Ddafydd yn seiliedig ar yr un gynnen, gan fod
+					yn y cywydd hwnnw s&ocirc;n am <span style="font-style: italic">fost</span>
+					y bardd mewn cyswllt &acirc; beirdd eraill (yn cynnwys Guto, o bosibl;
+					GDID cerdd XXIII). Ac eto ceir tebygrwydd rhyngddo a chywydd arall
+					a briodolir i Guto, sef dychan mwy bas lle gwawdir ymddangosiad
+					truenus Dafydd (cerdd 67). Fe'i darlunnir fel milwr sydd, er
+					gwaethaf ei wrhydri ar faes y gad, yn dwyn olion anarwrol y frwydr
+					ar ei ddillad a'i gorff eiddil. Gelwir Dafydd yn <span
+						style="font-style: italic">gor Syr Rys</span> mewn cyswllt &acirc; chanu
+					brud (67.46), geiriau a adleisir yng nghywydd Gwilym mewn
+					cyd-destun tebyg, ond tywyll yw'r arwyddoc&acirc;d. Eglurach o dipyn yw
+					cyd-destun cywydd dychan arall a ganodd Guto, oherwydd goroesodd y
+					cywydd gan Ddafydd a dynnodd flewyn o drwyn Guto yn y lle cyntaf
+					(cerdd 68a). Sail y dychan, boed wir neu au, yw bod Guto wedi torri
+					ei lengig wrth godi pwysau, camp y deil Guto ei hun mewn cerdd
+					arall iddo arbenigo arni yn ei ieuenctid (33.39-46; cf. 126.16).
+					Canodd Dafydd englyn ar yr un pwnc (cerdd 68b). Cwbl fasweddus yw'r
+					dychan, ynghyd ag ateb Guto (cerdd 68), lle bwria ei sen ar gal
+					fawr afiach Dafydd. Hynod anodd yw dyddio na lleoli'r un o'r cerddi
+					hyn, ond mae cyfeiriadau Guto at Syr Rhys a chyfeiriad ar ddiwedd
+					cywydd Dafydd at wraig Guto yn awgrymu dyddiad yn ystod y pumdegau
+					neu'r chwedegau.
+				</p>
+				<p>Gan na cheir golygiad awdurdodol o waith Dafydd nac ychwaith
+					astudiaeth fanwl o'i ymdrechion i ddiwygio cerdd dafod yn yr
+					eisteddfod yng Nghaerfyrddin, ni ellir ond dyfalu pam y canodd Guto
+					fwy o gerddi dychan iddo nac unrhyw fardd arall. Roedd Guto a
+					Dafydd yn sicr yn ddynion gwahanol iawn, y naill yn gyn-filwr
+					cydnerth a farddonai am ei fywoliaeth, a'r llall yn wr byr a ganai
+					ar ei fwyd ei hun. Os nad oedd yn dda gan Guto'r hyn a wnaeth
+					Dafydd yn yr eisteddfod - a chofier bod Guto, a fu'n canu am ryw
+					ddau ddegawd erbyn 1451, yn absennol o'r eisteddfod, hyd y gwyddys
+					- ni cheir awgrym clir o hynny yn ei gerddi (yn wahanol i Lawdden,
+					a leisiodd ei farn mewn englynion dychan, GLl cerddi 34, 36). Ni
+					ellir ar hyn o bryd ddweud ychwaith a aeth cerddi Guto'n fwyfwy
+					caeth erbyn diwedd ei oes yn unol &acirc;'r diwygio a wnaed yng
+					Nghaerfyrddin ynteu'n annibynnol arno.</p>
+			</div>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.2_div.5">
+				<h4>
+					<span class="headingNumber">2.5 </span><span class="head"><a
+						id="Toc369616108">
+							<!--anchor-->
+					</a>Wiliam Herbert a'i deulu</span>
+				</h4>
+				<p>Noddwr amlycaf Guto'n ddi-os oedd Wiliam Herbert o Raglan.
+					Mab ydoedd i Syr Wiliam ap Tomas, ac etifeddodd gastell Rhaglan yn
+					sgil marwolaeth ei dad yn 1445. Mae'n ansicr pryd y daeth Guto i'w
+					sylw, ond y tebyg yw fod gwasanaeth Guto ymhlith y pethau eraill a
+					etifeddodd Herbert oddi wrth ei dad. Bu Guto'n ymwelydd cyson &acirc;
+					Rhaglan ac yn dyst i dwf anhygoel grym Herbert ar hyd ei yrfa wrth
+					i'r uchelwr chwarae rhan flaenllaw yng ngwleidyddiaeth Lloegr yn
+					ystod y gwrthdaro a elwir yn Rhyfeloedd y Rhosynnau.</p>
+				<p>Roedd y blynyddoedd 1449-53 yn rhai cythryblus i deyrnas
+					Lloegr. Yn 1449 lansiodd y Ffrancwyr ymgyrch difaol yn erbyn y
+					trefi yn Normandi a oedd ym meddiant y Saeson. Ni allai'r Saeson
+					wrthsefyll grym Siarl VII ac o fewn llai na blwyddyn fe gollasant
+					bob modfedd o Normandi. Brwydr Formigny yn 1450, lle trechwyd y
+					Saeson yn llwyr, a benderfynodd dynged Normandi. Ymysg y
+					capteiniaid a ddaliwyd yno'r oedd yr Wiliam Herbert ifanc. Fe'i
+					rhyddhawyd ar &ocirc;l talu arian mawr, a llwyddodd i ddychwelyd i Gymru
+					yn fyw ac yn iach, ond ni fu Mathau Goch mor ffodus. Lladdwyd ef yn
+					Llundain yn 1450 yn ystod gwrthryfel Jack Cade. Yn 1453 wedyn daeth
+					ergyd arall wrth i Wasgwyn gael ei goresgyn gan y Ffrancwyr -
+					buasai troedle gan y Saeson yno er y ddeuddegfed ganrif. Bellach,
+					tref Calais oedd yr unig lecyn yn Ffrainc a ddaliai i fod ym
+					meddiant Coron Lloegr.</p>
+				<p>Yn sgil y trychinebau yn Ffrainc, bu'r 1450au yn ddegawd
+					anodd. Torrodd gwrthyfel Cade allan yng Nghaint, ac er i hwnnw gael
+					ei fygu'n ddigon cyflym, cynyddu'r oedd y tyndra rhwng Richard, dug
+					Iorc, a phlaid y brenin Harri VI. Roedd yn anochel y tynnid llawer
+					o noddwyr Guto i mewn i'r cweryl, a hwythau'n denantiaid ac yn
+					ddilynwyr y dug. Yn y cyfamser, fodd bynnag, daliai Guto i arfer ei
+					grefft. Ni ddylid ei alw'n fardd 'Iorcaidd', ac o ran hynny ni
+					ddylid galw ei noddwyr ym mhlaid y dug yn 'Iorciaid' ychwaith yn
+					ystod y 1450au. Ymgiprys am barch a dylanwad gyda'r brenin oedd
+					asgwrn y gynnen rhwng y dug a theulu estynedig Harri VI, nid
+					ymgiprys am y Goron ei hun. Nid tan ddiwedd 1460 yr hawliodd
+					Richard, dug Iorc, yr orsedd, a hyd yn oed mor ddiweddar &acirc; hynny
+					ceir tystiolaeth fod llawer o'i ddilynwyr yn anfodlon mynd mor bell
+					&acirc; diorseddu brenin eneiniedig. Dymuniad mwyafrif llethol y
+					boneddigion, yng Nghymru fel yn Lloegr, oedd gweld cymod ar delerau
+					teg rhwng y ddwy blaid. Gallwn ddyfalu y byddai bardd proffesiynol,
+					ac yntau'n dibynnu ar rwydwaith o noddwyr amrywiol ym mhob rhan o
+					Gymru, yn arbennig o awyddus i weld cydfod yn eu plith.</p>
+				<p>Erbyn y pumdegau roedd Wiliam Herbert yn un o brif gefnogwyr
+					dug Iorc. Diau fod Guto'n ymwelydd eithaf cyson &acirc; Rhaglan yn ystod
+					y pumdegau, ond aeth unrhyw gerddi a ganodd i Herbert yn
+					uniongyrchol yn y cyfnod hwn i ebargofiant. Fodd bynnag, y gerdd
+					gyntaf o waith Guto ar glawr a noddwyd gan Herbert yw'r cywydd
+					ymryson (cerdd 20) sy'n cyhuddo Hywel Dafi o dreulio gormod o amser
+					yn elwa ar berchentyaeth Herbert yn Rhaglan. Gellir dyddio hwn i
+					ryw dro cyn diwedd 1453, gan ei fod yn s&ocirc;n am fam Herbert fel
+					petai'n fyw o hyd (ni cheir sicrwydd, fodd bynnag, ynghylch dyddiad
+					marwolaeth Gwladus Gam). Parchedig ofn, efallai, yw nod amgen y
+					cywydd hwn, er gwaethaf y tynnu coes a gyfeirir at Hywel druan, a
+					ganodd gywydd ateb yn ei dro (cerdd 20a). Eisoes yn y cyfnod cynnar
+					hwn, nid oedd Herbert yn wr i dynnu'n groes iddo.</p>
+				<p>Coronwyd mab Richard, dug Iorc, yn frenin Edward IV yn 1461.
+					Bregus iawn oedd gafael y brenin newydd ar Gymru. Y de-ddwyrain yn
+					unig oedd yn ddiogel dan awdurdod iarll Warwick a Herbert, a oedd
+					ar yr adeg hon yn cydweithio'n ddigon hapus, ond nid ymestynnai
+					gair Edward IV fawr i'r gorllewin nac i'r gogledd. Y misoedd
+					pryderus hyn ar &ocirc;l brwydr Towton, ddiwedd Mawrth 1461, a welodd
+					gychwyn ar y proses o ddyrchafu Wiliam Herbert i safle uwchben pob
+					unigolyn arall yng Nghymru. Penodwyd ef yn ustus, siambrlen,
+					stiward a phrif fforestydd siroedd Aberteifi a Chaerfyrddin, gyda'i
+					frawd Rhisiart yn ddirprwy, a chomisiynwyd Wiliam Herbert a'i frawd
+					yng nghyfraith, Walter Devereux, i feddiannu iarllaeth Penfro a'r
+					tiroedd a gysylltid &acirc; hi. Yna meddiannodd Herbert diroedd teulu
+					Buckingham yng Nghymru, yn eu plith Brycheiniog a Gwynllwg. Ymlaen
+					&acirc;'r gwyr newydd, wedyn, i orllewin Cymru. Ffodd Siasbar Tudur,
+					hanner brawd Harri VI, rhagddynt i'r Gogledd, gan adael i gastell
+					Penfro syrthio i ddwylo Herbert. Yn y castell roedd y bachgen bach
+					pedair oed, Harri Tudur, mab i frawd Siasbar. Cymerodd Herbert ef
+					adref gydag ef i Raglan ac yno y magwyd Harri hyd 1469. Yn y
+					cyfamser, trechwyd Siasbar ym mrwydr Twthill ger Caernarfon, a bu
+					raid iddo ffoi i Iwerddon.</p>
+				<p>Yn sgil hyn roedd Herbert bellach yn tra-arglwyddiaethu dros
+					dde-orllewin Cymru. Yr unig fan lle na dderbynnid ei awdurdod oedd
+					castell Carreg Cennen, a ddelid gan Domas ac Owain ap Gruffudd ap
+					Nicolas. Bu raid i Herbert arwain ail ymgyrch, yn 1462, er mwyn
+					cipio'r cadarnle hwn oddi wrthynt. Ni wyddom a welodd Guto
+					ymgyrchoedd Herbert &acirc;'i lygaid ei hun, ond byddai'n cyfeirio atynt
+					yn ganmoliaethus iawn yn y cywydd a ganai i Herbert yn 1468, ar
+					anterth ei rym (cerdd 21).</p>
+				<p>Bu 1468 yn flwyddyn bwysig yng ngyrfa Guto. Y flwyddyn honno,
+					o'r diwedd, y penderfynodd Edward IV fynd i'r afael o ddifrif &acirc;'r
+					gwrthyfelwyr yng Ngwynedd, a rhoddodd i Herbert yr awdurdod a'r
+					adnoddau yr oedd eu hangen arno er mwyn dwyn y maen i'r wal. Yn
+					wir, mae Adam Chapman (papur heb ei gyhoeddi a draddodwyd yng
+					Nghynhadledd Guto'r Glyn, Aberystwyth, 2012) wedi dangos bod y swm
+					a wariwyd ar ymgyrch 1468 yn debyg i gost un o'r ymgyrchoedd
+					blynyddol yn Normandi yn gynharach yn y ganrif - swm aruthrol o
+					arian i'w dalu er mwyn cipio un castell, waeth pa mor gadarn
+					ydoedd. Gallwn amau'n gryf iawn nad oedd castell Harlech ond yn ben
+					ar y mwdwl. Prin, mewn gwirionedd, oedd awdurdod Edward IV ar draws
+					tair sir y Gogledd, a bu raid i Herbert a'i gyd-gapteiniaid ddod &acirc;
+					byddin anferth a hau dychryn ar hyd a lled Gwynedd cyn llwyddo i
+					ddarostwng y trigolion. Ildiodd castell Harlech iddo ar 14 Awst, a
+					chanodd Guto gywydd grymus iawn i longyfarch Herbert ac i ymbil
+					arno i ddangos trugaredd tuag at uchelwyr Gwynedd, a llawer o
+					noddwyr Guto yn eu plith (cerdd 21). Braf fyddai gwybod ar ba
+					achlysur y canwyd hwn, o flaen pwy, i ba raddau y cymeradwywyd ef
+					gan Herbert, ac a fu rhan gan eraill yn ei gomisiynu i ddynodi eu
+					hymostyngiad i'r cwncwerwr o'r De. Fodd bynnag, y cyfan y gellir ei
+					wybod yw ei fod wedi ei ganu cyn 8 Medi, pan ddyrchafwyd Herbert yn
+					iarll Penfro. Cwbl anghredadwy fyddai canu iddo ar &ocirc;l hynny heb
+					grybwyll y fath anrhydedd unigryw.</p>
+				<p>
+					Un gwr a elwodd, o bosibl, yn sgil ap&ecirc;l Guto at Wiliam Herbert oedd
+					Syr Rhosier Pilstwn o Emral, os cywir yw barn golygydd y cywydd a
+					ganodd Guto iddo ei fod yn perthyn i'r cyfnod rhwng mis Mawrth
+					1469, pan dderbyniodd Rhosier bardwn gan Edward IV, a'i farwolaeth
+					rywbryd yn nes ymlaen yn yr un flwyddyn (cerdd 74). Buasai Rhosier
+					yn un o arweinwyr plaid Lancastr yng ngogledd Cymru yn y 1460au.
+					Sonia Guto am [<span style="font-style: italic">f</span>]<span
+						style="font-style: italic">lynyddoedd blin </span>ac am y costau y
+					bu raid i Rosier eu talu; ai er mwyn cynnal achos Lancastr yn
+					filwrol, ynteu er mwyn prynu ffafr y brenin (a Herbert hefyd,
+					efallai), ni ddywed Guto wrthom.
+				</p>
+				<p>Perthyn dau gywydd arall i'r ychydig fisoedd rhwng
+					buddugoliaeth y brodyr Herbert a'u cwymp ym mis Gorffennaf 1469.
+					Sonia un ohonynt (cerdd 23) am Herbert fel iarll. Aethai i Gaerloyw
+					i fygu rhyw anghydfod yno, ar ran Edward IV yn ddiau; mae'n nodedig
+					y byddai marwnad Guto iddo ychydig yn nes ymlaen yn s&ocirc;n am
+					elyniaeth gwyr swydd Gaerloyw tuag ato. Bellach, roedd Herbert wedi
+					symud ymlaen i Lundain, a'r bardd yn poeni am ei ddiogelwch ymysg y
+					Saeson dichellgar. I ddarllenwyr heddiw, gall ymddangos fel
+					proffwydoliaeth, ond ni allai Guto rag-weld digwyddiadau haf 1469 a
+					rhamantiaeth ddi-sail yw gosod y gerdd hon yn ystod ymgyrch
+					trychinebus Banbury. I Lundain yr aethai Herbert, nid i ganolbarth
+					Lloegr i wynebu gwrthryfelwyr. Mae'r ail gerdd sy'n perthyn i'r
+					amser hwn wedi ei ganu i Risiart Herbert, ac mae'n canmol y gwaith
+					adeiladu mawreddog yr ymgymerodd ag ef yng Ngholbrwg, ei gartref ar
+					gyrion y Fenni (cerdd 22). Unwaith eto, anodd yw darllen am y
+					gwario rhyfygus hwn heb gofio y byddai pen Rhisiart yn gorwedd ar y
+					bloc mewn dim o dro. Mae dyddiad y gerdd yn ddiogel oherwydd mae'n
+					s&ocirc;n eto am iarllaeth Wiliam Herbert.</p>
+			</div>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.2_div.6">
+				<h4>
+					<span class="headingNumber">2.6 </span><span class="head"><a
+						id="Toc369616109">
+							<!--anchor-->
+					</a>Brwydr Edgecote (Banbury), 1469</span>
+				</h4>
+				<p>Ym mis Gorffennaf 1469 fe ddaeth gyrfa anhygoel Wiliam
+					Herbert i derfyn disyfyd a gwaedlyd. Codwyd gwrthryfel yng ngogledd
+					Lloegr. Er mai 'Robin of Redesdale' oedd arweinydd y gwrthryfelwyr,
+					mae'n ddiau mai Richard Neville, iarll Warwick, a George, dug
+					Clarence, a oedd y tu &ocirc;l iddynt. Aeth Edward IV i'r gogledd i'w
+					hwynebu, gan wysio Herbert o dde Cymru a Humphrey Stafford, iarll
+					Dyfnaint, o dde-orllewin Lloegr i ymuno ag ef. Ynyswyd Edward yn
+					Nottingham, ond aeth y gwrthyfelwyr heibio iddo. Ar 24 Gorffennaf
+					cyfarfuant &acirc; byddin Wiliam Herbert ger Edgecote, pentref yn swydd
+					Northampton yn agos i Banbury. Ymddengys na fu Humphrey Stafford
+					yno, neu ei fod wedi ffoi yn ystod y frwydr. Trechwyd byddin
+					Herbert a chipiwyd ef a'i frawd yn fyw. Aethpwyd &acirc; hwy i
+					Northampton, lle dedfrydwyd hwy i farwolaeth gan Warwick a
+					Clarence. Dienyddiwyd Rhisiart ar 26 Gorffennaf a'i frawd y diwrnod
+					wedyn. Erys ar glawr atodiad i ewyllys Herbert a ysgrifennodd yn ei
+					law ei hun y bore hwnnw.</p>
+				<p>Cwbl ysgytwol oedd effaith y digwyddiadau hyn ar y garfan o
+					feirdd a oedd wedi ymgasglu o gwmpas Herbert ym mlynyddoedd ei
+					oruchafiaeth, a Guto yn eu plith. Marwnad Herbert yw ateb Guto
+					(cerdd 24), cerdd a ganwyd ychydig fisoedd yn ddiweddarach, gellir
+					tybied, gan ei fod yn crybwyll marwolaeth Humphrey Stafford yn
+					Bridgwater, Gwlad yr Haf (17 Awst). Dyma, yn ddiamheuaeth, yw o
+					gerddi marwnad grymusaf yr iaith Gymraeg. Egyr drwy gymharu tranc
+					yr Herbertiaid &acirc; dawns angau, llun defosiynol a oedd newydd
+					gyrraedd Prydain o'r Cyfandir. &acirc; ymlaen i resynu bod llafn bwyell
+					wedi cyffwrdd &acirc;'r gwddf a arferai wisgo coler aur, a beiir y Tair
+					Tynged glasurol am dorri edefyn bywyd yr iarll hwn. Taer yw awch y
+					bardd am weld dial ar y Saeson am y drychineb. Nid erys dim iddo
+					yntau, bellach, heblaw mynd yn wallgof a chrwydro'r coedwigoedd fel
+					Myrddin Wyllt. Fodd bynnag, cloir y gerdd &acirc; thinc o obaith, wrth
+					i'r bardd gofio bod meibion a hanner brawd yr iarll, Syr Rhosier
+					Fychan o Dretwr, yn dal yn fyw i amddiffyn y wlad.</p>
+			</div>
+		</div>
+		<div class="teidiv1" id="index.xml-body.1_div.1_div.3">
+			<h3>
+				<span class="headingNumber">3. </span><span class="head"><a
+					id="Toc369616110">
+						<!--anchor-->
+				</a>Yr ugain mlynedd olaf, c.1470-90</span>
+			</h3>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.3_div.1">
+				<h4>
+					<span class="headingNumber">3.1 </span><span class="head"><a
+						id="Toc369616111">
+							<!--anchor-->
+					</a>Y saithdegau</span>
+				</h4>
+				<p>Ni ddaeth ymwneud Guto &acirc;'r Herbertiaid i ben wedi marwolaeth
+					Wiliam Herbert. Yn wir, parhaodd i ganu i aelodau eraill o'r teulu
+					yn y saithdegau. Y cyntaf, o bosibl, oedd mab Wiliam, sef Wiliam
+					Herbert arall, ail iarll Penfro. Canodd Guto gywydd mawl iddo, o
+					bosibl yng ngaeaf 1471/2, yn ei annog i ddial marwolaeth ei dad yn
+					1469 a marwolaeth ei ewythr, Syr Rhosier Fychan, ym Mai 1471 (cerdd
+					25). Llym iawn yw'r cyngor gwleidyddol ynghyd &acirc;'r cyngor ynghylch y
+					modd y dylai uchelwr ifanc fel Wiliam ymddwyn - nid, yn &ocirc;l Guto,
+					drwy fod yn falch hyd drahauster eithr drwy ddilyn esiampl ei dad.
+					Diddorol fyddai gwybod beth oedd barn y Wiliam ifanc am y cyngor
+					hwnnw, ac yntau'n olynydd i un o uchelwyr mwyaf balch ei oes yng
+					Nghymru. Fodd bynnag, pylu a wnaeth awdurdod ail iarll Penfro gydol
+					y saithdegau ac yn ei sgil ddylanwad yr Herbertiaid yn llys y
+					brenin.</p>
+				<p>Cerdd arall a ganwyd oddeutu'r un adeg yw cywydd mawl Guto i
+					fam Wiliam, Ann Herbert, gwraig yr iarll cyntaf (cerdd 26). Cysuro
+					yw prif ddiben y gerdd, un o'r ychydig gerddi a ganodd Guto i
+					ferched yn uniongyrchol, ond caiff ei mab gryn dipyn o sylw hefyd
+					fel olynydd perffaith i'w dad. Cerdd arall sy'n rhoi sylw i ail
+					iarll Penfro ac a ganwyd yn gynnar yn y saithdegau yw cywydd mawl
+					i'w hanner brawd hyn, Wiliam Herbert o Benfro a Llanfihangel
+					Troddi, mab anghyfreithlon i'r iarll cyntaf (cerdd 28). Molir yr
+					ail iarll a'i hanner brawd fel olynwyr teilwng i'r iarll cyntaf -
+					yn wir, deil Guto fod ei noddwr yr un ffunud &acirc;'i dad - a
+					phwysleisir teyrngarwch ffyddlon y brawd i'r iarll cyntaf. Roedd
+					Wiliam o Benfro yn drysorydd ac yn stiward i'w dad yn ei iarllaeth
+					yn y de-orllewin, a'r tebyg yw mai yno'r oedd ei brif gartref. Fodd
+					bynnag, er i Guto enwi llefydd ym Mhenfro yn ei gerdd, mae'r un mor
+					bosibl iddo ei chanu ar ymweliad Wiliam ag un o gartrefi ei deulu
+					estynedig yng Ngwent.</p>
+				<p>Cerdd hynod a gyfansoddwyd ar gais yr Herbertiaid, o bosibl,
+					yw cywydd mawl Guto i Edward IV (cerdd 29). Mae tystiolaeth y gerdd
+					yn awgrymu ei bod wedi ei chanu rhwng 1473 ac 1475, efallai yng
+					ngwydd Wiliam yr ail iarll ar ymweliad y brenin ag Amwythig ym mis
+					Mehefin 1473. Os felly, gellir dehongli'r cywydd fel ymgais gan
+					Wiliam i ennill ffafr Edward, gan bwysleisio ei deyrngarwch tuag
+					ato ar adeg pan roedd dylanwad yr Herbertiaid ar drai. Ceir yn y
+					gerdd gymysgedd diddorol o ganu brud traddodiadol, yn cynnwys
+					anogaeth i ymgymryd &acirc; chroesgad, ynghyd &acirc; deisyfu mwy uniongyrchol
+					ynghylch anghenion y Cymry, sef adfer trefn, cyfraith a chrefydd.</p>
+				<p>Os gwir i Guto gyflwyno'r gerdd gerbron y brenin yn Amwythig
+					yn 1473, mae'n bosibl iddo ganu i noddwyr eraill yn y
+					gogledd-ddwyrain oddeutu'r un adeg. Rai milltiroedd i'r de-ddwyrain
+					o Groesoswallt roedd cartref Syr Rosier Cinast o'r Cnwcin, gwr y
+					canodd Guto ei fawl yn fuan wedi Mai 1471, pan urddwyd Rosier yn
+					farchog gan Edward ar faes brwydr Tewkesbury (cerdd 79). Cyfeiria
+					Guto at yr anrhydedd hwnnw ac at y ffaith fod Rosier wedi ymladd ym
+					mrwydr Barnet ym mis Ebrill y flwyddyn honno, pan drechwyd Richard,
+					iarll Warwick (yn wir, mae'n bosibl mai Rosier a'i lladdodd).
+					Gwneir yn fawr o'r ffaith fod Rosier wedi parhau'n ffyddlon i
+					Edward pan orfodwyd hwnnw i ffoi i'r cyfandir yn 1470, ac eglura
+					Guto'n ddireidus ei fod wedi gohirio canu mawl iddo hyd nes y'i
+					gwneid yn farchog.</p>
+				<p>
+					Noddwr arall y mae'n bur debygol i Guto ymweld ag ef yn hanner
+					cyntaf y saithdegau yw Syr Si&ocirc;n Mechain, person Llandrinio, rai
+					milltiroedd i'r de o'r Cnwcin. Goroesodd dau gywydd iddo gan Guto.
+					Mawl bywiog yw'r naill (cerdd 84), lle cyfeiria Guto at ddau noddwr
+					arall iddo yn y rhan honno o'r wlad a fu farw (diau y byddai Si&ocirc;n
+					wedi eu hadnabod), sef Dafydd Cyffin o Langedwyn a Syr Bened,
+					person Corwen (am y canu iddynt, gw. uchod). Bellach deil Guto y
+					bydd Si&ocirc;n yn llenwi'r bwlch ar eu h&ocirc;l, gan ofyn cwestiwn a welir
+					mewn ffurfiau gwahanol mewn cerddi i wyr eraill a folwyd gan Guto
+					wrth iddo heneiddio: <span style="font-style: italic">Pwy
+						a'm pyrth, o syrth oes hen?</span> (84.51). Mae'n sicr fod Guto wedi
+					derbyn nawdd gan Si&ocirc;n ar fwy nac un achlysur, oherwydd canodd
+					gywydd mawl i gartref newydd y person yn Llandrinio (cerdd 85).
+					Dengys Guto ei adnabyddiaeth o ganu Iolo Goch ar ddechrau'r gerdd,
+					lle dwg i gof y nawdd a gawsai hwnnw gan Ithel ap Robert o
+					Goedymynydd yn sir y Fflint, ac ar ddiwedd y gerdd rhydd ei fendith
+					ar yr adeilad, yn yr un modd ag y dymunir llwyddiant i dy newydd
+					Moeliwrch mewn cywydd arall a berthyn i'w yrfa gynnar (cerdd 90).
+				</p>
+				<p>
+					I'r gogledd o Landrinio ac i'r gorllewin o Groesoswallt safai
+					arglwyddiaeth y Waun, lle'r oedd Sieffrai Cyffin yn ddistain yn
+					1475. Roedd Guto eisoes wedi canu mawl y noddwr hwnnw pan oedd yn
+					gwnstabl castell Croesoswallt ar ddechrau'r chwedegau, a Guto
+					yntau'n fwrdais yn ei dref, ond bellach roedd Sieffrai wedi symud i
+					fyd y gyfraith eithr gan barhau i gynnig nawdd i'w fardd. Tua'r
+					flwyddyn honno, o bosibl, fe ganodd Guto gywydd i ofyn corn hela
+					gan Sieffrai ar ran Si&ocirc;n Eutun o Barc Eutun i'r de o Wrecsam (cerdd
+					99). Mae'r gerdd yn llawn dyfalu dyfeisgar ac roedd yn hynod o
+					boblogaidd ymysg cop&iuml;wyr y llawygrifau - yn wir, ceir y copi
+					cynharaf ohoni yn llaw'r bardd Hywel Dafi. Yn ogystal &acirc; rhagori ym
+					myd y gyfraith, dywed Guto fod Sieffrai'n hyddysg hefyd mewn cerdd
+					dafod. Cerdd arall a ganwyd oddeutu'r un adeg, efallai, yw cywydd a
+					ganodd ar ran Sieffrai i ofyn dau filgi gan Robert ab Ieuan Fychan
+					o Goetmor yn Arllechwedd (cerdd 100). Yn ogystal &acirc;'i disgrifiadau
+					meistrolgar o'r cwn hela, mae'r gerdd yn arbennig hefyd am ei
+					sylwebaeth ar arferion gofyn y cyfnod. Canmolir Sieffrai am
+					ymwrthod &acirc; gofyn am rodd fawr fel march neu ych, ac yn hytrach
+					erchi anifeiliaid llai fel <span style="font-style: italic">adar
+						a chwn</span>.
+				</p>
+				<p>
+					Ym Maelor Saesneg i'r de-ddwyrain o Wrecsam roedd cartref Si&ocirc;n
+					Hanmer o Halchdyn, gwr arall y mae'n bosibl iddo noddi Guto ar ddau
+					achlysur yn y saithdegau (bu farw yn 1480). Roedd Si&ocirc;n yn nai i
+					Owain Glyndwr, perthynas y dwg Guto sylw ati yn ei gywydd mawl iddo
+					(cerdd 75). Ar gais Si&ocirc;n y canodd Guto gywydd gofyn am gyllell hela
+					gan Ruffudd ap Rhys o I&acirc;l, lle dyfelir y rhodd yn gain gan dynnu
+					sylw at ddwy gyllell arall lai a gedwid yn yr un god &acirc; hi, a
+					ddisgrifir yn hoffus fel <span style="font-style: italic">merched</span>
+					i'w <span style="font-style: italic">mam</span> (cerdd 76).
+				</p>
+				<p>
+					Mae un o'r cerddi olaf a ganodd Guto i noddwr o'r De yn cydgysylltu
+					dwy ardal ar y Gororau lle bu Guto'n weithgar iawn yn y saithdegau,
+					sef Powys a Gwent. Roedd Water Herbert yn fab i Wiliam Herbert,
+					iarll cyntaf Penfro, ac yn frawd iau i Wiliam Herbert, ail iarll
+					Penfro. Nid yw'n eglur ym mhle'r oedd ei gartref pan ganodd Guto
+					iddo - diau fod ganddo drigfan rywle yng Ngwent fel gweddill ei
+					deulu - ond gwna Guto'n fawr o'i gyswllt &acirc; Phowys yn ei gywydd mawl
+					iddo (cerdd 27), ac mae'n debygol mai rywle ym Mhowys y canwyd ef.
+					Rhoddwyd arglwyddiaeth Powys yng ngofal yr Herbertiaid yn 1467, gan
+					fod yr etifedd dan oed, a'r tebyg yw ei bod yn parhau ym meddiant y
+					teulu, a Water yn arbennig, pan folwyd ef gan Guto <span
+						style="font-style: italic">c</span>.1475. Roedd perthynas yr
+					Herbertiaid &acirc;'r brenin yn dirywio erbyn 1478 o leiaf, ac fe
+					ymddengys fod Guto yntau wedi cilio oddi wrth ei noddwyr erbyn y
+					cyfnod hwnnw. Y tebyg yw mai yn sgil heneiddio a gorfod cyfyngu
+					cylch ei glera y digwyddodd hynny, ond nid cyd-ddigwyddiad,
+					efallai, yw'r ffaith fod diwedd ar ymwneud Guto &acirc;'r Herbertiaid yn
+					cyd-daro &acirc; chyfnod cythryblus i'r teulu pan gollasant eu ffafr
+					gwleidyddol. Cerdd Guto i Water yw'r un olaf sydd ar glawr ganddo i
+					aelod o'r teulu hwnnw.
+				</p>
+				<p>
+					Nid ymwelodd Guto &acirc; chartrefi nawdd yng Ngwent wedi <span
+						style="font-style: italic">c</span>.1475, ac mae'n bosibl fod y
+					gerdd olaf a ganodd yn y De wedi ei chanu yn y Dyffryn Aur yn swydd
+					Henffordd. Dychwelodd yno er mwyn canu marwnad i un o'i noddwyr
+					cynharaf, Harri Gruffudd o'r Cwrtnewydd (cerdd 36), a fu farw yn
+					1476 neu 1477. Fel y gwelwyd eisoes, roedd Guto a Harri yn
+					gyfoeswyr a fu'n cyd-ymladd, yn cyd-wledda ac, o bosibl, yn
+					cyd-ymarfer campau megis taflu maen ers y 1430au, a diau fod llawer
+					mwy nag ystrydebu moel yng ngalaru Guto yn ei farwnad iddo. Ceir
+					rhyw dinc o euogrwydd hefyd, oherwydd ymddiheura Guto yn y gerdd am
+					ganu cywydd i ddychan Harri am fod yn gybyddlyd (cerdd 35), ac
+					mae'n bosibl nad oedd y ddau wedi cymodi cyn marw'r noddwr. Mae'r
+					gerdd yn ddiweddglo ar bennod helaeth yng ngyrfa Guto fel bardd o
+					fri a ymwelai &acirc; chartrefi yn ne Cymru ac yn y de-ddwyrain yn
+					benodol. Mae'n annhebygol iddo ddychwelyd eto i'r De, a cherddi i
+					noddwyr yn y Gogledd bron yn ddieithriad a ganodd o ail hanner y
+					saithdegau ymlaen.
+				</p>
+				<p>
+					Er na ellir dyddio'r un gerdd yn sicr yn ystod ail hanner y
+					saithdegau, diogelwyd cofnod diddorol iawn sy'n dangos bod Guto'n
+					weithgar fel bardd yn Amwythig yn 1476-7 ac yn 1477-8. Gelwir Guto
+					a gwr o'r enw <span style="font-style: italic">Walter Harper</span>
+					(ei delynor, yn sicr) yn <span style="font-style: italic">ministral[es]
+						principis</span> 'clerwyr y tywysog' yng nghofnodion beil&iuml;aid y ddinas ar
+					ddau achlysur yn ystod y blynyddoedd hynny (Harper 2013: 185). Nid
+					yw union arwyddoc&acirc;d y disgrifiad yn eglur, nac ychwaith natur y
+					ddau achlysur, ond mae'n bur debygol fod Guto a Walter (ynteu
+					Gwallter) wedi gwasanaethu Edward, Tywysog Cymru, sef mab cyntaf
+					Edward IV a aned yn 1470. Nid oes wybod pa gerddi a ddatganodd Guto
+					nac ychwaith a gomisiynwyd ef i gyfansoddi cerddi newydd ynteu i
+					ailberfformio hen gerddi (megis ei gywydd mawl i'r brenin, tad y
+					tywysog). Gellir dehongli'r cofnod fel arwydd o statws Guto fel
+					bardd ar ddiwedd ei oes ynghyd &acirc;'i flaengarwch wrth ddod o hyd i
+					ffynonellau nawdd newydd. Dylid cadw mewn cof, at hynny, mai prif
+					gynghorwr y tywysog ifanc oedd ei ewythr, Anthony Woodville, gwr
+					dysgedig a bardd o fath a fu'n ymweld &acirc;'r Eidal yn ystod y Dadeni,
+					a bod ei siambrlen, Syr Thomas Vaughan o Drefynwy, yn wr o dras
+					Cymreig.
+				</p>
+				<p>
+					Cyn gadael y saithdegau, rhaid nodi tair cerdd sy'n awgrymu'n gryf
+					fod Guto'n parhau i glera yn y gogledd-orllewin hefyd. Ni ellir
+					dyddio'r un o'r cerddi hyn yn fanwl iawn, ond mae eu gwneuthuriad
+					cynganeddol a rhai cyfeiriadau ynddynt yn rhoi lle i gredu eu bod
+					yn perthyn i'r saithdegau. O safbwynt arddull gynganeddol, y patrwm
+					cyffredinol yn y bymthegfed ganrif oedd gwneud mwy a mwy o ddefnydd
+					o gynganeddion cytsain cywrain ar draul y gynghanedd sain. Hynny
+					yw, wrth i'r ganrif fynd rhagddi, fe &acirc;i'r cerddi'n fwyfwy caeth
+					(LlU 99-100). Cerdd gaeth iawn yn gynganeddol yw cywydd marwnad
+					Guto i Hywel ab Owain o Lanbryn-mair, gwr a oedd yn gefnder drwy ei
+					fam i Sieffrai Cyffin o Groesoswallt ac a oedd, fel Sieffrai, yn
+					medru cerdd dafod (cerdd 40). Canodd Guto farwnad arall gaeth iawn
+					i Feurig Fychan ap Hywel Selau ac Angharad ferch Dafydd o Nannau
+					ger Dolgellau, p&acirc;r priod a roes eu nawdd i Guto yn ystod y
+					chwedegau (cerdd 50). Fel p&acirc;r priod arall a farwnadwyd gan Guto,
+					sef Dafydd Llwyd a Chatrin ferch Maredudd o Abertanad, y tebyg yw
+					fod Meurig Fychan ac Angharad hwythau wedi marw o haint y nodau.
+					Fe'u claddwyd ynghyd yn abaty Cymer. Ond ni cheir yn y farwnad i'r
+					p&acirc;r o Nannau y math o alar dwys a fynegwyd yn y cywydd a ganodd
+					Guto yn Abertanad, yn &ocirc;l pob tebyg am eu bod wedi byw i oedran teg
+					ac am fod eu plant eisoes yn oedolion. Ni chyfeiriodd Guto yn ei
+					farwnad at eu hetifedd, Dafydd ap Meurig Fychan, ond ceir ar glawr
+					gywydd i ddiolch am farch a gafodd ganddo ef a'i wraig, Elen ferch
+					Hywel (cerdd 51). Yn &ocirc;l y gerdd honno, clywodd Dafydd fod Guto wedi
+					colli ei farch du ac felly anfonodd farch newydd ato, un a fedrai
+					drotian yn ogystal &acirc; charlamu ac a oedd yn addas i gludo gwr dall
+					fel Guto. Ond er mai Dafydd yw'r rhoddwr, clodforir Elen yn llinell
+					olaf y gerdd am annog ei gwr i roi'r march i'w fardd. Mae'n wir nad
+					yw'r gerdd ddiolch mor gynganeddol gaeth &acirc;'r farwnad i rieni
+					Dafydd, nodwedd a allai awgrymu dyddiad cynnar, ond eto mae'r
+					cyfeiriad at ddallineb y bardd fel pe bai'n rhagfynegi'r s&ocirc;n mynych
+					am yr anabledd hwnnw yng ngherddi Guto yn ystod yr wythdegau. Ar
+					ddiwedd y gerdd gwelir Guto'n chwarae &acirc;'r syniad o dreulio ei
+					flynyddoedd olaf yn [<span style="font-style: italic">nh</span>]<span
+						style="font-style: italic">y Ferned</span>, sef abaty Cymer, o
+					bosibl, nid nepell o Nannau. Er mai mewn abaty arall y cafodd Guto
+					le yn y pen draw, mae'n amlwg eisoes erbyn diwedd y saithdegau ei
+					fod yn rhag-weld adeg ym machlud ei oes pan fyddai'n gorfod cyfyngu
+					ei orwelion i un lle arbennig.
+				</p>
+			</div>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.3_div.2">
+				<h4>
+					<span class="headingNumber">3.2 </span><span class="head"><a
+						id="Toc369616112">
+							<!--anchor-->
+					</a>Yr wythdegau</span>
+				</h4>
+				<p>Marwnad yw'r gerdd gyntaf y gellir ei dyddio'n hyderus yn yr
+					wythdegau. Yn fuan wedi marwolaeth Edward IV ar 9 Ebrill 1483, bu
+					farw dau o noddwyr Guto yn y Gogledd, sef Wiliam Fychan ap Gwilym
+					o'r Penrhyn ger Bangor a Gruffudd Fychan ap Gruffudd o Gorsygedol
+					i'r de o Harlech. Cyfeiriodd Guto at y tair marwolaeth ar ddechrau
+					ei gywydd marwnad i Ruffudd Fychan (cerdd 52), ac mae'r cyfeiriadau
+					mynych at leoliadau yn nyffryn Dyfrdwy yn awgrymu'n gryf mai ar
+					aelwyd Elisau, brawd Gruffudd, yng Ngwyddelwern y canwyd y gerdd yn
+					hytrach na chartref Gruffudd yng Nghorsygedol. Y tebyg yw fod
+					Guto'n clera yn y gogledd-ddwyrain tua diwedd 1483 a dechrau'r
+					flwyddyn ganlynol, oherwydd rywdro yn ystod y cyfnod hwnnw fe
+					ganodd gywydd mawl i Domas Salbri ap Harri Salbri o Leweni ger
+					Dinbych (cerdd 71). Roedd Tomas, a fu farw yn 1490, yn hen wr pan
+					ganwyd y gerdd a rhoir sylw helaeth, o ganlyniad, i'w wraig a'i
+					ddeg plentyn, yn arbennig i'w fab, ail Domas Salbri, ac i ferch o'r
+					enw Elsbeth. Roedd y mab a'r ferch yn rhannu'r un enwau &acirc;'r ddau
+					riant. Er mor afieithus yw campau cynganeddol Guto wrth ganmol y
+					deg plentyn a'u rhieni yn niweddglo'r gerdd, yn wahanol i nifer o
+					gerddi eraill a ganodd Guto tua diwedd ei oes, gwaith trwyadl
+					broffesiynol ydyw lle gwelir Guto'n cadw pellter rhyngddo a'i
+					noddwr. Cerdd debyg iawn yn hyn o beth ac un a ganwyd, efallai, ar
+					yr un daith glera, yw cywydd mawl i Syr Hywel ap Dai o Laneurgain
+					i'r de o'r Fflint, lle cyferchir y noddwr yn y trydydd person drwy
+					gydol y gerdd (cerdd 70).</p>
+				<p>Yn dilyn marwolaeth Edward IV, cipiodd ei frawd ieuengaf y
+					goron ar 6 Gorffennaf gan ddwyn y teitl Richard III. Cafodd priod
+					olynydd Edward IV, y Tywysog Cymru ifanc gynt y bu Guto'n ei
+					wasanaethu fel bardd yn Amwythig rhwng 1476 ac 1478, ei garcharu
+					gan ei ewythr yn Nhwr Llundain. Yno y cafodd ei lofruddio, yn &ocirc;l
+					pob tebyg, ynghyd &acirc;'i frawd iau, Richard, ar orchymyn Richard III
+					tua diwedd yr haf 1483. Ni bu Richard yn frenin am hir. Er iddo
+					lwyddo i wastrodi gwrthryfel yn ei erbyn yn yr hydref y flwyddyn
+					honno, cynyddu a wnaeth y gefnogaeth i'r unig gynrychiolydd a oedd
+					yn weddill i achos y Lancastriaid, y gwr a oedd &acirc;'i fryd ar
+					hawlio'r goron ond a fu'n byw'n alltud yn Llydaw ers 1471 - Harri
+					Tudur. Dychwelodd Harri i Brydain yn yr haf 1485, gan lanio ger
+					Aberdaugleddau a gorymdeithio drwy Gymru i faes Bosworth yng
+					nghanolbarth Lloegr erbyn 22 Awst, lle trechwyd lluoedd y brenin a
+					lladd Richard ei hun ar faes y gad. Dyrchafwyd Harri yn Harri VII
+					yn y fan a'r lle.</p>
+				<p>
+					Cymerodd o leiaf dri o noddwyr Guto ran ym mrwydr Bosworth. Roedd
+					Syr Rhys ap Tomas o Abermarlais yn nyffryn Tywi yn un o brif
+					gefnogwyr Harri Tudur yng Nghymru. Fe'i hurddwyd yn farchog dridiau
+					wedi brwydr Bosworth. Canodd Guto ei glodydd yn fuan wedi'r
+					fuddugoliaeth (cerdd 14), ac mae ei gyfeiriad diddorol at [<span
+						style="font-style: italic">l</span>]<span
+						style="font-style: italic">add y baedd</span>, sef Richard III, yn
+					dystiolaeth werthfawr a allai awgrymu mai gwyr Rhys ei hun a'i
+					lladdodd. Gan na cheir lle i gredu bod Guto'n dal i glera yn y De
+					erbyn 1485/6, mae'n debygol fod y cywydd wedi ei gludo i
+					Abermarlais a'i berfformio o flaen Rhys gan ddatgeiniad.
+					Posibilrwydd arall yw nad Guto a ganodd y cywydd hwn, gan fod
+					rhywfaint o le i amau dilysrwydd y priodoliad. Nid yw'n amhosibl,
+					fodd bynnag, fod Guto wedi derbyn nawdd gan Rys cyn iddo ennill bri
+					ar faes Bosworth.
+				</p>
+				<p>Y tebyg yw fod Si&ocirc;n Edward o Blasnewydd yn y Waun wedi ymladd
+					ym Mosworth ym myddin Sir William Stanley. Bu Stanley yn Iorcydd
+					pybyr am y rhan fwyaf o'i oes, ond ymddengys iddo newid ei liw yn
+					1485, o bosibl yn sgil amheuon ynghylch dilysrwydd teyrnasiad
+					Richard, a chefnogi achos Harri Tudur. Fodd bynnag, aros ei gyfle
+					ar ymyl y frwydr a wnaeth ym Mosworth, gan ymladd yn erbyn y brenin
+					ar yr eiliad olaf. Yn &ocirc;l Guto, bu Si&ocirc;n yn hir iawn yn dychwelyd
+					gartref o faes y gad, a chanodd gywydd mawl i ddathlu ei
+					ddychweliad ddau fis wedi'r frwydr (cerdd 107). Mae'r agosatrwydd a
+					deimlir yn y gerdd, sy'n cynnwys mawl i wraig Si&ocirc;n yn ogystal,
+					Gwenhwyfar ferch Elis Eutun, ynghyd &acirc; chyfeiriadau at nawdd Si&ocirc;n
+					mewn cerddi eraill, yn dangos yn eglur fod Guto wedi derbyn nawdd
+					gan y ddau ar fwy nag un achlysur a'i fod yn eu hadnabod yn dda.
+					Gwneir defnydd hefyd o'r ddelwedd o'r bardd fel saethydd a anelai
+					ei fawl at ei noddwr, delwedd y manteisiodd Guto'n helaeth arni yn
+					gynharach yn ei yrfa. Mae'r gerdd yn dadlennu cyfeillgarwch rhwng y
+					bardd a'i noddwr yn hytrach na pherthynas broffesiynol yn unig.</p>
+				<p>Cerddi a ganwyd yn y cywair personol hwnnw yw'r rheini a
+					ganodd Guto i noddwyr yng Ngwynedd oddeutu'r un adeg. Y trydydd o'r
+					gwyr a fu'n ymladd ym mhlaid Harri Tudur ym Mosworth oedd Wiliam ap
+					Gruffudd o Gochwillan yn nyffryn Ogwen. Fe'i gwobrwywyd am ei
+					wasanaeth ar 24 Medi 1485 drwy ei benodi'n siryf Caernarfon am oes,
+					ac fel siryf y'i cyferchir mewn cywydd mawl a ganodd Guto iddo yn
+					fuan wedyn (cerdd 55). Clodforir Wiliam am ei wrhydri, ei haelioni
+					ac am ei ymddangosiad, yn arbennig ei wallt gwyn hir, a
+					wrthgyferbynnir yn gynnil &acirc; moelni'r bardd. Mae'n amlwg fod Guto'n
+					teimlo'n gartrefol iawn ar aelwyd Cochwillan, mor gartrefol, yn
+					wir, nes iddo honni na fyddai'n gadael y lle hyd nes y byddai'n
+					marw. Ystrydeb oedd honiad o'r fath gan amlaf, ond diau fod ychydig
+					mwy o wirionedd yn perthyn i'r cais yn yr achos hwn, fel yn achos
+					diweddglo'r gerdd ddiolch am farch a ganodd i Ddafydd ap Meurig
+					Fychan o Nannau (cerdd 51).</p>
+				<p>Mae'n debygol fod Guto wedi teithio i'r gogledd-orllewin
+					ddechrau 1485 hefyd er mwyn canu cerdd i un o'i hen noddwyr ym M&ocirc;n.
+					Yng ngaeaf 1484, pan oedd Harri Tudur yn Ffrainc o hyd a Richard
+					III yn ceisio cryfhau ei afael ar yr orsedd, roedd Guto yng
+					nghantref Penllyn pan glywodd am anffawd a gawsai Huw Lewys o
+					Brysaeddfed (cerdd 64). Tua dechrau Rhagfyr y flwyddyn honno, o
+					bosibl, fe gwympodd Huw oddi ar ei geffyl wrth geisio croesi cors
+					beryglus Malltraeth ar yr ynys. Roedd Guto eisoes wedi canu clodydd
+					Huw ynghyd &acirc;'i bedwar brawd, o bosibl yn y chwedegau (cerdd 63). Yn
+					y cyfamser bu farw dau o'r brodyr, gan adael yr hynaf, Meurig, a'r
+					ieuengaf, Rhys, yn ogystal &acirc; Huw ei hun. Fel yn achos y cywydd a
+					ganodd Guto pan frifodd Hywel ab Ieuan Fychan o Foeliwrch ei
+					ben-glin (cerdd 92), tosturiodd Guto &acirc; Huw gan honni ei fod yntau'n
+					glaf hefyd yn sgil y ddamwain. Ond yn wahanol i'r cywydd i Hywel,
+					aeth Guto i eithafion braidd wrth gydymdeimlo &acirc; Huw. Honnodd ei fod
+					ei hun wedi dioddef yr un anffawd, bron, gan fod y dagrau a wylodd
+					ef ac eraill am Huw mor niferus nes creu m&ocirc;r i'r bardd foddi ynddo.
+					Rhaid bod yr empathi eithafol hwnnw wedi cosi clustiau clerwr a
+					oedd yn weithgar yng Ngwynedd ar y pryd, sef Llywelyn ap Gutun,
+					bardd-delynor terfysglyd o Felwern ger y Trallwng. Cymerodd
+					Llywelyn arno fod Guto ei hun wedi boddi ym Malltraeth, a chanodd
+					gywydd dychan digrif iawn iddo, yn &ocirc;l pob tebyg fel rhan o
+					ddathliadau'r Nadolig 1484 yn Llwydiarth ym M&ocirc;n (cerdd 65a).
+					Disgrifir corff mawr Guto is y tonnau - mae ei gorpws yn llawn
+					mecryll, penfreision a llysywod - ac yna ei helyntion fel ysbryd
+					blinderus ar dir sych. Ym mis Mawrth 1485, fe ymddengys, canodd
+					Guto gywydd dychan digrif i ateb Llywelyn, gan gyhuddo ei gyd-fardd
+					o feddwi'n dwll ar haelioni Huw Lewys a'i berthynas, Cynwrig ap
+					Dafydd, a breuddwydio'r holl stori yn ei feddwdod (cerdd 65).
+					Tacteg gyfrwys oedd cyhuddiad felly, gan ei fod yn wfftio Llywelyn
+					ac ar yr un pryd yn dyrchafu'n anuniongyrchol haelioni ei noddwyr,
+					sef prif nod ei gywydd gwreiddiol i Huw yn y lle cyntaf.</p>
+				<p>
+					Mae'n bur eglur fod Guto'n rhannu ei amser rhwng Gwynedd a'r
+					gogledd-ddwyrain o <span style="font-style: italic">c</span>.1480
+					hyd o leiaf ddiwedd 1485. Ond nid haelioni uchelwyr seciwlar y ddwy
+					diriogaeth hynny'n unig a'i denai, eithr nawdd estynedig gan ddau o
+					noddwyr crefyddol pwysicaf eu dydd, sef Rhisiart Cyffin, deon
+					Bangor, a'r Abad Dafydd ab Ieuan o Lyn-y-groes.
+				</p>
+			</div>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.3_div.3">
+				<h4>
+					<span class="headingNumber">3.3 </span><span class="head"><a
+						id="Toc369616113">
+							<!--anchor-->
+					</a>Rhisiart Cyffin, deon Bangor</span>
+				</h4>
+				<p>
+					Cafodd Rhisiart Cyffin ab Ieuan Llwyd ei benodi'n ddeon Bangor
+					rywbryd rhwng 1472 ac 1478, a gall fod peth o ganu Guto iddo'n
+					perthyn i'r saithdegau. Fel ei gefnder, Wiliam ap Gruffudd o
+					Gochwillan, roedd Rhisiart yn perthyn i un o deuluoedd mwyaf
+					dylanwadol Gwynedd ac yn un o gefnogwyr Harri Tudur. Bu'n ddeon
+					Bangor drwy gydol yr wythdegau a bu'n hynod hael ei nawdd i o leiaf
+					saith o feirdd. Ni ellir dyddio'r un o'r chwe cherdd a ganodd Guto
+					iddo'n fanwl, ac fel corff o waith mae'n nodedig nad yw'r un
+					ohonynt yn gerdd fawl seml. Llwyddodd Guto i foli'r deon yn helaeth
+					drwy gyfrwng <span style="font-style: italic">genres</span> eraill,
+					yn bennaf y canu gofyn a diolch.
+				</p>
+				<p>Er mai gwr crefyddol oedd Rhisiart wrth ei broffes, ymddwyn
+					fel noddwr seciwlar a wn&acirc;i wrth gyfnewid rhoddion &acirc;'i fardd ac &acirc;
+					pherthnasau pell ac agos. Cyfyrder iddo oedd Huw Bwlclai ap Wiliam
+					Bwlclai o Fiwmares, gwr y canodd Guto gywydd ar ei ran i ofyn
+					gwalch gan Risiart (cerdd 60). Roedd Huw yn ddirprwy gwnstabl
+					castell Conwy ar y pryd, swydd a ddaliodd o 1482 ymlaen. Cywydd
+					arall a ganodd Guto i ofyn rhodd gan Risiart yw'r un a luniodd ar
+					ran Syr Gruffudd ab Einion o Henllan ger Dinbych, gwr arall yr
+					honnir ei fod yn perthyn i'r deon (cerdd 61). Roedd Syr Gruffudd yn
+					dymuno ail-doi to gwellt ei gartref &acirc; theils o Eryri, a deil Guto y
+					bydd Rhisiart yn eu hanfon ato dros f&ocirc;r o Fangor i aber afon Clwyd
+					ac i fyny'r afon i Henllan. Rhydd y gerdd gipolwg gwerthfawr ar
+					ddyddiau cynnar y diwydiant llechi yng Ngwynedd.</p>
+				<p>
+					Canodd Guto ddwy gerdd ddiolch i Risiart am rodd bersonol, y naill
+					am bwrs a'r llall am baderau. Cerdd sy'n cynnwys mwy o fawl i
+					Risiart nag i'r rhodd yw'r cywydd i ddiolch am bwrs (cerdd 58).
+					Adleisir mewn mannau linellau o gywydd arall a ganodd Guto i
+					ddiolch am bwrs gan Gatrin ferch Maredudd o Abertanad ryw ddau
+					ddegawd yn gynharach (cerdd 87), cerdd sy'n cynnwys disgrifiadau
+					helaeth o'r rhodd. Ychydig yn wahanol yw pwyslais y cywydd a ganodd
+					i ddiolch i Risiart am baderau, sy'n cynnwys lliaws o ddisgrifiadau
+					dyfeisgar o'r rhodd, sef cyfres o ddeuddeg glain a ddefnyddid i
+					gyfri gwedd&iuml;au i Fair (cerdd 59). At hynny, tra brolir rhinweddau
+					materol y rhodd yn y cywydd i'r pwrs, mae'r mawl a roir i'r
+					paderau'n arwain at ddyhead i fod yn feudwy. Dymunir hir oes i
+					Risiart ar ddiwedd y cywydd i'r pwrs, a hynny'n &ocirc;l confensiwn y <span
+						style="font-style: italic">genre</span>, ond mewnblyg iawn yw
+					agwedd Guto ar ddiwedd ei gywydd i'r paderau, arwydd arall,
+					efallai, fod ei fryd ar ymgilio o'r byd.
+				</p>
+				<p>Os gobeithiai Guto ganfod lloches ym Mangor yn ei ddyddiau
+					olaf, ni fynegodd hynny'n uniongyrchol yn ei gerddi. I ddyffryn
+					Dyfrdwy, ac i abaty Glyn-y-groes yn benodol, y trodd yn y pen draw.
+					Ceir ar glawr ddwy gerdd bwysig gan Guto sy'n amlygu'r cyswllt agos
+					a ffurfiodd drwy ei waith rhwng Bangor a Glyn-y-groes. Cerdd ofyn
+					yw'r gyntaf, cywydd a ganodd ar ran Rhisiart i erchi dau ych yr un
+					gan bedwar noddwr o'r gogledd-ddwyrain (cerdd 108). Ni ddiogelwyd
+					cerddi eraill gan Guto i ddau o'r noddwyr hynny, sef Dafydd Llwyd
+					ap Tudur o Fodidris a Si&ocirc;n Trefor o Bentrecynfrig, er ei bod yn
+					debygol fod corff helaeth o ganu i'r ail wedi ei golli. Y ddau
+					noddwr arall oedd Si&ocirc;n Edward o Blasnewydd, gwr a folwyd gan Guto
+					yn fuan wedi brwydr Bosworth, a'r Abad Dafydd ab Ieuan o
+					Lyn-y-groes. Trafodir canu Guto i'r abad yn fanwl isod. Mae'r ail
+					gerdd sy'n pontio rhwng Bangor a Glyn-y-groes yn amlygu, o bosibl,
+					y rheswm pam y dewisodd Guto ymgilio i Lyn-y-groes (cerdd 109).
+					Dywed yn y gerdd iddo syrthio a thorri tair o'i asennau, damwain a
+					ddigwyddodd, gellid tybio, nid nepell o'r abaty ac a'i gorfododd i
+					geisio ymgeledd yno. Ond clywodd Rhisiart am ei anffawd ac anfonodd
+					gusan o Fangor at ei fardd drwy gyfrwng gwefusau'r Abad Dafydd, a
+					fu'n ymweld &acirc; Bangor, mae'n debyg. Er i asennau Guto wella, yn &ocirc;l
+					pob tebyg, diau y byddai'r ddamwain wedi rhoi terfyn ar unrhyw
+					gynlluniau a oedd ganddo i glera ymhell o gyffiniau Glyn-y-groes am
+					sbel.</p>
+			</div>
+			<div class="teidiv2" id="index.xml-body.1_div.1_div.3_div.4">
+				<h4>
+					<span class="headingNumber">3.4 </span><span class="head"><a
+						id="Toc369616114">
+							<!--anchor-->
+					</a>Yr Abad Dafydd ab Ieuan</span>
+				</h4>
+				<p>Penodwyd Dafydd ab Ieuan yn abad abaty Sistersiaidd
+					Glyn-y-groes tua 1480, gan olynu abad arall a fu'n noddi Guto, Si&ocirc;n
+					ap Rhisiart. Yn wahanol i Si&ocirc;n, nas diogelwyd yr un o gerddi Guto
+					iddo yn y llawysgrifau, goroesodd peth wmbreth o ganu Guto i'r Abad
+					Dafydd ac ystyrir nifer o'r cerddi hyn yn uchafbwynt ei yrfa. Fel
+					yn achos canu Guto i Risiart Cyffin, anodd iawn yw dyddio'r un o'r
+					cerddi i'r abad yn fanwl, ond y tebyg yw i Guto dderbyn nawdd
+					ganddo drwy gydol yr wythdegau. Yn wir, ceir cryn debygrwydd rhwng
+					Rhisiart a'r Abad Dafydd - cenhedlwyd y ddau, yn &ocirc;l pob tebyg, y tu
+					allan i briodas a bu'n rhaid iddynt geisio caniat&acirc;d y Pab er mwyn
+					dal swydd grefyddol, ac roedd y ddau'n gefnogwyr brwd i Harri
+					Tudur. Cafodd Dafydd ei benodi gan Harri VII yn 1485 i arwain y
+					gwaith o lunio achres Gymreig y brenin. At hynny, bu Rhisiart a
+					Dafydd yn hynod o hael eu nawdd i Guto yn ei henaint, mor hael, yn
+					wir, nes ennyn cenfigen beirdd eraill. Tra ym Mangor fe ganodd Syr
+					Si&ocirc;n Leiaf (mab Ieuan ap Gruffudd Leiaf a ganodd englynion dychan i
+					Guto; cerdd 93) gywydd mawl i Risiart sy'n cynnwys dychan agored i
+					Guto, Hywel Grythor a Gwerful Mechain (Salisbury 2011: 101-3).
+					Cyhuddodd Ieuan ei gyd-glerwyr o fanteisio ar haelioni Rhisiart a
+					gwledda'n ormodol yn ei lys ym Mangor. Cyfeiriodd Guto at yr
+					anghydfod hwnnw mewn cywydd a ganodd i ateb cyhuddiad arall tebyg
+					yn ei erbyn, y tro hwn yng Nglyn-y-groes (cerdd 116). Dywed fod tri
+					bardd iau wedi herio ei hawl i fwynhau nawdd yr Abad Dafydd yn yr
+					abaty, sef Maredudd ap Rhys, Gruffudd ap Dafydd (perthynas i Guto,
+					yn &ocirc;l y gerdd) ac Edward ap Dafydd. Amddiffynnodd Guto ei le'n
+					feistrolgar, gan fynnu fod ei awen ef, er dalled yw ac er mor
+					fusgrell yw ei gorff bellach, yn ddigon cryf i drechu cerddi gwan
+					ei gyd-feirdd, a oedd o dras uwch nac ef.</p>
+				<p>
+					Ac aros a wnaeth yng Nglyn-y-groes, gan grwydro'n lleol a dychwelyd
+					yn gyson (yn arbennig yn y gaeaf) i foli'r Abad Dafydd mewn mwy nag
+					un <span style="font-style: italic">genre</span>. Un gerdd a ganodd
+					ar ran yr abad oedd cywydd i ofyn am gael benthyg Llyfr y Greal gan
+					Drahaearn ab Ieuan o Ben-rhos ger Caerllion ar Wysg (cerdd 114).
+					Goroesodd yr union lyfr hwnnw hyd heddiw, sef Peniarth 11, copi o
+					gyfieithiad Cymraeg o chwedlau'r Greal yn Ffrangeg. Gan fod Guto,
+					yn &ocirc;l ei addefiad ei hun, yn henwr dall pan ganodd y gerdd, mae'n
+					annhebygol iddo ei chanu gerbron Trahaearn (er y gall iddo dderbyn
+					nawdd ganddo yn gynharach yn ei yrfa). Yn hytrach, y tebyg yw fod
+					datgeiniad wedi perfformio'r gerdd ar ei ran, naill ai ym Mhen-rhos
+					neu mewn llys a oedd yn eiddo iddo rywle yng nghyffiniau Hwlffordd.
+					Cerdd arall a ganodd Guto i'r abad ynghylch rhodd oedd cywydd i
+					ddiolch am fwcled, sef tarian gron fechan, a ganwyd yng nghartref
+					yr abad yn Nhrefor, efallai (cerdd 110). Rhodd bersonol oedd hon, a
+					bwriadai Guto ei hoffrymu (ynghyd &acirc; chleddyf byr) i'r abaty pan
+					fyddai farw, yn y gobaith y byddai'r arfau'n cael eu darlunio mewn
+					carreg ar ei fedd. Mae'r deisyfiad yn adlais o'i ddyddiau cynnar,
+					pan wasanaethodd ddug Iorc fel milwr yn 1441, ac yn arwydd cryf mai
+					fel milwr yn ogystal &acirc; bardd yr hoffai gael ei gofio (ymhellach,
+					gw. Day 2013: 256, 280-1). Canodd Guto gerdd i abad arall naill ai
+					ar gais yr Abad Dafydd o Lyn-y-groes neu yn rhinwedd ei gyswllt ag
+					ef, sef cywydd mawl i'r Abad Dafydd ab Owain o Ystrad Marchell
+					(cerdd 115). Ynghyd &acirc;'r farwnad a ganodd i Lywelyn ab y Moel yn
+					1440 (cerdd 82), dyma'r ail gerdd yn unig o eiddo Guto y gellir ei
+					chysylltu ag Ystrad Marchell, ac mae'n sicr fod swmp helaeth o ganu
+					ganddo i'r abaty wedi mynd ar ddifancoll. Molir Dafydd ab Owain am
+					ei ddoniau fel amaethwr da, ac yn arbennig fel bridiwr ceffylau.
+					Cloir y gerdd drwy ddymuno ei ddyrchafu'n esgob, swydd y penodwyd
+					ef iddi yn Llanelwy yn 1503.
+				</p>
+				<p>
+					Yn ogystal &acirc;'r cerddi achlysurol hyn, canodd Guto dair cerdd fawl i
+					Ddafydd ab Ieuan o Lyn-y-groes. Cywydd yw un ohonynt, cerdd sy'n
+					rhoi sylw helaeth i waith yr abad yn ailadeiladu ac yn adnewyddu'r
+					fynachlog (cerdd 112). Cyflwynir darlun llawen iawn o fywyd
+					ffyniannus yr abaty, sydd &acirc;'i storfeydd yn orlawn o yd a'i
+					hadeiladau wedi eu toi &acirc; phren coed derw o Fron Hyrddin gerllaw.
+					Tebyg yw naws y ddwy gerdd fawl arall, dwy awdl gelfydd iawn sy'n
+					dangos yn eglur nad oedd gallu Guto i lunio cerddi hynod gywrain
+					wedi pylu wrth iddo heneiddio. Perthyn un o'r awdlau (cerdd 111)
+					i'w ddyddiau cynnar fel bardd Glyn-y-groes, yn &ocirc;l pob tebyg, lle
+					molir Dafydd fel abad perffaith a datgenir bwriad y bardd i
+					ymgartrefu yn yr abaty ar ddiwedd ei oes. Yn wahanol i ddatganiadau
+					tebyg mewn cerddi i noddwyr eraill, gwireddwyd ei ddymuniad y tro
+					hwn - <span style="font-style: italic">Yn y diwedd yno deuaf
+						... Yn ei gwreiddion y gorweddaf</span> (111.62, 64) - a diau fod Guto wedi
+					derbyn addewid gan yr abad i'r perwyl hwnnw. Ailadroddir yr un
+					dymuniad yn yr awdl arall (cerdd 113), ond ar fywyd yr abaty ac ar
+					ddoniau Dafydd yn benodol y canolbwyntir yn y gerdd honno. Cyfeirir
+					at y perllannau, y coedwigoedd a'r gerddi gwenyn yn ogystal &acirc;
+					chryfder yr abad a'i ddiddordeb arbennig mewn cerdd dafod a cherdd
+					dant.
+				</p>
+				<p>
+					Erys dwy gerdd arall a ganodd Guto i Ddafydd, dau gywydd a berthyn
+					i'w flynyddoedd olaf. Cywydd mawl sy'n enwog am ei gwpled agoriadol
+					yw un ohonynt - <span style="font-style: italic">Mae'r
+						henwyr? Ai meirw'r rheini? / Hynaf oll heno wyf i</span> - a thebyg, er
+					nad mor ddigalon, yw naws gweddill y gerdd (cerdd 117). Dywed Guto
+					fod ei gylch clera wedi crebachu, ond nid oedd wedi ei gyfyngu i'r
+					abaty eto eithr i'w gyffiniau:
+				</p>
+				<p class="cefndir">Clera M&ocirc;n, cael aur a medd,<br/>
+				Gynt a gawn, Gwent a Gwynedd;<br/>
+				Clera'n nes, cael aur a wnaf,<br/>
+				Yma 'n I&acirc;l, am na welaf.</p>
+				<p>
+					Enwa dri noddwr arall, yn ogystal &acirc;'r Abad Dafydd, sy'n ei gadw
+					rhag anobeithio yn ei henaint, sef Si&ocirc;n Trefor o Bentrecynfrig,
+					Si&ocirc;n Edward o Blasnewydd a Dafydd Llwyd ap Tudur o Fodidris - yr un
+					pedwar noddwr y canodd Guto gywydd iddynt i ofyn dau ych yr un ar
+					ran Rhisiart Cyffin (cerdd 109). Cywydd llai enwog yw'r llall, ond
+					un mwy arwyddocaol, os rhywbeth (cerdd 118). Cerdd ydyw a ganodd
+					Guto ar gais Dafydd - <span style="font-style: italic">Erchi
+						ym, a'i orchymyn, / Foliannu Duw o flaen dyn</span>. Ac yntau wedi
+					rhagori ar ganu cerddi mawl i ddynion ar hyd ei oes, atgoffir Guto
+					gan ei noddwr yn ei flynyddoedd olaf y dylai ganu mawl i Dduw er
+					mwyn paratoi ei enaid ar gyfer y byd a ddaw. Molir Dafydd ei hun yn
+					sgil hynny, wrth reswm, ond cysegrir rhan helaethaf y gerdd i Dduw,
+					peth hynod brin yng ngwaith y bardd. Myfyria ar ei henaint, ar
+					ryfeddod y Drindod, ar Grist ac ar y creu, ac yna canolbwyntia ar
+					farwolaeth Crist ac ar ei farwolaeth ef ei hun. Daw i'r casgliad
+					mai edifarhau ac addoli Duw yw ei waith bellach, yn y gobaith y
+					caiff ymgartrefu yn y nefoedd maes o law.
+				</p>
+				<p>
+					Gall mai'r cywydd myfyrgar hwnnw yw'r gerdd olaf o eiddo Guto sydd
+					ar glawr. Mae'n debygol mai yng Nglyn-y-groes yr oedd pan
+					gyfansoddodd ddau englyn marwnad i'w gyd-feirdd, Dafydd Nanmor ac
+					Ieuan Deulwyn, a fu farw rywdro rhwng <span
+						style="font-style: italic">c</span>.1485 a <span
+						style="font-style: italic">c</span>.1490 (cerdd 54). Yr englynion
+					hyn yw'r unig dystiolaeth fod Guto'n adnabod Dafydd ac Ieuan, a
+					gladdwyd ill dau, fe ymddengys, yn abaty Sistersiaidd Hendy-gwyn yn
+					Sir G&acirc;r. Fel yn achos rhai cerddi eraill a ganodd Guto oddeutu'r un
+					adeg, mae'n debygol mai drwy gyfrwng datgeiniad y cludwyd yr
+					englynion hynny i'r De, os felly y bu. Englyn arall a berthyn i'r
+					cyfnod olaf un ym mywyd Guto, yw englyn a ganodd i gwyno ynghylch
+					poenau henaint (cerdd 119):
+				</p>
+				<p class="cefndir">Gwae'r gwan dau oedran nid edrych, - ni
+					chwardd,<br/>
+				Ni cherdda led y rhych,<br/>
+				Gwae ni wyl yn gynilwych,<br/>
+				Gwae ni chlyw organ a chlych!<br/>
+				<p>Yn &ocirc;l nodyn wrth ymyl copi o'r englyn yn llaw Thomas Wiliems
+					(1590au), collodd Guto wasanaeth yr offeren yn yr abaty am iddo
+					gysgu drwy alwadau'r organ a'r clychau. Pan ddeffrodd a sylweddoli
+					ei gam, tarfodd yr hen fardd dall a byddar ar y gwasanaeth. Ceir
+					adlais cryf yn y stori o ddisgrifiad Guto ohono ef ei hun yn ei
+					gywydd mawl i'r Abad Dafydd, lle dywed mor flinderus yw gwaith y
+					mynaich a ofalai amdano yn ei fusgrellni.</p>
+				<p>
+					Gall mai fel corod&iuml;ydd, sef gwr a gawsai le yn ei henaint mewn
+					mynachlog (naill ai drwy d&acirc;l neu drwy gael ei ddewis am ei
+					wasanaeth yn y gorffennol), y treuliodd Guto ei amser yng
+					Nglyn-y-groes (Bowen 1995: 153-6), er ei bod yn ddigon posibl mai
+					fel bardd preswyl yr hawliodd ei le yno. Ni waeth beth oedd y
+					trefniadau ffurfiol, go brin y cafodd aelodau'r abaty lawer o
+					ddweud yn y mater. Cafodd Guto hyd i noddwr yn yr Abad Dafydd a
+					fyddai'n barod i'w gynnal am weddill ei oes. Adlewyrchir eu
+					perthynas gl&ograve;s yn amrywiaeth y canu iddo - ceir canu gofyn a diolch
+					o bob math yn ogystal &acirc; chanu mawl ar amrywiaeth o fesurau, a'r
+					canu hwnnw'n cynnwys pob math o them&acirc;u nas disgwylid fel arfer mewn
+					canu o'r fath, megis herio beirdd eraill a chanu crefyddol dwys.
+					Diweddglo taclus yw gweld Guto'n treulio ei flynyddoedd olaf dan
+					nawdd Dafydd ab Ieuan yn abaty Glyn-y-groes, ac yntau wedi derbyn
+					cymaint o nawdd ar ddechrau ei yrfa gan abad arall, yr Abad Rhys o
+					Ystrad-fflur. Gwahanol iawn oedd tynged y ddau, y naill yn ddyledwr
+					a fu farw yng ngharchar a'r llall yn abad llwyddiannus a
+					ddyrchafwyd yn esgob yn ei flynyddoedd olaf. Nid oes wybod pryd yn
+					union y bu farw Guto, ond mae'n annhebygol o fod ymhell o <span
+						style="font-style: italic">c</span>.1490, ac yntau tua phedwar
+					ugain oed. Yn ogystal &acirc; noddi ei awen pan oedd ar dir y byw, dan
+					nawdd Dafydd hefyd y canwyd cywydd marwnad Guto yn yr abaty gan
+					Gutun Owain (cerdd 126). Fe'i claddwyd, yn &ocirc;l ei ddymuniad, yn nhir
+					Glyn-y-groes.
+				</p>
+			</div>
+		</div>
+		<div class="teidiv1" id="index.xml-body.1_div.1_div.4">
+			<h3>
+				<span class="headingNumber">4. </span><span class="head"><a
+					id="Toc369616115">
+						<!--anchor-->
+				</a>Llyfryddiaeth</span>
+			</h3>
+			<p class="nodiadau">
+				Boardman, A.W. (1998), <span style="font-style: italic">The
+					Medieval Soldier in the Wars of the Roses</span> (Stroud)
+			</p>
+			<p class="nodiadau">Bowen, D.J. (1995), 'Guto'r Glyn a
+				Glyn-y-groes', YB XX: 149-82</p>
+			<ul>
+				<li class="item">(2002), 'Y Canu i Gwilym ap Gruffudd (m. 1431)
+					o'r Penrhyn a'i Fab Gwilym Fychan (m. 1483)', <span
+					style="font-style: italic">Dwned</span>, 8: 59-78
+				</li>
+			</ul>
+			<p class="nodiadau">
+				Carr, A.D. (1982), <span style="font-style: italic">Medieval
+					Anglesey</span> (Llangefni)
+			</p>
+			<ul>
+				<li class="item">(1990), 'Gwilym ap Gruffydd and the Rise of
+					the Penrhyn Estate', Cylchg HC 15: 1-20</li>
+			</ul>
+			<p class="nodiadau">
+				Chapman, A. (2013), 'Dug fi at y dug of Iorc "He Took Me to the Duke
+				of York" - Henry Griffith, a "Man of War" ', D.F. Evans, B.J. Lewis
+				and A. Parry Owen (eds.), <span style="font-style: italic">'Gwalch
+					Cywyddau Gwyr': Essays on Guto'r Glyn and Fifteenth-century Wales</span>,
+				103-34
+			</p>
+			<p class="nodiadau">
+				Day, J. (2013), ' "Arms of stone upon my grave": Weapons in the
+				Poetry of Guto'r Glyn', D.F. Evans, B.J. Lewis and A. Parry Owen
+				(eds.), <span style="font-style: italic">'Gwalch Cywyddau
+					Gwyr': Essays on Guto'r Glyn and Fifteenth-century Wales</span>
+				(Aberystwyth), 233-81
+			</p>
+			<p class="nodiadau">
+				Davies, R.R. (1995), <span style="font-style: italic">The
+					Revolt of Owain Glyn Dwr</span> (Oxford)
+			</p>
+			<p class="nodiadau">
+				Hardy, R. (1994), 'The Longbow', A. Curry and M. Hughes (eds.), <span
+					style="font-style: italic">Arms, Armies and Fortifications
+					in the Hundred Years War</span> (Woodbridge), 161-81
+			</p>
+			<p class="nodiadau">
+				Harper, S. (2013), 'Musical Imagery in the Poetry of Guto'r Glyn',
+				D.F. Evans, B.J. Lewis and A. Parry Owen (eds.), <span
+					style="font-style: italic">'Gwalch Cywyddau Gwyr': Essays on
+					Guto'r Glyn and Fifteenth-century Wales</span>, 177-202
+			</p>
+			<p class="nodiadau">
+				Huws, B.O. (2007), 'Ailadeiladu Bywyd ar &ocirc;l Gwrthryfel Glyndwr:
+				Tystiolaeth y Canu i Foelyrch', <span style="font-style: italic">Dwned</span>,
+				13: 97-137
+			</p>
+			<ul>
+				<li class="item">(2011), 'Guto'r Glyn: Un o Feirdd y Ffin' <span
+					style="font-style: italic">Dwned</span>, 17: 55-71
+				</li>
+			</ul>
+			<p class="nodiadau">
+				Huws, D. (2004), 'Rhestr Gutun Owain o Wyr wrth Gerdd', <span
+					style="font-style: italic">Dwned</span>, 10: 79-88
+			</p>
+			<p class="nodiadau">
+				Johnson, P.A. (1988), <span style="font-style: italic">Duke
+					Richard of York 1411-1460</span> (Oxford)
+			</p>
+			<p class="nodiadau">
+				Johnston, D. (2008), 'Cofiant Creadigol', <span
+					style="font-style: italic">Taliesin</span>, 135: 000
+			</p>
+			<p class="nodiadau">
+				Lewis, B.J. (2013), 'Bardd yn y Tirlun: Cymru a'i Rhanbarthau drwy
+				Lygaid Guto'r Glyn', D.F. Evans, B.J. Lewis ac A. Parry Owen
+				(goln.), <span style="font-style: italic">'Gwalch Cywyddau
+					Gwyr': Ysgrifau ar Guto'r Glyn a Chymru'r Bymthegfed Ganrif</span>,
+				149-76
+			</p>
+			<p class="nodiadau">Lewis, S. (1976), 'Gyrfa Filwrol Guto'r
+				Glyn', YB IX: 80-99</p>
+			<p class="nodiadau">Lloyd, H.W. (1879), 'Ancient Welsh Poetry,
+				Illustrative of the History of Powysland', MontColl xii: 29-51</p>
+			<p class="nodiadau">
+				Morgan, T.J. and Morgan, P. (1985), <span
+					style="font-style: italic">Welsh Surnames</span> (Cardiff)
+			</p>
+			<p class="nodiadau">
+				Pennant, T. (1819), <span style="font-style: italic">Some
+					Account of the Ancient and Present State of Oswestry, by Thomas
+					Pennant Esq., with Notes and Considerable Additions by Thomas
+					Edwards</span> (Oswestry)
+			</p>
+			<p class="nodiadau">
+				Pollard, A.J. (1983), <span style="font-style: italic">John
+					Talbot and the War in France 1427-1453</span> (London)
+			</p>
+			<p class="nodiadau">Powell, M.W. (2004), 'Dyfalu Dafydd Nanmor',
+				LlCy 27: 86-112</p>
+			<p class="nodiadau">
+				Rees, E.A. (2008), <span style="font-style: italic">A Life
+					of Guto'r Glyn</span> (Tal-y-bont)
+			</p>
+			<p class="nodiadau">
+				Roberts, E. (1977), <span style="font-style: italic">Y
+					Beirdd a'u Noddwyr ym Maelor</span> (Darlith Lenyddol Eisteddfod
+				Genedlaethol Wrecsam a'r Cylch)
+			</p>
+			<p class="nodiadau">
+				Salisbury, E. (2007a), <span style="font-style: italic">Ar
+					Drywydd Guto'r Glyn ap Siancyn y Glyn</span> (Aberystwyth)
+			</p>
+			<ul>
+				<li class="item">(2007b), 'Tair Cerdd Dafod', <span
+					style="font-style: italic">Dwned</span>, 13: 139-68
+				</li>
+				<li class="item">(2009), ' "Y Traed Ataw a Redant": Golwg ar
+					Ganu Guto'r Glyn i Rys, Abad Ystrad-fflur', LlCy 32: 58-84</li>
+				<li class="item">(2011), 'Rhisiart Cyffin ab Ieuan Llwyd, Deon
+					Bangor', <span style="font-style: italic">Dwned</span>, 17: 73-118
+				</li>
+			</ul>
+			<p class="nodiadau">Thomson, D. (1982), 'Cistercians and Schools
+				in Late Medieval Wales', CMCS 3: 76-80</p>
+			<p class="nodiadau">
+				Watkin, I. (1920), <span style="font-style: italic">Oswestry</span>
+				(London, Oswestry)
+			</p>
+			<p class="nodiadau">
+				Williams, D.H. (2001), <span style="font-style: italic">The
+					Welsh Cistercians</span> (Leominster)
+			</p>
+			<p class="nodiadau">
+				Williams, J.E.C. (1997), 'Guto'r Glyn', A.O.H. Jarman and G.R.
+				Hughes (eds.), <span style="font-style: italic">A Guide to
+					Welsh Literature ii: 1282-</span>c<span style="font-style: italic">.1550</span>,
+				revised by D. Johnston (second ed., Cardiff), 197-221
+			</p>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}

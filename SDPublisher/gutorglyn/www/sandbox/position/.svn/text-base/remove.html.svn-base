@@ -1,0 +1,1483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Gutor Glyn.net - 001</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link type="text/css" rel="stylesheet" href="/static/blueprint/screen.css"
+            media="screen, projection" />
+
+        <!--[if lt IE 8]><link rel="stylesheet" href="/static/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+        <link type="text/css" rel="stylesheet" href="/static/css/gutorglyn.css"
+            media="screen, projection" />
+        <link type="text/css" rel="stylesheet" href="/static/css/jquery-ui-1.8.16.custom.css" />
+        <link type="text/css" rel="stylesheet" href="/static/css/slidingpanel.css"
+            media="screen, projection" />
+        <link type="text/css" rel="stylesheet" href="/static/css/jquery.lightbox-0.5.css"
+            media="screen" />
+
+        <link type="text/css" rel="stylesheet" href="/static/blueprint/print.css"
+            media="print" />
+
+        <script type="text/javascript" src="/static/js/jquery-1.5.1.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery-ui-1.8.16.custom.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.lightbox-0.5.js"></script>
+        <script type="text/javascript" src="/static/js/jquery-gutor.js"></script>
+        
+        <script type="text/javascript" src="/static/js/themeroller.js"></script>
+
+        </head>
+        <body>
+            <div class="container">
+
+
+<!-- Black Bar -->
+<div class="span-24 last" id="black-bar">
+    <form method="GET" action="/static/poem-redirect.html" id="poem-select">
+        <label for="poem">
+            	&nbsp;Cerdd: 
+        </label>
+        <select id="poem" name="poem">
+            <option value="#">Dewis...</option>
+            <option value="001">1</option>
+            <option value="002">2</option>
+            <option value="003">3</option>
+            <option value="008">8</option>
+            <option value="012">12</option>
+            <option value="016">16</option>
+            <option value="018">18</option>
+            <option value="018a">18a</option>
+            <option value="043">43</option>
+            <option value="055">55</option>
+			<option value="056">56</option>
+            <option value="063">63</option>
+            <option value="113">113</option>
+        </select>
+    </form>
+    <form method="GET" action="/gutorglyn/search/">
+        <label for="searchVal">
+            &nbsp;&nbsp;Chwilio am: 
+        </label>
+        <input type="text" name="searchVal" title="search" id="searchVal" /><input type="submit" value="Chwilio" />
+    </form>
+	<!-- paragraph sync button -->
+	&nbsp;&nbsp;<input type="checkbox" checked="yes" id="Activechk" />
+    <label for="Activechk">
+        Datgloi
+    </label>
+    <!-- paragraph sync button end -->
+    
+    <a style="color: white;" href="#" class="show-hide-vlines">Show/hide Line Links</a> | 
+    <a style="color: white;" href="#" class="">Show/hide Proper Names</a>
+
+</div>
+<!-- Black Bar End -->
+
+
+ 
+
+<hr class="space" />
+<div class="prepend-1 span-9 top-head">
+<a href="/gutorglyn/index"><img alt="guto'r glyn.net" src="/static/img/logo/gg-logo.png"></a>
+</div>	
+
+<!-- Top Nav links -->
+<div class="prepend-1 span-12 last top-nav">
+<a href="/static/index.htm">Home</a>&nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="/gutorglyn/poem/001">Poems</a> 
+<!-- 
+<a href="/static/patrons.htm">Patrons</a> | 
+<a href="/static/locations.htm">Locations</a> | 
+<a href="/static/first-lines.htm">First Lines</a> | 
+<a href="/static/titles.htm">Titles</a> |
+--> 
+</div>
+<!-- Top Nav links End-->
+
+               				           
+<hr style="color:red;background-color: #FF0000; height:4px;" />
+
+<hr class="space" />
+
+
+<!-- Poem Title -->
+<div class="prepend-1 span-22 last" id="main-title">
+	<div class="title">1 – Moliant i Syr Rhisiart Gethin o Fuellt, capten Mantes yn
+						Ffrainc</div>
+</div>
+<!-- Poem Title End -->
+<!-- Editor information -->
+<div class="prepend-1 span-9 last" id="editor-title">
+	<i>Golygwyd gan <span>Barry J. Lewis</span></i>
+</div>
+<!-- Editor information end -->
+
+<hr class="space" />
+<!-- Column 1 -->
+<div id="col-1">
+
+	<!-- Edited Text -->
+	<div id="edited-text">
+		<hr class="space" />
+	
+
+						<div class="cywydd-group">
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line-1">Oer oedd weled urddolion</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 1" href="#" OnClick="showLine('001','1');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">A’r ieirll yn dyfod o <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lr06')">Rôn</a>.</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 2" href="#" OnClick="showLine('001','2');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Pob capten o sifften Sais</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 3" href="#" OnClick="showLine('001','3');">===</a><br/>
+							<span class="cywydd-line-number">4</span><span class="cywydd-line">O waelod <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=ll28')">Lloegr</a> a
+								welais.</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 4" href="#" OnClick="showLine('001','4');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Pond rhyfedd (o’r mawredd mau!),</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 5" href="#" OnClick="showLine('001','5');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Beili <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lm17')">Mawnt</a>, b’le mae
+								yntau?</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 6" href="#" OnClick="showLine('001','6');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Bual du a blodeuyn</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 7" href="#" OnClick="showLine('001','7');">===</a><br/>
+							<span class="cywydd-line-number">8</span><span class="cywydd-line"><a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lb20')">Buellt</a> dir, ni bu well
+								dyn.</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 8" href="#" OnClick="showLine('001','8');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">O gwelais lawer galawnt,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 9" href="#" OnClick="showLine('001','9');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Gorau am win oedd garw <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lm17')">Mawnt</a>,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 10" href="#" OnClick="showLine('001','10');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Y marchog dyledog daid</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 11" href="#" OnClick="showLine('001','11');">===</a><br/>
+							<span class="cywydd-line-number">12</span><span class="cywydd-line">A’r sêr ar ei gwrseriaid,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 12" href="#" OnClick="showLine('001','12');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line"><a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/personGetEng.php?personID=nr08')">Syr Rhisiart</a> goethwart
+									<a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/personGetEng.php?personID=nr08')">Gethin</a>,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 13" href="#" OnClick="showLine('001','13');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Serchog faedd tarianog trin.</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 14" href="#" OnClick="showLine('001','14');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">O <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/personGetEng.php?personID=pm12')">Fair</a> ddi-wair, a ddaw
+								ef</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 15" href="#" OnClick="showLine('001','15');">===</a><br/>
+							<span class="cywydd-line-number">16</span><span class="cywydd-line">Yn hydr yng nghefn Hydref,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 16" href="#" OnClick="showLine('001','16');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Myrdd wynfyd (<a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/personGetEng.php?personID=pm12')">Mair</a> i’w
+								ddanfon!),</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 17" href="#" OnClick="showLine('001','17');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Mab <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/personGetEng.php?personID=pr26')">Rhys</a> ar frys o dref
+									<a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lr06')">Rôn</a>?</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 18" href="#" OnClick="showLine('001','18');">===</a><br/>
+						</div><br/>
+						<div class="cywydd-group">
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line-first">Medd rhai, ‘Nid oes modd yrhawg,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 19" href="#" OnClick="showLine('001','19');">===</a><br/>
+							<span class="cywydd-line-number">20</span><span class="cywydd-line">Nis gad y wlad oludawg.</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 20" href="#" OnClick="showLine('001','20');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Cadw’r dref y mae ef ym <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lm17')">Mawnt</a></span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 21" href="#" OnClick="showLine('001','21');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Er perigl aer aparawnt</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 22" href="#" OnClick="showLine('001','22');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Ac ynnill â gwayw uniawn</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 23" href="#" OnClick="showLine('001','23');">===</a><br/>
+							<span class="cywydd-line-number">24</span><span class="cywydd-line">Gair a chlod goruchel iawn,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 24" href="#" OnClick="showLine('001','24');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Anturiaw, modd y daw dis,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 25" href="#" OnClick="showLine('001','25');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Ymwan <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/personGetEng.php?personID=pp14')">Pyr</a> ym min <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lp04')">Paris</a>,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 26" href="#" OnClick="showLine('001','26');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Pwyntiaw maelys, pwynt <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lm21')">Melan</a>;</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 27" href="#" OnClick="showLine('001','27');">===</a><br/>
+							<span class="cywydd-line-number">28</span><span class="cywydd-line">Pobl y gŵr, pob elw a gân’.</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 28" href="#" OnClick="showLine('001','28');">===</a><br/>
+						</div><br/>
+						<div class="cywydd-group">
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line-first">Glew oedd ef a gloyw ei ddart,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 29" href="#" OnClick="showLine('001','29');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Gwlad a dâl trwsiad <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/personGetEng.php?personID=nr08')">Rhisiart</a>.</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 30" href="#" OnClick="showLine('001','30');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Gwagedd browysedd <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lb16')">Bresawnt</a></span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 31" href="#" OnClick="showLine('001','31');">===</a><br/>
+							<span class="cywydd-line-number">32</span><span class="cywydd-line">Wrth wŷr a meirch <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/personGetEng.php?personID=pa23')">Arthur</a>
+								<a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lm17')">Mawnt</a>.</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 32" href="#" OnClick="showLine('001','32');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Paun aur ddaly, pen urddolion,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 33" href="#" OnClick="showLine('001','33');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Pan ddêl yr angel o <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lr06')">Rôn</a>,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 34" href="#" OnClick="showLine('001','34');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Pwy a fedr ond edrych?</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 35" href="#" OnClick="showLine('001','35');">===</a><br/>
+							<span class="cywydd-line-number">36</span><span class="cywydd-line">Pond ef yn y dref yw’n drych,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 36" href="#" OnClick="showLine('001','36');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">A’i ddeulu yn ei ddilin,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 37" href="#" OnClick="showLine('001','37');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">A’i ddwy law yn gwallaw gwin,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 38" href="#" OnClick="showLine('001','38');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">A phawb yn cyfarch, parch pêr,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 39" href="#" OnClick="showLine('001','39');">===</a><br/>
+							<span class="cywydd-line-number">40</span><span class="cywydd-line">I’r galawnt aur ei goler?</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 40" href="#" OnClick="showLine('001','40');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Llewpart yw <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/personGetEng.php?personID=nr08')">Rhisiart</a> yn
+									<a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lr06')">Rhôn</a>,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 41" href="#" OnClick="showLine('001','41');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Llew du’n ystaenu dynion,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 42" href="#" OnClick="showLine('001','42');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Llew <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=ll28')">Lloegr</a> a’i llaw a’i
+								llygad,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 43" href="#" OnClick="showLine('001','43');">===</a><br/>
+							<span class="cywydd-line-number">44</span><span class="cywydd-line">Llew terwyn glew tir ein gwlad.</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 44" href="#" OnClick="showLine('001','44');">===</a><br/>
+						</div><br/>
+						<div class="cywydd-group">
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line-first">Gŵr bellach a grybwyllwn,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 45" href="#" OnClick="showLine('001','45');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Gem ar holl <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lc53')">Gymru</a> yw
+								hwn,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 46" href="#" OnClick="showLine('001','46');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Corf llorf llu deutu <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=ld14')">Dotawnt</a>,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 47" href="#" OnClick="showLine('001','47');">===</a><br/>
+							<span class="cywydd-line-number">48</span><span class="cywydd-line">Capten ac arglwydd mên <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lm17')">Mawnt</a>.</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 48" href="#" OnClick="showLine('001','48');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Unair ag <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/personGetEng.php?personID=pa23')">Arthur</a> yno</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 49" href="#" OnClick="showLine('001','49');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Yw ar faes â’i wŷr efô,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 50" href="#" OnClick="showLine('001','50');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Ac unwedd, fonedd fynag,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 51" href="#" OnClick="showLine('001','51');">===</a><br/>
+							<span class="cywydd-line-number">52</span><span class="cywydd-line">Unglod â <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/personGetEng.php?personID=pl02')">Lawnslod di
+									Lag</a>.</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 52" href="#" OnClick="showLine('001','52');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Cadr gwrser yn cadw’r garsiwn,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 53" href="#" OnClick="showLine('001','53');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Cadw’r tir yn hir a wna hwn,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 54" href="#" OnClick="showLine('001','54');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">Cadw <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lr06')">Rhôn</a>,
+								feilïon flaenawr,</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 55" href="#" OnClick="showLine('001','55');">===</a><br/>
+							<span class="cywydd-line-number">56</span><span class="cywydd-line">A chadw <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lm17')">Mawnt</a> â
+								chadwayw mawr</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 56" href="#" OnClick="showLine('001','56');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">(Cadr mel <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/personGetEng.php?personID=po04')">Otiel</a>
+								ytiw)</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 57" href="#" OnClick="showLine('001','57');">===</a><br/>
+							<span class="cywydd-line-number">&nbsp;</span><span class="cywydd-line">A chadw <a class="name" href="javascript:popUp('http://www.dafyddapgwilym.net/ggg/placeGetEng.php?placeID=lf08')">Ffrainc</a>, iechyd i’w
+								ffriw!</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol 58" href="#" OnClick="showLine('001','58');">===</a><br/>
+						</div><br/>
+					
+
+	</div>
+	<!-- Edited Text end -->
+</div>
+<!-- Column 1 end -->
+<!-- Column 2 -->
+<div id="col-2">
+	<div id="tabs">
+		<ul>
+			<li>
+				<a href="#paraphrase-tab">
+					<span>Aralleiriad</span>
+				</a>
+			</li>
+			<li>
+				<a href="#audio-tab">
+					<span>Awdio</span>
+				</a>
+			</li>
+			<li>
+				<a href="#translation-tab">
+					<span>Translation</span>
+				</a>
+			</li>
+			<li>
+				<a href="#notes-tab">
+					<span>Nodiadau</span>
+				</a>
+			</li>
+			<li>
+				<a href="#transcriptions-tab">
+					<span>Llawysgrifau</span>
+				</a>
+			</li>
+			<li>
+				<a href="/gutorglyn/variant-lines/?p=001&l=1" class="show-hide-vlines">
+					<span>Amrywiadau</span>
+				</a>
+			</li>
+		</ul>
+		<div id="paraphrase-tab">
+						<div class="stanza">
+							<span class="line-number">1</span><span class="line">Trist oedd gweld marchogion</span><br/>
+							<span class="line-number">2</span><span class="line">a’r ieirll yn dod o Rouen.</span><br/>
+							<span class="line-number">3</span><span class="line">Pob capten o Sais sy’n bennaeth</span><br/>
+							<span class="line-number">4</span><span class="line">o berfeddion Lloegr a welais.</span><br/>
+							<span class="line-number">5</span><span class="line">Onid yw’n rhyfedd (o fy mawredd!),</span><br/>
+							<span class="line-number">6</span><span class="line">beili Mantes, b’le mae yntau?</span><br/>
+							<span class="line-number">7</span><span class="line">Ych gwyllt gwalltddu a blodeuyn</span><br/>
+							<span class="line-number">8</span><span class="line">tir Buellt, ni fu dyn gwell erioed.</span><br/>
+							<span class="line-number">9</span><span class="line">Os wyf wedi gweld llawer gŵr cwrtais,</span><br/>
+							<span class="line-number">10</span><span class="line">y gorau am roi gwin oedd carw Mantes,</span><br/>
+							<span class="line-number">11</span><span class="line">y marchog a’i daid yn fonheddig</span><br/>
+							<span class="line-number">12</span><span class="line">a’r sêr ar ei gwrseriaid,</span><br/>
+							<span class="line-number">13</span><span class="line">Syr Rhisiart Gethin, gwarchodwr cain,</span><br/>
+							<span class="line-number">14</span><span class="line">baedd hynaws y frwydr yn dwyn tarian.</span><br/>
+							<span class="line-number">15</span><span class="line">O Fair bur, a ddaw ef</span><br/>
+							<span class="line-number">16</span><span class="line">yn eofn yng nghanol Hydref,</span><br/>
+							<span class="line-number">17</span><span class="line">gwynfyd i liaws (boed Mair i’w anfon!),</span><br/>
+							<span class="line-number">18</span><span class="line">mab Rhys ar frys o dref Rouen?</span><br/>
+						</div><br/>
+						<div class="stanza">
+							<span class="line-number">19</span><span class="line">Medd rhai, ‘Nid oes modd am amser maith,</span><br/>
+							<span class="line-number">20</span><span class="line">ni fydd y wlad gyfoethog yn caniatáu iddo.</span><br/>
+							<span class="line-number">21</span><span class="line">Gwarchod y dref y mae ef ym Mantes</span><br/>
+							<span class="line-number">22</span><span class="line">rhag perygl etifedd eglur</span><br/>
+							<span class="line-number">23</span><span class="line">ac ennill â gwaywffon syth</span><br/>
+							<span class="line-number">24</span><span class="line">fri a chlod uchel iawn,</span><br/>
+							<span class="line-number">25</span><span class="line">mentro, yn y modd y syrthia dis,</span><br/>
+							<span class="line-number">26</span><span class="line">ymwan fel Pyrrhus wrth ymyl Paris,</span><br/>
+							<span class="line-number">27</span><span class="line">trywanu maels, pwynt o ddur Milan;</span><br/>
+							<span class="line-number">28</span><span class="line">pobl y gŵr hwn, fe gânt bob elw.’</span><br/>
+						</div><br/>
+						<div class="stanza">
+							<span class="line-number">29</span><span class="line">Dewr oedd ef a llachar ei ddart,</span><br/>
+							<span class="line-number">30</span><span class="line">mae trwsiad Rhisiart yn werth gwlad gyfan.</span><br/>
+							<span class="line-number">31</span><span class="line">Gwagedd yw disgleirdeb offer Brescia</span><br/>
+							<span class="line-number">32</span><span class="line">o’i gymharu â gwŷr a meirch Arthur Mantes.</span><br/>
+							<span class="line-number">33</span><span class="line">Paun sy’n gwisgo aur, pennaeth marchogion,</span><br/>
+							<span class="line-number">34</span><span class="line">pan ddaw’r angel o Rouen,</span><br/>
+							<span class="line-number">35</span><span class="line">pwy a all beidio ag edrych?</span><br/>
+							<span class="line-number">36</span><span class="line">Onid ef yw ein drych yn y dref,</span><br/>
+							<span class="line-number">37</span><span class="line">a’i ddau lu yn ei ddilyn,</span><br/>
+							<span class="line-number">38</span><span class="line">a’i ddwy law yn gweini gwin,</span><br/>
+							<span class="line-number">39</span><span class="line">a phawb yn cyfarch, parch melys,</span><br/>
+							<span class="line-number">40</span><span class="line">y gŵr cwrtais sy’n gwisgo coler aur?</span><br/>
+							<span class="line-number">41</span><span class="line">Llewpart yw Rhisiart yn Rouen,</span><br/>
+							<span class="line-number">42</span><span class="line">llew du sy’n staenio dynion [yn goch],</span><br/>
+							<span class="line-number">43</span><span class="line">llew Lloegr a’i llaw a’i llygad,</span><br/>
+							<span class="line-number">44</span><span class="line">llew tanbaid dewr tir ein gwlad.</span><br/>
+						</div><br/>
+						<div class="stanza">
+							<span class="line-number">45</span><span class="line">Gŵr a folwn o hyn ymlaen,</span><br/>
+							<span class="line-number">46</span><span class="line">gem ar Gymru gyfan yw hwn,</span><br/>
+							<span class="line-number">47</span><span class="line">colofn a philer i lu ar ddwy ochr Dotawnt,</span><br/>
+							<span class="line-number">48</span><span class="line">capten ac arglwydd mên Mantes.</span><br/>
+							<span class="line-number">49</span><span class="line">O’r un bri ag Arthur yno</span><br/>
+							<span class="line-number">50</span><span class="line">yw efe ar faes brwydr gyda’i wŷr,</span><br/>
+							<span class="line-number">51</span><span class="line">ac o’r un dull, tyst i’w fonedd,</span><br/>
+							<span class="line-number">52</span><span class="line">o’r un clodydd â Lawnslod du Lac.</span><br/>
+							<span class="line-number">53</span><span class="line">Cwrser gwych yn gwarchod y garsiwn,</span><br/>
+							<span class="line-number">54</span><span class="line">gwarchod y tir yn hir a wna hwn,</span><br/>
+							<span class="line-number">55</span><span class="line">gwarchod Rouen, pennaeth beilïaid,</span><br/>
+							<span class="line-number">56</span><span class="line">a gwarchod Mantes â gwaywffon frwydr fawr</span><br/>
+							<span class="line-number">57</span><span class="line">(gwych fel Otiel ydyw)</span><br/>
+							<span class="line-number">58</span><span class="line">a gwarchod Ffrainc, iechyd i’w wyneb!</span><br/>
+						</div><br/>
+					</div>
+		<div id="audio-tab">
+			<audio controls="controls">
+			  <source src="song.ogg" type="audio/ogg" />
+			  <source src="/static/audio/001.mp3" type="audio/mp3" />
+			  Your browser does not support the audio tag.
+			</audio>
+		<br/>
+	<a href="/static/audio/001.mp3"> Awdio cerdd 001.mp3</a>
+		</div>
+		<div id="translation-tab">
+						<div class="cywydd-group">
+							<span class="line-number"></span><span class="line">1 – In praise of Sir Richard Gethin of Builth, captain of
+								Mantes in France</span>&nbsp;<a class="variant-line-link" title="Cliciwch i weld y darlleniadau amrywiol " href="#" OnClick="showLine('001','');">===</a><br/>
+						</div><br/>
+						<div class="stanza">
+							<span class="line-number">1</span><span class="line">Sad it was to see knights</span><br/>
+							<span class="line-number">2</span><span class="line">and the earls coming from Rouen.</span><br/>
+							<span class="line-number">3</span><span class="line">Every English chieftain who is a captain</span><br/>
+							<span class="line-number">4</span><span class="line">from the depths of England I saw.</span><br/>
+							<span class="line-number">5</span><span class="line">Is it not strange (my goodness!),</span><br/>
+							<span class="line-number">6</span><span class="line">the <i>bailli</i> of Mantes, where is he?</span><br/>
+							<span class="line-number">7</span><span class="line">The black bison and flower</span><br/>
+							<span class="line-number">8</span><span class="line">of the land of Builth, never was there a finer man.</span><br/>
+							<span class="line-number">9</span><span class="line">If I have seen many a gallant,</span><br/>
+							<span class="line-number">10</span><span class="line">The stag of Mantes was the best for dispensing wine,</span><br/>
+							<span class="line-number">11</span><span class="line">the knight whose grandfather was noble,</span><br/>
+							<span class="line-number">12</span><span class="line">with the stars upon his coursers,</span><br/>
+							<span class="line-number">13</span><span class="line">Sir Richard Gethin, a fine protector,</span><br/>
+							<span class="line-number">14</span><span class="line">a gentle boar of battle, bearing a shield.</span><br/>
+							<span class="line-number">15</span><span class="line">O pure Mary, will he come</span><br/>
+							<span class="line-number">16</span><span class="line">valiantly in the middle of October,</span><br/>
+							<span class="line-number">17</span><span class="line">the joy of a multitude (may Mary be there to send him!),</span><br/>
+							<span class="line-number">18</span><span class="line">the son of Rhys in haste from Rouen town?</span><br/>
+						</div><br/>
+						<div class="stanza">
+							<span class="line-number">19</span><span class="line">Say some, ‘There’s no chance for a long while,</span><br/>
+							<span class="line-number">20</span><span class="line">the rich country won’t let him.</span><br/>
+							<span class="line-number">21</span><span class="line">He is holding the town in Mantes</span><br/>
+							<span class="line-number">22</span><span class="line">against the danger of the heir apparent</span><br/>
+							<span class="line-number">23</span><span class="line">and winning with unbending spear</span><br/>
+							<span class="line-number">24</span><span class="line">fame and glory most exalted,</span><br/>
+							<span class="line-number">25</span><span class="line">venturing, the same way as a die falls,</span><br/>
+							<span class="line-number">26</span><span class="line">combat beside Paris like that of Pyrrhus,</span><br/>
+							<span class="line-number">27</span><span class="line">piercing chainmail, a point of Milanese steel;</span><br/>
+							<span class="line-number">28</span><span class="line">this man’s people, they get every profit.’</span><br/>
+						</div><br/>
+						<div class="stanza">
+							<span class="line-number">29</span><span class="line">He was bold and his dart was bright,</span><br/>
+							<span class="line-number">30</span><span class="line">Richard’s equipment is worth a whole country.</span><br/>
+							<span class="line-number">31</span><span class="line">The splendour of gear from Brescia is nothing</span><br/>
+							<span class="line-number">32</span><span class="line">compared with the men and horses of the Arthur of Mantes.</span><br/>
+							<span class="line-number">33</span><span class="line">A peacock who wears gold, chief of knights,</span><br/>
+							<span class="line-number">34</span><span class="line">when the angel comes from Rouen,</span><br/>
+							<span class="line-number">35</span><span class="line">who will be able to help themselves but look?</span><br/>
+							<span class="line-number">36</span><span class="line">Is he not our mirror in the town,</span><br/>
+							<span class="line-number">37</span><span class="line">with his two hosts following him,</span><br/>
+							<span class="line-number">38</span><span class="line">and his two hands dispensing wine,</span><br/>
+							<span class="line-number">39</span><span class="line">and everyone saluting, sweet adulation,</span><br/>
+							<span class="line-number">40</span><span class="line">the gold-collared gallant?</span><br/>
+							<span class="line-number">41</span><span class="line">Richard is a leopard in Rouen,</span><br/>
+							<span class="line-number">42</span><span class="line">a black lion who stains men red,</span><br/>
+							<span class="line-number">43</span><span class="line">England’s lion and her hand and her eye,</span><br/>
+							<span class="line-number">44</span><span class="line">the fierce bold lion of the land of our country.</span><br/>
+						</div><br/>
+						<div class="stanza">
+							<span class="line-number">45</span><span class="line">Let us praise a man from now on,</span><br/>
+							<span class="line-number">46</span><span class="line">he is the jewel of all Wales,</span><br/>
+							<span class="line-number">47</span><span class="line">column and pillar of a host on both sides of the Dotawnt,</span><br/>
+							<span class="line-number">48</span><span class="line">captain and mesne lord of Mantes.</span><br/>
+							<span class="line-number">49</span><span class="line">Of the same fame as Arthur there</span><br/>
+							<span class="line-number">50</span><span class="line">is he with his men on a field of battle,</span><br/>
+							<span class="line-number">51</span><span class="line">and of the same manner, witness to his noble blood,</span><br/>
+							<span class="line-number">52</span><span class="line">of the same glory as Lancelot du Lac.</span><br/>
+							<span class="line-number">53</span><span class="line">Splendid courser holding the garrison,</span><br/>
+							<span class="line-number">54</span><span class="line">this man will hold the land for long,</span><br/>
+							<span class="line-number">55</span><span class="line">hold Rouen, chief of <i>baillis</i>,</span><br/>
+							<span class="line-number">56</span><span class="line">and hold Mantes with a mighty battle-spear</span><br/>
+							<span class="line-number">57</span><span class="line">(he is splendid like Otiel)</span><br/>
+							<span class="line-number">58</span><span class="line">and hold France, good health to his countenance!</span><br/>
+						</div><br/>
+					</div>
+		<div id="notes-tab">
+			<ul>
+				<li>
+					<a href="#explanatory-notes-tab">
+						<span>Esboniadol</span>
+					</a>
+				</li>
+				<li>
+					<a href="#text-notes-tab">
+						<span>Testunol</span>
+					</a>
+				</li>
+				<li>
+					<a href="#english-explanatory-notes-tab">
+						<span>English Notes</span>
+					</a>
+				</li>
+				<li>
+					<a href="#names-tab">
+						<span>Names</span>
+					</a>
+				</li>
+			</ul>
+			<div id="text-notes-tab">
+						<span>
+							<p><i>Y llawysgrifau</i><br/>Ceir y cywydd hwn mewn
+									26 llawysgrif. Ystyriwyd 15 ohonynt wrth
+								lunio’r testun golygedig. Y prif wahaniaeth rhyngddynt yw trefn
+								llinellau 3–16 lle mae’r copïau yn ymrannu fel y canlyn:
+								(i) LlGC 3057D, BL 14894, C 2.114, Pen 152; (ii) Pen 82, BL 14989,
+								LlGC 3046D, C 1.2; (iii) BL 14965 a phum copi Llywelyn Siôn
+								(LlGC 970E, LlGC 21290E, LlGC 6511B, C 5.44 a Llst 134). Mae Stowe
+								959 yn wahanol eto. Er bod Pen 152 yn ochri â grŵp (i)
+								yn gyffredinol, ceir peth tebygrwydd hefyd rhyngddi a BL 14989 a C
+								1.2, ac efallai ei bod yn destun cyfansawdd. Collwyd rhannau o
+								destun BL 14984 oherwydd difrod i’r llawysgrif a chollwyd testun
+								Stowe 959 ar ôl llinell 41 yn sgil colli dalen. Dechrau pob
+								llinell yn unig a geir yn Pen 82.</p>
+							<p>Trawsysgrifiadau: LlGC 3057D, C 2.114, Pen
+									82, BL 14989, BL 14965, LlGC 6511B. Stema.</p>
+						</span>
+						<span>
+							<span>
+								<p>2 <b>a’r</b>  Llywelyn Siôn <i>a</i>.</p>
+								<p>2 <b>dyfod</b>  C 2.114 a C 1.2 <i>dowad</i>.</p>
+								<p>2 <b>o</b>  BL 14894, LlGC 3046D a C 1.2
+										<i>i</i>.</p>
+							</span>
+							<span>
+								<p>3–16  Mae trefn y llinellau hyn yn amrywio’n
+									sylweddol yn y llawysgrifau. Dilynir BL 14894 a C 2.114; mae
+									LlGC 3057D yn unffurf ac eithrio bod 5–6 a 7–8 wedi
+									eu trawsosod. Mae trefn y copïau hyn yn rhoi rhediad
+									synnwyr cryf a dealladwy, ac fe’i dilynwyd yn GGl hefyd. Y drefn
+									yn Pen 82, BL 14989 a LlGC 3046D yw 9–14, 3–6,
+									15–16, 7–8, fel hefyd yn C 1.2 (lle na cheir
+									15–16). Amheuir bod y drefn hon wedi tarddu drwy i rywun
+									roi 9, llinell sy’n cynnwys y ferf <i>gwelais</i>, wrth 1–2, sy’n cynnwys y berfenw <i>weled</i>. Fe sylwir bod cysylltiad cyffelyb
+									yn y drefn a dderbyniwyd yn y testun golygedig: ceir <i>welais</i> yn 4. Hawdd fyddai drysu gan
+									ddwyn i gof y cwpled anghywir yma. Mae’r drefn a dderbyniwyd yn
+									rhagori: mae’n esbonio’n syth pwynt y tristwch yn 1–2 (<i>oer oedd weled</i>), gan dynnu sylw at y
+									ffaith nad oedd gwrthrych y gerdd i’w weld ymhlith yr <i>urddolion</i> a ddeuai o Rouen. Yn ôl
+									trefn Pen 82, &c., mae’r bardd yn mynd yn syth i ganmol Syr
+									Rhisiart, gan ohirio esbonio ergyd 1–2 am rai llinellau
+									eto. Fel y saif, mae’r drefn hon fel petai’n awgrymu <i>bod</i> Syr Rhisiart ymhlith <i>urddolion</i> 1–2, a dim ond yn nes
+									ymlaen y clywn nad ydyw. Am y rheswm hwn rwyf yn hyderus na all
+									trefn Pen 82 gael ei derbyn rhagor trefn BL 14894 a’i
+									chymheiriaid. Gwahanol eto yw trefn BL 14965 a chopïau
+									Llywelyn Siôn: 11–16, 3–10 (ond ni cheir
+									9–10 yn BL 14965). Mae’r drefn yn llai boddhaol fyth yn y
+									rhain: collir y cysylltiad â <i>weled</i>
+									yn 1, a chyflwynir disgrifiad o Syr Rhisiart yn syth ar ôl
+									1–2, heb egluro rhediad y meddwl. Yn olaf, mae Stowe 959
+									yn cynnig 3–4, 11–14, 5–6, 15–16,
+									9–10, 7–8. Mae’n unigryw, felly, ymhlith y
+									copïau sy’n anghytuno â BL 14894, &c., o ran
+									cyd-fynd â hwy a rhoi 3–4 ar ôl 1–2.
+									Dyma ateg bellach i’r drefn 1–4, yr wyf eisoes wedi dadlau
+									ei bod yn gryf ac yn rhoi synnwyr da.</p>
+								<p>A derbyn ar sail ystyr mai BL 14894 a’i chymheiriaid sydd wedi
+									cadw’r drefn orau, cyfyd y cwestiwn a yw’r fersiynau llwgr yn y
+									copïau sy’n anghytuno â hwy yn tarddu o un llygriad
+									cychwynnol ynteu a lygrwyd y testun fwy nag unwaith yn
+									annibynnol. Mae hyn yn gwestiwn pwysig iawn o ystyried bod y
+									darlleniad yn 11 (<i>dyledog daid</i> neu <i>blodeuog blaid</i>), a dilysrwydd
+									17–18 a 27–8 yn eu crynswth, yn dibynnu ar yr ateb:
+									mae’r holl gopïau sy’n anghytuno â BL 14894, &c.,
+									o ran trefn 3–16 hefyd yn anghytuno â hwy yn y tri
+									achos hyn. Eithriad yw C 1.2, sy’n cytuno â BL 14894,
+									&c., o ran peidio â chynnwys 17–18 na 27–8
+									ond sy’n cytuno â’r copïau eraill yn 11. Os yw’r holl
+									broblemau yn 3–16 yn tarddu yn y pen draw o un llygriad
+									cychwynnol, hynny yw mewn cynsail gyffredin, ni fyddai achos mor
+									gryf dros y darlleniad <i>dyledog daid</i> yn
+									11 a dilysrwydd 17–18 a 27–8, gan y gallent oll fod
+									yn tarddu o’r un gynsail honno. Ar y llaw arall, os llygrwyd
+									trefn 3–16 fwy nag unwaith yn annibynnol, nid oes rhaid
+									derbyn bod yr holl gopïau ac eithrio BL 14894, &c., yn
+									tarddu o un gynsail. Gan ei bod yn anodd gweld beth fyddai’r cam
+									cyntaf a roddai fod i’r gwahanol fersiynau o 3–16, haws
+									cymryd bod y drefn wedi ei disodli fwy nag unwaith yn
+									annibynnol. Gan hynny, nid oes rheswm i olrhain y darlleniad <i>dyledog daid</i> yn 11 a bodolaeth
+									17–18 a 27–8 i ffynhonnell unigol, a chryfheir yr
+									achos dros eu derbyn. Ar y llaw arall, ymddengys yn debygol fod
+									BL 14894, &c., yn perthyn yn agos i’w gilydd, nid yn unig
+									oherwydd absenoldeb 17–18 a 27–8, ond hefyd ar sail
+									y darlleniad <i>blodeuog blaid</i> yn 11. Er
+									gwaethaf hyn, mae rhediad llyfn yr ystyr yn 3–16 yn
+									awgrymu y dylid eu dilyn o ran trefn y llinellau hyn, fel y
+									dadleuwyd eisoes.</p>
+							</span>
+							<span>
+								<p>3 <b>pob</b>  Nis ceir yn BL 14989.</p>
+								<p>3 <b>o sifften</b>  Pen 152 <i>o sifflen</i>, BL 14989 <i>siffden o</i>, Stowe 959 <i>ssawden
+									o</i>, LlGC 21290E, LlGC 6511B a Llst 134 <i>o
+										sawden</i>.</p>
+							</span>
+							<span>
+								<p>5 <b>pond</b>  Pen 82 a LlGC 3046D <i>pont</i>, LlGC 3057D, BL 14894, C 2.114 a BL
+									14989 <i>ond</i>, Pen 152, C 1.2 a BL 14965 <i>pand</i>, Stowe 959 <i>pond</i>, Llywelyn Siôn <i>bond</i>. Ceir digon o dystiolaeth yma dros dderbyn ffurf yn
+										<i>p</i>-.</p>
+								<p>5 <b>o’r</b>  LlGC 3057D a BL 14989 <i>y</i>.</p>
+							</span>
+							<span>
+								<p>8 <b>dir</b>  LlGC 970E a C 5.44 <i>yw</i>, LlGC 6511B a Llst 134 <i>du</i>, LlGC 21290E <i>du</i> (cywirwyd yn <i>yw</i>).</p>
+							</span>
+							<span>
+								<p>9–10  Nis ceir yn BL 14965.</p>
+							</span>
+							<span>
+								<p>9 <b>o</b>  LlGC 3046D <i>or</i>.</p>
+							</span>
+							<span>
+								<p>11 <b>dyledog daid</b>  Dilynir LlGC
+									3046D, BL 14989, C 1.2 a BL 14965 <i>dyledoc
+										daid</i>, Stowe 959 <i>dlyedog daid</i>,
+									Llywelyn Siôn <i>dyl\yedog daid</i>;
+									gthg. LlGC 3057D, BL 14894, C 2.114 a Pen 152 <i>blodevog blaid</i>. Ymranna’r llawysgrifau yn ddau
+									grŵp, felly, gyda’r holl rai sy’n cynnig trefn wahanol ar
+									gyfer 1–16 yn bleidiol i <i>dyledog
+										daid</i> neu’r tebyg, a’r holl gopïau sy’n cynnwys y
+									drefn a dderbyniwyd yma yn rhoi <i>blodeuog
+										blaid</i>. Mae’n anodd dewis rhyngddynt ar sail ystyr, ac o
+									ran y mesur a’r gynghanedd mae’r ddau ddarlleniad yn dderbyniol
+									ac y rhoi sain drosgl. Ceir y llinell <i>Y
+										marchog blodeuog blaid</i> ar ddechrau cywydd i Syr
+									Gruffudd Fychan (m. 1447), sef IGE<sup>2</sup>
+									cerdd CV. Canwyd hi 1422x1444 (ibid. xliii–xliv), gan
+									Hywel Cilan, efallai. Gall fod y llinell agoriadol drawiadol hon
+									wedi dylanwadu ar y llinell yng ngherdd Guto’r Glyn yn ystod ei
+									throsglwyddiad. Nid yw’r ddadl hon yn gryf iawn, fodd bynnag:
+									gellid honni hefyd fod Guto ei hun wedi mabwysiadu’r llinell ar
+									ôl clywed y cywydd i Ruffudd Fychan, neu hyd yn oed fod
+									bardd y cywydd i Ruffudd Fychan wedi dwyn y llinell oddi wrth
+									Guto. Yn y bôn, derbynnir <i>dyledog
+										daid</i> yma am nad oes rheswm i gredu bod y llawysgrifau
+									sy’n ei gynnwys yn perthyn yn agos i’w gilydd; ar y llaw arall,
+									mae absenoldeb 17–18 a 27–8 o’r copïau lle ceir
+										<i>blodeuog blaid</i> yn awgrymu mai un
+									grŵp ydynt. Cf. 3–16n. Afraid dweud nad yw’r ddadl
+									yn ddigwestiwn: dibynna ar ddilysrwydd 17–18 a
+									27–8!</p>
+							</span>
+							<span>
+								<p>12 <b>A’r sêr ar ei
+									gwrseriaid</b>  LlGC 3057D <i>ar syr
+										ar i gwrseriaid</i>, BL 14894 a C 2.114 <i>ar sirri(f) ar kwrseriaid</i>, Pen 152 <i>gwr siwr ar i gwrseriaid</i>; mae’r lleill yn cynnig y
+									darlleniad a dderbyniwyd, ac eithrio BL 14989 lle ceir y
+									talfyriad <i>sr’</i> (am <i>syr</i>?) yn lle <i>sêr</i>. Ar
+									sail pob copi ond BL 14894 a C 2.114 gallwn dderbyn mai <i>A’r sêr/sŷr ar ei gwrseriaid</i>
+									yw’r darlleniad mwyaf tebygol (gthg. GGl a ddilynodd C 2.114),
+									ond mae’n anodd gwybod pa ffurf luosog, ai <i>sêr</i> neu <i>sŷr</i>, y
+									dylid ei derbyn. Ceir y ddwy ffurf gan Guto mewn mannau eraill,
+									e.e. 22.2 a 16 (<i>sêr</i> yn cynnal y
+									brifodl), 88.22 (<i>sŷr</i> yn cynnal y
+									brifodl). Diau fod <i>siri(f)</i>, darlleniad
+									BL 14894 a C 2.114, yn tarddu o <i>sŷr</i>. Cefnogir <i>sŷr</i>,
+									felly, gan LlGC 3057D, BL 14894, C 2.114 ac efallai BL 14989. Ar
+									y llaw arall, rhydd <i>sêr</i> gynghanedd
+									ddwbl, sef traws a llusg, ac mae’n ddarlleniad cyfoethocach o’r
+									herwydd. Dilynir mwyafrif y llawysgrifau, ac am awgrym fod LlGC
+									3057D, BL 14894 a C 2.114 (sef y llawysgrifau sy’n cefnogi <i>sŷr</i> yma, ac eithrio BL 14989) yn
+									agos gysylltiedig â’i gilydd, gw. 3–16n, 11n.</p>
+							</span>
+							<span>
+								<p>13 <b>goethwart</b>  BL 14989 <i>goeth warth</i>.</p>
+							</span>
+							<span>
+								<p>15–16  Nis ceir yn C 1.2.</p>
+							</span>
+							<span>
+								<p>15 <b>o</b>  Pen 82 <i>ie</i>.</p>
+								<p>15 <b>a</b>  Llywelyn Siôn <i>na</i>.</p>
+							</span>
+							<span>
+								<p>16 <b>yn hydr</b>  Dyma ddarlleniad LlGC
+									3057D (ond <i>yn hydyr</i> yno), BL 14894, Pen
+									82, LlGC 3046D, BL 14989, BL 14965 a Stowe 959 (<i>yn hydyr</i> eto); gthg. C 2.114 a Llywelyn
+									Siôn <i>yn hyder</i>. Gellid dilyn y rhai
+									olaf hyn a darllen <i>ein hyder</i>, gan greu
+									llinell reolaidd ei hyd, ond mae’r gynghanedd yn erbyn hynny
+									(mae angen -<i>dr</i> a atebir yn <i>hydref</i>). Ar y llaw arall, mae cytundeb y
+									llawysgrifau eraill o blaid y gair gweddol anghyffredin <i>hydr</i> yn ffafrio’r darlleniad hwnnw.
+									Gellir awgrymu bod <i>hydr</i> neu <i>nghefn</i> yn cael ei ynganu’n ddeusill. Yn
+									Pen 152 ceir <i>yn hydr yma</i>.</p>
+								<p>16 <b>yng nghefn</b>  LlGC 3057D <i>ofiawn</i>, BL 14965 <i>ym
+										ynghefn</i>. Nid oes sail i ddarlleniad GGl, <i>yma ’nghefn</i>, yn y llawysgrifau: ymgais i
+									reoleiddio hyd y llinell ydyw, cf. y nodyn blaenorol.</p>
+							</span>
+							<span>
+								<p>17–18  Nis ceir yn LlGC 3057D, BL 14894, C 2.114
+									na Pen 152, hynny yw, yn y copïau y seiliwyd trefn y
+									llinellau arnynt hyd yn hyn, nac ychwaith yn C 1.2. A ddylid
+									derbyn y cwpled hwn? Nid oes dim yng nghynnwys na chrefft y
+									cwpled yn awgrymu nad yw’n ddilys, ac mae’r ffaith ei fod yn
+									rhoi enw cywir tad Syr Rhisiart o’i blaid, efallai. Mae hefyd
+									gymeriad llythrennol â 19 a chysylltiad rhwng <i>Fair</i> (15) a <i>Mair</i>
+									(17) a hefyd adlais o linell 2. Cf. 3–16n lle awgrymir nad
+									oes rheswm dros gredu bod yr holl gopïau sy’n cynnwys y
+									cwpled hwn yn tarddu o gynsail gyffredin yn y pen draw.</p>
+							</span>
+							<span>
+								<p>17 <b>i’w</b>  BL 14989 <i>i</i>, ond <i>yw</i> yn y
+									lleill lle ceir y cwpled hwn. Nid yw’n arferol treiglo’r
+									goddrych ar ôl <i>yw</i>, gw. TC 287,
+									felly er mor gryf yw’r demtasiwn i ddarllen <i>Myrdd wynfyd, Mair, yw ddanfon / Mab Rhys</i>, rhaid deall
+									y gystrawen yn wahanol. Deellir <i>mab Rhys</i>
+									mewn cyfosodiad ag <i>ef</i> yn 15, a deellir
+										<i>Mair i’w ddanfon</i> ar wahân; am
+									y gystrawen hon mewn deisyfiadau, cf. 112.28 <i>Yma ’rioed, Mair i’w adu</i>, GGMD i, 2.24 <i>Duw o’i adu</i> a GMBen 15.52 <i>Mair i’w adael</i>.</p>
+							</span>
+							<span>
+								<p>18 <b>ar</b>  BL 14965 a Stowe 959 <i>drwy</i>.</p>
+							</span>
+							<span>
+								<p>19–20  Nis ceir yn C 1.2.</p>
+							</span>
+							<span>
+								<p>19 <b>oes</b>  BL 14894 <i>oedd</i>.</p>
+							</span>
+							<span>
+								<p>21 <b>cadw’r dref</b>  LlGC 3057D <i>kadw y dre</i>, LlGC 3046D <i>kadw tref</i>.</p>
+								<p>21 <b>y</b>  LlGC 3046D, BL 14989 a
+									Llywelyn Siôn; nis ceir yn y lleill. Efallai nas ceid yn
+									wreiddiol a bod <i>cadw</i> wedi ei gyfrif yn
+									ddeusill.</p>
+								<p>21 <b>ym</b>  C 1.2 <i>a</i>.</p>
+							</span>
+							<span>
+								<p>22 <b>er</b>  Dim ond Pen 152, C 3.37 a
+									Llywelyn Siôn sy’n cynnig y darlleniad hwn; yn y lleill
+									ceir <i>ar</i>. Credir hefyd fod C 3.37 yn
+									tarddu o C 2.114, lle ceir <i>ar</i>, felly
+									diwygiad neu lygriad yw <i>er</i> yno. Mae
+									mwyafrif mawr y llawysgrifau, felly, o blaid <i>ar</i>, ac mae hyn yn benbleth. Ni ellir cael y ffurf
+									ddidreiglad <i>perigl</i> ar ôl yr
+									arddodiad <i>ar</i>, ac nid yw’r gair wedi ei
+									dreiglo yn yr un o’r copïau; hefyd, mae’r gynghanedd yn
+									gwarantu <i>p</i>-. Os derbynnir <i>ar</i>, felly, rhaid mai <i>a’r</i> neu <i>â’r</i> ydyw. Gall
+										<i>perigl</i> fod yn ansoddair, gw. GPC
+									2784, ac os felly, efallai mai ‘a’r/gyda’r aer aparawnt
+									peryglus’ yw’r ystyr. Ond pwy fyddai’r <i>perigl
+										aer aparawnt</i> a ymladdai ochr-yn-ochr â Syr
+									Rhisiart Gethin ym Mantes? Yn y cyd-destun mae’n anodd ar y naw
+									credu bod <i>aer aparawnt</i> yn cyfeirio at
+									neb ond Charles, <i>dauphin</i> Ffrainc, sef y
+									gelyn. Gan hynny, o’r braidd fod y dehongliad yn tycio. Gan fod
+									y darlleniad <i>ar</i> mor anodd ei ddeall,
+									derbyniwyd <i>er</i> yma. Efallai fod <i>ar</i> wedi codi oherwydd bod y sain <i>a</i> yn digwydd droeon yn y llinell ac ar
+									ddechrau’r llinell nesaf.</p>
+								<p>22 <b>perigl</b>  BL 14965 <i>peril</i>, Stowe 959 <i>paril</i>.</p>
+								<p>22 <b>aer</b>  LlGC 3057D, BL 14965,
+									Stowe 959 a Llywelyn Siôn (ac eithrio LlGC 970E) <i>ail</i>, LlGC 970E <i>yr</i>, Pen 152 <i>a dur</i>.</p>
+								<p>22 <b>aparawnt</b>  Pen 152 <i>parawnt</i>.</p>
+							</span>
+							<span>
+								<p>23 <b>ac ynnill</b>  Llywelyn Siôn
+										<i>yn ennill</i>; ni cheir ond <i>ynill</i> yn BL 14965; Pen 152 <i>di a gynnull</i>.</p>
+								<p>23 <b>â gwayw</b>  LlGC 3046D <i>yn dec</i>, BL 14965 a Llywelyn Siôn
+										<i>ai wayw /n/</i>.</p>
+							</span>
+							<span>
+								<p>25 <b>modd</b>  LlGC 3057D a BL 14989 <i>fal</i>.</p>
+								<p>25 <b>daw</b>  BL 14989 <i>dawr</i>.</p>
+							</span>
+							<span>
+								<p>26 <b>Pyr</b>  Stowe 959 <i>pyrr</i>, yr holl gopïau eraill <i>pur</i>. Nid yw’r ansoddair <i>pur</i> yn rhoi ystyr arbennig o dda yma, ac
+									yn sicr byddai cyfeiriad at arwr chwedlonol yn gweddu’n dda yn y
+									cyd-destun. Am Pyr, sef Pyrrhus, mab Achilles, gw. GLlLl 17.16n
+										(<i>pyrr</i> yn y llawysgrif), GDC 3.16n a
+									GIRh 4.42n.</p>
+							</span>
+							<span>
+								<p>27–8  Fel 17–18, nis ceir yn LlGC 3057D, BL
+									14894, C 2.114 na Pen 152, hynny yw, yn y copïau y seiliwyd
+									trefn y llinellau arnynt, nac ychwaith yn C 1.2. Gan fod
+									17–18 wedi eu derbyn yma, anodd cyfiawnhau peidio â
+									derbyn y rhain hefyd, yn enwedig gan nad oes dim yn eu cynnwys
+									na’r mesur na’r gynghanedd sy’n awgrymu nad ydynt yn ddilys.</p>
+							</span>
+							<span>
+								<p>27 <b>pwyntiaw</b>  BL 14989 <i>peintiaw</i>, Stowe 949 <i>pwyn tyay</i>.</p>
+								<p>27 <b>maelys</b>  Yn Pen 82 yn unig y
+									ceir <i>maelas</i>, a ddehonglir yma’n ffurf ar
+										<i>maelys</i>. Mae gweddill y copïau’n
+									cynnig <i>malais</i> (LlGC 3046D a Llywelyn
+									Siôn) neu <i>malis(s)</i> (BL 14989, BL
+									14965 a Stowe 959). Yn ôl GPC 2327 amrywiad ar <i>malais</i> yw <i>malis</i>.
+									Gellid dadlau dros <i>pwyntiaw malais pwynt
+										Melan</i> ‘trefnu malais pwynt (cleddyf/gwaywffon) o ddur
+									Milan’. Ar y llaw arall, mae’r cyfosodiad <i>mael(y)s</i> a <i>Melan</i> yn un hysbys,
+									cf. 98.54; GHD 19.60.</p>
+							</span>
+							<span>
+								<p>28 <b>gŵr</b>  Llywelyn Siôn
+										<i>gwyr</i> (ac eithrio C 5.44 <i>gwr</i> a LlGC 21290E lle cywirwyd <i>gwyr</i> yn <i>gwr</i>).</p>
+							</span>
+							<span>
+								<p>29 <b>glew</b>  Stowe 959 <i>glan</i>.</p>
+								<p>29 <b>ei</b>  Stowe <i><sup>n</sup>y</i>.</p>
+							</span>
+							<span>
+								<p>30 <b>dâl</b>  LlGC 3057D <i>ddal</i>.</p>
+								<p>30 <b>trwsiad</b>  LlGC 3046D <i>towssiad</i>.</p>
+							</span>
+							<span>
+								<p>31 <b>gwagedd</b>  BL 14894, Pen 82 a
+									Llywelyn Siôn <i>gwragedd</i>, Pen 152
+										<i>gwag oedd</i>.</p>
+								<p>31 <b>browysedd</b>  Ceir y darlleniad
+									hwn yn BL 14989 (<i>browyssedd</i>); cf. LlGC
+									3057D <i>b<sup>r</sup>ewyssedd</i>, Stowe 959
+										<i>a brywssedd</i>, Llywelyn Siôn <i>brywyswedd</i>, LlGC 3046D <i>browssedd</i>, C 1.2 <i>bresedd</i>, BL 14965 <i>brewssedd</i>,
+									Pen 152 <i>brwysoedd</i>; gthg. BL 14894 <i>ffriw assedd</i> a C 2.114 <i>ffriw ossedd</i>. Mae’r darlleniadau yn <i>ff</i>- yn debygol o darddu o <i>ffrowysedd</i>, er na nodir y gair yn GPC
+									1318. Fe geir <i>ffrowys</i>, amrywiad ar <i>browys</i>, gw. ibid., ac os felly, dichon y
+									ceid <i>ffrowysedd</i> i gyfateb i <i>browysedd</i>. Awgryma mwyafrif llethol y
+									copïau mai <i>browysedd</i> a ddylai fod
+									yma.</p>
+								<p>31 <b>Bresawnt</b>  Felly LlGC 3057D,
+									LlGC 3046D, BL 14989, BL 14965, Stowe 959 a Llywelyn Siôn;
+									cf. C 1.2 <i>browysawnt</i>, Pen 152 <i>o besawnt</i>; gthg. BL 14894 a C 2.114 <i>ffressawnt</i>. Nid oes fawr o amheuaeth am
+									y darlleniad, felly, ond nid yw ei arwyddocâd yn eglur. Ni
+									nodir <i>presawnt</i> fel amrywiad posibl ar
+										<i>presen(t)</i> yn GPC 2877 ac ni
+									ddisgwylid treiglad meddal yma. Ymddengys, gan hynny, mai enw
+									priod yw <i>Bresawnt</i>; am awgrymiadau, gw.
+									1.31n (esboniadol).</p>
+							</span>
+							<span>
+								<p>32 <b>wrth wŷr</b>  Llywelyn
+									Siôn <i>a thir</i>, ac eithrio Llst 134
+									lle ceir llinell 10 eto yn lle’r llinell hon. Ni cheir <i>wŷr</i> yn BL 14989.</p>
+								<p>32 <b>a meirch</b>  Stowe 959 <i>mayrch yw</i>.</p>
+							</span>
+							<span>
+								<p>33 <b>paun</b>  BL 14965 <i>pan vn</i>, Stowe 959 <i>paen</i>, Llywelyn Siôn <i>pwy
+										n</i>.</p>
+								<p>33 <b>ddaly</b>  Ceir <i>ddala</i> yn y rhan fwyaf o’r copïau (LlGC 3057D, BL
+									14894, C 2.114, BL 14989, C 1.2, BL 14965 a Stowe 959). Mae <i>ddala</i> yn gwneud y llinell yn rhy hir a
+									gwelir sawl ymgais i ddatrys y broblem, megis dileu <i>aur</i> (BL 14894) neu ddileu sillaf olaf
+										<i>ddala</i> (Stowe 959). Ceir <i>ddal</i> yn LlGC 3046D, <i>ddaulv</i> yn LlGC 970E, LlGC 21290E, C 5.44 a Llst 134 a
+										<i>ddaly</i> yn LlGC 6511B, <i>ddail</i> yn Pen 152. Mae’n debygol mai’r
+									ffurf unsill <i>ddaly</i> a geid yma’n
+									wreiddiol. Trodd <i>daly</i> yn <i>dala</i> neu <i>dal</i> ar
+									lafar, ac mae’r llawysgrifau’n aml yn rhoi ffurfiau amrywiol.
+									Cf. cerdd 2 am enghreifftiau eraill.</p>
+							</span>
+							<span>
+								<p>34 <b>ddêl</b>  Stowe 959 <i>el</i>.</p>
+								<p>34 <b>o</b>  LlGC 3057D, C 1.2, BL 14965
+									a Pen 152 <i>i</i>, LlGC 3046D a Stowe 959 <i>y</i>. Mae mwyafrif y copïau o blaid
+										<i>o</i>, a ategir gan linell 2.</p>
+							</span>
+							<span>
+								<p>35 <b>pwy</b>  C 1.2 <i>pawb</i>.</p>
+								<p>35 <b>a</b>  Felly LlGC 3057D, LlGC
+									3046D, BL 14965, Pen 152 a Llywelyn Siôn; gthg. C 2.114,
+									Pen 82, BL 14989, C 1.2 a Stowe 959 <i>ni</i>.
+									Mae’r gystrawen <i>ni allaf/fedraf ond
+										gwneud</i> yn gyffredin, ond yma mae’r pwyslais ar <i>pwy</i>, a byddai <i>pwy ni
+										fedr ond edrych</i> yn cyfleu syndod <i>na</i> all neb wrthsefyll y demtasiwn i syllu ar Syr
+									Rhisiart yn hytrach na gofyn yn rhethregol a all unrhyw un ei
+									gwrthsefyll.</p>
+								<p>35 <b>ond</b>  Felly LlGC 3057D, BL
+									14894, C 2.114, C 1.2 a Stowe 959; gthg. LlGC 3046D, BL 14965,
+									LlGC 970E, Llst 134, LlGC 21290E a C 5.44 <i>onid</i> (cywiriad o <i>ond</i> yn y ddau
+									achos olaf), BL 14989, Pen 152 a LlGC 6511B <i>ond i</i>. Amheuir mai <i>ond</i> a geid
+									yng nghynsail Llywelyn Siôn yma. Mae’r llinell yn fyr o
+									sillaf, a gellid osgoi hynny drwy ddarllen <i>onid</i>. Fodd bynnag, mae’r llawysgrifau yn ffafrio <i>ond</i>. Y tebyg yw bod <i>fedr</i> i’w gyfrif yn ddeusill a bod <i>onid</i> ac <i>ond i</i> yn gynigion
+									gwahanol i reoleiddio hyd y llinell gan gopïwyr na
+									dderbyniai hynny.</p>
+							</span>
+							<span>
+								<p>36 <b>pond</b>  Felly Pen 82, BL 14965 a
+									Llywelyn Siôn (ac eithrio Llst 134), cf. LlGC 3046D a Llst
+									134 <i>ponid</i>, LlGC 3057D, BL 14894, C
+									2.114, BL 14989, Pen 152 a Stowe 959 <i>pand</i>, C 1.2 <i>pam</i>. Er cysondeb
+									â llinell 5 mabwysiadwyd <i>pond</i>.</p>
+								<p>36 <b>yw’n</b>  LlGC 3046D <i>yw r</i>.</p>
+							</span>
+							<span>
+								<p>37 <b>a’i</b>  Pen 152 <i>i</i>.</p>
+							</span>
+							<span>
+								<p>38 <b>a’i ddwy law</b>  LlGC 3046D <i>a ffob llaw</i>.</p>
+								<p>38 <b>gwallaw</b>  LlGC 3057D <i>gwallawr</i>.</p>
+							</span>
+							<span>
+								<p>41 <b>yn</b>  Pen 152 <i>y</i>.</p>
+							</span>
+							<span>
+								<p>42 <b>ystaenu</b>  C 1.2 <i>estynv</i>.</p>
+							</span>
+							<span>
+								<p>43–6  Nis ceir yn Pen 152.</p>
+							</span>
+							<span>
+								<p>43 <b>a’i llaw</b>  C 1.2 <i>i llaw</i>.</p>
+							</span>
+							<span>
+								<p>44 <b>terwyn</b>  LlGC 3046D <i>tarian</i>.</p>
+								<p>44 <b>glew</b>  BL 14894 <i>glo</i>, C 2.114 <i>gloyw</i>.</p>
+							</span>
+							<span>
+								<p>46 <b>ar</b>  BL 14965 <i>yr</i>, Llywelyn Siôn <i>ar
+									wyr</i>.</p>
+							</span>
+							<span>
+								<p>47 <b>corf llorf</b>  Llywelyn Siôn
+										<i>korff llorff</i>, C 2.114 <i>llen gorff</i>. Cywirodd rhywun yr holl
+									linell yn C 2.114 yn <i>korff llorf llv deulu
+										deLawnt</i>.</p>
+								<p>47 <b>llu</b>  C 1.2 <i>y
+										llv</i>.</p>
+								<p>47 <b>deutu</b>  C 2.114 (drwy gywiriad)
+									a Pen 152 <i>devlv</i>.</p>
+								<p>47 <b>Dotawnt</b>  Felly LlGC 3057D, BL
+									14894 (<i>dot[  ]</i>), C 2.114, BL
+									14989, C 1.2, BL 14965 a Llywelyn Siôn; gthg. LlGC 3046D
+										<i>datawnt</i>, C 2.114 (drwy gywiriad) <i>deLawnt</i>, Pen 152 <i>delawnt</i>. Mae’r darlleniad yn eglur ond nid felly’r
+									arwyddocâd. Efallai mai enw afon yn Normandi ydyw, ond ar
+									afon Seine y saif Mantes. Yn GGl ceir <i>Detawnt</i>, nas ceir sail eglur iddo yn y
+									llawysgrifau.</p>
+							</span>
+							<span>
+								<p>48 <b>ac</b>  Nis ceir yn LlGC 3046D.</p>
+								<p>48 <b>mên</b>  BL 14894 (drwy
+									gywiriad) a BL 14965 <i>maen</i>, am na
+									ddeellid ystyr <i>mên</i>, bid sicr.</p>
+							</span>
+							<span>
+								<p>49 <b>unair</b>  Pen 82 <i>mair</i>.</p>
+							</span>
+							<span>
+								<p>50 <b>ar</b>  BL 14894 <i>r</i>.</p>
+								<p>50 <b>â’i</b>  LlGC 3057D <i>gida i</i>, C 2.114 <i>ar
+										i</i>, Pen 152 <i>i</i>.</p>
+								<p>50 <b>efô</b>  LlGC 3057D, C 2.114,
+									LlGC 3046D a C 1.2 <i>fo</i>.</p>
+							</span>
+							<span>
+								<p>51 <b>ac unwedd</b>  BL 14989 <i>agwedd i</i>.</p>
+							</span>
+							<span>
+								<p>52 <b>unglod</b>  LlGC 3057D, Pen 82,
+									LlGC 3046D, BL 14989, Pen 152, C 1.2, BL 14965 a Llywelyn
+									Siôn <i>ac vn glod</i>. Cf. y nodyn
+									nesaf.</p>
+								<p>52 <b>di</b>  Nis ceir yn LlGC 3046D, BL
+									14989, Pen 152, C 1.2, BL 14965 a chopïau Llywelyn
+									Siôn. Mewn enghreifftiau eraill o’r enw yng ngwaith y
+									beirdd mae’r arddodiad Ffrangeg yn bresennol, cf. DN XX.58,
+									GLMorg 76.62. Y tebyg yw bod <i>ac</i> wedi
+									cael ei ychwanegu at ddechrau’r llinell dan ddylanwad y llinell
+									flaenorol, ac yna hepgorwyd <i>di</i> er mwyn
+									cadw hyd rheolaidd.</p>
+							</span>
+							<span>
+								<p>53 <b>cadr</b>  BL 14989 <i>kidai</i>.</p>
+								<p>53 <b>yn</b>  Nis ceir yn BL 14989.</p>
+								<p>53 <b>garsiwn</b>  LlGC 3046D <i>gaesiwn</i>.</p>
+							</span>
+							<span>
+								<p>54 <b>a wna</b>  C 2.114 <i>i may</i>.</p>
+							</span>
+							<span>
+								<p>55 <b>feilïon</b>  Diwygiad petrus.
+									Mae’r llawysgrifau i gyd yn cynnig darlleniadau gwan o ran ystyr
+									neu sy’n tanseilio’r gynghanedd: LlGC 3057D <i>ail f<strike>y</strike><sup>i</sup>on</i>, BL 14894 <i>ail flion</i>, C 2.114 <i>ail fion</i>, LlGC 3046D <i>ail ion
+										yn</i>, BL 14989 <i>ai linon</i>, Pen 152
+									a C 1.2 <i>ail fy ion</i>, BL 14965 a Llywelyn
+									Siôn <i>val ion yn</i>. Derbyniwyd y
+									darlleniad olaf yn GGl: mae’n rhoi cynghanedd gywir, ond mae’r
+									ystyr yn dila ac mae’n anodd deall sut y byddai’r darlleniadau
+									eraill yn tarddu ohono, yn enwedig paham y byddai <i>fal</i> yn troi yn <i>ail</i> mewn cymaint o gopïau, er bod y gynghanedd yn
+									diogelu <i>f</i>. O ran y gynghanedd, mae angen
+										<i>fl</i>- o flaen yr acen ac efallai -<i>n</i>- ar ei hôl, ac mae angen tair
+									sillaf. Rhaid hefyd wrth yr odl -<i>on</i>.
+									Gelwir Syr Rhisiart yn <i>feili</i> yn 6, a
+									hawdd deall sut y gallai copïwyr diweddarach faglu ar y
+									gair dieithr hwn. Yr unig ffurf luosog a nodir yn GPC 269 mewn
+									enghraifft ganoloesol yw <i>beilïaid</i>,
+									ond nodir hefyd -<i>au</i>, -<i>od</i> fel terfyniadau lluosog eraill. Ansicr iawn, felly,
+									yw <i>feilïon</i> yma, ond mae o leiaf yn
+									rhoi ystyr dda ac yn bodloni anghenion y gynghanedd a’r
+									mesur.</p>
+								<p>55 <b>flaenawr</b>  BL 14989 <i>lan awr</i>.</p>
+							</span>
+							<span>
+								<p>56 <b>chadwayw</b>  BL 14989, Pen 152 a C
+									1.2 <i>choedwaiw</i>, Llywelyn Siôn <i>chydwaew</i>.</p>
+							</span>
+							<span>
+								<p>57–8  Ychwanegwyd y cwpled hwn at gopi LlGC 3057D
+									ddwywaith gan ddwy law wahanol. Yn 152 ceir y drefn 58, 57.</p>
+							</span>
+							<span>
+								<p>57 <b>cadr</b>  BL 14894 <i>kadwr</i> (cywirwyd yn <i>kader</i>), LlGC 3046D, LlGC 21290E, C 5.44 a Llst 134 <i>kadarn</i>, LlGC 6511B <i>kadar</i>; ond <i>cadr</i> yn LlGC 3057D,
+									C 2.114, Pen 82, BL 14989, C 1.2, BL 14965 a LlGC 970E; Pen 152
+										<i>ai chadw</i>. Nid oes llawer o
+									amheuaeth, felly, nad y gair cymharol anghyffredin <i>cadr</i> (a gafwyd eisoes yn 53) a oedd
+									yma’n wreiddiol; mae’r gwahanol ddarlleniadau yng nghopïau
+									Llywelyn Siôn yn awgrymu mai <i>cadr</i>
+									a oedd yn ei gynsail yntau, a’i fod wedi sylwi bod y llinell yn
+									fyr ac wedi ceisio diwygio. Rhaid bod <i>cadr</i> yn cael ei gyfrif yn ddeusill yma, oni chollwyd
+									rhyw air unsill o rywle arall yn y llinell. Ond rhyfedd fyddai
+									colli gair o bob copi, gan nad oes awgrym arall fod un gynsail
+									iddynt oll.</p>
+								<p>57 <b>mel</b>  LlGC 3057D <i>mel</i> yn yr ychwanegiad cyntaf (gw.
+									uchod), ond <i>a wnel</i> yn yr ail (fel yn Pen
+									152), LlGC 3046D <i>vel</i>, BL 14965 <i>va ail</i>, C 1.2 <i>mal</i>, Llywelyn Siôn <i>val</i>;
+									ond <i>mel</i> yn BL 14894, C 2.114, Pen 82 a
+									BL 14989. Mae angen -<i>el</i> ar gyfer y
+									gynghanedd sain. Nodir <i>mel</i> fel amrywiad
+									ar <i>mal</i> (<i>fal</i>, <i>fel</i> &c) yn GPC 2325–6 d.g. <i>mal</i><sup>1</sup>, gydag
+									enghreifftiau o’r 13g. ymlaen. Ni ellir derbyn <i>mêl</i> yma am nas treiglir ar
+									ôl yr ansoddair <i>cadr</i>.</p>
+								<p>57 <b>Otiel ytiw</b>  LlGC 3057D <i>odiel ydiw</i>, BL 14989 <i>ottiwel y yttiw</i>, Llywelyn Siôn <i>aidial (Eidial, idial) ydiw</i>.</p>
+							</span>
+							<span>
+								<p>58 <b>i’w</b>  BL 14894 a Llywelyn
+									Siôn (ac eithrio LlGC 21290E) <i>oi</i>,
+									C 2.114 a BL 14989 a C 1.2 <i>ir</i>, BL 14965
+										<i>i</i>.</p>
+							</span>
+						</span>
+					</div>
+			<div id="explanatory-notes-tab">
+						<span>
+							<p>Milwr proffesiynol oedd <a class="name" href="javascript:popUp('/gutorglyn/name/?n=nr08')">Syr Rhisiart
+									Gethin</a> ap Rhys Gethin ab Owain o Fuellt, yn ymladd yn
+								Ffrainc gyda byddin Lloegr. Y tebyg yw bod Guto’r Glyn wedi cwrdd ag
+								ef yn Ffrainc yn 1436, a bod y cywydd hwn yn perthyn i 1437/8, ar
+								ôl i Guto ddychwelyd adref (llinellau 1–6n). Derbyniodd
+								Guto glogyn euraid gan Syr Rhisiart yn gyfnewid am ei ganmol gartref
+								yng Nghymru, arwydd o haelioni a ysgogodd gywydd mawl gan Ieuan ap
+								Hywel Swrdwal sy’n adleisio rhannau o’r cywydd hwn (GHS cerdd
+								24).</p>
+							<p>Mae’r bardd yn dechrau gan resynu na welodd Syr Rhisiart yn dychwelyd
+								o Ffrainc gyda’r capteiniaid eraill (1–6). Syr Rhisiart,
+								afraid dweud, yw’r gorau ohonynt (7–14). Paham, felly, nad oes
+								gobaith iddo ddychwelyd i’w fro, hyd yn oed ar ôl i’r bardd
+								apelio ar y Forwyn Fair am ei chymorth (15–18)? Y rheswm, wrth
+								gwrs, yw bod dyletswydd yn ei gadw yn <i>y wlad
+									oludawg</i> (19–20). Mae tref Mantes dan ei ofal ef, a
+								bygythiad y gelyn, Charles o Ffrainc, yn amlwg (21–2). Ond nid
+								dyletswydd yn unig sy’n ei gadw, ond hefyd y cyfle i gael hwyl a
+								sbri (25–8). Mae Syr Rhisiart yn ennill clod yn y brwydro:
+								dyna ddigon o reswm dros aros. Yna mae’r bardd yn troi i’w ganmol
+								fel y gorau o’i fath (29–32). Pan ddaw ef adref yn y diwedd,
+								bydd yn sicr o ddenu llygaid edmygus pawb (33–40). Syr
+								Rhisiart yw pen-campwr Lloegr (41–4; sylwer ar y modd y mae
+								Guto, yng nghyd-destun y rhyfeloedd yn Ffrainc, yn ymuniaethu’n
+								rhwydd ag achos Lloegr). Gellir ei gymharu ag Arthur a Lawnslod
+								(45–52). Gorffen y cywydd gan ddymuno hir oes i’r arwr yn
+								amddiffyn Mantes rhag y gelyn (53–8). Ceir yma gyffyrddiadau o
+								ieithwedd beirdd y bedwaredd ganrif ar ddeg, ac mae dylanwad Iolo
+								Goch yn benodol yn eglur (47n, 53–8n). Mae’r cywydd cynnar hwn
+								yn rhoi gwybodaeth werthfawr, felly, am gynhysgaeth farddol Guto’r
+								Glyn.</p>
+							<p><i>Dyddiad</i><br/>1437x1438. Mae’r dyddiad yn dibynnu ar y ffaith fod Syr
+								Rhisiart yn diflannu o gofnodion swyddogol ar ôl 1438. Mae
+								hynny’n awgrymu ei fod wedi marw tua diwedd y flwyddyn honno neu’n
+								fuan wedyn, sef cyn ymweliad sicr Guto â Ffrainc yn 1441. O’r
+								herwydd, mae’n debygol fod Guto’r Glyn eisoes wedi mynd i Ffrainc ar
+								gyfer ymgyrch cyntaf Rhisiart, dug Iorc, sef yn 1436. Rhoddai hynny
+								gyfle iddo gwrdd â Syr Rhisiart Gethin yno. Canwyd y cywydd
+								yng Nghymru, ac felly ar ôl i Guto ddychwelyd adref. Mae
+								hynny’n awgrymu 1437 neu 1438. Ymdriniaeth lawnach: <a class="name" href="javascript:popUp('/gutorglyn/name/?n=nr08')">Syr Rhisiart Gethin</a>.</p>
+							<p><i>Golygiad blaenorol</i><br/>GGl cerdd I.</p>
+							<p><i>Mesur a chynghanedd</i><br/>Cywydd, 58
+								llinell.<br/>Cynghanedd: croes 40% (23 llinell), traws 14% (8
+								llinell), sain 45% (26 llinell), llusg 2% (1 llinell). Mae’r
+								gynghanedd yn llinell 16 yn draws ac yn llusg.</p>
+						</span>
+						<span>
+							<span>
+								<p>1–6  Mae’r cywydd ar ei hyd yn dangos bod Guto
+									yng Nghymru, nid yn Normandi (cf. 15–18 yn enwedig). Yn
+									1–6 mae’n edrych yn ôl ar olygfa a welodd (neu un
+									mae’n honni ei fod wedi ei gweld). Ymhle mae’r olygfa yn y
+									llinellau hyn yn digwydd? Dyma dri ateb posibl: i. yn ôl
+									yng Nghymru, a Guto’n disgwyl dychweliad y capteiniaid o
+									Ffrainc; ii. mewn porthladd yn ne Lloegr, a Guto ar ei ffordd
+									adref o’r Cyfandir, ond yn methu gweld Syr Rhisiart ymhlith y
+									rhai sy’n dychwelyd gydag ef; iii. yr un peth â (ii), ond
+									rywle yng ngogledd Ffrainc, a Guto eto ar ei ffordd adref, a
+									phobl eraill yn ymlwybro o Rouen adref, ond Rhisiart heb fod yn
+									eu plith. Cyfeiria <i>o waelod Lloegr</i> yn 4
+									at gynefin y capteiniaid Seisnig, nid at leoliad yr olygfa
+									hon.</p>
+							</span>
+							<span>
+								<p>1 <b>oer</b>  Mae’r gair hwn yn aml yn
+									dynodi ‘trist’ yn yr Oesoedd Canol, gw. GPC 2624 (b).</p>
+							</span>
+							<span>
+								<p>2 <b>ieirll</b>  Rhisiart, dug Iorc, oedd
+									arweinydd y fyddin a aeth i Normandi yn 1436. Gydag ef roedd
+									ieirll Suffolk a Chaersallog (Barker 2009: 249). Gwasanaethodd
+									tan fis Tachwedd 1437 (Johnson 1988: 30, Barker 2009: 260).
+									Tybed ai diwedd 1437, felly, yw dyddiad yr olygfa a ddisgrifir
+									yn 1–6? </p>
+								<p>2 <b>Rhôn</b>  Rouen, prifddinas
+									Normandi a chanolfan grym y Saeson yng ngogledd Ffrainc.</p>
+							</span>
+							<span>
+								<p>6 <b>beili</b>  Ffrangeg <i>bailli</i>, sef swyddog a oedd yn gyfrifol
+									am ranbarth o Normandi (Powicke 1913: 71–3).</p>
+								<p>6 <b>Mawnt</b>  Mantes, tref a leolir ar
+									afon Seine rhwng Rouen a Pharis, ychydig y tu allan i Normandi
+									heddiw. Roedd Syr Rhisiart Gethin yn gapten ar y dref yn y
+									cyfnod 1432–7. Collodd y Saeson Baris yn 1436, ac felly
+									roedd Mantes yn amddiffyn ffin y tir a oedd yn dal yn eu
+									meddiant.</p>
+							</span>
+							<span>
+								<p>8 <b>Buellt</b>  Casglodd Fychan (2007)
+									gyfeiriadau llên gwerin at dad Rhisiart Gethin, Rhys
+									Gethin, yn ardal Buellt.</p>
+							</span>
+							<span>
+								<p>11 <b>dyledog daid</b>  Cyfeiriad
+									cyffredinol, efallai, at daid Rhisiart Gethin fel gŵr o
+									dras, yn hytrach nag at unrhyw hynodrwydd arbennig a berthynai
+									iddo. Taid Rhisiart ar ochr ei dad oedd Owain o Lwyn-y-gwch (WG1
+									‘Elystan Glodrydd’ 9). Priododd tad Rhisiart ddwywaith, felly
+									nid yw’n sicr pwy oedd ei daid ar ochr ei fam, naill ai Llywelyn
+									Fychan (WG ‘Seisyll’ 4) ynteu Rhisiart o Fuellt (WG ‘Elystan
+									Glodrydd’ 12).</p>
+							</span>
+							<span>
+								<p>12 <b>cwrseriaid</b>  Meirch rhyfel
+									cyflym, gw. GPC 649.</p>
+							</span>
+							<span>
+								<p>15 <b>di-wair</b>  Ffurf ar <i>diwair</i> lle acennir y sillaf olaf, fel y
+									mae’r gynghanedd yma’n mynnu. Gw. GPC 1054.</p>
+							</span>
+							<span>
+								<p>16 <b>yng nghefn</b>  Am yr ystyr
+									‘canol’, gw. GPC 446.</p>
+							</span>
+							<span>
+								<p>18 <b>mab Rhys</b>  WG1 ‘Elystan
+									Glodrydd’ 9. Ymladdodd Rhys Gethin ar ochr Owain
+									Glyndŵr.</p>
+							</span>
+							<span>
+								<p>20 <b>y wlad oludawg</b>  Cyfeiriad
+									dadlennol. Nid yw’n syndod fod gwŷr a oedd yn gyfarwydd
+									â thirwedd mor anial â Buellt yn ystyried Normandi
+									fel lle delfrydol i ennill fortiwn.</p>
+							</span>
+							<span>
+								<p>22 <b>aer aparawnt</b>  Yr etifedd eglur,
+									yn Saesneg ‘heir apparent’, etifedd nad oes disgwyl iddo gael ei
+									ddisodli gan unrhyw ymgeisydd arall; arferir y term yn aml am y
+									mab hynaf. Yma mae’n cyfeirio at Charles VII o Ffrainc. Yn sgil
+									Cyfamod Troyes (1420) dietifeddwyd ef gan ei dad, Charles VI, a
+									gwnaed brenin Lloegr yn etifedd coron Ffrainc. Yn 1422 bu farw
+									Charles VI ac o dan amodau’r Cyfamod, Harri VI o Loegr a ddaeth
+									yn frenin Ffrainc. Parhaodd Charles VII i frwydro am gael ei
+									gydnabod yn frenin, fodd bynnag. Galwai’r Saeson ef yn wawdus
+									‘The Dauphin’, sef teitl traddodiadol a roddid i fab hynaf
+									brenin Ffrainc, yr etifedd eglur.</p>
+							</span>
+							<span>
+								<p>26 <b>Pyr</b>  Pyrrhus, mab Achilles, gw.
+									GLlLl 17.16n, GDC 3.16n a GIRh 4.42n.</p>
+								<p>26 <b>ym min Paris</b>  Rhyw 30 milltir
+									sydd rhwng Mantes a Pharis.</p>
+							</span>
+							<span>
+								<p>27 <b>pwyntiaw</b>  GPC 2952 d.g. <i>pwyntiaf</i><sup>2</sup>
+									‘pennu, penodi, gosod, trefnu, ordeinio’, ond nid yw hynny’n
+									arbennig o addas yma. Cf. yn lle hynny yr ystyr ‘to prick with
+									something sharp; to pierce, stab’ a nodir yn OED Online d.g. <i>point, v.<sup>1</sup></i>.
+									Gan fod yr enw <i>pwynt</i> yn fenthycair,
+									byddai’n rhesymol derbyn bod y ferf sy’n tarddu ohono, <i>pwyntio</i>, yn dwyn ystyron tebyg i’r ferf
+									Saesneg gyfatebol. </p>
+								<p>27 <b>Melan</b>  Milan yn yr Eidal, dinas
+									enwog am gynhyrchu dur o ansawdd uchel.</p>
+							</span>
+							<span>
+								<p>31 <b>Bresawnt</b>  Gallai fod yn enw
+									person neu le: cadfridog Ffrengig yr ymladdai Syr Rhisiart ag
+									ef, efallai, neu ryw gymeriad hanesyddol neu chwedlonol y
+									cymherir Syr Rhisiart ag ef, neu efallai dref neu ardal yn
+									Ffrainc yr ymosodai Sr Rhisiart arni. Ond yn wyneb y cyd-destun,
+									digon posibl yw cyfeiriad at Brescia yn yr Eidal, tref a oedd yn
+									enwog am gynhyrchu arfau dur. Mae’r bardd eisoes wedi sôn
+									am Milan yn 27, a byddai cyfeiriad at arfau gwych yn cyd-fynd yn
+									dda â 30 (am <i>browys</i> yn yr ystyr
+									‘disglair’, gw. GPC 334 (b)). Efallai fod Guto’n gyfarwydd
+									â Brescia drwy gyfrwng Ffrangeg: enw Ffrangeg ar ardal
+									Brescia yw <i>Le Bressan</i>, ffurf ddigon agos
+									i’r hyn a geir yn y gerdd. Llai tebygol yw ffurf dreigledig <i>presawnt</i>, a allai fod yn amrywiad ar <i>presen, present</i>, neu <i>presan, presant</i>: ni restrir <i>presawnt</i> yn GPC.</p>
+							</span>
+							<span>
+								<p>36 <b>drych</b>  Am ei fod yn ddelfryd
+									iddynt, ac am fod ei arfau’n disgleirio fel drych.</p>
+							</span>
+							<span>
+								<p>40 <b>aur ei goler</b>  Nod amgen
+									marchog.</p>
+							</span>
+							<span>
+								<p>45 <b>Gŵr bellach a
+									grybwyllwn</b>  Cf. GIG VIII.67 a XX.20 <i>Gŵr bellach a grybwyllir</i>.</p>
+							</span>
+							<span>
+								<p>47 <b>Corf llorf llu deutu
+									Dotawnt</b>  Llinell anarferol o gain, yn cynnwys
+									cynghanedd sain ddwbl a chyfuniad geiriol (<i>corf llorf</i>) sy’n dwyn i gof waith y Gogynfeirdd fel
+									Gruffudd ap Maredudd: cf. GGMD i, 2.2 <i>Llorf
+										corf cad, ceimiad camon dasgu</i>, ac enghreifftiau eraill
+									yn ibid. 3.21, 74, 4.28 &c. Mae’r adlais yn cyd-fynd â
+									dyddiad cynnar y gerdd hon yng ngyrfa’r bardd.</p>
+								<p>47 <b>Dotawnt</b>  Anhysbys: enw afon neu
+									nant, efallai.</p>
+							</span>
+							<span>
+								<p>48 <b>arglwydd mên</b>  Arglwydd
+									sy’n dal tir o dan arglwydd arall, Saesneg ‘mesne lord’. Harri
+									VI oedd priod arglwydd Mantes (yn ôl cred y Saeson) ac
+									roedd Syr Rhisiart Gethin yn ei dal dan ei awdurdod ef.</p>
+							</span>
+							<span>
+								<p>50 <b>maes</b>  Hynny yw, maes brwydr:
+									cyffredin oedd defnyddio <i>maes</i> ar ei ben
+									ei hun yn yr ystyr hon, yn yr un modd ag y defnyddid ‘field’ yn
+									Saesneg y cyfnod am ‘battle(field)’.</p>
+							</span>
+							<span>
+								<p>52 <b>Lawnslod di Lag</b>  Lawnslod du
+									Lac, arwr rhamant.</p>
+							</span>
+							<span>
+								<p>53–8  Mae’r adran hon o’r gerdd wedi ei chanu ar
+									batrwm GIG II.73–82, sef diwedd cywydd Iolo Goch i Syr
+									Hywel y Fwyall, lle anogir ef i gynnal castell Cricieth. Mae
+									53–4 yng nghywydd Guto yn unffurf â 73–4 yno,
+									ac mae’r llinell olaf yn adleisio llinell olaf cywydd Iolo (<i>A chadw’r gaer – iechyd i’r
+										gŵr!</i>). Roedd Syr Hywel yntau’n enwog am ei
+									wasanaeth yn Ffrainc.</p>
+							</span>
+							<span>
+								<p>57 <b>Otiel</b>  Un o arwyr chwedlau
+									Siarlymaen, gw. GGLl 12.48n; GGMD iii, 2.35n. <i>Otwel</i> yw’r ffurf yn 72.17.</p>
+							</span>
+						</span>
+						<p><i>Llyfryddiaeth</i><br/>Barker, J. (2009), <i>Conquest: The English Kingdom of France
+								1417–1450</i> (London)<br/>Fychan, C. (2007), <i>Pwy Oedd Rhys Gethin? Yr Ymchwil am Gadfridog Owain
+								Glyndŵr</i> (Aberystwyth)<br/>Johnson, P.A. (1988), <i>Duke Richard of York 1411–1460</i>
+							(Oxford)<br/>Powicke, F.M. (1913), <i>The Loss of
+								Normandy (1189–1204)</i> (Manchester)</p>
+					</div>
+			<div id="english-explanatory-notes-tab">
+						<span>
+							<p>The recipient is <a class="name" href="javascript:popUp('/gutorglyn/name/?n=nr08')">Sir Richard
+									Gethin</a> ap Rhys Gethin ab Owain of Builth, a professional
+								soldier who fought in the English armies in France. It is likely
+								that Guto’r Glyn met Sir Richard Gethin while he was in France in
+								1436, and that this poem belongs to the period 1437/8, after Guto
+								returned home (lines 1–6n). Guto received a golden cloak from
+								Sir Richard in exchange for praising him back home in Wales, a mark
+								of generosity which in turn inspired a praise poem by Ieuan ap Hywel
+								Swrdwal which echoes parts of Guto’s poem (GHS poem 24).</p>
+							<p>The poet begins by lamenting the fact that he failed to see Sir
+								Richard among the captains coming home from France (1–6). Sir
+								Richard, it scarcely needs saying, is the best of them (7–14).
+								Why, then, is there no prospect of his returning to his native soil,
+								even after the poet has appealed to the Virgin Mary to exercise her
+								influence (15–18)? The reason, of course, is that duty compels
+								him to remain in <i>y wlad oludawg</i> ‘the wealthy
+								country’ (19–20). The town of Mantes is in his care, and the
+								enemy, Charles of France, an obvious threat (21–2). But it is
+								not merely duty which keeps him there, but also the opportunity for
+								sport (25–8). Sir Richard is winning fame in the action: that
+								is sufficient reason to remain. Next the poet turns to praising Sir
+								Richard as the best of his kind (29–32). When he does
+								eventually come home, he will certainly draw the admiring gaze of
+								all onlookers (33–40). Sir Richard is England’s champion
+								(41–4; note how Guto, in the context of the French wars,
+								readily identifies with the cause of England). Sir Richard may be
+								compared with Arthur and Lancelot (45–52). The poem ends by
+								wishing a long life to the hero in his defence of Mantes from the
+								enemy (53–8). The style is reminiscent of the
+								fourteenth-century poets, and the influence of Iolo Goch in
+								particular is clear (47n, 53–8n). This early poem thus offers
+								valuable information regarding Guto’s poetic inheritance.</p>
+							<p><i>Date</i><br/>1437x1438. The date depends on the fact that Sir Richard
+								vanishes from official records after 1438. That suggests that he
+								died towards the end of that year or soon afterwards, before Guto’s
+								attested visit to France in 1441. That makes it likely that Guto’r
+								Glyn had fought previously in France, i.e. as part of the duke of
+								York’s first expedition in 1436, which would have allowed him to
+								meet Sir Richard Gethin there. The poem was performed in Wales, i.e.
+								after Guto returned home. That suggests 1437 or 1438. Fuller
+								discussion: <a class="name" href="javascript:popUp('/gutorglyn/name/?n=nr08')">Sir Richard
+								Gethin</a>.</p>
+							<p><i>The manuscripts</i><br/>This poem occurs in 26 manuscripts. Of these 15 were used to make
+								the edition. The biggest difference between them is the order of
+								3–16, in respect of which the copies divide as follows: (i)
+								LlGC 3057D, BL 14894, C 2.114, C 3.37, Pen 152; (ii) Pen 82, BL
+								14989, LlGC 3046D, C 1.2; (iii) BL 14965 and Llywelyn Siôn’s
+								five copies (LlGC 970E, LlGC 21290E, LlGC 6511B, C 5.44 a Llst 134).
+								Stowe 959 is different again. Although Pen 152 generally agrees with
+								group (i), it also shows some similarities with BL 14989 and C 1.2,
+								and it may be composite. Parts of the text in BL 14984 are lost
+								through damage to the manuscript and the text of Stowe 959 is
+								missing after line 41 owing to the loss of a leaf. Pen 82 contains
+								only the beginning of each line.</p>
+							<p><i>Previous edition</i><br/>GGl poem I.</p>
+							<p><i>Metre and</i> cynghanedd<br/><i>Cywydd</i>, 58 lines.<br/><i>Cynghanedd</i>:
+									<i>croes</i> 40% (23 lines), <i>traws</i> 14% (8 lines), <i>sain</i> 45% (26
+								lines), <i>llusg</i> 2% (1 line). Line 16 could
+								count as <i>traws</i> or <i>llusg</i>.</p>
+						</span>
+						<span>
+							<span>
+								<p>1–6  The poem taken as a whole shows that Guto is
+									in Wales, not Normandy (cf. 15–18 in particular). In
+									1–6 he is recalling a scene which he observed (or claims
+									to have observed). Where is this scene playing out? Three
+									possible answers are: i. back in Wales, with Guto expecting the
+									return of the captains from France; ii. in a port in the south
+									of England, with Guto on his way home from the Continent, but
+									not seeing Sir Richard amongst those who are making the journey
+									with him; iii. like (ii), but somewhere in northern France, Guto
+									still being on his way home, other people likewise making their
+									way from Rouen, but Richard not among them. In 4 <i>o waelod Lloegr</i> refers to the home of
+									the English captains, not the place where this scene
+									occurred.</p>
+							</span>
+							<span>
+								<p>1 <b>oer</b>  This word often means ‘sad’
+									in the Middle Ages, see GPC 2624 (b).</p>
+							</span>
+							<span>
+								<p>2 <b>ieirll</b>  Richard, duke of York,
+									led the army which went to Normandy in 1436. With him were the
+									earls of Suffolk and Salisbury (Barker 2009: 249). He served
+									until November 1437 (Johnson 1988: 30, Barker 2009: 260). Does
+									that therefore mean that the scene described in 1–6 took
+									place in late 1437? </p>
+								<p>2 <b>Rhôn</b>  Rouen, capital of
+									Normandy and the centre of English power in northern France.</p>
+							</span>
+							<span>
+								<p>6 <b>beili</b>  French <i>bailli</i>, the title of an official responsible for a
+									region of Normandy (Powicke 1913: 71–3).</p>
+								<p>6 <b>Mawnt</b>  Mantes, a town on the
+									river Seine between Rouen and Paris, just outside today’s
+									Normandy. Sir Richard Gethin was captain of the town in the
+									period 1432–7. The English lost Paris in 1436, which meant
+									that Mantes became a frontier post.</p>
+							</span>
+							<span>
+								<p>8 <b>Buellt</b>  Fychan (2007) collects
+									references from folklore to Richard Gethin’s father, Rhys
+									Gethin, in the Builth area.</p>
+							</span>
+							<span>
+								<p>11 <b>dyledog daid</b>  A non-specific
+									reference, perhaps, to Richard Gethin’s grandfather as a man of
+									lineage, rather than an indication that there was anything
+									particularly special about him. Richard’s grandfather on his
+									father’s side was Owain of Llwyn-y-gwch (WG1 ‘Elystan Glodrydd’
+									9). Richard’s father married twice, so it is not certain who
+									Richard’s grandfather was on his mother’s side, either Llywelyn
+									Fychan (WG ‘Seisyll’ 4) or Richard of Builth (WG ‘Elystan
+									Glodrydd’ 12).</p>
+							</span>
+							<span>
+								<p>12 <b>cwrseriaid</b>  Coursers, swift
+									warhorses, see GPC 649.</p>
+							</span>
+							<span>
+								<p>15 <b>di-wair</b>  A variant of <i>diwair</i> with the final syllable stressed,
+									as the <i>cynghanedd</i> requires here. See GPC
+									1054.</p>
+							</span>
+							<span>
+								<p>16 <b>yng nghefn</b>  For the meaning
+									‘centre’, see GPC 446.</p>
+							</span>
+							<span>
+								<p>18 <b>mab Rhys</b>  WG1 ‘Elystan
+									Glodrydd’ 9. Rhys Gethin fought for Owain Glyndŵr, see
+									background note.</p>
+							</span>
+							<span>
+								<p>20 <b>y wlad oludawg</b>  A revealing
+									comment. It is not surprising that men used to the harsh
+									landscape of Builth considered Normandy to be an ideal place to
+									earn their fortune.</p>
+							</span>
+							<span>
+								<p>22 <b>aer aparawnt</b>  English ‘heir
+									apparent’, an heir who is not expected to be displaced by any
+									other heir; often used of the eldest son. Here it refers to
+									Charles VII of France. Under the Treaty of Troyes (1420) he was
+									disinherited by his father, Charles VI, and the king of England
+									was declared to be heir to the crown of France. In 1422 Charles
+									VI died, and under the terms of the treaty Henry VI of England
+									became king of France. Charles VII continued to fight to be
+									recognised as king, however. The English mockingly called him
+									the ‘Dauphin’, a title traditionally enjoyed by the eldest son
+									of the king of France, the heir apparent.</p>
+							</span>
+							<span>
+								<p>26 <b>Pyr</b>  Pyrrhus, son of Achilles,
+									see GLlLl 17.16n, GDC 3.16n and GIRh 4.42n.</p>
+								<p>26 <b>ym min Paris</b>  Mantes is about
+									30 miles from Paris.</p>
+							</span>
+							<span>
+								<p>27 <b>pwyntiaw</b>  GPC 2952 s.v. <i>pwyntiaf</i><sup>2</sup>
+									‘appoint, assign, set, order’, but these meanings do not fit
+									especially well here. Cf. instead the meanings ‘to prick with
+									something sharp; to pierce, stab’ which are noted in OED Online
+									s.v. <i>point, v.<sup>1</sup></i>. Since <i>pwynt</i> is a
+									loan-word, it would be reasonable to assume that the derived
+									verb <i>pwyntio</i> could bear similar meanings
+									to the matching English verb.</p>
+								<p>27 <b>Melan</b>  Milan in Italy, a city
+									famous for producing high-quality steel.</p>
+							</span>
+							<span>
+								<p>31 <b>Bresawnt</b>  This might be the
+									name of a person or a place: a French commander against whom Sir
+									Richard fought, perhaps, or some historical or legendary
+									character with whom Sir Richard is being compared, or perhaps a
+									town or region of France which Sir Richard attacked. However, in
+									the context, it is quite likely to refer to Brescia in Italy, a
+									town famous for producing steel weapons. The poet has already
+									mentioned Milan in 27, and a reference to splendid arms would
+									follow on well from 30 (for <i>browys</i> with
+									the meaning ‘bright, splendid’, see GPC 334 (b)). Perhaps Guto
+									knew of Brescia through French: the French name for the Brescia
+									region is <i>Le Bressan</i>, which is quite
+									close to the form in the poem. Less likely, it could be a
+									lenited form of <i>presawnt</i>, a conceivable
+									variant of <i>presen, present</i>, or of <i>presan, presant</i>: but <i>presawnt</i> is not listed in GPC.</p>
+							</span>
+							<span>
+								<p>36 <b>drych</b>  Both because he is an
+									ideal for them, and because his arms shine like a reflective
+									mirror.</p>
+							</span>
+							<span>
+								<p>40 <b>aur ei goler</b>  The gold collar
+									was the sign of a knight.</p>
+							</span>
+							<span>
+								<p>45 <b>Gŵr bellach a
+									grybwyllwn</b>  A reminiscence of Iolo Goch, cf. GIG
+									VIII.67 and XX.20 <i>Gŵr bellach a
+										grybwyllir</i>.</p>
+							</span>
+							<span>
+								<p>47 <b>Corf llorf llu deutu
+									Dotawnt</b>  An unusually ornate line, containing <i>cynghanedd sain ddwbl</i> and a verbal
+									collocation (<i>corf llorf</i>) which is
+									reminiscent of the works of the <i>Gogynfeirdd</i> like Gruffudd ap Maredudd: cf. GGMD i, 2.2
+										<i>Llorf corf cad, ceimiad camon dasgu</i>,
+									and other examples ibid. 3.21, 74, 4.28 &c. The echo fits
+									the early date of this poem in the poet’s career.</p>
+								<p>47 <b>Dotawnt</b>  Unknown: possibly a
+									river or stream.</p>
+							</span>
+							<span>
+								<p>48 <b>arglwydd mên</b>  A mesne
+									lord, a lord who holds land under a higher lord. Henry VI was
+									lord of Mantes (from the English point of view) and Sir Richard
+									Gethin held it under the king’s authority.</p>
+							</span>
+							<span>
+								<p>50 <b>maes</b>  That is, a battlefield:
+									it was common to use <i>maes</i> on its own
+									with this meaning, just as ‘field’ was used in the English of
+									the period to mean ‘battle(field)’.</p>
+							</span>
+							<span>
+								<p>52 <b>Lawnslod di Lag</b>  Lancelot du
+									Lac, a romance hero.</p>
+							</span>
+							<span>
+								<p>53–8  This section of the poem is based on GIG
+									II.73–82, the end of Iolo Goch’s poem for Sir Hywel of the
+									Battleaxe, in which he is urged to defend Cricieth castle.
+									53–4 of Guto’s poem are identical to 73–4 of Iolo’s,
+									and the last line echoes the last line of Iolo’s poem (<i>A chadw’r gaer – iechyd i’r
+										gŵr!</i>). Sir Hywel was famous for his exploits in
+									France.</p>
+							</span>
+							<span>
+								<p>57 <b>Otiel</b>  A hero of the
+									Charlemagne cycle, see GGLl 12.48n; GGMD iii, 2.35n. <i>Otwel</i> is the form found in 72.17.</p>
+							</span>
+						</span>
+						<p><i>Bibliography</i><br/>Barker, J. (2009), <i>Conquest: The English Kingdom of France
+								1417–1450</i> (London)<br/>Fychan, C. (2007), <i>Pwy Oedd Rhys Gethin? Yr Ymchwil am Gadfridog Owain
+								Glyndŵr</i> (Aberystwyth)<br/>Johnson, P.A. (1988), <i>Duke Richard of York 1411–1460</i>
+							(Oxford)<br/>Powicke, F.M. (1913), <i>The Loss of
+								Normandy (1189–1204)</i> (Manchester)</p>
+					</div>
+		</div>
+		<div id="transcriptions-tab">
+			<ul>
+				<li>
+					<a href="#transcriptions-sources-tab">
+						<span>Ffynonellau</span>
+					</a>
+				</li>
+				<li>
+					<a href="/gutorglyn/transcripts/?poem=001">
+						<span>Testunau</span>
+					</a>
+				</li>
+				<li>
+					<a href="#transcriptions-images-tab">
+						<span>Lluniau</span>
+					</a>
+				</li>
+			</ul>
+			<div id="transcriptions-sources-tab">
+				<iframe width="100%" height="100%" src="http://www.dafyddapgwilym.net/ggg/manuGetEng.php?poemID=001"></iframe>
+			</div>
+			<div id="transcriptions-text-tab"></div>
+			<div id="transcriptions-images-tab">
+				<iframe width="520px" height="356px" scrolling="yes" src="http://www.dafyddapgwilym.net/AnaServer?dafydd+29999+viewVariant3Eng.anv+edID=27882&paraEl=28157&baseEl=27882"></iframe>
+			</div>			
+		</div>
+		<div id="variants-tab">
+
+		</div>
+	</div>
+</div>
+<!-- Column 2 end -->
+
+
+
+
+<!-- sliding left panel -->
+<div class="panel">
+	<div style="clear:both;"></div>
+	<div class="panel-heading"><strong>Patron Notes</strong></div>
+	<div class="toggle"><p><iframe width="100%" height="90%" src="/gutorglyn/patron/?n=nr08">Sir Richard
+									Gethin</iframe></p></div>
+
+	<div class="panel-heading"><strong>Stema</strong></div>
+	<div class="toggle"><p><img width="90%" src="/static/img/stemma/001stema.png"></p></div>
+
+	<div style="clear:both;"></div>
+	<div style="clear:both;"></div>
+</div>
+<a class="trigger" href="#"></a>
+<!-- sliding left panel end -->
+
+
+
+</div>
+<!-- Container End -->            
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+
+ $("a").click(function(event){
+   event.preventDefault();
+   $(this).hide("slow");
+ });
+ 
+ 
+ });
+    </script>
+    
+    <style type="text/css">
+    a.test { font-weight: bold; }
+ </style>
+    
+  </head>
+  <body>
+    Click the link to make it disappear!
+    <a href="http://jquery.com/">jQuery</a>
+  </body>
+</html>

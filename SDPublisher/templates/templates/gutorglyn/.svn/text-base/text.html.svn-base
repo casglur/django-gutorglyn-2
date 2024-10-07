@@ -1,0 +1,12 @@
+{% extends "gutorglyn/base.html" %}
+{% block main %}
+        {{ page_content|safe }}
+{% endblock %}
+
+{% block para %}
+        {{ page_content1|safe }}
+{% endblock %}
+
+{% block trans %}
+        {{ page_content2|safe }}
+{% endblock %}

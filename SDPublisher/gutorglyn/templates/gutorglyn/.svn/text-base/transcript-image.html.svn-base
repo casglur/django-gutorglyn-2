@@ -1,0 +1,15 @@
+{% load i18n %}
+<div class="transcript-image-ref">
+{{transcriptImageRef|safe}}
+</div>
+<div class="transcript-image-src">
+{{transcriptImageID|safe}}
+</div>
+
+
+
+
+
+
+
+

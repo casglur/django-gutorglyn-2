@@ -1,0 +1,31 @@
+/* IDs */
+
+#black-bar, #nav, #slider-code, #top-line, #trigger, #trigger2{
+    display: none;
+}
+
+/* Classes  */
+.panel, .panel2, .search-group, .space {
+    display: none;
+}
+
+.container {
+    float: none;
+    font-family: georgia;   
+    margin: 0;
+    margin-left: 5%;
+    width: 90%;    
+}
+
+a:link, a:visited {
+    color: #781351
+}
+
+.manuscript-search-results, .patron-list, .title-list {
+    padding-bottom: 5%;
+}
+
+.patron-list > a:link, .patron-list > a:visited, .title-list > a:link, .title-list > a:visited {
+    color: #000;
+    text-decoration: none;
+}

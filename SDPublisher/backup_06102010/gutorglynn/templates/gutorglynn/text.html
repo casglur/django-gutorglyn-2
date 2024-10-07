@@ -1,0 +1,9 @@
+{% extends "gutorglynn/base.html" %}
+{% block content %}
+<div class="prepend-1 span-22 append-1 last content links">
+<a href="/gutorglynn/poem">Full Poem</a> | </a><a href="/gutorglynn/editedText">Edited Text</a>
+</div>
+<div class="prepend-1 span-22 append-1 last content">
+        {{ page_content|safe }}
+</div>
+{% endblock %}

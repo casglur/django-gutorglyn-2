@@ -1,0 +1,68 @@
+/*
+  -----------------------------------------------------------------------
+  Green stylesheet
+  -----------------------------------------------------------------------
+ */
+body {
+    background-color:#666;
+}
+.container {
+    background-color: #dbe3c0;  
+}
+.patron-panel {
+    background:#dbe3c0;
+}
+.abbrev-panel-content {
+    background:#dbe3c0;
+}
+.panel2 {
+    background:#dbe3c0;
+}
+a.trigger {
+    background:#000;
+    border: 1px solid #9b4700;
+}
+a.trigger:hover {
+    background:green;
+}
+a.active.trigger {
+    background:green;
+}
+a.trigger2 {
+    background:#000;
+    border: 1px solid #9b4700;
+}
+a.trigger2:hover {
+    background:green;
+}
+a.active.trigger2 {
+    background:green;
+}
+
+a.variant-line-link-show:link {
+    color:#8B7D6B;
+}
+a.variant-line-link:active {
+    color:#8B7D6B;
+}
+.ui-button-text {color:white;}
+
+/* Tabs */
+.ui-widget-content {
+     background:#dbe3c0;    
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+     background:#666;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color:white;
+}
+.ui-tabs .ui-tabs-nav {
+    background:#dbe3c0;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+     background:#9b4700;
+}
+.ui-tabs .ui-tabs-panel{
+    background-color:#dbe3c0;
+}

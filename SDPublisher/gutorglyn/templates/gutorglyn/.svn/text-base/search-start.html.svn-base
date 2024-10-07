@@ -1,0 +1,35 @@
+{% extends "gutorglyn/static-base.html" %}
+{% load i18n %}
+
+{% block content %}
+{% load i18n %}
+
+<div class="span-20">
+<br/>
+<h2>{% trans "Search Page search button" %}<br /></h2>
+</div>
+
+<div class="span-20 search-form-1">
+    <form method="GET" action="/gutorglyn/search/" onsubmit="return validateMainSearchBox()">
+        <input type="text" name="searchVal" title="Chwilio" id="searchVal" value="{{searchTrm}}" placeholder="{% trans "Search Page search button" %}" size="50" class="main-search-box" />
+        <select id="search-option-selection" name="search-option" class="search-options">
+	        <option value="match-case">{% trans "Search Page Match Case Label" %}</option>
+	        <option value="ignore-diacritics" selected>{% trans "Search Form Ignore Diacritics Lable" %}</option>
+	        <option value="reg-ex">{% trans "Search Form Regular Expression Lable" %}</option>  
+        </select>
+        <input type="submit" value="{% trans "Search Page search button" %}" />                
+        
+        <!-- 
+        <input type="checkbox" name="whole-word"  id="whole-word" /> Whole words only       
+        <input type="checkbox" name="match-case"  id="match-case" class="cb-group" /> {% trans "Search Page Match Case Label" %}
+    	<input type="checkbox" name="ignore-diacritics" id="ignore-diacritics" class="cb-group" /> {% trans "Search Form Ignore Diacritics Lable" %}   
+    	<input type="checkbox" name="reg-ex"  id="reg-ex"> {% trans "Search Form Regular Expression Lable" %}     &nbsp;&nbsp;
+         --> 
+         
+		<input type="hidden" name="page-start"  id="page-start" value="0"/>
+        <br/>
+    </form>
+</div>  
+
+<script type="text/javascript" src="/static/js/search-start.js"></script>    
+{% endblock %}    			

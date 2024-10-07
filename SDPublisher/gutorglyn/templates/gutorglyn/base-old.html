@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gutor Glyn.net - {{poemNumber}}</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        
+        <!-- For mobile displays -->
+		<link rel="stylesheet" type="text/css" href="/static/blueprint/mobile.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="/static/blueprint/print.css" media="print" />
+        
+        <!-- For desktop displays -->
+        
+        <link type="text/css" rel="stylesheet" href="/static/blueprint/screen.css" />
+
+        <!--[if lt IE 8]>        
+        	<link rel="stylesheet" href="/static/blueprint/ie.css" type="text/css" media="screen, projection">       
+        <![endif]-->
+
+        <link type="text/css" rel="stylesheet" href="/static/css/gutorglyn.css"
+            media="screen, projection" />
+        <link type="text/css" rel="stylesheet" href="/static/css/jquery-ui-1.8.16.custom.css" />
+        <link type="text/css" rel="stylesheet" href="/static/css/slidingpanel.css"
+            media="screen, projection" />
+        <link type="text/css" rel="stylesheet" href="/static/css/slidingpanel1.css"
+            media="screen, projection" /> 
+        <link type="text/css" rel="stylesheet" href="/static/css/slidingpanel2.css"
+            media="screen, projection" />                        
+        <link type="text/css" rel="stylesheet" href="/static/css/jquery.lightbox-0.5.css"
+            media="screen" />
+
+        <link type="text/css" rel="stylesheet" href="/static/blueprint/print.css"
+            media="print" />
+
+
+
+        <script type="text/javascript" src="/static/js/jquery-1.5.1.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery-ui-1.8.16.custom.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.lightbox-0.5.js"></script>
+        <script type="text/javascript" src="/static/js/jquery-gutor.js"></script>
+        <script type="text/javascript" src="/static/js/themeroller.js"></script>
+       	<script type="text/javascript" src="/static/js/raphael-min.js"></script>
+       	<script type="text/javascript" src="/static/js/gutor.js"></script>  
+        <script type="text/javascript" src="/static/js/vocab.js"></script>       	
+		{% include "gutorglyn/google-analytics.html" %} 
+        </head>
+        <body>
+        
+            <div class="container">
+
+{% include "gutorglyn/black-bar.html" %} 
+
+<hr class="space" />
+<div class="prepend-1 span-8 top-head">
+<a href="/gutorglyn/index"><img alt="guto'r glyn.net" src="/static/img/logo/gg-logo-300x44-gradient.png"></a>
+</div>	
+{% include "gutorglyn/nav-bar.html" %}               				           
+<hr style="background: url('/static/img/logo/knot-small.gif'); height:19px;" />
+{% block greeting %}{% endblock greeting%}
+{% block content %}{% endblock content%}
+
+</div>
+<!-- Container End -->      
+       	<script type="text/javascript" src="/static/js/rotate.js"></script>      
+    </body>
+</html>

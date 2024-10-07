@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>auto resize test</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    
+
+ <script type="text/javascript">
+$(document).ready(function() {
+
+
+$(window).resize(function(){
+        var h = $(window).height();
+        var w = $(window).width();
+        $("#div1").css('height',(h < 768 || w < 1024) ? 500 : 700);
+    });
+
+});
+
+ </script>
+      
+      <style type="text/css">
+          #div1 {
+          overflow:auto;
+          border:1px solid black;
+          background-color:lightblue;
+          }
+      </style>
+      
+</head>
+<body>
+    <div id="div1">
+    Text in a box
+</div>
+    <button id="getdiv">Get div Height</button>
+<script>
+    function showHeight(ele, h) {
+      $("div").text("The height for the " + ele + 
+                    " is " + h + "px.");
+    }
+    $("#getdiv").click(function () { 
+      showHeight("div1", $("#div1").height()); 
+    });
+
+</script>
+</body>
+</html>

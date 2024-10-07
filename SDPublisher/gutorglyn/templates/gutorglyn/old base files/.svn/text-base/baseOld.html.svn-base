@@ -1,0 +1,65 @@
+ <!--  {% load verbatim %} -->  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Gwaith Guto'r Glyn</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link type="text/css" rel="stylesheet" href="/static/gutorglyn.css" />
+        <link type="text/css" rel="stylesheet" href="/static/slidingpanel.css" />
+        <link type="text/css" rel="stylesheet" href="/static/blueprint/screen.css" />
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"
+            rel="stylesheet" type="text/css" />
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+
+        <script type="text/javascript">
+$(document).ready(function() {
+
+$("#tabs").tabs();
+
+$(".trigger").click(function(){
+		$(".panel").toggle("fast");
+		$(this).toggleClass("active");
+		return false;
+	});
+
+});
+    </script>
+    </head>
+    <body>
+
+        <div class="container">
+            <hr class="space" />
+            <h1>Gwaith Guto'r Glyn</h1>
+            <h2>{% block poemTitleh2 %}{% endblock %} </h2>
+            <div class="prepend-1 span-9"><hr class="space" /><hr class="space" /><hr class="space" />
+                <hr class="space" />
+                {% block main %}{% endblock %}</div>
+            <div class="span-14 last">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#paraphrase"><span>Aralleiriad</span></a></li>
+                        <li><a href="#translation"><span>Translation</span></a></li>
+                    </ul>
+                    <div id="paraphrase"> {% block para %}{% endblock %} </div>
+                    <div id="translation"> {% block trans %}{% endblock %} </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <h3>{% block poemTitleNav %}{% endblock %} </h3> 
+            <ul>
+                <li><a href="/gutorglyn/poem/001" title="Guto 1">Guto 1</a></li>
+                <li><a href="/gutorglyn/poem/002" title="Guto 2">Guto 2</a></li>
+                <li><a href="/gutorglyn/poem/003" title="Guto 3">Guto 3</a></li>
+                <li><a href="/gutorglyn/poem/016" title="Guto 16">Guto 16</a></li>
+            </ul>
+            <div style="clear:both;"></div>
+            
+            <div style="clear:both;"></div>
+        </div>
+        <a class="trigger" href="#">Nav</a>
+    </body>
+</html>

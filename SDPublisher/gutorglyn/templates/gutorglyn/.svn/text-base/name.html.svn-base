@@ -1,0 +1,18 @@
+{% extends "gutorglyn/static-base.html" %} {% block content %}
+{% load i18n %}
+<hr class="space"/>
+<div class="span-20 last">
+	<div class="name-note">
+		{{name|safe}}
+	</div>
+</div>			
+<hr class="space"/>
+{% endblock %}
+
+
+
+
+
+
+
+

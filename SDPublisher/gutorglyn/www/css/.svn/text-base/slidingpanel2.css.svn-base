@@ -1,0 +1,149 @@
+
+
+a:focus {
+outline: none;
+}
+
+.panel2 h1 {
+font-size: 34px;
+font-family: georgia, serif;
+letter-spacing:-2px;
+color:#9FC54E;
+font-weight:700;
+padding:20px 0 0;
+}
+
+.panel2 h2 {
+font-size: 24px;
+font-family: georgia, serif;
+color:#444444;
+font-weight: 400;
+padding: 0 0 10px;
+}
+
+.panel2 h3 {
+font-size:14px;
+font-family:georgia, serif;
+letter-spacing:-1px;
+color:#FFFFFF;
+font-weight: 700;
+margin:0;
+padding:8px 0 8px 0;
+}
+
+.abbrev {
+    display: inline-block;
+    width: 20%;
+    vertical-align:top;
+}
+
+.abbrev-detail {
+    display: inline-block;
+    width:80%;
+}
+
+.abbrev-link {
+    display: inline-block;
+    width:78%;
+    padding-left: 20%;
+    text-decoration:underline;
+    padding-bottom:10px;
+}
+
+#container {
+clear: both;
+margin: 0;
+padding: 0;
+}
+
+#container a{
+float: right;
+background: #9FC54E;
+border: 1px solid #9FC54E;
+text-decoration: none;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 20px;
+font-weight: 700;
+}
+
+#container a:hover{
+float: right;
+background: #a0a0a0;
+border: 1px solid #cccccc;
+text-decoration: none;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 20px;
+font-weight: 700;
+}
+
+.content {
+font-style:normal;
+font-family:helvetica, arial, verdana, sans-serif;
+color:#ffffff;
+background:#333333;
+border:1px solid #444444;
+margin: 30px 0 50px;
+padding: 15px 0;
+}
+
+.content p {
+margin: 10px 0;
+padding: 15px 20px;
+}
+
+.panel2 {
+position: absolute;
+top: 70px;
+left: 0;
+display: none;
+background: #000000;
+border:solid #CDF53C;
+border-width: 1px 1px 1px 0px;
+width: 80%;
+height: 60%;
+padding: 30px 30px 30px 130px;
+-moz-border-radius: 10px; /* Firefox */
+-webkit-border-radius: 10px; /* Safari, Chrome */
+border-radius: 10px; /* CSS3 */
+/*filter: alpha(opacity=65);*/
+/*opacity: .85;*/
+}
+
+.panel2 a, .panel2 a:visited{
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+
+.panel2 a:hover, .panel2 a:visited:hover{
+margin: 0;
+padding: 0;
+text-decoration: underline;
+}
+
+a.trigger2{
+position: absolute;
+top: 310px; 
+left: 0px;
+text-decoration:none;
+border-width: 1px 1px 1px 0px;
+display: block;
+
+border-top-right-radius: 20px;
+-moz-border-radius-topright: 20px;
+-webkit-border-top-right-radius: 20px;
+
+border-bottom-right-radius: 20px;
+-moz-border-radius-bottomright: 20px;
+-webkit-border-bottom-right-radius: 20px;
+}
+
+a.active.trigger2 {
+padding-left:25px;
+}

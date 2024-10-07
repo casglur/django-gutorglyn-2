@@ -1,0 +1,151 @@
+#main-title {
+    font-size:1.5em;    
+}
+
+.top-nav a {
+    font-size:1.5em;
+}
+
+#editor {
+    font-size:1em;    
+}
+
+.top-head a {
+    text-decoration:none;
+    color: #000000;
+    font-family: georgia;
+}
+.top-head a:hover {
+    color: #000000;
+}
+.top-head a:visited {
+    text-decoration:none;
+    color: #000000;
+}
+#black-bar{
+    background-color: #3D3D3D;
+    color: white;
+    text-align: right;
+}
+form {
+    float:left;
+}
+
+/* Tabs */
+
+#edited-text {
+    width: 400px;
+    height: 200px;
+    overflow: auto;
+}
+
+#paraphrase-tab {
+    width: 500px;
+    height: 356px;
+    overflow: scroll;
+}
+
+#translation-tab{
+    width: 500px;
+    height: 356px;
+    overflow: scroll;
+}
+
+#notes-tab {
+    width: 500px;
+    height: 356px;
+    overflow: auto;
+}
+
+#stemma-tab {
+    width: 500px;
+    height: 356px;
+    overflow: scroll;
+}
+
+#stemma-img, #stemma-img-dialog {
+    cursor:move;
+}
+
+#transcriptions-tab {
+    width: 500px;
+    height: 356px;
+    overflow: scroll;
+}
+
+#transcript-title {
+    font-weight: bold;
+}
+
+a.variant-line:link {text-decoration: none; color: black;}
+a.variant-line:visited {text-decoration: none; color: black;}
+a.variant-line:hover {text-decoration: none; color: black; background-color: #ccc;}
+a.variant-line:active {text-decoration: none; color: black;}
+
+
+/*
+Poem line group
+*/
+.CH-group {position: relative; left: 10px;}
+.clog-group {position: relative; left: 10px;}
+.CNB-group {position: relative; left: 10px;}
+.cywydd-group {position: relative; left: 10px;}
+.EUU-group {position: relative; left: 10px;}
+.EP-group {position: relative; left: 10px;}
+.stanza {position: relative; left: 10px;}
+.TC-group {position: relative; left: 10px;}
+
+
+/* 
+Poem line group line number
+*/
+.CH-line-number {position:relative; left: 0px; width: 70px; float:left;color:#8B7D6B;}
+.clog-line-number {position:relative; left: 0px; width: 70px; float:left;color:#8B7D6B;}
+.CNB-line-number {position:relative; left: 0px; width: 70px; float:left;color:#8B7D6B;}
+.cywydd-line-number {position:relative; left: 0px; width: 70px; float:left;color:#8B7D6B;}
+.EUU-line-number {position:relative; left: 0px; width: 70px; float:left;color:#8B7D6B;}
+.EP-line-number {position:relative; left: 0px; width: 70px; float:left;color:#8B7D6B;}
+.line-number {position:relative; left: 0px; width: 70px; float:left;color:#8B7D6B;}
+.TC-line-number {position:relative; left: 0px; width: 70px; float:left;color:#8B7D6B;}
+
+/*
+Poem line
+*/
+.CH-line-even {position: relative; left:-11px;}
+.CH-line-odd {position: relative; left:-25px;}
+.clog-line-first {position: relative; left:-10px;}
+.clog-line-second {position: relative; left:-10px;}
+.clog-line-third {position: relative; left:-35px;}
+.clog-line-fourth {position: relative; left:15px;}
+.CNB-line {position: relative; left: -22px;}
+.cywydd-line {position: relative; left:-5px;}
+.cywydd-line-1 {position: relative; left:-5px;}
+.cywydd-line-first {position: relative; left:13px;}
+.EP-line {position: relative; left:-5px;}
+.EUU-line-first {position: relative; left: -35px;}
+.EUU-line-second {position: relative; left: 15px;}
+.EUU-line-third {position: relative; left: 0px;}
+.EUU-line-fourth {position: relative; left: 0px;}
+.TC-line {position: relative; left: -10px;}
+.line {position: relative; left:-5px;}
+
+/* Search */
+cite {
+	color:green;
+	font-style:normal;	
+}
+
+/* 
+Highlited Search Terms 
+*/
+span.term-0 {
+    background-color: #FAF6D1;   
+}
+ 
+span.term-1 {
+    background-color: #EAFAD1;   
+}
+ 
+span.term-2 {
+    background-color: #F7E2D4;   
+}

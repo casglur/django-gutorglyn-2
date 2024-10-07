@@ -1,0 +1,10 @@
+{
+   	"patrons": [
+	{% for patronName, patronID in patronNamesOutput %}
+	{ "label": "{{ patronName }}", "value": "{{ patronID }}" }{% if not forloop.last %},{% endif %}
+	{% endfor %}
+   ]
+}
+
+
+

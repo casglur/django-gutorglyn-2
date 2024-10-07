@@ -1,0 +1,781 @@
+/* Set Global Width and Height */
+
+html, body {
+    height:100%; 
+    min-height: 100%;
+    width:100%;
+}
+.debug {
+    background-color: #99FFFF;
+    padding: 20px;
+    border: 2px solid #ccc;
+}
+
+.poem-container {
+    height:100%;
+    min-height: 100%;
+}
+
+.poem-container {width:950px; margin:0 auto;}
+.poem-container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.poem-container {display:block;}
+
+.col-1 {
+    height: 67%;
+}
+.col-2 {
+    height: 67%;
+}
+#edited-text {
+    height: 100%;
+    margin-top: 1px;
+}
+
+/*  Labels  */
+.view-results-label {
+    font-size: large;
+    padding-top: 20px;
+}
+
+/* Tabs */
+
+#tabs {
+    height: 99%;
+    margin-top: -34px;
+    padding-bottom: 39px;
+}
+#paraphrase-tab {
+    overflow: scroll;
+    height: 97%;
+}
+#translation-tab {
+    overflow: scroll;
+    height: 97%;
+}
+#notes-tab {
+    height: 97%;
+    overflow: auto;
+}
+#transcriptions-tab {
+    overflow: hidden;
+    height: 97%;
+}
+/* variant line tab */
+#ui-tabs-1 {
+    height: 97%;
+}
+.tab-detail {
+    height: 92%;
+    width: 100%;
+    overflow:auto;
+}
+
+a {
+    color: #000000;
+}
+
+.manuscripts-poems {
+    border: solid #ccc 1px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;   
+}
+.manuscripts-poems tr:hover {
+    background: #fff;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;     
+} 
+.manuscripts-poems td, .manuscripts-poems th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;    
+}
+.manuscripts-poems th {
+    background-color: #a20a1b;
+}
+.manuscripts-poems td:first-child, .manuscripts-poems th:first-child {
+    border-left: none;
+}
+.manuscripts-poems th:first-child {
+    border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+.manuscripts-poems th:last-child {
+    border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+.manuscripts-poems th:only-child {
+    border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+.manuscripts-poems tr:last-child td:first-child {
+    border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+.manuscripts-poems tr:last-child td:last-child {
+    border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+#link-content {
+    position: absolute;
+    width: 280px;
+    padding: 10px;
+    background: #eeeeee;
+    color: #000000;
+    border: 1px solid #1a1a1a;
+    font-size: 90%;
+}
+#main-title {
+    font-size:1.5em;
+}
+#top-line {
+    /*background: url('../img/logo/knot-small.gif') repeat-x;
+    height: 19px;*/
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image:         linear-gradient(left, #ccc, #333, #ccc);    
+    margin:0;
+}
+.top-nav {
+    float:left;
+    padding-top: 12px;
+}
+.top-nav a {
+    font-size:1.1em;
+    text-decoration: none;
+}
+.top-nav a:hover {
+    font-size:1.1em;
+    text-decoration: underline;
+}
+
+#manuscript {
+    background-image:url('../img/bg/manuscript-bg.jpg');
+    height:100%;    
+}
+#welcome {
+    padding-top:0.2em;
+    font-size: 1.8em;
+    text-align:center;
+}
+#disclaimer {
+    line-height:1.1em;
+    text-align:center;    
+}
+#footer {
+    padding-top:2em;
+    background-color:#dddccc;
+    border: 1px solid #AFAE99;
+    border-width: 1px 0 1px; 
+}
+
+#links-holder {
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 40px !important;   
+}
+
+.home-page-links  {
+    margin: 0;
+    text-align:center;
+    list-style:none;
+    padding:0;
+}
+.home-page-links ul li {
+    display:inline;
+}
+.home-page-links li {
+    padding-left:15px;
+    padding-right:15px;
+    float:left;
+}
+.home-page-links a {
+    font-size:large;
+}
+#funding-logos {
+    text-align:center;
+}
+#copyright {
+    padding-top:40px;
+    text-align:center;
+}
+.editor-title {
+    font-size:1em;
+}
+#gg-logo {
+    padding-top:15px;
+}
+#black-bar {
+    background-color: #000;
+    color: #dce3c1;
+    box-shadow: 0 5px 6px 1px rgba(0, 0, 0, 0.2);
+}
+.top-links {
+    float:right;
+    padding-right: 5px;    
+    padding-top: 7px;
+}
+.top-links a {
+    color: #dce3c1;
+}
+.title {
+    font-weight: bold;
+    padding-top:20px;
+}
+.hidden-title {
+    visibility: hidden;
+}
+.slide-menu {
+    position: relative;
+    /*With top knot top: -17px;*/    
+    padding:20px;
+    vertical-align: middle;
+    background:#a18a8a;
+    border-style: solid;
+    border-color:#959595;
+    border-width: 1px 0 0 0;
+}
+form {
+    float:left;
+    display:block;
+}
+#poem-selection {
+    width: 200px;
+    margin-left:16px;
+}
+#first-line {
+    width: 150px;
+}
+/*
+  * Edited Text
+ */
+
+#edited-text {
+    overflow: auto;
+}
+#stema-dialog {
+    background-color:#80943E;
+}
+
+/*
+  * Transcription
+ */
+#transcript-title {
+    font-weight: bold;
+    padding-top: 10px;
+}
+#transcript-form {
+    padding-top: 2px;
+}
+/*
+  * variant styling
+ */
+.variant-title {
+    font-weight: bold;
+}
+/* default color for line numbers is color: #8B7D6B; */
+a.variant-line-link-hide:link {
+    visibility: hidden;
+}
+a.variant-line-link-show:link {
+    text-decoration: none;
+}
+/*
+  * Panels
+ */
+.panel-heading {
+    color: #fff;
+    padding: 3px 10px;
+    position: relative;
+    background-color:#a20a1b;
+}
+.patron-panel {
+    padding: 10px;
+    overflow:auto;
+    height:90%;
+}
+#patron-div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.abbrev-panel-content {
+    padding: 10px;
+    background-color:#DBE3C0;
+    overflow:auto;
+    height:90%;
+}
+
+.abbreviation-list {
+    list-style:none;
+}
+/*
+  * Pop Ups
+ */
+.name-note {
+    padding: 10px;
+}
+/*
+  * Stemma
+ */
+#stemma-img, #stemma-img-dialog {
+    cursor:move;
+}
+/*
+  * Poem line group
+ */
+.CH-group {
+    position: relative;
+    margin-left: 10px;
+}
+.clog-group {
+    position: relative;
+    left: 10px;
+}
+.CNB-group {
+    position: relative;
+    margin-left: 10px;
+}
+.cywydd-group {
+/*
+  position: relative;
+  left: 10px;
+ */
+    margin-left:10px;
+}
+.EUU-group {
+    position: relative;
+    margin-left: 10px;
+}
+.EP-group {
+    position: relative;
+    margin-left: 10px;
+}
+.stanza {
+    position: relative;
+    margin-left: 10px;
+}
+.TC-group {
+    position: relative;
+    margin-left: 10px;
+}
+/*
+  * Poem line group line number
+ */
+.CH-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.clog-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.CNB-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.cywydd-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.EUU-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.EP-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.TC-line-number {
+    position:relative;
+    left: 0px;
+    width: 70px;
+    float:left;
+}
+.line-number {
+    position:relative;
+    left: 0px;
+    width: 30px;
+    float:left;
+}
+.variant-line-number {
+    position:relative;
+    left: 0px;
+    width: 30px;
+    float:left;
+}
+/*
+  * Poem line
+ */
+.bardd-line {
+    position: relative;
+    font-weight: bold;
+    left:40px;    
+}
+.CH-line-even {
+    position: relative;
+    left:-11px;
+}
+.CH-line-odd {
+    position: relative;
+    left:-25px;
+}
+.clog-line-first {
+    position: relative;
+    left:-10px;
+}
+.clog-line-second {
+    position: relative;
+    left:-10px;
+}
+.clog-line-third {
+    position: relative;
+    left:-35px;
+}
+.clog-line-fourth {
+    position: relative;
+    left:15px;
+}
+.CNB-line {
+    position: relative;
+    left: -22px;
+}
+.cywydd-line {
+    position: relative;
+    left:-5px;
+}
+.cywydd-line-1 {
+    position: relative;
+    left:-5px;
+}
+.cywydd-line-first {
+    position: relative;
+    left:13px;
+}
+.EP-line {
+    position: relative;
+    left:-5px;
+}
+.EUU-line-first {
+    position: relative;
+    left: -35px;
+}
+.EUU-line-second {
+    position: relative;
+    left: 15px;
+}
+.EUU-line-third {
+    position: relative;
+    left: 0px;
+}
+.EUU-line-fourth {
+    position: relative;
+    left: 0px;
+}
+.TC-line {
+    position: relative;
+    left: -10px;
+}
+.variant-line {
+    position: relative;
+    left:0px;
+}
+.line {
+    position: relative;
+    left:0px;
+}
+/*
+  * Icons
+ */
+ 
+.ui-icon-print {
+    margin-bottom: 10px;
+}
+ul#icons {
+    margin: 0;
+    padding: 0;
+}
+ul#icons li {
+    margin: 2px;
+    position: relative;
+    padding: 4px 0;
+    cursor: pointer;
+    float: left;
+    list-style: none;
+}
+ul#icons span.ui-icon {
+    float: left;
+    margin: 0 4px;
+}
+
+/* Advanced Search */
+
+#advanced-search-link-top {
+    color: white;
+    padding-left: 5px;
+}
+
+#advanced-search-link {
+    color: #000;
+    padding-left: 5px;
+}
+
+#hidden-length-alert-text {
+    display: none;
+}
+
+/*
+  * Search Results
+ */
+.hit-count {
+    color: #868686;
+}
+.terms {
+    visibility: hidden;
+}
+.found {
+    background-color: #dcc4c7;
+}
+
+#results {
+    height: 92%;
+    overflow: auto;
+}    
+
+#search-results {
+    height: 75%;
+}
+
+.search-results-line {
+    color:gray;
+}
+
+.search-form-1 {
+    background-color: #dcc4c7;
+    margin-bottom: 20px;
+    border: solid #ccc 1px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;       
+}
+
+.search-form-1 > form {
+    margin-left: 10px;
+    padding: 20px;
+}
+
+.search-icon {
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.search-tools {
+	background-color: #dcc4c7;
+	display: inline-block;
+	padding: 10px;
+}
+.search-tools a {
+    margin-right: 0.5em;
+}
+.search-info {
+    font-weight: bold;
+}
+.search-pagination a.search-icon {
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.seek-first {
+    background-image: url('/static/img/icons/control-skip-180.png');
+}
+.seek-prev {
+    background-image: url('/static/img/icons/control-180.png');
+}
+.seek-next {
+    background-image: url('/static/img/icons/control.png');
+}
+.seek-last {
+    background-image: url('/static/img/icons/control-skip.png');
+}
+.search-results-current-page-number-prev a, .search-results-current-page-number-next a{
+    font-weight: bold;
+    margin: 0.5em;
+    text-decoration: none;
+}
+.search-results-current-page-number {
+    background-color: #a20a1b;
+    color: #fff;
+    font-weight: bold;
+    margin: 0.5em;
+    padding: 0.2em 0.3em;    
+}
+
+
+/*
+  * option boxes
+ */
+ .search-options {
+     background-color: #a20a1b;
+     color: white;
+ }
+.option-text {
+    padding: 10px;
+    background-color: #F7EFD8;
+    width: 231px;
+}
+#option-box-1 {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('/static/img/options/adnoddau.jpg');
+    width: 250px;
+    height: 115px;
+}
+#option-box-2 {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('/static/img/options/canllawiau.jpg');
+    width: 250px;
+    height: 115px;
+}
+#option-box-3 {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('/static/img/options/cerddi.jpg');
+    width: 250px;
+    height: 115px;
+}
+#option-box-4 {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('/static/img/options/cymru.jpg');
+    width: 250px;
+    height: 115px;
+}
+#option-box-5 {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('/static/img/options/guto_cymraeg.jpg');
+    width: 250px;
+    height: 115px;
+}
+#option-box-6 {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('/static/img/options/prosiect.jpg');
+    width: 250px;
+    height: 115px;
+}
+/*
+  * manuscript image dialog
+ */
+#manuscript-image-dialog {
+    display: none;
+}
+/*
+  * quotes
+ */
+.poem-quote {
+    margin-left: 6em;
+}
+
+/* 
+ * Title List
+ */
+ 
+.title-list a, .patron-list a {
+    text-decoration:none;
+}
+.title-list a:hover, .patron-list a:hover {
+    text-decoration:none;
+    background-color:#ccc;
+    color:#000;
+    margin:5px;
+}
+.title-list a:hover, .patron-list a:active {
+    text-decoration:none;
+    background-color:#ccc;
+    color:#000;
+    margin:5px;
+}
+
+/* 
+ * Bibliography
+ */
+ 
+ .teidiv0 p {
+     font-size:16px;
+ }
+ .biography-list {
+     font-size: x-large;
+ }
+ .cefndir {
+     margin-left:50px;
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+ #cy-biog > div > p, #cy-biog > div > div > p, #cy-biog > div > div > div > p {
+     font-size: x-large;
+ }
+.head {
+    font-style: italic;
+    font-size: 1.5em;
+}
+.heading {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.headingNumber {
+    font-size: 1.3em;    
+}
+.toc_0, .toc_1, .toc_2 {
+    font-size: 1.1em;
+}
+h2 > .topHeading {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.4em;    
+}
+h3 > .topHeading {
+    font-style: italic;
+    font-size: 1.8em;    
+}
+
+/* 
+ * Essays
+ */
+ .essay-contents {
+     list-style: decimal;
+ }
+ .essay-flyer-image {
+     padding-right: 30px;     
+ }

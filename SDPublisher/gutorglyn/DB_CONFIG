@@ -1,0 +1,24 @@
+set_flags DB_LOG_AUTOREMOVE
+set_flags DB_DSYNC_LOG
+
+#
+# Set the database in memory cache size.
+#
+set_cachesize   0       500428800       0
+
+
+#
+# Set database flags.
+# (for database loading/reindexing)               
+#set_flags       DB_TXN_NOSYNC
+# The above setting is not necessary in
+# OpenLDAP 2.3 and later.  Use the -q flag
+# to slapadd and slapindex instead.
+
+
+#
+# Set log values.
+#
+set_lg_regionmax        1048576
+set_lg_max              10485760
+set_lg_bsize            2097152

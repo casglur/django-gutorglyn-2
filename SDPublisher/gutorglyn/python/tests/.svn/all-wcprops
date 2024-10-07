@@ -1,0 +1,461 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gutorglyn/!svn/ver/1499/gutorglyn/python/tests
+END
+listTestEnumerate2.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/listTestEnumerate2.py
+END
+convertListToDict1.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/convertListToDict1.py
+END
+paging.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gutorglyn/!svn/ver/1445/gutorglyn/python/tests/paging.py
+END
+unicode1.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/unicode1.py
+END
+count1.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gutorglyn/!svn/ver/1406/gutorglyn/python/tests/count1.py
+END
+html_parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gutorglyn/!svn/ver/1129/gutorglyn/python/tests/html_parser.py
+END
+countFunction2.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/countFunction2.py
+END
+dictToJson.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/1065/gutorglyn/python/tests/dictToJson.py
+END
+lineCondition3.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/lineCondition3.py
+END
+testInclude.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gutorglyn/!svn/ver/1063/gutorglyn/python/tests/testInclude.py
+END
+unicode.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/unicode.py
+END
+xquery-function-search-context3.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gutorglyn/!svn/ver/1262/gutorglyn/python/tests/xquery-function-search-context3.py
+END
+string_split_on_character_with_unicode.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/string_split_on_character_with_unicode.py
+END
+whileTest3.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/1406/gutorglyn/python/tests/whileTest3.py
+END
+listTest3.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/listTest3.py
+END
+countSearchResults.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/gutorglyn/!svn/ver/1445/gutorglyn/python/tests/countSearchResults.py
+END
+listTest4enumerate.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/listTest4enumerate.py
+END
+listTest5enumerate.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/listTest5enumerate.py
+END
+whileTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/whileTest.py
+END
+listToJson.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/1065/gutorglyn/python/tests/listToJson.py
+END
+printRange.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/printRange.py
+END
+rangePrint.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/rangePrint.py
+END
+listTest2range.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/listTest2range.py
+END
+xslt2.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/xslt2.py
+END
+searchNestedDict.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/searchNestedDict.py
+END
+ForLoopToList.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gutorglyn/!svn/ver/1063/gutorglyn/python/tests/ForLoopToList.py
+END
+countAndPageSearchResults.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/gutorglyn/!svn/ver/1445/gutorglyn/python/tests/countAndPageSearchResults.py
+END
+lineCondition2.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/lineCondition2.py
+END
+findInList3.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/findInList3.py
+END
+xquery-function-search-context2.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gutorglyn/!svn/ver/1262/gutorglyn/python/tests/xquery-function-search-context2.py
+END
+context-matches1.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/gutorglyn/!svn/ver/1258/gutorglyn/python/tests/context-matches1.py
+END
+string_split_on_character.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/string_split_on_character.py
+END
+whileTest2.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/1402/gutorglyn/python/tests/whileTest2.py
+END
+foo
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/foo
+END
+countFunction.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/countFunction.py
+END
+multivalueAssisgnment.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/gutorglyn/!svn/ver/1453/gutorglyn/python/tests/multivalueAssisgnment.py
+END
+xquery-function-search-paging2.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/gutorglyn/!svn/ver/1402/gutorglyn/python/tests/xquery-function-search-paging2.py
+END
+associative_array.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gutorglyn/!svn/ver/1226/gutorglyn/python/tests/associative_array.py
+END
+listTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/listTest.py
+END
+helloWorld.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/helloWorld.py
+END
+rangeListTest3.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/rangeListTest3.py
+END
+nextTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/nextTest.py
+END
+rangeListTestIndex.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/rangeListTestIndex.py
+END
+xquery-function.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/gutorglyn/!svn/ver/1258/gutorglyn/python/tests/xquery-function.py
+END
+findInList2.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/findInList2.py
+END
+enumerate.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/enumerate.py
+END
+xquery-function-search-context1.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gutorglyn/!svn/ver/1258/gutorglyn/python/tests/xquery-function-search-context1.py
+END
+for_loop_iterator.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gutorglyn/!svn/ver/1129/gutorglyn/python/tests/for_loop_iterator.py
+END
+whileTest1.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/1402/gutorglyn/python/tests/whileTest1.py
+END
+xslt.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/xslt.py
+END
+xquery-function-search-context5.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gutorglyn/!svn/ver/1262/gutorglyn/python/tests/xquery-function-search-context5.py
+END
+printRange2.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gutorglyn/!svn/ver/1452/gutorglyn/python/tests/printRange2.py
+END
+listTest1.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/listTest1.py
+END
+whileTest5.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/1428/gutorglyn/python/tests/whileTest5.py
+END
+xmlToJson.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/xmlToJson.py
+END
+lineCondition.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/lineCondition.py
+END
+stringFormatting.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/stringFormatting.py
+END
+string-in-operator.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/string-in-operator.py
+END
+unicodeAsciiConversion01.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/gutorglyn/!svn/ver/1499/gutorglyn/python/tests/unicodeAsciiConversion01.py
+END
+for1.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/for1.py
+END
+xquery-function-search-paging1.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/gutorglyn/!svn/ver/1445/gutorglyn/python/tests/xquery-function-search-paging1.py
+END
+nestedDictionary.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/gutorglyn/!svn/ver/1460/gutorglyn/python/tests/nestedDictionary.py
+END
+rangeListTest2.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/rangeListTest2.py
+END
+listTestRange2.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/listTestRange2.py
+END
+feedGenerator.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gutorglyn/!svn/ver/1485/gutorglyn/python/tests/feedGenerator.py
+END
+urlQuote.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gutorglyn/!svn/ver/1429/gutorglyn/python/tests/urlQuote.py
+END
+lineCondition4.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/lineCondition4.py
+END
+xquery-update-modify-delete1.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/gutorglyn/!svn/ver/1258/gutorglyn/python/tests/xquery-update-modify-delete1.py
+END
+convertListToDict.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/convertListToDict.py
+END
+findInList1.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/findInList1.py
+END
+increment.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/increment.py
+END
+for.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/for.py
+END
+isMultiple.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/isMultiple.py
+END
+xquery-function-search-context4.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gutorglyn/!svn/ver/1429/gutorglyn/python/tests/xquery-function-search-context4.py
+END
+whileTest4.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/1428/gutorglyn/python/tests/whileTest4.py
+END
+listTest4.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gutorglyn/!svn/ver/962/gutorglyn/python/tests/listTest4.py
+END

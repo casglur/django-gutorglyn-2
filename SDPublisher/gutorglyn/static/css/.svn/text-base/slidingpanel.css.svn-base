@@ -1,0 +1,143 @@
+
+
+a:focus {
+outline: none;
+}
+
+.panel h1 {
+font-size: 34px;
+font-family: georgia, serif;
+letter-spacing:-2px;
+color:#9FC54E;
+font-weight:700;
+padding:20px 0 0;
+}
+
+.panel h2 {
+font-size: 24px;
+font-family: georgia, serif;
+color:#444444;
+font-weight: 400;
+padding: 0 0 10px;
+}
+
+.panel h3 {
+font-size:14px;
+font-family:georgia, serif;
+letter-spacing:-1px;
+font-weight: 700;
+margin:0;
+padding:8px 0 8px 0;
+}
+
+
+#container {
+clear: both;
+margin: 0;
+padding: 0;
+}
+
+#container a{
+float: right;
+background: #9FC54E;
+border: 1px solid #9FC54E;
+text-decoration: none;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 20px;
+font-weight: 700;
+}
+
+#container a:hover{
+float: right;
+background: #a0a0a0;
+border: 1px solid #cccccc;
+text-decoration: none;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 20px;
+font-weight: 700;
+}
+
+.content {
+font-style:normal;
+font-family:helvetica, arial, verdana, sans-serif;
+color:#ffffff;
+background:#333333;
+border:1px solid #444444;
+margin: 30px 0 50px;
+padding: 15px 0;
+}
+
+.content p {
+margin: 10px 0;
+padding: 15px 20px;
+}
+
+.panel {
+position: absolute;
+top: 70px;
+left: 0;
+display: none;
+background: #000000;
+border:solid #F4E381;
+border-width: 1px 1px 1px 0px;
+width: 80%;
+height: 60%;
+padding: 30px 30px 30px 130px;
+-moz-border-radius: 10px; /* Firefox */
+-webkit-border-radius: 10px; /* Safari, Chrome */
+border-radius: 10px; /* CSS3 */
+/*filter: alpha(opacity=65);*/
+/*opacity: .85;*/
+z-index:2;
+}
+
+.panel iframe {
+    height:28em;
+}
+
+a.trigger {
+position: absolute;
+top: 130px; 
+left: 0px;
+text-decoration:none;
+border-width: 1px 1px 1px 0px;
+display: block;
+z-index:2;
+
+border-top-right-radius: 20px;
+-moz-border-radius-topright: 20px;
+-webkit-border-top-right-radius: 20px;
+
+border-bottom-right-radius: 20px;
+-moz-border-radius-bottomright: 20px;
+-webkit-border-bottom-right-radius: 20px;		
+}
+
+a.active.trigger{
+padding-left:25px;
+}
+
+.columns{
+clear: both;
+width: 330px;
+padding: 0 0 20px 0;
+line-height: 22px;
+}
+
+.colleft{
+float: left;
+width: 130px;
+line-height: 22px;
+}
+
+.colright{
+float: right;
+width: 130px;
+line-height: 22px;
+}

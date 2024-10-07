@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/gutorglyn/!svn/ver/903/SDPintro/templates/SDPintro
+END
+error.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gutorglyn/!svn/ver/8/SDPintro/templates/SDPintro/error.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/903/SDPintro/templates/SDPintro/base.html
+END
+print.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gutorglyn/!svn/ver/8/SDPintro/templates/SDPintro/print.html
+END
+text.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gutorglyn/!svn/ver/8/SDPintro/templates/SDPintro/text.html
+END

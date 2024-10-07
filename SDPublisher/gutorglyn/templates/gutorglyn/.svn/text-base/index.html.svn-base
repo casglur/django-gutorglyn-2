@@ -1,0 +1,41 @@
+{% extends "gutorglyn/home-base.html" %} {% block content %}
+{% load i18n %}
+<div class="span-24 last" id="manuscript">
+	<hr class="space" />
+	<hr class="space" />
+	<hr class="space" />	
+	<!-- Slideshow -->
+	<div id="slider-code">
+		<a class="buttons prev" href="#">left</a>
+		<div class="viewport">
+			<ul class="overview">
+				<li><a href="/gutorglyn/poem/"><img id="slideshow-poems" alt="Go to the poems" src="#" /></a></li>
+				<li><img id="slideshow-resources" alt="" src="#"/></li>
+				<li><img id="slideshow-guidelines" alt="" src="#"/></li>
+				<li><img id="slideshow-gutoswales" alt="" src="#"/></li>
+				<li><img id="slideshow-guto" alt="" src="#"/></li>
+				<li><img id="slideshow-about" alt="About the project" src="#"/></li>
+			</ul>
+		</div>
+		<a class="buttons next" href="#">right</a>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#slider-code').tinycarousel();
+		});
+	</script>
+	<!-- Slideshow End -->
+	<hr class="space" />
+	<hr class="space" />	
+	<!-- Disclaimer -->
+	<div class="prepend-3 span-18 last" id="disclaimer">
+		<h1 id="homepage-welcome">{% trans "Home Page Welcome Message" %}</h1>
+		<p id="homepage-disclaimer">
+			{% trans "Home Page Disclaimer" %}
+		</p>
+		<p>{% trans "Home Page Browser Message" %}</p>
+	</div>
+	<div id="push"></div>
+</div>
+<!-- Disclaimer End -->
+{% endblock %}

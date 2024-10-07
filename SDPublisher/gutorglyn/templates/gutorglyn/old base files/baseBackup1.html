@@ -1,0 +1,83 @@
+{% load verbatim %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <link type="text/css" rel="stylesheet" href="/static/gutorglyn.css"/>        
+        <style>
+.body {height:100%px;background-color:#fff;} .body div {height:100%;vertical-align:left;text-align:left;} .body h3 {text-align:center;} .tabsView td {border:solid 1px #0000A6;border-top:none;border-right:solid 2px #1E1ED2;}
+.tabsView th {cursor:pointer;padding:2px;font-weight:normal;font-style:italic;color:#888;border:solid 1px #bbb;border-right:none;background-color:#f8f8f8;border-bottom:solid 1px #1E1ED2;} #tabsView > .tabsView {width:950px;} 
+.tabsView {width:950px;border-collapse:collapse;border:none;margin:5px;} .tabsView tr {border-right:solid 1px #bbb;} th.header_true {font-weight:bold;border:solid 1px #0000A6;border-right:solid 2px #1E1ED2;border-bottom:solid 1px #eee;color:#0000A6;background-color:#fff;} 
+</style>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+        
+        <script type="text/javascript">
+$(document).ready(function() {
+
+});
+    </script>
+    </head>
+    <body>
+        
+<h1>Gutor Glyn</h1>
+        
+        <script id="tabsTmpl" type="text/x-jquery-tmpl">
+{% verbatim %}{{wrap(null, {state: $item.state}) "#tabsWrap"}}{% endverbatim %}
+        <h3>Edited Text</h3> 
+        <div>                
+                {% block main %}{% endblock %}
+        </div>
+        <h3>Paraphrase</h3>
+        <div>
+                {% block para %}{% endblock %}
+        </div>
+        <h3>Translation</h3>
+        <div>
+               {% block trans %}{% endblock %}
+        </div>
+   {% verbatim %} {{/wrap}}{% endverbatim %}
+</script>
+        
+        <script id="tabsWrap" type="text/x-jquery-tmpl">
+    <table class="tabsView"><tbody>
+        <tr>
+           {% verbatim %} {{each $item.html("h3", true)}}
+                <th class="header_${$index === $item.state.activeIndex}">
+                    ${$value}
+                </th>
+            {{/each}}
+        </tr>
+        <tr><td colspan='${$item.html("h3").length}'>
+            <div class="body">
+                {{html $item.html("div")[$item.state.activeIndex]}}{% endverbatim %}
+            </div>
+        </td></tr>
+    </tbody></table>
+</script>
+        
+        <div id="tabsView"></div>
+        
+        <script>
+/* Track the selected tab index */
+var state = { activeIndex: 1 };
+
+/* Render tabs view */
+$( "#tabsTmpl" ).tmpl( null, { state: state})
+    .appendTo( "#tabsView" );
+
+$( "#tabsView" )
+    .delegate( ".tabsView th", "click", function() {
+        var tmplItem = $.tmplItem( this );
+
+        /* Set the selected tab index to this tab */
+        tmplItem.state.activeIndex = $(this).index();
+
+        /* update the rendering */
+        tmplItem.update();
+    });
+</script>
+        
+    </body>
+</html>

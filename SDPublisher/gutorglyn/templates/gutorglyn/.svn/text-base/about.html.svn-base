@@ -1,0 +1,117 @@
+{% extends "gutorglyn/static-base.html" %} 
+{% block content %}
+{% load i18n %}
+<hr class="space"/>
+<div>
+<h2>{% trans "About the project Page Title" %}</h2>
+</div>
+{% if lang == "cym" %}
+<div class="prepend-1 span-18 last">
+<h3>Staff y prosiect</h3>
+<ul>
+	<li>Ann Parry Owen (Arweinydd Prosiect a Golygydd Cyffredinol)</li>
+	<li>Iestyn Daniel (golygydd)</li>
+	<li>Alaw Mai Edwards (golygydd)</li>
+	<li>Dafydd Johnston (golygydd)</li>
+	<li>Barry Lewis (golygydd)</li>
+	<li>Eurig Salisbury (golygydd)</li>
+	<li>Jenny Day (golygydd amgodio)</li>
+	<li>Alexander L. Roberts, Prifysgol Abertawe (Swyddog Gwe)</li>
+	<li>Gwen Angharad Gruffudd (golygydd copi)</li>
+	<li>Elin Nesta Lewis (golygydd copi)</li>
+</ul>
+<p>
+Enwir golygydd pob cerdd wrth frig pob testun.
+</p>
+<hr>
+<h3>Noddwyr a Chymwynaswyr</h3>
+<p>Rydym yn ddiolchgar iawn i Gyngor Ymchwil y Celfyddydau a'r Dyniaethau (AHRC) ac i Brifysgol Cymru am eu nawdd hael i'r prosiect hwn dros bum mlynedd.</p>
+
+<p>Buom yn ffodus iawn yn ein partneriaid ymchwil - Llyfrgell Genedlaethol Cymru a Chomisiwn Brenhinol Henebion Cymru.
+
+<p>Yn ogystal &acirc; chymwynasau lu gan ei staff yn ystod y cyfnod, rydym yn ddyledus i Lyfrgell Genedlaethol Cymru am ddarparu lluniau digidol o'r llawysgrifau pwysig ac am sefydlu ffordd rwydd i ni eu harddangos ar ein gwefan. Hoffwn ddiolch yn arbennig i Dafydd Evans o Archif Sgrin a Sain am bob cymorth wrth baratoi ffeiliau sain o'r cerddi.</p>
+
+<p>Rydym yn ddiolchgar iawn i Martin Crampin am ei waith dylunio, gan gynnwys creu logo ar gyfer y prosiect, ac am ein cynghori'n gyffredinol yngln &acirc; diwyg y ddwy wefan. Diolch hefyd i Nigel Callaghan am ei gymorth wrth lunio 'Cymru Guto'.</p>
+
+<p>Bu staff Comisiwn Brenhinol Henebion Cymru bob amser yn hael eu gwybodaeth am gartrefi noddwyr Guto'r Glyn, a rhaid nodi ein diolch arbennig i Richard Suggett. Diolch iddynt am ganiat&acirc;d i ddefnyddio nifer o ddelweddau at ddibenion y prosiect. Pleser oedd cydweithio gyda Mr Suggett a staff <a href="http://www.see3d.co.uk/">See3D</a> i gynhyrchu animeiddiad 'Guto yng Nghochwillan' a gyflwynir ar wefan 'Cymru Guto'.</p>
+
+<p>Rydym hefyd yn ddiolchgar i Lyfrgell Prifysgol Bangor, Llyfrgell Ganolog Caerdydd a'r Llyfrgell Brydeinig am eu caniat&acirc;d parod i ddangos rhai delweddau o'u casgliadau llawysgrifau ar ein gwefan.</p>
+
+<p>Bu Staff Geiriadur Prifysgol Cymru bob tro yn barod iawn eu cymwynas i ni, gan ganiat&aacute;u mynediad i ni i'w casgliad gwerthfawr o slipiau ac i'w hadnoddau yn gyffredinol.</p>
+
+<p>Bu aelodau'r Bwrdd Golygyddol a'r Golygydd Ymgynghorol yn barod iawn eu cymorth a'u cefnogaeth yn ystod y cyfnod, boed mewn cyfarfodydd ffurfiol neu drwy ymateb i ymholiadau unigol:
+<ul>
+<li>R. Geraint Gruffydd (Y Golygydd Ymgynghorol)</li>
+<li>Gareth Bevan</li>
+<li>D.J. Bowen</li>
+<li>Huw Meirion Edwards</li>
+<li>Dylan Foster Evans</li>
+<li>Andrew Hawke</li>
+<li>Daniel Huws</li>
+<li>Bleddyn O. Huws</li>
+<li>A. Cynfael Lake</li>
+<li>Diana Luft</li>
+<li>Peredur I. Lynch</li>
+<li>Gruffydd Aled Williams</li>
+</ul>
+
+<p>Rydym i gyd wedi manteisio ar garedigrwydd llu o gymwynaswyr eraill: afraid eu henwi i gyd yma, ond nodir eu henwau yn y golygiad.</p>
+</div>
+
+
+{% else %}
+<div class="prepend-1 span-18 last">
+<h3>Project staff</h3>
+
+<ul>
+	<li>Ann Parry Owen (Project Leader and General Editor)</li>
+	<li>Iestyn Daniel (editor)</li>
+	<li>Alaw Mai Edwards (editor)</li>
+	<li>Dafydd Johnston (editor)</li>
+	<li>Barry Lewis (editor)</li>
+	<li>Eurig Salisbury (editor)</li>
+	<li>Jenny Day (encoding editor)</li>
+	<li>Alexander L. Roberts, Swansea University (Web Technology Team Manager)</li>
+	<li>Gwen Angharad Gruffudd (copy editor)</li>
+	<li>Elin Nesta Lewis (copy editor)</li>
+</ul>
+<p>
+The editor of each poem is named before the edited text.
+</p>
+<hr>
+<h3>Funding, partners and other acknowledgements</h3>
+<p>We are very grateful to the Arts and Humanities Research Council (AHRC) and to the University of Wales for their generous support for this project over five years.</p>
+
+<p>We have been extremely fortunate in our research partners - the National Library of Wales and the Royal Commission on the Ancient and Historical Monuments of Wales.</p>
+
+<p>In addition to the many kindnesses shown by its staff during the project, we are indebted to the National Library of Wales for providing us with access to digital images from the most important manuscripts and for establishing an effective way for us to display them on our website. The Library also will be hosting our website in the long term. We would also like to thank Dafydd Evans of the Screen and Sound Archive for all his help in preparing the sound files of the poems.</p>
+
+<p>We are grateful to Martin Crampin for his graphic design work, including the creation of a logo for the project, and for his advice on the general appearance of the two websites. Our thanks also to Nigel Callaghan for his help in creating 'Guto's World'.</p>
+
+<p>The staff of the Royal Commission on the Ancient and Historical Monuments of Wales have always been very generous with their knowledge about the houses of Guto's patrons, and we must specifically thank Richard Suggett. We are also grateful for their permission to use various images for the project. It was a pleasure to collaborate with Mr Suggett and the staff of <a href="http://www.see3d.co.uk/">See3D</a> in Aberystwyth to create the animation 'Guto in Cochwillan' which is shown on 'Guto's Wales'.</p>
+
+<p>We are also grateful to the Library of Bangor University, the Central Library Cardiff, and the British Library for their kind permission to show images from some of their manuscripts on our website.</p>
+
+<p>The Staff of the University of Wales Dictionary have always been ready to help us, and granted us access to their important collection of unpublished slips and to their resources in general.</p>
+
+<p>The members of the Editorial Board and the Consultant Editor have been extremely supportive during the project, in formal meetings or in replying to general queries:
+<ul>
+<li>R. Geraint Gruffydd (Consultant Editor)</li>
+<li>Gareth Bevan</li>
+<li>D.J. Bowen</li>
+<li>Huw Meirion Edwards</li>
+<li>Dylan Foster Evans </li>
+<li>Andrew Hawke</li>
+<li>Daniel Huws</li>
+<li>Bleddyn O. Huws</li>
+<li>A. Cynfael Lake</li>
+<li>Diana Luft</li>
+<li>Peredur I. Lynch</li>
+<li>Gruffydd Aled Williams</li>
+</ul>
+<p>
+We have all benefitted from the kindness of many other colleagues: it is impossible to list them all here, but their names are given in the edition.
+</p>
+</div>
+{% endif %}
+{% endblock %}

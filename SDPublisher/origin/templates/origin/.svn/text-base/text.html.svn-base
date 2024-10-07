@@ -1,0 +1,16 @@
+{% extends "origin/base.html" %}
+{% block content %}
+<div class="nav">
+  {% if previouspb %}
+  <a href="{% url origin.views.page previouspb %}" target="_parent">Previous {{previouspb}}</a>
+  {% endif %}
+  {{ current_page }}
+  {% if nextpb %}
+  <a href="{% url origin.views.page nextpb %}" target="_parent">Next {{nextpb}}</a>
+  {% endif %}
+</div>
+<div id="page">
+{{ page_content|safe }}
+</div>
+{% endblock %}
+

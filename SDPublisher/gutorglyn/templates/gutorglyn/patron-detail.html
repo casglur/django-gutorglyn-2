@@ -1,0 +1,9 @@
+{% extends "gutorglyn/static-base.html" %} {% block content %}
+{% load i18n %}
+<hr class="space"/>
+<div class="span-20 last">
+<h2>{% trans "People Detail Page Title" %}</h2>
+{{name|safe}}
+</div>
+<hr class="space"/>
+{% endblock %}

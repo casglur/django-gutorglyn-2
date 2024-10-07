@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/gutorglyn/!svn/ver/1521/gutorglyn
+END
+gutorglyn.db
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gutorglyn/!svn/ver/1095/gutorglyn/gutorglyn.db
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gutorglyn/!svn/ver/1213/gutorglyn/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gutorglyn/!svn/ver/1521/gutorglyn/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gutorglyn/!svn/ver/8/gutorglyn/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gutorglyn/!svn/ver/1477/gutorglyn/tests.py
+END
+DB_CONFIG
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gutorglyn/!svn/ver/1470/gutorglyn/DB_CONFIG
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gutorglyn/!svn/ver/1333/gutorglyn/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gutorglyn/!svn/ver/1517/gutorglyn/urls.py
+END

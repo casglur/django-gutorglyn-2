@@ -1,0 +1,193 @@
+{% block content %}
+{% load i18n %}
+<div class="span-20" id="poem-wait" style="display: none;">
+	<div class="progress-label">
+		<p>{% trans "Search Page Message" %}</p>
+		<p><img src="/static/img/icons/ajax-loader.gif"></p>
+	</div>
+</div>
+<div id="poem-results-container">
+	{% if debug == "on" %}
+	Mode: {{ searchMode }} <br/>
+	Search Term: {{ searchTrm }}<br/>
+	Contains Type: {{ containsType }} <br/>
+	Search Type: {{ searchType }} <br/>
+	Poem Page Number: {{ poemPageNumber }} <br/>
+	Poem Page Number Values: {{ poemPageNumberValues }} <br/>
+	Start: {{ pageStart }} - End: {{ pageEnd }}<br/>
+	Total: {{ poemSearchNum }}<br/>
+	{% endif %}
+	
+	<div class="span-8">
+		{% trans "Search Page Results Per Page Label" %}: {{perPage}}
+		<br/>
+		{% trans "Search Page Page Number Label" %}: {{ poemPageNumber }} of <span id="total-pages">{{ totalPageNumber|floatformat }}</span>
+		<br/>
+		Results {{ pageStart }} - {{ pageEnd }} of {{ poemSearchNum }} 
+	</div>
+	<div class="span-10 last">
+		<a href="#" onclick="JavaScript: getFirstPage();" class="first-poem-page">First Page</a>
+		<a href="#" onclick="JavaScript: getPreviousPage();" class="previous-poem-page">Previous</a>
+		<a href="#" onclick="JavaScript: getNextPage();" class="next-poem-page">Next</a>
+		<a href="#" onclick="JavaScript: getLastPage();" class="last-poem-page">Last Page</a>
+	</div>
+	
+	<br/>
+	<br/>
+
+	<div>
+
+	
+	<br/>
+			<!--
+			{% trans "Search Page Showing Label" %}: 
+	        <select name="per-page">
+	        	<option value="10">10 {% trans "Search Page Instances Label" %}</option>
+	 	        <option value="20">20 {% trans "Search Page Instances Label" %}</option>
+	 	        <option value="30">30 {% trans "Search Page Instances Label" %}</option>
+	 	        <option value="40" selected>40 {% trans "Search Page Instances Label" %}</option>
+	 	        <option value="50">50 {% trans "Search Page Instances Label" %}</option>
+	        </select>
+	        -->
+	
+	        <input type="hidden" name="page-start"  id="page-start" value="0"/>
+	</div>
+	
+	
+	
+	<br/>
+	
+	<div class="results-group" id="poem-results-group">
+		 {{poemSearchLineHits|safe}}
+	</div>
+	
+	<a href="#" onclick="JavaScript: getFirstPage();" class="first-poem-page">First Page</a>
+	<a href="#" onclick="JavaScript: getPreviousPage();" class="previous-poem-page">Previous</a>
+	<a href="#" onclick="JavaScript: getNextPage();" class="next-poem-page">Next</a>
+	<a href="#" onclick="JavaScript: getLastPage();" class="last-poem-page">Last Page</a>
+</div>
+
+
+
+<script type="text/javascript">
+	$('.first-poem-page').button();
+	$('.last-poem-page').button();
+	$('.next-poem-page').button();
+	$('.previous-poem-page').button();
+
+	
+	currentPoemPage = parseInt({{ poemPageNumber }});
+	ignoreDiacritics = gup('ignore-diacritics');
+    
+	matchCase = gup('match-case');
+	poemPageNumberValues = {{ poemPageNumberValues }};    
+	poemResultsEnd = parseInt({{ pageEnd }});
+	poemResultsStart = parseInt({{ pageStart }});
+    regEx = gup('reg-ex');
+    searchVal = gup('searchVal');
+    totalPoemPages = poemPageNumberValues.length;
+    totalPoemPages = totalPoemPages - 2;
+    totalPoemResults = parseInt({{ poemSearchNum }});
+    
+    nextPageStart = poemPageNumberValues[currentPoemPage];
+    
+    if (nextPageStart > totalPoemResults) {
+        $('.next-poem-page').hide();
+        $('.next-poem-page').removeAttr('onClick');
+        $('.last-poem-page').hide();
+        $('.last-poem-page').removeAttr('onClick');
+    }
+    
+    previousPageStart = poemPageNumberValues[currentPoemPage - 2];
+    
+    if (currentPoemPage <= 1) {
+        $('.previous-poem-page').hide();
+        $('.previous-poem-page').removeAttr('onClick');
+    }
+    
+    if (currentPoemPage <= 1) {
+        $('.first-poem-page').hide();
+        $('.first-poem-page').removeAttr('onClick');
+        $('.previous-poem-page').hide();
+        $('.previous-poem-page').removeAttr('onClick');
+    }
+    
+    poemPageStart = readCookie('poem_page_start');
+    poemResultsPerPage = readCookie('poem_results_per_page');
+    
+    lastPoemPageIndex = parseInt(poemResultsPerPage) * totalPoemPages;    
+    
+	console.log('page number values: ' + poemPageNumberValues);
+	console.log('current page: ' + currentPoemPage);
+	console.log('next page start value: ' + nextPageStart);
+	console.log('previous page start value: ' + previousPageStart);
+	console.log('last page number value: ' + lastPoemPageIndex);
+	console.log('total poem pages: ' + totalPoemPages );
+
+	function getFirstPage() {    
+	    $("#poem-results-container").hide();
+	    $("#poem-wait").show();
+
+	    $.get("gutorglyn/search-results-poems/?searchVal=" + searchVal
+	            + "&ignore-diacritics=" + ignoreDiacritics + "&match-case="
+	            + matchCase + "&reg-ex=" + regEx + "&per-page=" + poemResultsPerPage
+	            + "&page-start=" + 0, function(data) {
+	        $("#poem-results-container").replaceWith(data);
+	        $("#poem-wait").hide();
+	    });
+	}
+	
+	function getLastPage() {    
+	    $("#poem-results-container").hide();
+	    $("#poem-wait").show();
+
+	    $.get("gutorglyn/search-results-poems/?searchVal=" + searchVal
+	            + "&ignore-diacritics=" + ignoreDiacritics + "&match-case="
+	            + matchCase + "&reg-ex=" + regEx + "&per-page=" + poemResultsPerPage
+	            + "&page-start=" + lastPoemPageIndex, function(data) {
+	        $("#poem-results-container").replaceWith(data);
+	        $("#poem-wait").hide();
+	    });
+	}
+	
+	function getPreviousPage() {    
+	    $("#poem-results-container").hide();
+	    $("#poem-wait").show();
+
+	    $.get("gutorglyn/search-results-poems/?searchVal=" + searchVal
+	            + "&ignore-diacritics=" + ignoreDiacritics + "&match-case="
+	            + matchCase + "&reg-ex=" + regEx + "&per-page=" + poemResultsPerPage
+	            + "&page-start=" + previousPageStart, function(data) {
+	        $("#poem-results-container").replaceWith(data);
+	        $("#poem-wait").hide();
+	    });
+	}
+	
+	function getNextPage() {    
+	    $("#poem-results-container").hide();
+	    $("#poem-wait").show();
+
+	    $.get("gutorglyn/search-results-poems/?searchVal=" + searchVal
+	            + "&ignore-diacritics=" + ignoreDiacritics + "&match-case="
+	            + matchCase + "&reg-ex=" + regEx + "&per-page=" + poemResultsPerPage
+	            + "&page-start=" + nextPageStart, function(data) {
+	        $("#poem-results-container").replaceWith(data);
+	        $("#poem-wait").hide();
+	    });
+	}
+	
+	/* code to highlight found search terms  */
+	var terms = searchVal;
+	var regEx = new RegExp(terms, 'gi');
+
+	$('.search-results-line').each(function() { 
+		$(this).html($(this).html().replace(regEx, "<span class='found'>$&</span>"));
+		$(".found").parents(".search-results-line").css("color", "#222222");		
+		});
+	$('p').each(function() { 
+		$(this).html($(this).html().replace(regEx, "<span class='found'>$&</span>"));
+		});	
+
+	/* code to highlight found search terms End */
+</script>
+{% endblock %}    			

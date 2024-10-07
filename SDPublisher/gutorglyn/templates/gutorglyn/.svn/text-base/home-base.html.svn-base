@@ -1,0 +1,129 @@
+{% load i18n %}
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Gutor Glyn.net</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1">
+
+{% include "gutorglyn/css.html" %} 
+{% include "gutorglyn/js.html" %} 
+{% include "gutorglyn/google-analytics.html" %}
+
+<style type="text/css">
+#slider-code {
+	height: 184px;
+	overflow: hidden;
+	width: 500px;
+	padding-top: 10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#slider-code .viewport {
+	float: left;
+	width: 400px;
+	height: 184px;
+	overflow: hidden;
+	position: relative;
+}
+
+#slider-code .buttons {
+	background: url("/static/img/icons/buttons-brown.png") no-repeat scroll
+		0 0 transparent;
+	display: block;
+	margin: 65px 10px 0 0;
+	background-position: 0 -38px;
+	text-indent: -999em;
+	float: left;
+	width: 39px;
+	height: 37px;
+	overflow: hidden;
+	position: relative;
+}
+
+#slider-code .next {
+	background-position: 0 0;
+	margin: 65px 0 0 10px;
+}
+#slider-code .disable {
+	visibility: hidden;
+}
+
+#slider-code .overview {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+}
+
+#slider-code .overview li {
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 1px;
+	height: 184px;
+	width: 400px;
+}
+
+#slider-code .pager {
+	overflow: hidden;
+	list-style: none;
+	clear: both;
+	margin: 0 0 0 45px;
+}
+
+#slider-code .pager li {
+	float: left;
+}
+
+#slider-code .pagenum {
+	background-color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px;
+	color: #555555;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+}
+
+#slider-code .active {
+	color: #fff;
+	background-color: #555555;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+	
+		{% include "gutorglyn/black-bar.html" %}
+		
+		<div class="span-10 last">
+			<a href="/gutorglyn/index"><img id="gg-logo" alt="guto'r glyn.net"
+				src="/static/img/logo/gg-logo-1.png"></a>
+		</div>
+		
+		{% include "gutorglyn/nav-bar.html" %}
+		
+		<div class="span-22 manuscript-holder">
+			
+			{% block content %}
+			{% endblock content%}
+			
+		</div>
+	
+		{% include "gutorglyn/footer.html" %}   	
+	
+	</div>
+<!-- Container End --> 
+	<script>
+	
+	$( function()
+	{
+		$( '#nav li:has(ul)' ).doubleTapToGo();
+	});
+	
+	</script>
+</body>
+</html>

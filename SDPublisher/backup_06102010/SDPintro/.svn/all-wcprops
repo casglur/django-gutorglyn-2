@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/gutorglyn/!svn/ver/903/backup_06102010/SDPintro
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gutorglyn/!svn/ver/8/backup_06102010/SDPintro/__init__.py
+END
+SDPintro.dbxml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/8/backup_06102010/SDPintro/SDPintro.dbxml
+END
+teilite.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gutorglyn/!svn/ver/8/backup_06102010/SDPintro/teilite.dtd
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/gutorglyn/!svn/ver/8/backup_06102010/SDPintro/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/gutorglyn/!svn/ver/8/backup_06102010/SDPintro/urls.py
+END
+iso-lat1.ent
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gutorglyn/!svn/ver/8/backup_06102010/SDPintro/iso-lat1.ent
+END
+SDPintro.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gutorglyn/!svn/ver/903/backup_06102010/SDPintro/SDPintro.xml
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/gutorglyn/!svn/ver/8/backup_06102010/SDPintro/views.py
+END

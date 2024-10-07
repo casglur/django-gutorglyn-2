@@ -1,0 +1,149 @@
+/*
+  -----------------------------------------------------------------------
+  New stylesheet
+  -----------------------------------------------------------------------
+ */
+html {
+    background-color:#eeeddd;
+    background: url('/static/img/bg/manuscript-bg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.container {
+    background-color: #fbfaf1;
+    border: 1px solid #AFAE99;
+    border-width: 0 1px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.poem-container {
+    background-color: #fbfaf1;
+    border: 1px solid #AFAE99;
+    border-width: 0 1px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.2);  
+}
+#edited-text {
+    background-color: #fbfaf1;
+}
+.panel,.panel2 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.2);    
+}
+.patron-panel {
+    background:#fbfaf1;
+}
+.abbrev-panel-content {
+    background:#fbfaf1;
+}
+.panel2 {
+    background:#fbfaf1;
+}
+a.trigger {
+    background:#000;
+    border: 1px solid #9b4700;
+}
+a.trigger:hover {
+    background:#A20A1B;
+}
+a.active.trigger {
+    background:#A20A1B;
+}
+a.trigger2 {
+    background:#000;
+    border: 1px solid #9b4700;
+}
+a.trigger2:hover {
+    background:#A20A1B;
+}
+a.active.trigger2 {
+    background:#A20A1B;
+}
+
+a.variant-line-link-show:link {
+    color:#8B7D6B;
+}
+a.variant-line-link:active {
+    color:#8B7D6B;
+}
+.ui-button-text {color:white;}
+
+.buttons a span {color:black;}
+.buttons label span {color:black;}
+
+/* Accordians */
+
+.names > h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.names > p {
+    display: block;
+    height: 60px;
+    overflow: auto;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.ui-accordion .ui-accordion-header {
+    margin-top: 10px;
+    padding-left: 2.2em;
+}
+
+.names > h3.ui-helper-reset {
+    line-height: 3;
+}
+
+.names > h3.ui-state-active {
+    background: #A20A1B;
+    border: 1px solid #666;
+    color: #fff;
+}
+
+.names > h3.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+     background: #666;
+     color: #fff;
+}
+
+/* Tabs */
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+     background:#666;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color:white;
+}
+
+.ui-state-default {
+    background: url("images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% #E6E6E6;
+    border: 1px solid #D3D3D3;
+    color: #555555;
+    font-weight: normal;
+}
+.ui-tabs .ui-tabs-nav {
+    background:#fbfaf1;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+     background:#a20a1b;
+}
+.ui-tabs .ui-tabs-panel{
+    background-color:#fbfaf1;
+}
+.ui-widget-header {
+     border:0px;    
+}
+.ui-widget-content {
+     background:#fbfaf1;  
+     border:0px;
+}
+
+/* Ajax Auto Complete For Title List */
+
+.ui-menu {
+    background-color:#eeeddd;
+    border:1px solid #ccc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);        
+}
